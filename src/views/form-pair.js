@@ -6,12 +6,12 @@ import { generating, checkPrivate, checkPublic } from 'Utils/keys.js';
 import Bus from 'Utils/bus.js';
 
 
-
-const initialStateValue = {
+let initialStateValue = {
   label: '',
   private: '',
   public: ''
 };
+
 
 const initialStateValidator = {
   label: 0,
@@ -20,13 +20,19 @@ const initialStateValidator = {
 };
 
 
-
 const FormPair = () => {
 
-  const { changeRoute } = useRouterContext();
-  const { add } = usePairsContext();
-  const [ stateValue, setStateValue ] = useState(initialStateValue);
+  const { changeRoute, route } = useRouterContext();
+  const { add, get: getPair, modify } = usePairsContext();
+  const editMode = route.uuid ? true : false;
+
   const [ stateValidator, setStateValidator ] = useState(initialStateValidator);
+  const [ stateValue, setStateValue ] = useState(
+    editMode
+      ? getPair(route.uuid)
+      : initialStateValue
+  );
+
 
   const handlerSetValue = event => {
     const { keyState } = event.target.dataset;
@@ -57,7 +63,6 @@ const FormPair = () => {
 
 
   const checkValidator = () => {
-
     // 0 = OK, 1 = vide, 2 = rsa non valid
     let validator = {
       label: 0,
@@ -67,16 +72,12 @@ const FormPair = () => {
 
     if (!stateValue.label || stateValue.label === '')
       validator.label = 1;
-
     if (!checkPublic(stateValue.public))
       validator.public = 2;
-
     if (!checkPrivate(stateValue.private))
       validator.private = 2;
-
     if (!stateValue.private || stateValue.private === '')
       validator.private = 1;
-
     if (!stateValue.public || stateValue.public === '')
       validator.public = 1;
 
@@ -88,11 +89,19 @@ const FormPair = () => {
     const validator = checkValidator();
 
     if (validator.label + validator.private + validator.public === 0) {
-      add({
-        label: stateValue.label,
-        private: stateValue.private,
-        public: stateValue.public
-      });
+      if (editMode) {
+        modify(route.uuid, {
+          label: stateValue.label,
+          private: stateValue.private,
+          public: stateValue.public
+        });
+      } else {
+        add({
+          label: stateValue.label,
+          private: stateValue.private,
+          public: stateValue.public
+        });
+      }
       Bus.dispatch('success', 'Your key pair has been saved');
       changeRoute({ name: 'Index' });
 
@@ -124,13 +133,11 @@ const FormPair = () => {
         </div>
       </div>
 
-      {/* txt warn */}
       <div className="u-border u-margin-top-s u-themecolor-color u-themecolor-container u-padding-s">
         <i>
           Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys
           as well as their size (2048). If you don't know what you are doing, use generation.
         </i>
-        {/* generate button */}
         <button
           className="general-button generate-button u-margin-top-s save-key"
           onClick={() => clickGenerating()}
@@ -139,14 +146,14 @@ const FormPair = () => {
         </button>
       </div>
 
-      {/* _private key */}
+      {/* private key */}
       <div className="u-margin-top-s">
         <label>Your private key</label>
         <textarea
           name="name"
           rows="8"
           cols="80"
-          placeholder="Paste your _private key here"
+          placeholder="Paste your private key here"
           value={stateValue.private}
           data-key-state="private"
           onChange={handlerSetValue}
@@ -161,14 +168,14 @@ const FormPair = () => {
         }
       </div>
 
-      {/* _public key */}
+      {/* public key */}
       <div className="u-margin-top-s">
         <label>Your public key</label>
         <textarea
           name="name"
           rows="8"
           cols="80"
-          placeholder="Paste your _public key here"
+          placeholder="Paste your public key here"
           value={stateValue.public}
           data-key-state="public"
           onChange={handlerSetValue}

@@ -22,6 +22,7 @@ const initialPairs = {
 function PairsProvider(props) {
   const [ pairs, setPairs ] = useState(initialPairs);
 
+
   /* initialisation */
   const getList = async () => {
     const list = await pairStore.getList();
@@ -31,6 +32,7 @@ function PairsProvider(props) {
     getList();
   }, []);
 
+
   /* fonctions de changement d'état */
   function add(pair) {
     pairStore.set(pair).then(() => {
@@ -38,8 +40,14 @@ function PairsProvider(props) {
     });
   }
   /**/
-  function edit(uuid, obj) {
+  function modify(uuid, obj) {
     pairStore.modify(uuid, obj).then(() => {
+      getList();
+    });
+  }
+  /**/
+  function remove(uuid) {
+    pairStore.remove(uuid).then(() => {
       getList();
     });
   }
@@ -55,9 +63,15 @@ function PairsProvider(props) {
     return null;
   }
 
-  const update = getList;
+
   return <PairsContext.Provider
-    value={{ pairs, add, edit, update, get }}
+    value={{
+      pairs,
+      add,
+      modify,
+      remove,
+      get
+    }}
     {...props}
   />;
 }

@@ -12,9 +12,11 @@ const List = props => {
     empty =
       'BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys.';
   } else if (type === 'friend') {
-    empty = '';
+    empty =
+      'BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key.';
   } else if (type === 'method') {
-    empty = '';
+    empty =
+      'BONES does not have any methodes. Methods are key bindings attached to a url.';
   }
 
   if (list.length === 0) {

@@ -4,6 +4,8 @@ import { render } from 'react-dom';
 // Router utilise l'api context
 import { RouterProvider, RouterContext } from 'Contexts/router.js';
 import { PairsProvider } from 'Contexts/pairs.js';
+import { FriendsProvider } from 'Contexts/friends.js';
+import { MethodsProvider } from 'Contexts/methods.js';
 // pages
 import Index from 'Views/index.js';
 import FormPair from 'Views/form-pair.js';
@@ -21,10 +23,15 @@ import 'Styles/button.less';
 
 
 const MultipleProvider = props => {
+  // todo: ameliorer l'import multiple de provider
   return <RouterProvider>
-    <PairsProvider
-      {...props}
-    />
+    <FriendsProvider>
+      <MethodsProvider>
+        <PairsProvider
+          {...props}
+        />
+      </MethodsProvider>
+    </FriendsProvider>
   </RouterProvider>;
 };
 
