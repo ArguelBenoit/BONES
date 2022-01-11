@@ -1,0 +1,38 @@
+{
+  "name": "BONES",
+  "version": "0.0.1",
+  "main": "manifest.json",
+  "author": "Benoit Arguel",
+  "license": "unlicense",
+  "homepage": ".",
+  "scripts": {
+    "dev": "webpack -w --env dev",
+    "build": "webpack --env prod"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-benoitarguel": "^0.2.2",
+    "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1",
+    "style-resources-loader": "^1.5.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "keypair": "^1.0.4",
+    "less": "^3.10.1",
+    "prop-types": "^15.8.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

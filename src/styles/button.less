@@ -1,0 +1,71 @@
+
+body {
+
+  /******* common button *******/
+  .return-link {
+    color: #fff;
+    display: inline-block;
+    font-weight: 200;
+    padding: 6px;
+    border-radius: 2px;
+    background: @themecolor-one;
+    border: 0.5px solid @themecolor-two;
+    display: flex;
+    align-items: center;
+    width: 112px;
+    cursor: pointer;
+    img {
+      margin-right: 5px;
+    }
+    &:hover {
+      text-decoration: none;
+      transform: scale(1.02);
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  /******* another common button *******/
+  .general-button {
+    min-height: 34px;
+    padding: 0 20px;
+    border-radius: 2px;
+    background: @secondarythemecolor;
+    font-size: 100%;
+    display: block;
+    margin: 0 auto 0 auto;
+    color: #060015;
+    border: none;
+    &:hover,
+    &:active {
+      cursor: pointer;
+      text-decoration: none;
+    }
+    &:hover {
+      transform: scale(1.02);
+    }
+    &:active {
+      transform: scale(0.99) !important;
+    }
+  }
+
+  /******* another common button *******/
+  .linkstyle-button {
+    background: none;
+    font-size: 100% !important;
+    text-align: center;
+    border: none;
+    color: @secondarythemecolor;
+    text-decoration: none;
+    font-style: italic;
+    margin: 0 auto 0 auto;
+    display: block;
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+}

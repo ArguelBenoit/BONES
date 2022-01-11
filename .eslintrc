@@ -1,0 +1,6 @@
+{
+  "extends": "benoitarguel",
+  "env": {
+    "webextensions": true
+  }
+}

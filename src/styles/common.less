@@ -1,0 +1,99 @@
+
+
+* {
+  font-family: sans-serif;
+  scrollbar-color: #222 #000;
+}
+body, html {
+  overflow-x: hidden;
+}
+body {
+  margin: auto;
+  max-width: 380px;
+  min-width: 380px;
+  background: #060015;
+  font-size: 95%;
+  color: #ddd;
+  padding: 20px;
+  a, .link {
+    cursor: pointer;
+    color: @secondarythemecolor;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin-top: 0px;
+  }
+
+  /******* form *******/
+  input[type=text],
+  select,
+  textarea {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    background: @themecolor-one;
+    border: 0.5px solid @themecolor-two;
+    box-sizing: border-box;
+    color: #ddd;
+    font-size: 92%;
+    margin-top: 10px;
+    scrollbar-color: @themecolor-one transparent;
+  }
+  .form-error {
+    margin-top: 5px;
+    color: red;
+    font-style: italic;
+  }
+
+  /******* utility *******/
+  .u-themecolor-container {
+    background: @themecolor-one;
+    border-radius: 2px;
+    border: 1px solid @themecolor-one;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    select, input, textarea {
+      border: 0.5px solid @themecolor-two;
+      background: @themecolor-one;
+    }
+  }
+  .u-full-width { width: 100%; }
+  .u-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .u-themecolor-color { color: @themecolor; }
+  .u-white-color { color: #fff; }
+
+  .u-text-center { text-align: center; }
+  .u-text-italic { font-style: italic; }
+
+  .u-font-size-s { font-size: 90%; }
+  .u-font-size-m { font-size: 95%; }
+  .u-font-size-l { font-size: 100%; }
+  .u-font-size-xl { font-size: 110%; }
+
+  .u-border { border: 0.5px solid @themecolor-two; }
+
+  .u-padding { padding: 20px; }
+  .u-padding-s { padding: 12px; }
+
+  .u-margin-s { margin: 15px; }
+  .u-margin-m { margin: 20px; }
+  .u-margin-bottom-s { margin-bottom: 15px; }
+  .u-margin-bottom-m { margin-bottom: 20px; }
+  .u-margin-top-s { margin-top: 15px; }
+  .u-margin-top-m { margin-top: 20px; }
+  .u-margin-left-s { margin-left: 15px; }
+  .u-margin-left-m { margin-left: 20px; }
+  .u-margin-right-s { margin-right: 15px; }
+  .u-margin-right-m { margin-right: 20px; }
+
+  .u-left { float: left; }
+  .u-right { float: right; }
+}
