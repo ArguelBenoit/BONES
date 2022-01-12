@@ -5,23 +5,11 @@ import 'Styles/list.less';
 
 
 const List = props => {
-  const { list, type } = props;
-
-  let empty = '';
-  if (type === 'pair') {
-    empty =
-      'BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys.';
-  } else if (type === 'friend') {
-    empty =
-      'BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key.';
-  } else if (type === 'method') {
-    empty =
-      'BONES does not have any methodes. Methods are key bindings attached to a url.';
-  }
+  const { list, type, emptyMessage } = props;
 
   if (list.length === 0) {
     return <div className="list-empty u-themecolor-container u-padding u-themecolor-color u-text-center u-font-size-s">
-      <i>{empty}</i>
+      <i>{emptyMessage}</i>
     </div>;
 
   } else {
@@ -42,7 +30,8 @@ const List = props => {
 
 List.propTypes = {
   list: PropTypes.array.isRequired,
-  type: PropTypes.string.isRequired
+  type: PropTypes.string.isRequired,
+  emptyMessage: PropTypes.string.isRequired
 };
 
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReturnLink from 'Components/return-link.js';
 import { useRouterContext } from 'Contexts/router.js';
 import { useFriendsContext } from 'Contexts/friends.js';
-import { generating, checkPrivate, checkPublic } from 'Utils/keys.js';
+import { checkPublic } from 'Utils/keys.js';
 import Bus from 'Utils/bus.js';
 
 
@@ -77,7 +77,7 @@ const FormFriend = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('success', 'Message succes');
+      Bus.dispatch('success', 'Your friend\'s key has been saved');
       changeRoute({ name: 'Index' });
 
     } else {

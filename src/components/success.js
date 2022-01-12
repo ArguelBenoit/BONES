@@ -39,7 +39,7 @@ const Success = () => {
           width="90"
         />
       </div>
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', width: 200, margin: 'auto'}}>
         {message}
       </div>
     </div>

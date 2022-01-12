@@ -16,6 +16,8 @@ const Index = () => {
   const { friends } = useFriendsContext();
   const { methods } = useMethodsContext();
 
+  const methodIsBlocked = pairs.pairs.length === 0 || friends.friends.length === 0;
+
   return <div>
 
     <header className="header u-flex">
@@ -34,6 +36,7 @@ const Index = () => {
       <List
         type={'pair'}
         list={pairs.pairs}
+        emptyMessage="BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys."
       />
       <div className="u-padding-s u-themecolor-container">
         <button
@@ -50,6 +53,7 @@ const Index = () => {
       <List
         type={'friend'}
         list={friends.friends}
+        emptyMessage="BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key."
       />
       <div className="u-padding-s u-themecolor-container">
         <button
@@ -66,12 +70,31 @@ const Index = () => {
       <List
         type={'method'}
         list={methods.methods}
+        emptyMessage="BONES does not have any methodes. Methods are key bindings attached to a url."
       />
       <div className="u-padding-s u-themecolor-container">
-        <div className="form-error u-text-center u-font-size-s u-margin-bottom-s">You need a pair and a friend to create a method</div>
+        <div
+          className="form-error u-text-center u-font-size-s u-margin-bottom-s"
+          style={{display: methodIsBlocked ? 'inherit' : 'none'}}
+        >
+          You need a pair and a friend to create a method
+        </div>
         <button
-          onClick={() => changeRoute({ name: 'FormMethod' })}
+          onClick={methodIsBlocked
+            ? () => {}
+            : () => changeRoute({ name: 'FormMethod' })
+          }
           className="general-button"
+          style={
+            methodIsBlocked
+            ?
+              {
+                opacity: 0.5,
+                cursor: 'not-allowed'
+              }
+            :
+              {}
+          }
         >
           Add a method
         </button>
