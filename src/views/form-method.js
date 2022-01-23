@@ -1,33 +1,37 @@
 import React, { useState } from 'react';
 import ReturnLink from 'Components/return-link.js';
 import { useRouterContext } from 'Contexts/router.js';
-import { useFriendsContext } from 'Contexts/friends.js';
+import { useMethodsContext } from 'Contexts/methods.js';
 import { checkPublic } from 'Utils/keys.js';
 import Bus from 'Utils/bus.js';
 
 
 let initialStateValue = {
   label: '',
-  public: ''
+  url: '',
+  pair: '',
+  friends: []
 };
 
 
 const initialStateValidator = {
   label: 0,
-  public: 0
+  url: 0,
+  pair: 0,
+  friends: 0
 };
 
 
 const FormMethod = () => {
 
   const { changeRoute, route } = useRouterContext();
-  const { add, get: getFriend, modify } = useFriendsContext();
+  const { add, get: getMethod, modify } = useMethodsContext();
   const editMode = route.uuid ? true : false;
 
   const [ stateValidator, setStateValidator ] = useState(initialStateValidator);
   const [ stateValue, setStateValue ] = useState(
     editMode
-      ? getFriend(route.uuid)
+      ? getMethod(route.uuid)
       : initialStateValue
   );
 
