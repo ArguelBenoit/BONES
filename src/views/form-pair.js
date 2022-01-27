@@ -3,6 +3,7 @@ import ReturnLink from 'Components/return-link.js';
 import { useRouterContext } from 'Contexts/router.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { generating, checkPrivate, checkPublic } from 'Utils/keys.js';
+import FieldError from 'Components/field-error.js';
 import Bus from 'Utils/bus.js';
 
 
@@ -75,7 +76,7 @@ const FormPair = () => {
     if (!checkPublic(stateValue.public))
       validator.public = 2;
     if (!checkPrivate(stateValue.private))
-      validator.private = 2;
+      validator.private = 3;
     if (!stateValue.private || stateValue.private === '')
       validator.private = 1;
     if (!stateValue.public || stateValue.public === '')
@@ -126,10 +127,7 @@ const FormPair = () => {
             data-key-state="label"
             onChange={handlerSetValue}
           />
-          {stateValidator.label === 1
-            ? <span className="form-error">This field is required</span>
-            : ''
-          }
+          <FieldError status={stateValidator.label} />
         </div>
       </div>
 
@@ -158,14 +156,7 @@ const FormPair = () => {
           data-key-state="private"
           onChange={handlerSetValue}
         />
-        {stateValidator.private === 1
-          ? <span className="form-error">This field is required</span>
-          : ''
-        }
-        {stateValidator.private === 2
-          ? <span className="form-error">This is not a RSA private key</span>
-          : ''
-        }
+        <FieldError status={stateValidator.private} />
       </div>
 
       {/* public key */}
@@ -180,14 +171,7 @@ const FormPair = () => {
           data-key-state="public"
           onChange={handlerSetValue}
         />
-        {stateValidator.public === 1
-          ? <span className="form-error">This field is required</span>
-          : ''
-        }
-        {stateValidator.public === 2
-          ? <span className="form-error">This is not a RSA public key</span>
-          : ''
-        }
+        <FieldError status={stateValidator.public} />
       </div>
     </div>
 
