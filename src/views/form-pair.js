@@ -42,8 +42,16 @@ const FormPair = () => {
       ...stateValue,
       [keyState]: value
     });
-    // remise à 0 des validations
-    setStateValidator(initialStateValidator);
+    // remise à 0 de la validation
+    resetValidation(keyState);
+  };
+
+
+  const resetValidation = key => {
+    setStateValidator({
+      ...stateValidator,
+      [key]: 0
+    });
   };
 
 

@@ -58,8 +58,7 @@ module.exports = env => {
         Components: path.resolve(__dirname, 'src/components/'),
         Images: path.resolve(__dirname, 'src/images/'),
         Utils: path.resolve(__dirname, 'src/utils/'),
-        Contexts: path.resolve(__dirname, 'src/contexts/'),
-        Hooks: path.resolve(__dirname, 'src/hooks/')
+        Contexts: path.resolve(__dirname, 'src/contexts/')
       }
     }
   };
