@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/common.min.css"/>
+    <title>BONES - chat</title>
+
+    <style>
+      * {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+      html, body {
+        margin: 0 0;
+        padding: 0 0;
+        background: #000;
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      .container {
+        padding: 0 20px 0 20px;
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: 550px;
+        min-height: 100vh;
+        max-height: 100vh;
+        margin: auto;
+      }
+      .container-top {
+        height: 100%;
+        overflow: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .container-bottom {}
+      #textarea {
+        width: 100%;
+        height: 100px;
+        background: #333;
+        color: #fff;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 10px;
+      }
+      #send {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        border: none;
+        font-weight: bold;
+        border-radius: 4px;
+        color: #000;
+        cursor: pointer;
+      }
+      #send:active {
+        background: yellow;
+      }
+      .container-message {
+        width: 100%;
+        position: relative;
+        width: 70%;
+      }
+      .container-message-right {
+        float: right;
+        color: #1484fc;
+      }
+      .container-message-left {
+        float: left;
+        color: #8c14fc;
+      }
+      .message {
+        margin-top: 30px;
+        padding: 10px;
+        white-space: pre-line;
+        word-break: break-all;
+      }
+      .message-left {
+        background: rgba(140, 20, 252, 0.3);
+        border-radius: 14px 14px 14px 2px;
+        float: left;
+        margin-left: 40px;
+        transform: translate(-5px, -17px);
+      }
+      .message-right {
+        background: rgba(20, 140, 252, 0.3);
+        border-radius: 14px 14px 2px 14px;
+        float: right;
+        margin-right: 40px;
+        transform: translate(5px, -17px);
+      }
+      .user {
+        position: absolute;
+        bottom: 0px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .user-left {
+        background: rgba(140, 20, 252, 0.3);
+        left: 0;
+      }
+      .user-right {
+        background: rgba(20, 140, 252, 0.3);
+        right: 0;
+      }
+      .date {
+        position: absolute;
+        bottom: 0px;
+        font-size: 10px;
+        color: #ccc;
+        width: 100%;
+      }
+      .date-left {
+        text-align: left;
+        transform: translateX(35px);
+      }
+      .date-right {
+        text-align: right;
+        transform: translateX(-35px);
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="messages" class="container-top"></div>
+      <div class="container-bottom">
+        <textarea id="textarea" placeholder="write your text here"></textarea>
+        <button id="send">Send</button>
+      </div>
+    </div>
+
+  </body>
+  <script>
+
+    var left = false;
+    var userLeft = 'AX';
+    var userRight = 'JM';
+
+    function addMessage(text) {
+      left = !left;
+      var div = document.createElement('div');
+      div.innerHTML =
+        `<div class="container-message ${left ? 'container-message-left' : 'container-message-right'}">
+          ${left ? `<div class="user user-left">${userLeft}</div>` : ''}
+          <div class="message ${left ? 'message-left' : 'message-right'}">${text}</div>
+          ${!left ? `<div class="user user-right">${userRight}</div>` : ''}
+          <div class="date date-${left ? 'left' : 'right'}">${getDate()}</div>
+        </div>`;
+      var messages = document.querySelector('#messages');
+      messages.appendChild(div);
+    }
+
+    function getDate() {
+      var cd = new Date();
+      var cMinutes = (cd.getMinutes()<10?'0':'') + cd.getMinutes();
+      var cHours = (cd.getHours()<10?'0':'') + cd.getHours();
+      var cSeconds = (cd.getSeconds()<10?'0':'') + cd.getSeconds();
+
+      return `${cHours}:${cMinutes}:${cSeconds}`;
+    }
+
+    document.querySelector('#send').onclick = () => {
+      var textarea = document.querySelector('#textarea');
+      var text = textarea.value;
+      if (text && text !== '') {
+        addMessage(text);
+        textarea.value = '';
+      }
+    };
+
+  </script>
+</html>

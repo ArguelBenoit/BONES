@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { RouterContext } from 'Contexts/router.js';
+import { useRouterContext } from 'Contexts/router.js';
 
 // pages
 import Index from 'Views/index.js';
@@ -21,13 +20,8 @@ const routes = {
 
 
 const RouterTrigger = () => {
-
-  return <RouterContext.Consumer>
-    { ({ route }) => {
-      return React.createElement(routes[route.name]);
-    }}
-  </RouterContext.Consumer>;
-
+  const { route } = useRouterContext();
+  return React.createElement(routes[route.name]);
 };
 
 
