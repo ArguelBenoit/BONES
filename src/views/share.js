@@ -24,15 +24,15 @@ const Share = () => {
   return <div>
     <ReturnLink />
 
-    <div className="u-themecolor-color u-themecolor-container u-padding-s">
+    <div className="u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m">
       <i>
         Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.
       </i>
     </div>
 
-    <section className="u-themecolor-container">
+    <section className="u-themecolor-container u-padding-s u-margin-top-m">
       <div>{pair.public}</div>
-      <button className="general-button" onClick={copy}>Copy in clipboard</button>
+      <button className="general-button u-margin-top-s" onClick={copy}>Copy in clipboard</button>
     </section>
   </div>;
 };

@@ -36,7 +36,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
 
 
   return <div className="u-margin-top-s">
-    <div>Friend's key</div>
+    <div style={{marginBottom: 10}}>Friend's key</div>
     <div className="u-padding u-themecolor-container repeat-select u-border">
       <div className="container-multiple-select">
 
@@ -47,6 +47,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
             onChange={handlerChange}
             data-index={i}
             key={`select-${i}`}
+            style={i === 0 ? { marginTop: 0 } : {}}
           >
             <option value="--" key={'no-value-' + i}>--</option>
             {friends.friends.map(el =>
@@ -78,7 +79,8 @@ const FieldFriends = ({ updateParent, initialState }) => {
 
 
 FieldFriends.propTypes = {
-  initialState: PropTypes.array.isRequired
+  initialState: PropTypes.array.isRequired,
+  updateParent: PropTypes.func.isRequired
 };
 
 

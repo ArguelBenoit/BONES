@@ -1,0 +1,269 @@
+/*
+Ne pouvant connaitre à l'avance les pages contenues dans les méthodes de l'utilisateur,
+ce css est importé dans toutes les pages du www explorées par l'utilisateur. N'ayant pas
+forcément besoin de la totalité du css de common, on duplique seulement les règles css
+nécessaires.
+*/
+
+#BONES-CONTAINER #bones-tool-box {
+
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #ddd;
+  font-family: sans-serif;
+  position: fixed;
+  top: 60px;
+  left: 60px;
+  z-index: 10000;
+
+  /* not toggled */
+  border-radius: 24px;
+  width: 130px;
+
+  a {
+    cursor: pointer;
+    color: @secondarythemecolor;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding: 0 0 0 15px;
+    margin: 10px 0 0 0;
+    list-style-type: decimal;
+    li {
+      padding: 0 0 0 0;
+      margin: 0 0 5px 0;
+      &:last-child {
+        margin: 0 0 0 0;
+      }
+    }
+  }
+
+  #bones-input {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    background: @themecolor-one;
+    border-radius: 4px;
+    border: 1px solid @themecolor-one;
+    padding: 12px;
+    margin-top: 2px;
+    color: #ccc;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: @themecolor;
+      opacity: 1; /* Firefox */
+    }
+  }
+
+  .label-method {
+    display: none;
+    width: 240px;
+    height: 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    text-align: center;
+    .text {
+      display: inline-block;
+      width: 240px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .content {
+    display: none;
+  }
+  .bones-header .toggle-header {
+    transform: rotateX(180deg);
+  }
+  .content-shadow-one {
+    border-radius: 24px;
+  }
+  /* toggled */
+  &.toggled {
+    width: 360px;
+    .content {
+      display: inherit;
+    }
+    .bones-header .toggle-header {
+      transform: rotateX(0deg);
+    }
+    .content-shadow-one {
+      border-radius: 16px;
+    }
+    .label-method {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  * {
+    font-size: 14px;
+  }
+
+  /* shadow */
+  .content-shadow-one {
+    box-shadow: 0px 0px 0px 5px @themecolor;
+    background: #000;
+    position: relative;
+    z-index: 2;
+  }
+  .content-shadow-two {
+    box-shadow: 0px 0px 0px 5px @themecolor;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: -13px;
+    left: -14px;
+    z-index: 1;
+  }
+
+  .bones-header {
+    height: 50px;
+    cursor: move;
+    .bones-logo-header {
+      box-sizing: border-box;
+      background: #000;
+      border-radius: 50%;
+      height: 75px;
+      width: 75px;
+      position: absolute;
+      top: -13px;
+      left: -14px;
+      padding: 7.5px;
+    }
+    .toggle-header {
+      position: absolute;
+      right: 18px;
+      top: 13px;
+      cursor: pointer;
+    }
+  }
+
+  /******* title step **********/
+  .step-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: @themecolor;
+    .step-title-txt {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+      font-size: 14px;
+    }
+    .step-title-nbr {
+      font-weight: bolder;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      border: 2px solid @themecolor;
+      border-radius: 50%;
+    }
+  }
+
+  /******* common button *******/
+  .general-button {
+    width: 100%;
+    min-height: 34px;
+    border-radius: 4px;
+    background: @secondarythemecolor;
+    font-size: 100%;
+    display: inline;
+    margin: 0 auto 0 auto;
+    color: #060015;
+    border: none;
+    font-size: 13px;
+    &:hover,
+    &:active {
+      cursor: pointer;
+      text-decoration: none;
+    }
+    &:hover {
+      transform: scale(1.02);
+    }
+    &:active {
+      transform: scale(0.99) !important;
+    }
+    &.--color-one {
+      background: @themecolor;
+
+    }
+  }
+  .action {
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.7;
+  }
+
+  /******* utility *******/
+  .u-themecolor-container {
+    background: @themecolor-one;
+    border-radius: 2px;
+    border: 1px solid @themecolor-one;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    select, input, textarea {
+      border: 0.5px solid @themecolor-two;
+      background: @themecolor-one;
+    }
+  }
+
+  /* the properties of utility classes are the most important, they are absolute */
+  .u-flex {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .u-themecolor-color { color: @themecolor !important; }
+  .u-white-color { color: #fff !important; }
+
+  .u-text-center { text-align: center !important; }
+  .u-opacity-half { opacity: 0.5; }
+
+  .u-font-size-s { font-size: 90% !important; }
+  .u-font-size-m { font-size: 95% !important; }
+  .u-font-size-l { font-size: 100% !important; }
+  .u-font-size-xl { font-size: 110% !important; }
+  .u-text-italic { font-style: italic !important; }
+
+  .u-border { border: 0.5px solid @themecolor-two !important; }
+
+  .u-padding { padding: 20px !important; }
+  .u-padding-s { padding: 12px !important; }
+  .u-padding-top-s { padding-top: 12px !important; }
+
+  .u-margin-s { margin: 15px !important; }
+  .u-margin-m { margin: 20px !important; }
+
+  .u-margin-bottom-s { margin-bottom: 15px !important; }
+  .u-margin-bottom-m { margin-bottom: 20px !important; }
+
+  .u-margin-top-s { margin-top: 15px !important; }
+  .u-margin-top-m { margin-top: 20px !important; }
+
+  .u-margin-left-s { margin-left: 15px !important; }
+  .u-margin-left-m { margin-left: 20px !important; }
+
+  .u-margin-right-s { margin-right: 15px !important; }
+  .u-margin-right-m { margin-right: 20px !important; }
+
+  .u-left { float: left !important; }
+  .u-right { float: right !important; }
+
+}

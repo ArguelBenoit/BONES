@@ -145,7 +145,7 @@ const FormPair = () => {
           as well as their size (2048). If you don't know what you are doing, use generation.
         </i>
         <button
-          className="general-button generate-button u-margin-top-s save-key"
+          className="general-button generate-button u-margin-top-m"
           onClick={() => clickGenerating()}
         >
           Generate pair of key

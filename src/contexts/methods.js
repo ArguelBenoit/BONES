@@ -51,6 +51,12 @@ function MethodsProvider(props) {
       getList();
     });
   }
+  /**/
+  function keyValue(key, value) {
+    methodStore.keyValue(key, value).then(val => {
+      return val;
+    });
+  }
 
 
   /* getter */
@@ -70,7 +76,8 @@ function MethodsProvider(props) {
       add,
       modify,
       remove,
-      get
+      get,
+      keyValue
     }}
     {...props}
   />;
