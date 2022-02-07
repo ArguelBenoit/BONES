@@ -12,9 +12,11 @@ nécessaires.
   color: #ddd;
   font-family: sans-serif;
   position: fixed;
-  top: 60px;
-  left: 60px;
   z-index: 10000;
+
+  * {
+    scrollbar-color: @themecolor-one transparent;
+  }
 
   /* not toggled */
   border-radius: 24px;
@@ -60,7 +62,7 @@ nécessaires.
 
   .label-method {
     display: none;
-    width: 240px;
+    width: 260px;
     height: 52px;
     white-space: nowrap;
     overflow: hidden;
@@ -69,7 +71,7 @@ nécessaires.
     text-align: center;
     .text {
       display: inline-block;
-      width: 240px;
+      width: 260px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -81,6 +83,9 @@ nécessaires.
   .content {
     display: none;
   }
+  .bones-header {
+    cursor: move;
+  }
   .bones-header .toggle-header {
     transform: rotateX(180deg);
   }
@@ -89,7 +94,7 @@ nécessaires.
   }
   /* toggled */
   &.toggled {
-    width: 360px;
+    width: 380px;
     .content {
       display: inherit;
     }
@@ -130,7 +135,6 @@ nécessaires.
 
   .bones-header {
     height: 50px;
-    cursor: move;
     .bones-logo-header {
       box-sizing: border-box;
       background: #000;
@@ -185,9 +189,9 @@ nécessaires.
     font-size: 100%;
     display: inline;
     margin: 0 auto 0 auto;
-    color: #060015;
     border: none;
     font-size: 13px;
+    color: #000;
     &:hover,
     &:active {
       cursor: pointer;
@@ -210,6 +214,47 @@ nécessaires.
     opacity: 0.7;
   }
 
+
+  /******* checkbx like toggle ********/
+  .cm-toggle {
+  	-webkit-appearance: none;
+  	-webkit-tap-highlight-color: transparent;
+  	position: relative;
+  	border: 0;
+  	outline: 0;
+  	cursor: pointer;
+  	margin: 4px 0 0 0;
+    background-color: transparent;
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      border-radius: 4px;
+      background: #000;
+    }
+    &:after {
+      content: '';
+      width: 34px;
+      height: 20px;
+      display: inline-block;
+      background: #333;
+      border-radius: 4px;
+      clear: both;
+    }
+    &:checked {
+      &:before {
+        left: 16px;
+      }
+      &:after {
+        background: @themecolor;
+      }
+    }
+  }
+
   /******* utility *******/
   .u-themecolor-container {
     background: @themecolor-one;
@@ -228,6 +273,15 @@ nécessaires.
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    &.--left{
+      justify-content: left !important;
+    }
+  }
+  .u-full-width {
+    width: 100%;
+  }
+  .u-half-width {
+    width: 50%;
   }
 
   .u-themecolor-color { color: @themecolor !important; }

@@ -1,0 +1,13 @@
+
+- fix showInstructions
+- fix border boutton prompt
+____________done____________
+- raffraichir toolbox lorsque les méthodes sont mise à jour
+- raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
+- traiter les url avec ou sans le "/" de fin
+- action dump
+- action delete
+- action + page import
+- amélioration chiffrement (pour l'instant limité à 214c)
+- README github, tutoriel de fonctionnement etc...
+- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).

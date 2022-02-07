@@ -30,11 +30,9 @@ const Success = () => {
 
   const { active, message } = state;
 
-
   const remove = () => {
     setState({ active: false, message: '' });
   };
-
 
   const successHtml = <div style={styleSuccess} onClick={() => remove()}>
     <div style={{width: '100%'}}>

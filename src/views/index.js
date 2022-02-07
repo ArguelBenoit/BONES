@@ -49,7 +49,7 @@ const Index = () => {
     </section>
 
     <section className="u-margin-top-m">
-      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Pairs (your key pairs)</div>
+      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Friends (their public keys)</div>
       <List
         type={'friend'}
         list={friends.friends}
@@ -66,7 +66,7 @@ const Index = () => {
     </section>
 
     <section className="u-margin-top-m">
-      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Pairs (your key pairs)</div>
+      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Methods (keys per thread)</div>
       <List
         type={'method'}
         list={methods.methods}
@@ -106,7 +106,6 @@ const Index = () => {
       <div className="u-flex u-margin-top-m">
         <img src={line} width="80" />
       </div>
-      <button className="linkstyle-button u-margin-top-s">Tools page</button>
       <button className="linkstyle-button u-margin-top-s">Make a dump of your database</button>
       <button className="linkstyle-button u-margin-top-s">Import a dump of database</button>
       <button className="linkstyle-button u-margin-top-s">Delete database</button>

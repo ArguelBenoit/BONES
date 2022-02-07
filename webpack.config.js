@@ -3,7 +3,6 @@ const path = require('path');
 module.exports = env => {
 
   let config = {
-    // 3 principaux script
     entry: {
       // background: path.join(__dirname, 'src/background.js'),
       content: path.join(__dirname, 'src/content.js'),
@@ -66,7 +65,7 @@ module.exports = env => {
   // avec --env dev
   if (env === 'dev') {
     config.mode = 'development';
-    config.devtool = 'inline-source-map';
+    config.devtool = 'source-map';
   // avec --env prod
   } else if (env === 'prod') {
     config.mode = 'production';

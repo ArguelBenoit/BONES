@@ -57,7 +57,6 @@ const Prompt = () => {
           />
         </div>
         <div
-          className="u-margin-bottom-s"
           style={{
             margin: 'auto',
             textAlign: 'center',

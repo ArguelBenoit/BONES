@@ -196,7 +196,7 @@ const FormMethod = () => {
       onClick={() => save()}
       className="general-button generate-button u-margin-top-s save-keys"
     >
-      Save friend's key
+      Save your method
     </button>
 
   </div>;
