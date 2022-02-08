@@ -7,6 +7,7 @@ import { useRouterContext } from 'Contexts/router.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
 import { useMethodsContext } from 'Contexts/methods.js';
+import Bus from 'Utils/bus.js';
 
 
 const Index = () => {
@@ -17,6 +18,10 @@ const Index = () => {
   const { methods } = useMethodsContext();
 
   const methodIsBlocked = pairs.pairs.length === 0 || friends.friends.length === 0;
+
+  const activeDumpDb = () => {
+    Bus.dispatch('dumpDB', {});
+  };
 
   return <div>
 
@@ -106,7 +111,7 @@ const Index = () => {
       <div className="u-flex u-margin-top-m">
         <img src={line} width="80" />
       </div>
-      <button className="linkstyle-button u-margin-top-s">Make a dump of your database</button>
+      <button className="linkstyle-button u-margin-top-s" onClick={activeDumpDb}>Make a dump of your database</button>
       <button className="linkstyle-button u-margin-top-s">Import a dump of database</button>
       <button className="linkstyle-button u-margin-top-s">Delete database</button>
     </div>

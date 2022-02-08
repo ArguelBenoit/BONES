@@ -6,6 +6,7 @@ import Providers from 'Contexts/providers.js';
 import Loading from 'Components/loading.js';
 import Success from 'Components/success.js';
 import Prompt from 'Components/prompt.js';
+import DumpDb from 'Components/dump-db.js';
 
 import RouterTrigger from 'Components/router-trigger.js';
 
@@ -20,6 +21,7 @@ const PopUp = () => {
     <Loading />
     <Success />
     <Prompt />
+    <DumpDb />
     <RouterTrigger />
   </Providers>;
 };
