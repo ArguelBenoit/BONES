@@ -164,12 +164,32 @@ export class Storage {
   }
 
   /* /!\ remplace tout l'existant /!\ */
-  importNewStorage() {
+  async importNewStorage(json) {
+
+    await this.deleteAll();
+
     return new Promise(resolve => {
-      let cleaner = browser.storage.local.clear();
-      cleaner.then(() => {
-        resolve();
+
+      const lists = ['pair', 'friend', 'method'];
+
+      lists.forEach(type => {
+        const list = json[type];
+
+        if (list) {
+          browser.storage.local.set({ [type]: list });
+          list.forEach(uuid => {
+
+            const element = json[uuid];
+            if (element) {
+              browser.storage.local.set({ [uuid]: element });
+            }
+
+          });
+        }
+
       });
+
+      resolve();
     });
   }
 

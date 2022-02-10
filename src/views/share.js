@@ -5,6 +5,15 @@ import { useRouterContext } from 'Contexts/router.js';
 import Bus from 'Utils/bus.js';
 
 
+
+const styleKey = {
+  overflowX: 'scroll',
+  paddingBottom: 10,
+  scrollbarColor: '#510b93 transparent'
+};
+
+
+
 const Share = () => {
 
   const { route: getRoute, changeRoute } = useRouterContext();
@@ -16,13 +25,13 @@ const Share = () => {
       .clipboard
       .writeText(pair.public)
       .then(() => {
-        Bus.dispatch('success', 'Your public key is copied to the clipboard.');
+        Bus.dispatch('ModalSuccess', 'Your public key is copied to the clipboard. Transmit there in the way of your choice');
         changeRoute({ name: 'Index' });
       });
   };
 
-  return <div>
-    <ReturnLink />
+  return <div className="form">
+    <ReturnLink/>
 
     <div className="u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m">
       <i>
@@ -31,7 +40,7 @@ const Share = () => {
     </div>
 
     <section className="u-themecolor-container u-padding-s u-margin-top-m">
-      <div>{pair.public}</div>
+      <div style={styleKey}>{pair.public}</div>
       <button className="general-button u-margin-top-s" onClick={copy}>Copy in clipboard</button>
     </section>
   </div>;

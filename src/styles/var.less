@@ -1,5 +1,33 @@
 
+
+//-------- VAR --------//
 @themecolor: rgba(140, 20, 252, 1);
+@themecolor-full: #23053f;
 @themecolor-one: rgba(140, 20, 252, 0.25);
 @themecolor-two: rgba(140, 20, 252, 0.6);
 @secondarythemecolor: #f8a300;
+
+
+//------- MIXIN -------//
+.mixin-generalbutton() {
+  min-height: 34px;
+  padding: 0 20px;
+  border-radius: 4px;
+  background: @secondarythemecolor;
+  font-size: 100%;
+  display: block;
+  margin: 0 auto 0 auto;
+  color: #060015;
+  border: none;
+  &:hover,
+  &:active {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active {
+    transform: scale(0.99) !important;
+  }
+}

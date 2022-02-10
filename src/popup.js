@@ -3,10 +3,11 @@ import { render } from 'react-dom';
 import Providers from 'Contexts/providers.js';
 
 // Les composants absolues
-import Loading from 'Components/loading.js';
-import Success from 'Components/success.js';
-import Prompt from 'Components/prompt.js';
-import DumpDb from 'Components/dump-db.js';
+import ModalLoading from 'Components/modal-loading.js';
+import ModalSuccess from 'Components/modal-success.js';
+import ModalPrompt from 'Components/modal-prompt.js';
+import ModalDumpDb from 'Components/modal-dump-db.js';
+import ModalImportDb from 'Components/modal-import-db.js';
 
 import RouterTrigger from 'Components/router-trigger.js';
 
@@ -18,10 +19,12 @@ import 'Styles/button.less';
 
 const PopUp = () => {
   return <Providers>
-    <Loading />
-    <Success />
-    <Prompt />
-    <DumpDb />
+    <ModalLoading />
+    <ModalSuccess />
+    <ModalPrompt />
+    <ModalDumpDb />
+    <ModalImportDb />
+
     <RouterTrigger />
   </Providers>;
 };

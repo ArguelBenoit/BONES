@@ -127,7 +127,7 @@ const FormMethod = () => {
           friends: cleanedFriends()
         });
       }
-      Bus.dispatch('success', 'Your method has been saved');
+      Bus.dispatch('ModalSuccess', 'Your method has been saved');
       changeRoute({ name: 'Index' });
 
     } else {
@@ -136,7 +136,7 @@ const FormMethod = () => {
   };
 
 
-  return <div>
+  return <div className="form">
     <ReturnLink />
 
     <div className="u-margin-top-m">

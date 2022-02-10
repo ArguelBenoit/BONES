@@ -85,7 +85,7 @@ const FormFriend = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('success', 'Your friend\'s key has been saved');
+      Bus.dispatch('ModalSuccess', 'Your friend\'s key has been saved');
       changeRoute({ name: 'Index' });
 
     } else {
@@ -94,7 +94,7 @@ const FormFriend = () => {
   };
 
 
-  return <div>
+  return <div className="form">
     <ReturnLink />
 
     <div className="u-margin-top-m">

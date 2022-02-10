@@ -1,14 +1,21 @@
 
-- fix showInstructions
-- fix border boutton prompt
-- action dump
-____________done____________
-- action + page import
-- action delete
-- fix share overflow text
+____________TODO____________
 - raffraichir toolbox lorsque les méthodes sont mise à jour
 - raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 - traiter les url avec ou sans le "/" de fin
+- favicon tab
 - amélioration chiffrement (pour l'instant limité à 214c)
 - README github, tutoriel de fonctionnement etc...
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
+
+
+____________WIP_____________
+- tab à la place de popup (réouvrir si déjà ouvert)
+
+____________DONE____________
+- action import
+- action delete (raffraichir les données une fois cela fait)
+- fix share overflow text
+- fix showInstructions
+- fix border boutton prompt
+- action dump

@@ -33,7 +33,7 @@ const ActionsFriend = ({ item }) => {
       height="18"
       width="18"
       className="action"
-      onClick={() => Bus.dispatch('prompt', dataRemoveAction)}
+      onClick={() => Bus.dispatch('ModalPrompt', dataRemoveAction)}
     />
   </div>;
 };

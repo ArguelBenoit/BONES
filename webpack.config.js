@@ -4,7 +4,7 @@ module.exports = env => {
 
   let config = {
     entry: {
-      // background: path.join(__dirname, 'src/background.js'),
+      background: path.join(__dirname, 'src/background.js'),
       content: path.join(__dirname, 'src/content.js'),
       popup: path.join(__dirname, 'src/popup.js')
     },

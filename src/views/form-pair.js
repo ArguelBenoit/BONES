@@ -56,7 +56,7 @@ const FormPair = () => {
 
 
   const clickGenerating = () => {
-    Bus.dispatch('loading', true);
+    Bus.dispatch('ModalLoading', true);
     setTimeout(() => {
       let pairGenerated = generating();
       setStateValue(
@@ -66,7 +66,7 @@ const FormPair = () => {
           public: pairGenerated.public.trim()
         }
       );
-      Bus.dispatch('loading', false);
+      Bus.dispatch('ModalLoading', false);
     }, 50);
   };
 
@@ -111,7 +111,7 @@ const FormPair = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('success', 'Your key pair has been saved');
+      Bus.dispatch('ModalSuccess', 'Your key pair has been saved');
       changeRoute({ name: 'Index' });
 
     } else {
@@ -120,7 +120,7 @@ const FormPair = () => {
   };
 
 
-  return <div>
+  return <div className="form">
     <ReturnLink />
 
     <div className="u-margin-top-m">

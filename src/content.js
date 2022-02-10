@@ -36,7 +36,6 @@ toolBox dans la page en question.*/
       methodStore.modify(methodActive.uuid, { [key]: value });
     };
 
-    //  /!\ TODO cet import a tout cassé !!!!
     const friends = await friendStore.getList();
     const pair = await pairStore.getOne(methodActive.pair);
     const crypting = new Crypting(friends, pair, methodActive);

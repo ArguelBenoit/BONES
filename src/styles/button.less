@@ -28,26 +28,7 @@ body {
 
   /******* another common button *******/
   .general-button {
-    min-height: 34px;
-    padding: 0 20px;
-    border-radius: 4px;
-    background: @secondarythemecolor;
-    font-size: 100%;
-    display: block;
-    margin: 0 auto 0 auto;
-    color: #060015;
-    border: none;
-    &:hover,
-    &:active {
-      cursor: pointer;
-      text-decoration: none;
-    }
-    &:hover {
-      transform: scale(1.02);
-    }
-    &:active {
-      transform: scale(0.99) !important;
-    }
+    .mixin-generalbutton();
   }
 
   /******* another common button *******/

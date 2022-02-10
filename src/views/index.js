@@ -2,12 +2,15 @@
 import React from 'react';
 import bones from 'Images/bones/head-regular.png';
 import line from 'Images/bones/line.png';
+import 'Styles/index.less';
 import List from 'Components/list.js';
 import { useRouterContext } from 'Contexts/router.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
 import { useMethodsContext } from 'Contexts/methods.js';
 import Bus from 'Utils/bus.js';
+import { Storage } from 'Utils/storage.js';
+const store = new Storage();
 
 
 const Index = () => {
@@ -20,16 +23,30 @@ const Index = () => {
   const methodIsBlocked = pairs.pairs.length === 0 || friends.friends.length === 0;
 
   const activeDumpDb = () => {
-    Bus.dispatch('dumpDB', {});
+    Bus.dispatch('ModalDumpDb', {});
   };
 
-  return <div>
+  const importDb = () => {
+    Bus.dispatch('ModalImportDB', {});
+  };
 
-    <header className="header u-flex">
-      <img src={bones} width="70" />
-      <div className="u-font-size-s u-margin-left-s">
-        <b>BONES</b>&nbsp;
-        is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.&nbsp;
+  const deleteDb = () => {
+    Bus.dispatch('ModalPrompt', {
+      message: 'Do you really want to delete all data?',
+      action: () => {
+        store.deleteAll().then(() => {
+          location.reload();
+        });
+      }
+    });
+  };
+
+  return <div className="content">
+
+    <header className="header">
+      <img src={bones} width="100" />
+      <div className="u-font-size-s">
+        <b>BONES</b> is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.&nbsp;
         <a href="https://github.com/ArguelBenoit/e2e-chat-encryption">
           github
         </a>
@@ -112,8 +129,8 @@ const Index = () => {
         <img src={line} width="80" />
       </div>
       <button className="linkstyle-button u-margin-top-s" onClick={activeDumpDb}>Make a dump of your database</button>
-      <button className="linkstyle-button u-margin-top-s">Import a dump of database</button>
-      <button className="linkstyle-button u-margin-top-s">Delete database</button>
+      <button className="linkstyle-button u-margin-top-s" onClick={importDb}>Import a dump of database</button>
+      <button className="linkstyle-button u-margin-top-s" onClick={deleteDb}>Delete database</button>
     </div>
 
   </div>;

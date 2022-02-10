@@ -84966,8 +84966,7 @@ _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( 
 
           updateMethod = function updateMethod(key, value) {
             methodStore.modify(methodActive.uuid, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, key, value));
-          }; //  /!\ TODO cet import a tout cassé !!!!
-
+          };
 
           _context.next = 16;
           return friendStore.getList();
@@ -85500,14 +85499,49 @@ var Storage = /*#__PURE__*/function () {
 
   }, {
     key: "importNewStorage",
-    value: function importNewStorage() {
-      return new Promise(function (resolve) {
-        var cleaner = browser.storage.local.clear();
-        cleaner.then(function () {
-          resolve();
-        });
-      });
-    }
+    value: function () {
+      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee4(json) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _context4.next = 2;
+                return this.deleteAll();
+
+              case 2:
+                return _context4.abrupt("return", new Promise(function (resolve) {
+                  var lists = ['pair', 'friend', 'method'];
+                  lists.forEach(function (type) {
+                    var list = json[type];
+
+                    if (list) {
+                      browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, list));
+                      list.forEach(function (uuid) {
+                        var element = json[uuid];
+
+                        if (element) {
+                          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, element));
+                        }
+                      });
+                    }
+                  });
+                  resolve();
+                }));
+
+              case 3:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4, this);
+      }));
+
+      function importNewStorage(_x) {
+        return _importNewStorage.apply(this, arguments);
+      }
+
+      return importNewStorage;
+    }()
   }]);
 
   return Storage;
