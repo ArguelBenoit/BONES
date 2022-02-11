@@ -93,12 +93,30 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-browser.browserAction.onClicked.addListener(function () {
-  var url = browser.extension.getURL('popup.html');
-  browser.tabs.create({
-    url: url
+var activeTab = function activeTab() {
+  browser.tabs.query({
+    title: 'BONES !#@$'
+  }).then(function (tabs) {
+    if (tabs.length > 0) {
+      // si un onglet bones est présent
+      // on active celui-ci
+      var id = tabs[0].id;
+      browser.tabs.update(id, {
+        active: true
+      });
+    } else {
+      // sinon l'onglet n'existe pas
+      // on ouvre un onglet BONES
+      var url = browser.extension.getURL('popup.html');
+      browser.tabs.create({
+        url: url
+      });
+    }
   });
-});
+}; // utilisateur clique sur l'icon de l'extension
+
+
+browser.browserAction.onClicked.addListener(activeTab);
 
 /***/ })
 

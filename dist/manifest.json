@@ -6,7 +6,8 @@
   "homepage_url": "https://github.com/ArguelBenoit/BONES",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "icons": {
     "32": "icons/icon-32.png",

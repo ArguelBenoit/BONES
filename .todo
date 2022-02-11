@@ -2,17 +2,22 @@
 ____________TODO____________
 - raffraichir toolbox lorsque les méthodes sont mise à jour
 - raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
-- traiter les url avec ou sans le "/" de fin
-- favicon tab
+- Boutton modifier la methode dans toolbox et arriver desuite sur l'édition
+- toolbox vide pour les pages sans méthode afin d'en créer une
+- toolbox quick use
+
 - amélioration chiffrement (pour l'instant limité à 214c)
 - README github, tutoriel de fonctionnement etc...
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 ____________WIP_____________
-- tab à la place de popup (réouvrir si déjà ouvert)
+- traiter les url avec ou sans le "/" de fin
+
 
 ____________DONE____________
+- tab à la place de popup (réouvrir si déjà ouvert)
+- favicon tab
 - action import
 - action delete (raffraichir les données une fois cela fait)
 - fix share overflow text

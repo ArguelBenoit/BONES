@@ -3,20 +3,18 @@
   font-family: sans-serif;
   scrollbar-color: #222 #000;
 }
-body, html {
-  overflow-x: hidden;
-  &:before {
-    content: '🇫🇷';
-    font-size: 30px;
-    position: fixed;
-    top: 5px;
-    left: 10px
-  }
+html:before {
+  content: '🇫🇷';
+  font-size: 30px;
+  position: fixed;
+  top: 5px;
+  left: 10px
 }
 #root {
   width: 100%;
 }
 body {
+  overflow-x: hidden;
   margin: auto;
   width: 580px;
   background: #111;
@@ -39,24 +37,27 @@ body {
   p {
     margin-top: 0px;
   }
-
-  /******* form *******/
-  .form, .content {
+  h1 {
+    font-weight: normal;
+  }
+  .content {
     border-radius: 10px;
     box-sizing: border-box;
     padding: 30px;
     background: #000;
-    border: 6px solid @themecolor-two;
+  }
+  /******* form *******/
+  .form {
+    border-top: 1px solid #666;
   }
   input[type=text],
   select,
   textarea {
     padding: 10px;
     width: 100%;
-    border: none;
     border-radius: 4px;
     background: @themecolor-one;
-    border: 0.5px solid @themecolor-two;
+    border: 1px solid @themecolor-three;
     box-sizing: border-box;
     color: #ddd;
     font-size: 92%;
@@ -71,6 +72,9 @@ body {
   }
   input[type="file"] {
     display: none;
+  }
+  .container-multiple-select select {
+    background: @themecolor-four;
   }
 
 
@@ -92,7 +96,7 @@ body {
       text-align: center;
       background: #000;
       padding: 30px;
-      border: 6px solid @themecolor-two;
+      border: 6px solid @themecolor;
       border-radius: 10px;
       img {
         display: block;
@@ -116,14 +120,10 @@ body {
   /******* utility *******/
   .u-themecolor-container {
     background: @themecolor-one !important;
-    border-radius: 2px !important;
-    border: 1px solid @themecolor-one !important;
+    border-radius: 4px !important;
+    border: 1px solid @themecolor-three !important;
     margin-bottom: 5px !important;
     box-sizing: border-box !important;
-    select, input, textarea {
-      border: 0.5px solid @themecolor-two !important;
-      background: @themecolor-one !important;
-    }
   }
   .u-full-width { width: 100% !important; }
   .u-flex {
@@ -142,7 +142,7 @@ body {
   .u-font-size-l { font-size: 100% !important; }
   .u-font-size-xl { font-size: 110% !important; }
 
-  .u-border { border: 0.5px solid @themecolor-two !important; }
+  .u-border { border: 1px solid @themecolor-three !important; }
 
   .u-padding { padding: 20px !important; }
   .u-padding-s { padding: 12px !important; }

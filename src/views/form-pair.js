@@ -120,10 +120,10 @@ const FormPair = () => {
   };
 
 
-  return <div className="form">
+  return <div className="content">
     <ReturnLink />
-
-    <div className="u-margin-top-m">
+    <h1><span>{editMode ? 'Edit' : 'Add'}</span> a personal rsa key pair</h1>
+    <div className="form">
       {/* label */}
       <div className="u-margin-top-m">
         <div className="u-margin-top-s">

@@ -6,13 +6,6 @@ import Bus from 'Utils/bus.js';
 
 
 
-const styleKey = {
-  overflowX: 'scroll',
-  paddingBottom: 10,
-  scrollbarColor: '#510b93 transparent'
-};
-
-
 
 const Share = () => {
 
@@ -30,19 +23,21 @@ const Share = () => {
       });
   };
 
-  return <div className="form">
+  return <div className="content">
     <ReturnLink/>
+    <h1>Copy a public key to share it</h1>
+    <div>
+      <div className="u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m">
+        <i>
+          Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.
+        </i>
+      </div>
 
-    <div className="u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m">
-      <i>
-        Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.
-      </i>
+      <section className="u-themecolor-container u-padding-s u-margin-top-m">
+        <div style={{overflowWrap: 'anywhere'}}>{pair.public}</div>
+        <button className="general-button u-margin-top-s" onClick={copy}>Copy in clipboard</button>
+      </section>
     </div>
-
-    <section className="u-themecolor-container u-padding-s u-margin-top-m">
-      <div style={styleKey}>{pair.public}</div>
-      <button className="general-button u-margin-top-s" onClick={copy}>Copy in clipboard</button>
-    </section>
   </div>;
 };
 

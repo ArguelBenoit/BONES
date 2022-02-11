@@ -1,5 +1,5 @@
 import React from 'react';
-import cross from 'Images/bones/cross.png';
+import arrow from 'Images/bones/arrow.png';
 import { useRouterContext } from 'Contexts/router.js';
 
 
@@ -11,7 +11,7 @@ const ReturnLink = () => {
     className="return-link"
     onClick={() => changeRoute({ name: 'Index' })}
   >
-    <img src={cross} width="22" height="22" />
+    <img src={arrow} width="26" height="18"/>
     GO BACK !
   </div>;
 

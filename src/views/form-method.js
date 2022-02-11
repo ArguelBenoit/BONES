@@ -136,10 +136,11 @@ const FormMethod = () => {
   };
 
 
-  return <div className="form">
+  return <div className="content">
     <ReturnLink />
+    <h1><span>{editMode ? 'Edit' : 'Add'}</span> a method</h1>
 
-    <div className="u-margin-top-m">
+    <div className="form">
 
       <div className="u-margin-top-s">
         <label>Label</label>

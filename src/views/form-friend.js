@@ -94,10 +94,10 @@ const FormFriend = () => {
   };
 
 
-  return <div className="form">
+  return <div className="content">
     <ReturnLink />
-
-    <div className="u-margin-top-m">
+    <h1><span>{editMode ? 'Edit' : 'Add'}</span> a friend's key</h1>
+    <div className="form">
       {/* label */}
       <div className="u-margin-top-m">
         <div className="u-margin-top-s">
