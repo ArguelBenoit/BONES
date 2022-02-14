@@ -419,6 +419,27 @@ module.exports = _toConsumableArray, module.exports.__esModule = true, module.ex
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
+}
+
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
@@ -20677,7 +20698,7 @@ exports.push([module.i, "body {\n  /******* common button *******/\n  /******* a
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #222 #000;\n}\nhtml:before {\n  content: '🇫🇷';\n  font-size: 30px;\n  position: fixed;\n  top: 5px;\n  left: 10px;\n}\n#root {\n  width: 100%;\n}\nbody {\n  overflow-x: hidden;\n  margin: auto;\n  width: 580px;\n  background: #111;\n  font-size: 95%;\n  color: #ddd;\n  padding: 20px;\n  min-height: 100vh;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /******* form *******/\n  /******* modal *******/\n  /******* utility *******/\n}\nbody a,\nbody .link {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\nbody a:hover,\nbody .link:hover {\n  text-decoration: underline;\n}\nbody p {\n  margin-top: 0px;\n}\nbody h1 {\n  font-weight: normal;\n}\nbody .content {\n  border-radius: 10px;\n  box-sizing: border-box;\n  padding: 30px;\n  background: #000;\n}\nbody .form {\n  border-top: 1px solid #666;\n}\nbody input[type=text],\nbody select,\nbody textarea {\n  padding: 10px;\n  width: 100%;\n  border-radius: 4px;\n  background: #23053f;\n  border: 1px solid #35095e;\n  box-sizing: border-box;\n  color: #ddd;\n  font-size: 92%;\n  margin-top: 10px;\n  scrollbar-color: #23053f transparent;\n}\nbody .form-error {\n  padding-top: 5px;\n  color: red;\n  font-style: italic;\n  display: inherit;\n}\nbody input[type=\"file\"] {\n  display: none;\n}\nbody .container-multiple-select select {\n  background: #120122;\n}\nbody .modal {\n  height: 100vh;\n  width: 100%;\n  top: 0;\n  left: 0;\n  position: fixed;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.85);\n  display: flex;\n  align-items: center;\n  line-height: 26px;\n}\nbody .modal .modal-content {\n  margin: auto;\n  max-width: 320px;\n  text-align: center;\n  background: #000;\n  padding: 30px;\n  border: 6px solid #8c14fc;\n  border-radius: 10px;\n}\nbody .modal .modal-content img {\n  display: block;\n  margin: auto;\n}\nbody .modal .modal-buttons {\n  display: flex;\n  margin-top: 10px;\n}\nbody .modal .modal-buttons button,\nbody .modal .modal-buttons a,\nbody .modal .modal-buttons label {\n  min-height: 34px;\n  padding: 0 20px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: block;\n  margin: 0 auto 0 auto;\n  color: #060015;\n  border: none;\n  font-size: 85%;\n  line-height: 34px;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover,\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  cursor: pointer;\n  text-decoration: none;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover {\n  transform: scale(1.02);\n}\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  transform: scale(0.99) !important;\n}\nbody .modal .modal-buttons button.left,\nbody .modal .modal-buttons a.left,\nbody .modal .modal-buttons label.left,\nbody .modal .modal-buttons button:first-child,\nbody .modal .modal-buttons a:first-child,\nbody .modal .modal-buttons label:first-child {\n  margin-right: 7.5px;\n}\nbody .modal .modal-buttons button.right,\nbody .modal .modal-buttons a.right,\nbody .modal .modal-buttons label.right,\nbody .modal .modal-buttons button:last-child,\nbody .modal .modal-buttons a:last-child,\nbody .modal .modal-buttons label:last-child {\n  margin-left: 7.5px;\n}\nbody .u-themecolor-container {\n  background: #23053f !important;\n  border-radius: 4px !important;\n  border: 1px solid #35095e !important;\n  margin-bottom: 5px !important;\n  box-sizing: border-box !important;\n}\nbody .u-full-width {\n  width: 100% !important;\n}\nbody .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\nbody .u-themecolor-color {\n  color: #8c14fc !important;\n}\nbody .u-white-color {\n  color: #fff !important;\n}\nbody .u-text-center {\n  text-align: center !important;\n}\nbody .u-text-italic {\n  font-style: italic !important;\n}\nbody .u-font-size-s {\n  font-size: 90% !important;\n}\nbody .u-font-size-m {\n  font-size: 95% !important;\n}\nbody .u-font-size-l {\n  font-size: 100% !important;\n}\nbody .u-font-size-xl {\n  font-size: 110% !important;\n}\nbody .u-border {\n  border: 1px solid #35095e !important;\n}\nbody .u-padding {\n  padding: 20px !important;\n}\nbody .u-padding-s {\n  padding: 12px !important;\n}\nbody .u-margin-s {\n  margin: 15px !important;\n}\nbody .u-margin-m {\n  margin: 20px !important;\n}\nbody .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\nbody .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\nbody .u-margin-top-s {\n  margin-top: 15px !important;\n}\nbody .u-margin-top-m {\n  margin-top: 20px !important;\n}\nbody .u-margin-left-s {\n  margin-left: 15px !important;\n}\nbody .u-margin-left-m {\n  margin-left: 20px !important;\n}\nbody .u-margin-right-s {\n  margin-right: 15px !important;\n}\nbody .u-margin-right-m {\n  margin-right: 20px !important;\n}\nbody .u-left {\n  float: left !important;\n}\nbody .u-right {\n  float: right !important;\n}\n", ""]);
+exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #222 #000;\n}\nhtml:before {\n  content: '🇫🇷';\n  font-size: 24px;\n  position: fixed;\n  top: 5px;\n  left: 10px;\n}\n#root {\n  width: 100%;\n}\nbody {\n  overflow-x: hidden;\n  margin: auto;\n  width: 580px;\n  background: #111;\n  font-size: 95%;\n  color: #ddd;\n  padding: 20px;\n  min-height: 100vh;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /******* form *******/\n  /******* modal *******/\n  /******* utility *******/\n}\nbody a,\nbody .link {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\nbody a:hover,\nbody .link:hover {\n  text-decoration: underline;\n}\nbody p {\n  margin-top: 0px;\n}\nbody h1 {\n  font-weight: normal;\n}\nbody .content {\n  border-radius: 10px;\n  box-sizing: border-box;\n  padding: 30px;\n  background: #000;\n  position: relative;\n}\nbody .form {\n  border-top: 1px solid #666;\n}\nbody input[type=text],\nbody select,\nbody textarea {\n  padding: 10px;\n  width: 100%;\n  border-radius: 4px;\n  background: #23053f;\n  border: 1px solid #35095e;\n  box-sizing: border-box;\n  color: #ddd;\n  font-size: 92%;\n  margin-top: 10px;\n  scrollbar-color: #23053f transparent;\n}\nbody .form-error {\n  padding-top: 5px;\n  color: red;\n  font-style: italic;\n  display: inherit;\n}\nbody input[type=\"file\"] {\n  display: none;\n}\nbody .container-multiple-select select {\n  background: #120122;\n}\nbody .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\nbody .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\nbody .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\nbody .cm-toggle:checked:before {\n  left: 16px;\n}\nbody .cm-toggle:checked:after {\n  background: #8c14fc;\n}\nbody .modal {\n  height: 100vh;\n  width: 100%;\n  top: 0;\n  left: 0;\n  position: fixed;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.85);\n  display: flex;\n  align-items: center;\n  line-height: 26px;\n}\nbody .modal .modal-content {\n  margin: auto;\n  max-width: 320px;\n  text-align: center;\n  background: #000;\n  padding: 30px;\n  border: 6px solid #8c14fc;\n  border-radius: 10px;\n}\nbody .modal .modal-content img {\n  display: block;\n  margin: auto;\n}\nbody .modal .modal-buttons {\n  display: flex;\n  margin-top: 10px;\n}\nbody .modal .modal-buttons button,\nbody .modal .modal-buttons a,\nbody .modal .modal-buttons label {\n  min-height: 34px;\n  padding: 0 20px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: block;\n  margin: 0 auto 0 auto;\n  color: #060015;\n  border: none;\n  font-size: 85%;\n  line-height: 34px;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover,\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  cursor: pointer;\n  text-decoration: none;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover {\n  transform: scale(1.02);\n}\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  transform: scale(0.99) !important;\n}\nbody .modal .modal-buttons button.left,\nbody .modal .modal-buttons a.left,\nbody .modal .modal-buttons label.left,\nbody .modal .modal-buttons button:first-child,\nbody .modal .modal-buttons a:first-child,\nbody .modal .modal-buttons label:first-child {\n  margin-right: 7.5px;\n}\nbody .modal .modal-buttons button.right,\nbody .modal .modal-buttons a.right,\nbody .modal .modal-buttons label.right,\nbody .modal .modal-buttons button:last-child,\nbody .modal .modal-buttons a:last-child,\nbody .modal .modal-buttons label:last-child {\n  margin-left: 7.5px;\n}\nbody .u-themecolor-container {\n  background: #23053f !important;\n  border-radius: 4px !important;\n  border: 1px solid #35095e !important;\n  margin-bottom: 5px !important;\n  box-sizing: border-box !important;\n}\nbody .u-themecolor-container input[type=\"select\"],\nbody .u-themecolor-container select,\nbody .u-themecolor-container input[type=\"text\"],\nbody .u-themecolor-container textarea {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-themecolor-container .u-themecolor-container {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-full-width {\n  width: 100% !important;\n}\nbody .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\nbody .--beetwen {\n  justify-content: space-between !important;\n}\nbody .u-themecolor-color {\n  color: #8c14fc !important;\n}\nbody .u-white-color {\n  color: #fff !important;\n}\nbody .u-text-center {\n  text-align: center !important;\n}\nbody .u-text-italic {\n  font-style: italic !important;\n}\nbody .u-font-size-s {\n  font-size: 90% !important;\n}\nbody .u-font-size-m {\n  font-size: 95% !important;\n}\nbody .u-font-size-l {\n  font-size: 100% !important;\n}\nbody .u-font-size-xl {\n  font-size: 110% !important;\n}\nbody .u-border {\n  border: 1px solid #35095e !important;\n}\nbody .u-padding {\n  padding: 20px !important;\n}\nbody .u-padding-s {\n  padding: 12px !important;\n}\nbody .u-margin-s {\n  margin: 15px !important;\n}\nbody .u-margin-m {\n  margin: 20px !important;\n}\nbody .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\nbody .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\nbody .u-margin-top-s {\n  margin-top: 15px !important;\n}\nbody .u-margin-top-m {\n  margin-top: 20px !important;\n}\nbody .u-margin-left-s {\n  margin-left: 15px !important;\n}\nbody .u-margin-left-m {\n  margin-left: 20px !important;\n}\nbody .u-margin-right-s {\n  margin-right: 15px !important;\n}\nbody .u-margin-right-m {\n  margin-right: 20px !important;\n}\nbody .u-left {\n  float: left !important;\n}\nbody .u-right {\n  float: right !important;\n}\n", ""]);
 
 
 
@@ -20692,7 +20713,7 @@ exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #22
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".header {\n  text-align: center;\n  margin-bottom: 25px;\n}\n.header img {\n  display: block;\n  margin: 0px auto 20px auto;\n}\n", ""]);
+exports.push([module.i, ".header {\n  text-align: center;\n  margin-bottom: 15px;\n}\n.header img {\n  display: block;\n  margin: 0px auto 20px auto;\n}\n", ""]);
 
 
 
@@ -20707,7 +20728,7 @@ exports.push([module.i, ".header {\n  text-align: center;\n  margin-bottom: 25px
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".list {\n  scrollbar-color: #23053f transparent;\n  max-height: 150px;\n  overflow: auto;\n  overflow-x: hidden;\n  padding: 0 12px;\n}\n.list .item {\n  list-style: none;\n  padding: 14px 8px;\n  height: 50px;\n  box-sizing: border-box;\n  border-top: 2px solid #000;\n  position: relative;\n}\n.list .item:first-child {\n  border: none;\n}\n.list .item .name {\n  z-index: 1;\n  color: inherit;\n}\n.list .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n.list .action.small {\n  margin-left: 8px;\n}\n", ""]);
+exports.push([module.i, ".list {\n  scrollbar-color: #23053f transparent;\n  max-height: 150px;\n  overflow: auto;\n  overflow-x: hidden;\n  padding: 0 12px;\n}\n.list .item {\n  list-style: none;\n  padding: 14px 8px;\n  height: 50px;\n  box-sizing: border-box;\n  border-top: 2px solid #000;\n  position: relative;\n  color: #aaa;\n}\n.list .item:first-child {\n  border: none;\n}\n.list .item .name {\n  z-index: 1;\n  color: inherit;\n}\n.list .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n.list .action.small {\n  margin-left: 8px;\n}\n", ""]);
 
 
 
@@ -87310,7 +87331,7 @@ var FieldFriends = function FieldFriends(_ref) {
       setFields = _useState2[1];
 
   var addFriend = function addFriend() {
-    var newValue = [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(fields.value), ['--']);
+    var newValue = [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(fields.value), ['']);
     setFields({
       value: newValue
     });
@@ -87321,7 +87342,7 @@ var FieldFriends = function FieldFriends(_ref) {
     var index = event.target.dataset.index;
     var value = event.target.value;
 
-    if (value === '--' && fields.value.length > 1) {
+    if (value === '' && fields.value.length > 1) {
       var tempValues = fields.value;
       tempValues.splice(index, 1);
       setFields({
@@ -87335,6 +87356,17 @@ var FieldFriends = function FieldFriends(_ref) {
         value: _tempValues
       });
       updateParent(_tempValues);
+    }
+  };
+
+  var optionDisabled = function optionDisabled(i, uuid) {
+    // si
+    if (fields.value.indexOf(uuid) === -1) {
+      return false;
+    } else if (fields.value[i] === uuid) {
+      return false;
+    } else {
+      return true;
     }
   };
 
@@ -87358,17 +87390,18 @@ var FieldFriends = function FieldFriends(_ref) {
         marginTop: 0
       } : {}
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
-      value: "--",
+      value: "",
       key: 'no-value-' + i
     }, "--"), friends.friends.map(function (el) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
         value: el.uuid,
-        key: "".concat(el.uuid, "-").concat(i)
+        key: "".concat(el.uuid, "-").concat(i),
+        disabled: optionDisabled(i, el.uuid)
       }, el.label);
     }));
   })), fields.value.length < friends.friends.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     onClick: addFriend,
-    className: "general-button u-margin-top-s add-select"
+    className: "linkstyle-button u-margin-top-s"
   }, "Add another friend") : ''));
 };
 
@@ -87377,6 +87410,104 @@ FieldFriends.propTypes = {
   updateParent: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (FieldFriends);
+
+/***/ }),
+
+/***/ "./src/components/form-stupid-method.js":
+/*!**********************************************!*\
+  !*** ./src/components/form-stupid-method.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
+/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
+/* harmony import */ var Components_field_friends_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Components/field-friends.js */ "./src/components/field-friends.js");
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+
+
+ // import Bus from 'Utils/bus.js';
+
+
+
+var FormStupidMethod = function FormStupidMethod() {
+  var _usePairsContext = Object(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_3__["usePairsContext"])(),
+      pairs = _usePairsContext.pairs;
+
+  var _useSettingsContext = Object(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_4__["useSettingsContext"])(),
+      settings = _useSettingsContext.get,
+      storeModify = _useSettingsContext.modify;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])({
+    pair: settings().pair,
+    friends: settings().friends
+  }),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
+      stateValue = _useState2[0],
+      setStateValue = _useState2[1];
+
+  var handlerSetPair = function handlerSetPair(event) {
+    var value = event.target.value;
+    storeModify({
+      pair: value
+    });
+    setStateValue(_objectSpread(_objectSpread({}, stateValue), {}, {
+      pair: value
+    }));
+  };
+
+  var handlerSetValueFriends = function handlerSetValueFriends(value) {
+    storeModify({
+      friends: cleanedValue(value)
+    });
+    setStateValue(_objectSpread(_objectSpread({}, stateValue), {}, {
+      friends: value
+    }));
+  };
+
+  var cleanedValue = function cleanedValue(value) {
+    return value.filter(function (el) {
+      return el !== '';
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "u-themecolor-container u-padding"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: "u-themecolor-color u-margin-bottom-s"
+  }, "The stupid mode activates bones on all pages with the settings entered below. This mode is required if you want to encrypt your emails. this mode is imperative to encrypt emails (the url changes for each email in email clients). All fields are required"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
+    type: "select",
+    value: stateValue.pair,
+    onChange: handlerSetPair
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
+    key: "--",
+    value: "--"
+  }, "--"), pairs.pairs.map(function (pair) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
+      key: pair.uuid,
+      value: pair.uuid
+    }, pair.label);
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_friends_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    updateParent: handlerSetValueFriends,
+    initialState: stateValue.friends
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FormStupidMethod);
 
 /***/ }),
 
@@ -87970,6 +88101,7 @@ var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('
 var FriendsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet friend
 
 var initialFriends = {
+  loaded: false,
   friends: []
 }; // Attache FriendsContext.Provider à FriendsProvider avec le state et les fonctions de changement d'état
 
@@ -87994,6 +88126,7 @@ function FriendsProvider(props) {
             case 2:
               list = _context.sent;
               setFriends({
+                loaded: true,
                 friends: list
               });
 
@@ -88122,6 +88255,7 @@ var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('
 var MethodsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet method
 
 var initialMethods = {
+  loaded: false,
   methods: []
 }; // Attache MethodsContext.Provider à MethodsProvider avec le state et les fonctions de changement d'état
 
@@ -88146,6 +88280,7 @@ function MethodsProvider(props) {
             case 2:
               list = _context.sent;
               setMethods({
+                loaded: true,
                 methods: list
               });
 
@@ -88283,6 +88418,7 @@ var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('pa
 var PairsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet pair, option n'est pas obligatoire
 
 var initialPairs = {
+  loaded: false,
   pairs: []
 }; // Attache PairsContext.Provider à PairsProvider avec le state et les fonctions de changement d'état
 
@@ -88307,6 +88443,7 @@ function PairsProvider(props) {
             case 2:
               list = _context.sent;
               setPairs({
+                loaded: true,
                 pairs: list
               });
 
@@ -88402,16 +88539,13 @@ function usePairsContext() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
-/* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
-/* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
-/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
-/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
+/* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
+/* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
+/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
+/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 
 
 
@@ -88420,21 +88554,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Providers = function Providers(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
-    fakeUpdateId: 1
-  }),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
-      state = _useState2[0],
-      setState = _useState2[1];
-
-  Utils_bus_js__WEBPACK_IMPORTED_MODULE_6__["default"].subscribe('FullUpdate', function () {
-    setState({
-      fakeUpdateId: state.fakeUpdateId + 1
-    });
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contexts_router_js__WEBPACK_IMPORTED_MODULE_2__["RouterProvider"], {
-    key: state.fakeUpdateId
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_4__["FriendsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_5__["MethodsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_3__["PairsProvider"], props))));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_router_js__WEBPACK_IMPORTED_MODULE_1__["RouterProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__["FriendsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_4__["MethodsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_5__["SettingsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__["PairsProvider"], props)))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Providers);
@@ -88492,6 +88612,122 @@ function RouterProvider(props) {
 
 function useRouterContext() {
   return Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(RouterContext);
+}
+
+
+
+/***/ }),
+
+/***/ "./src/contexts/settings.js":
+/*!**********************************!*\
+  !*** ./src/contexts/settings.js ***!
+  \**********************************/
+/*! exports provided: SettingsProvider, useSettingsContext, SettingsContext */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsProvider", function() { return SettingsProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useSettingsContext", function() { return useSettingsContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsContext", function() { return SettingsContext; });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+
+
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+/* eslint-disable react/no-multi-comp */
+
+
+var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
+var SettingsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_5__["createContext"])(); // modèle de l'objet settings
+
+var initialSettings = {
+  loaded: false,
+  activate: true,
+  instruction: true,
+  stupid: false,
+  // ces deux clefs/valeurs sont pour le mode stupid
+  pair: '',
+  friends: []
+}; // Attache SettingsContext.Provider à SettingsProvider avec le state et les fonctions de changement d'état
+
+function SettingsProvider(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(initialSettings),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3___default()(_useState, 2),
+      settings = _useState2[0],
+      setSettings = _useState2[1];
+  /* initialisation */
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_5__["useEffect"])(function () {
+    _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee() {
+      var settingsStore, newData;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return store.getOne('settings');
+
+            case 2:
+              settingsStore = _context.sent;
+              newData = _objectSpread(_objectSpread(_objectSpread({}, settings), settingsStore), {}, {
+                loaded: true
+              });
+              setSettings(newData);
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  }, []);
+  /* fonctions de changement d'état */
+
+  function modify(obj) {
+    var newData = _objectSpread(_objectSpread({}, settings), obj);
+
+    setSettings(newData);
+    store.modify('settings', newData);
+  }
+  /* getter */
+
+
+  function get() {
+    return settings;
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SettingsContext.Provider, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+    value: {
+      modify: modify,
+      get: get
+    }
+  }, props));
+} // Cette fonction permet un import de SettingsContext et createContext en une fois
+
+
+function useSettingsContext() {
+  return Object(react__WEBPACK_IMPORTED_MODULE_5__["useContext"])(SettingsContext);
 }
 
 
@@ -88863,17 +89099,20 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Storage", function() { return Storage; });
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+
 
 
 
@@ -88882,43 +89121,43 @@ __webpack_require__.r(__webpack_exports__);
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /*
-  La classe storage est utilise par les differents contexts et
-  par les actions principales de base (delete, import...)
+La classe storage est utilisé par les différents contexts et
+par les actions principales de base (delete, import...)
 */
 
 var Storage = /*#__PURE__*/function () {
   function Storage(type) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Storage);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
 
     /*
-      le type est la clef utilise par les 3 listes (pair, friend, method)
-      ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
+    le type est la clef utilise par les 3 listes (pair, friend, method)
+    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
     */
     this.type = type;
   }
   /* ajoute un element avec en clef son uuid et ajoute cet uuid dans le tableau correspondant au type */
 
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Storage, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Storage, [{
     key: "set",
     value: function set(objectSended) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].uuid();
+        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_6__["tools"].uuid();
         var type = _this.type;
-        var getter = browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
-        var setter = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
+        var getter = browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
+        var setter = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
           uuid: uuid,
           type: type
         }, objectSended)));
         Promise.all([getter, setter]).then(function (data) {
           var newList = data[0][type];
           newList.push(uuid);
-          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
+          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, newList)).then(function () {
             return resolve();
           })["catch"](function () {
             return reject();
@@ -88936,14 +89175,14 @@ var Storage = /*#__PURE__*/function () {
       var _this2 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee$(_context) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
                   _context.next = 2;
-                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
+                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
 
                 case 2:
                   getList = _context.sent;
@@ -88969,7 +89208,7 @@ var Storage = /*#__PURE__*/function () {
         }))();
       });
     }
-    /* recupere un element par son uuid */
+    /* recupere un element par une clef (uuid) */
 
   }, {
     key: "getOne",
@@ -88990,14 +89229,14 @@ var Storage = /*#__PURE__*/function () {
       var _this3 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee2() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee2() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee2$(_context2) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   _context2.next = 2;
-                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
+                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this3.type, []));
 
                 case 2:
                   getList = _context2.sent;
@@ -89023,25 +89262,25 @@ var Storage = /*#__PURE__*/function () {
         }))();
       });
     }
-    /* modifie un seul element cible par son uuid */
+    /* modifie un seul element cible par sa clef (uuid par ex) */
 
   }, {
     key: "modify",
-    value: function modify(uuid, newObject) {
+    value: function modify(key, newObject) {
       return new Promise(function (resolve) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee3() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee3() {
           var getObject;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee3$(_context3) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee3$(_context3) {
             while (1) {
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return browser.storage.local.get(uuid);
+                  return browser.storage.local.get(key);
 
                 case 2:
                   getObject = _context3.sent;
-                  newObject = _objectSpread(_objectSpread({}, getObject[uuid]), newObject);
-                  browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, newObject)).then(function () {
+                  newObject = _objectSpread(_objectSpread({}, getObject[key]), newObject);
+                  browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, key, newObject)).then(function () {
                     resolve();
                   });
 
@@ -89066,14 +89305,14 @@ var Storage = /*#__PURE__*/function () {
           var newList = data[_this4.type];
           var indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          var setterNewList = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
+          var setterNewList = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this4.type, newList));
           var removeObject = browser.storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(function () {
             resolve();
           });
         });
       });
-    } ////////// Ces fonction ignore le type elles sont employees pour les actions globales ////////
+    } ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
 
     /* recupere tout le store */
 
@@ -89104,8 +89343,8 @@ var Storage = /*#__PURE__*/function () {
   }, {
     key: "importNewStorage",
     value: function () {
-      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee4(json) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee4$(_context4) {
+      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee4(json) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
@@ -89119,12 +89358,18 @@ var Storage = /*#__PURE__*/function () {
                     var list = json[type];
 
                     if (list) {
-                      browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, list));
+                      browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, list));
                       list.forEach(function (uuid) {
                         var element = json[uuid];
 
                         if (element) {
-                          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, element));
+                          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, element));
+                        }
+
+                        if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
+                          browser.storage.local.set({
+                            settings: json.settings
+                          });
                         }
                       });
                     }
@@ -89383,7 +89628,7 @@ var initialStateValue = {
   label: '',
   url: '',
   pair: '',
-  friends: ['--']
+  friends: ['']
 };
 var initialStateValidator = {
   label: 0,
@@ -89447,10 +89692,10 @@ var FormMethod = function FormMethod() {
     };
     if (!stateValue.label || stateValue.label === '') validator.label = 1;
     if (!stateValue.url || stateValue.url === '') validator.url = 1;
-    if (!stateValue.pair || stateValue.pair === '--') validator.pair = 1;
+    if (!stateValue.pair || stateValue.pair === '') validator.pair = 1;
     var friendsField = false;
     stateValue.friends.forEach(function (item) {
-      if (item && item !== '--') {
+      if (item && item !== '') {
         friendsField = true;
       }
     });
@@ -89464,7 +89709,7 @@ var FormMethod = function FormMethod() {
 
   var cleanedFriends = function cleanedFriends() {
     return stateValue.friends.filter(function (el) {
-      return el !== '--';
+      return el !== '';
     }).filter(function (el, i, self) {
       return i === self.indexOf(el);
     });
@@ -89530,7 +89775,7 @@ var FormMethod = function FormMethod() {
     onChange: handlerSetValue
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
     key: "--",
-    value: "--"
+    value: ""
   }, "--"), pairs.pairs.map(function (pair) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
       key: pair.uuid,
@@ -89758,21 +90003,27 @@ var FormPair = function FormPair() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var Images_bones_line_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/bones/line.png */ "./src/images/bones/line.png");
-/* harmony import */ var Images_bones_line_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_line_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var Styles_index_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Styles/index.less */ "./src/styles/index.less");
-/* harmony import */ var Styles_index_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(Styles_index_less__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var Components_list_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/list.js */ "./src/components/list.js");
-/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
-/* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
-/* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
-/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
-/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/bones/head-fail.png */ "./src/images/bones/head-fail.png");
+/* harmony import */ var Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var Images_bones_line_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Images/bones/line.png */ "./src/images/bones/line.png");
+/* harmony import */ var Images_bones_line_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(Images_bones_line_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var Styles_index_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Styles/index.less */ "./src/styles/index.less");
+/* harmony import */ var Styles_index_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(Styles_index_less__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var Components_list_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Components/list.js */ "./src/components/list.js");
+/* harmony import */ var Components_form_stupid_method_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/form-stupid-method.js */ "./src/components/form-stupid-method.js");
+/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
+/* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
+/* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
+/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
+/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
+/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 
 
 
@@ -89784,33 +90035,40 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_10__["Storage"]();
+
+
+
+
+var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_14__["Storage"]();
 
 var Index = function Index() {
-  var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_5__["useRouterContext"])(),
+  var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_8__["useRouterContext"])(),
       changeRoute = _useRouterContext.changeRoute;
 
-  var _usePairsContext = Object(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_6__["usePairsContext"])(),
+  var _usePairsContext = Object(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_9__["usePairsContext"])(),
       pairs = _usePairsContext.pairs;
 
-  var _useFriendsContext = Object(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_7__["useFriendsContext"])(),
+  var _useFriendsContext = Object(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__["useFriendsContext"])(),
       friends = _useFriendsContext.friends;
 
-  var _useMethodsContext = Object(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_8__["useMethodsContext"])(),
+  var _useMethodsContext = Object(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_11__["useMethodsContext"])(),
       methods = _useMethodsContext.methods;
 
+  var _useSettingsContext = Object(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_12__["useSettingsContext"])(),
+      settings = _useSettingsContext.get,
+      setSettings = _useSettingsContext.modify;
+
+  var loaded = pairs.loaded && friends.loaded && methods.loaded && settings().loaded;
   var methodIsBlocked = pairs.pairs.length === 0 || friends.friends.length === 0;
 
-  var activeDumpDb = function activeDumpDb() {
-    Utils_bus_js__WEBPACK_IMPORTED_MODULE_9__["default"].dispatch('ModalDumpDb', {});
-  };
-
-  var importDb = function importDb() {
-    Utils_bus_js__WEBPACK_IMPORTED_MODULE_9__["default"].dispatch('ModalImportDB', {});
+  var handlerSetValue = function handlerSetValue(event) {
+    var keyState = event.target.dataset.keyState;
+    var checked = event.target.checked;
+    setSettings(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, keyState, checked));
   };
 
   var deleteDb = function deleteDb() {
-    Utils_bus_js__WEBPACK_IMPORTED_MODULE_9__["default"].dispatch('ModalPrompt', {
+    Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__["default"].dispatch('ModalPrompt', {
       message: 'Do you really want to delete all data?',
       action: function action() {
         store.deleteAll().then(function () {
@@ -89820,94 +90078,122 @@ var Index = function Index() {
     });
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    width: "100"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-font-size-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "BONES"), " is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://github.com/ArguelBenoit/e2e-chat-encryption"
-  }, "github"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "u-margin-top-m"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-  }, "Pairs (your key pairs)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    type: 'pair',
-    list: pairs.pairs,
-    emptyMessage: "BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-padding-s u-themecolor-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    onClick: function onClick() {
-      return changeRoute({
-        name: 'FormPair'
-      });
-    },
-    className: "general-button"
-  }, "Add a key pair"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "u-margin-top-m"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-  }, "Friends (their public keys)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    type: 'friend',
-    list: friends.friends,
-    emptyMessage: "BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-padding-s u-themecolor-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    onClick: function onClick() {
-      return changeRoute({
-        name: 'FormFriend'
-      });
-    },
-    className: "general-button"
-  }, "Add a friend's key"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "u-margin-top-m"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-  }, "Methods (keys per thread)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    type: 'method',
-    list: methods.methods,
-    emptyMessage: "BONES does not have any methodes. Methods are key bindings attached to a url."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-padding-s u-themecolor-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-error u-text-center u-font-size-s u-margin-bottom-s",
-    style: {
-      display: methodIsBlocked ? 'inherit' : 'none'
-    }
-  }, "You need a pair and a friend to create a method"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    onClick: methodIsBlocked ? function () {} : function () {
-      return changeRoute({
-        name: 'FormMethod'
-      });
-    },
-    className: "general-button",
-    style: methodIsBlocked ? {
-      opacity: 0.5,
-      cursor: 'not-allowed'
-    } : {}
-  }, "Add a method"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "dangerous-actions-buttons"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-flex u-margin-top-m"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: Images_bones_line_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    width: "80"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "linkstyle-button u-margin-top-s",
-    onClick: activeDumpDb
-  }, "Make a dump of your database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "linkstyle-button u-margin-top-s",
-    onClick: importDb
-  }, "Import a dump of database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "linkstyle-button u-margin-top-s",
-    onClick: deleteDb
-  }, "Delete database")));
+  if (loaded) {
+    var _settings = settings(),
+        stupid = _settings.stupid,
+        activate = _settings.activate;
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "content"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
+      className: "header"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: activate ? Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default.a : Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+      width: "100"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-font-size-s"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, "BONES"), " is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+      href: "https://github.com/ArguelBenoit/e2e-chat-encryption"
+    }, "github"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-flex --left input-activation"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      type: "checkbox",
+      className: "cm-toggle u-margin-right-s",
+      checked: activate,
+      "data-key-state": "activate",
+      onChange: handlerSetValue
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Activate BONES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+      className: "u-margin-top-m"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
+    }, "Pairs (your key pairs)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      type: 'pair',
+      list: pairs.pairs,
+      emptyMessage: "BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys."
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding-s u-themecolor-container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: function onClick() {
+        return changeRoute({
+          name: 'FormPair'
+        });
+      },
+      className: "general-button"
+    }, "Add a key pair"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+      className: "u-margin-top-m"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
+    }, "Friends (their public keys)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      type: 'friend',
+      list: friends.friends,
+      emptyMessage: "BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key."
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding-s u-themecolor-container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: function onClick() {
+        return changeRoute({
+          name: 'FormFriend'
+        });
+      },
+      className: "general-button"
+    }, "Add a friend's key"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+      className: "u-margin-top-m"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding u-themecolor-container u-white-color u-font-size-l u-flex --beetwen"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, stupid ? 'Method' : 'Methods (keys per thread)'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-flex --left input-activation"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-margin-right-s"
+    }, "Stupid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+      type: "checkbox",
+      className: "cm-toggle",
+      checked: stupid,
+      "data-key-state": "stupid",
+      onChange: handlerSetValue
+    }))), stupid ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_form_stupid_method_js__WEBPACK_IMPORTED_MODULE_7__["default"], null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      type: 'method',
+      list: methods.methods,
+      emptyMessage: "BONES does not have any methodes. Methods are key bindings attached to a url."
+    }), !stupid ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding-s u-themecolor-container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "form-error u-text-center u-font-size-s u-margin-bottom-s",
+      style: {
+        display: methodIsBlocked ? 'inherit' : 'none'
+      }
+    }, "You need a pair and a friend to create a method"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      onClick: methodIsBlocked ? function () {} : function () {
+        return changeRoute({
+          name: 'FormMethod'
+        });
+      },
+      className: "general-button",
+      style: methodIsBlocked ? {
+        opacity: 0.5,
+        cursor: 'not-allowed'
+      } : {}
+    }, "Add a method")) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-flex u-margin-top-m"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: Images_bones_line_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+      width: "80"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      className: "linkstyle-button u-margin-top-s",
+      onClick: function onClick() {
+        return Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__["default"].dispatch('ModalDumpDb', {});
+      }
+    }, "Make a dump of your database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      className: "linkstyle-button u-margin-top-s",
+      onClick: function onClick() {
+        return Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__["default"].dispatch('ModalImportDB', {});
+      }
+    }, "Import a dump of database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      className: "linkstyle-button u-margin-top-s",
+      onClick: deleteDb
+    }, "Delete database"));
+  } else {
+    return '';
+  }
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -89956,7 +90242,9 @@ var Share = function Share() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Copy a public key to share it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Copy a public key to share it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "form"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "u-themecolor-container u-padding-s u-margin-top-m"

@@ -10,7 +10,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
 
 
   const addFriend = () => {
-    const newValue = [...fields.value, '--'];
+    const newValue = [...fields.value, ''];
     setFields({ value: newValue });
     updateParent(newValue);
   };
@@ -20,7 +20,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
     const { index } = event.target.dataset;
     const { value } = event.target;
 
-    if (value === '--' && fields.value.length > 1) {
+    if (value === '' && fields.value.length > 1) {
       let tempValues = fields.value;
       tempValues.splice(index, 1);
       setFields({ value: tempValues });
@@ -31,6 +31,18 @@ const FieldFriends = ({ updateParent, initialState }) => {
       tempValues[index] = value;
       setFields({ value: tempValues });
       updateParent(tempValues);
+    }
+  };
+
+
+  const optionDisabled = (i, uuid) => {
+    // si
+    if (fields.value.indexOf(uuid) === -1) {
+      return false;
+    } else if (fields.value[i] === uuid) {
+      return false;
+    } else {
+      return true;
     }
   };
 
@@ -49,9 +61,9 @@ const FieldFriends = ({ updateParent, initialState }) => {
             key={`select-${i}`}
             style={i === 0 ? { marginTop: 0 } : {}}
           >
-            <option value="--" key={'no-value-' + i}>--</option>
+            <option value="" key={'no-value-' + i}>--</option>
             {friends.friends.map(el =>
-              <option value={el.uuid} key={`${el.uuid}-${i}`}>
+              <option value={el.uuid} key={`${el.uuid}-${i}`} disabled={optionDisabled(i, el.uuid)}>
                 {el.label}
               </option>
             )}
@@ -65,7 +77,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
             ?
               <button
                 onClick={addFriend}
-                className="general-button u-margin-top-s add-select"
+                className="linkstyle-button u-margin-top-s"
               >
                 Add another friend
               </button>

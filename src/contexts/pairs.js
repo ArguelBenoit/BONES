@@ -13,6 +13,7 @@ const PairsContext = createContext();
 
 // modèle de l'objet pair, option n'est pas obligatoire
 const initialPairs = {
+  loaded: false,
   pairs: []
 };
 
@@ -26,7 +27,10 @@ function PairsProvider(props) {
   /* initialisation */
   const getList = async () => {
     const list = await pairStore.getList();
-    setPairs({ pairs: list });
+    setPairs({
+      loaded: true,
+      pairs: list
+    });
   };
   useEffect(() => {
     getList();

@@ -20726,7 +20726,7 @@ exports.constants = {
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "/*\nNe pouvant connaitre à l'avance les pages contenues dans les méthodes de l'utilisateur,\nce css est importé dans toutes les pages du www explorées par l'utilisateur. N'ayant pas\nforcément besoin de la totalité du css de common, on duplique seulement les règles css\nnécessaires.\n*/\n#BONES-CONTAINER #bones-tool-box {\n  font-size: 13px;\n  color: #ddd;\n  font-family: sans-serif;\n  position: fixed;\n  z-index: 10000;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbx like toggle ********/\n  /******* utility *******/\n  /* the properties of utility classes are the most important, they are absolute */\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-method {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-method .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-method {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99) !important;\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0 !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right !important;\n}\n", ""]);
+exports.push([module.i, "/*\nNe pouvant connaitre à l'avance les pages contenues dans les méthodes de l'utilisateur,\nce css est importé dans toutes les pages du www explorées par l'utilisateur. N'ayant pas\nforcément besoin de la totalité du css de common, on duplique seulement les règles css\nnécessaires.\n*/\n#BONES-CONTAINER #bones-tool-box {\n  font-size: 13px;\n  color: #ddd;\n  font-family: sans-serif;\n  position: fixed;\n  z-index: 10000;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n  /* the properties of utility classes are the most important, they are absolute */\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-method {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-method .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-method {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99) !important;\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110% !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0 !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left !important;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right !important;\n}\n", ""]);
 
 
 
@@ -84867,7 +84867,6 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
         type: "checkbox",
         className: "cm-toggle u-margin-right-s",
         id: "show-bones-instruction",
-        name: "scales",
         checked: showInstruction,
         onChange: this.setShowInstruction
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, "Show instructions")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -85100,7 +85099,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 var encryptHeader = '~ BONES ENCRYPTED MESSAGE';
-var decryptHeader = '☠️ BONES DECRYPTED MESSAGE ☠️\n';
+var decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
 
 var Crypting = /*#__PURE__*/function () {
   function Crypting(friends, pair, method) {
@@ -85259,17 +85258,20 @@ var Crypting = /*#__PURE__*/function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Storage", function() { return Storage; });
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+
 
 
 
@@ -85278,43 +85280,43 @@ __webpack_require__.r(__webpack_exports__);
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /*
-  La classe storage est utilise par les differents contexts et
-  par les actions principales de base (delete, import...)
+La classe storage est utilisé par les différents contexts et
+par les actions principales de base (delete, import...)
 */
 
 var Storage = /*#__PURE__*/function () {
   function Storage(type) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Storage);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
 
     /*
-      le type est la clef utilise par les 3 listes (pair, friend, method)
-      ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
+    le type est la clef utilise par les 3 listes (pair, friend, method)
+    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
     */
     this.type = type;
   }
   /* ajoute un element avec en clef son uuid et ajoute cet uuid dans le tableau correspondant au type */
 
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Storage, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Storage, [{
     key: "set",
     value: function set(objectSended) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].uuid();
+        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_6__["tools"].uuid();
         var type = _this.type;
-        var getter = browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
-        var setter = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
+        var getter = browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
+        var setter = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
           uuid: uuid,
           type: type
         }, objectSended)));
         Promise.all([getter, setter]).then(function (data) {
           var newList = data[0][type];
           newList.push(uuid);
-          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
+          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, newList)).then(function () {
             return resolve();
           })["catch"](function () {
             return reject();
@@ -85332,14 +85334,14 @@ var Storage = /*#__PURE__*/function () {
       var _this2 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee$(_context) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
                   _context.next = 2;
-                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
+                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
 
                 case 2:
                   getList = _context.sent;
@@ -85365,7 +85367,7 @@ var Storage = /*#__PURE__*/function () {
         }))();
       });
     }
-    /* recupere un element par son uuid */
+    /* recupere un element par une clef (uuid) */
 
   }, {
     key: "getOne",
@@ -85386,14 +85388,14 @@ var Storage = /*#__PURE__*/function () {
       var _this3 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee2() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee2() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee2$(_context2) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   _context2.next = 2;
-                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
+                  return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this3.type, []));
 
                 case 2:
                   getList = _context2.sent;
@@ -85419,25 +85421,25 @@ var Storage = /*#__PURE__*/function () {
         }))();
       });
     }
-    /* modifie un seul element cible par son uuid */
+    /* modifie un seul element cible par sa clef (uuid par ex) */
 
   }, {
     key: "modify",
-    value: function modify(uuid, newObject) {
+    value: function modify(key, newObject) {
       return new Promise(function (resolve) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee3() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee3() {
           var getObject;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee3$(_context3) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee3$(_context3) {
             while (1) {
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return browser.storage.local.get(uuid);
+                  return browser.storage.local.get(key);
 
                 case 2:
                   getObject = _context3.sent;
-                  newObject = _objectSpread(_objectSpread({}, getObject[uuid]), newObject);
-                  browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, newObject)).then(function () {
+                  newObject = _objectSpread(_objectSpread({}, getObject[key]), newObject);
+                  browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, key, newObject)).then(function () {
                     resolve();
                   });
 
@@ -85462,14 +85464,14 @@ var Storage = /*#__PURE__*/function () {
           var newList = data[_this4.type];
           var indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          var setterNewList = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
+          var setterNewList = browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this4.type, newList));
           var removeObject = browser.storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(function () {
             resolve();
           });
         });
       });
-    } ////////// Ces fonction ignore le type elles sont employees pour les actions globales ////////
+    } ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
 
     /* recupere tout le store */
 
@@ -85500,8 +85502,8 @@ var Storage = /*#__PURE__*/function () {
   }, {
     key: "importNewStorage",
     value: function () {
-      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee4(json) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee4$(_context4) {
+      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee4(json) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
@@ -85515,12 +85517,18 @@ var Storage = /*#__PURE__*/function () {
                     var list = json[type];
 
                     if (list) {
-                      browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, list));
+                      browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, list));
                       list.forEach(function (uuid) {
                         var element = json[uuid];
 
                         if (element) {
-                          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, element));
+                          browser.storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, element));
+                        }
+
+                        if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
+                          browser.storage.local.set({
+                            settings: json.settings
+                          });
                         }
                       });
                     }

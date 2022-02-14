@@ -5,7 +5,7 @@
 }
 html:before {
   content: '🇫🇷';
-  font-size: 30px;
+  font-size: 24px;
   position: fixed;
   top: 5px;
   left: 10px
@@ -45,6 +45,7 @@ body {
     box-sizing: border-box;
     padding: 30px;
     background: #000;
+    position: relative;
   }
   /******* form *******/
   .form {
@@ -76,7 +77,45 @@ body {
   .container-multiple-select select {
     background: @themecolor-four;
   }
-
+  // toggle field
+  .cm-toggle {
+  	-webkit-appearance: none;
+  	-webkit-tap-highlight-color: transparent;
+  	position: relative;
+  	border: 0;
+  	outline: 0;
+  	cursor: pointer;
+  	margin: 4px 0 0 0;
+    background-color: transparent;
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      border-radius: 4px;
+      background: #000;
+    }
+    &:after {
+      content: '';
+      width: 34px;
+      height: 20px;
+      display: inline-block;
+      background: #333;
+      border-radius: 4px;
+      clear: both;
+    }
+    &:checked {
+      &:before {
+        left: 16px;
+      }
+      &:after {
+        background: @themecolor;
+      }
+    }
+  }
 
   /******* modal *******/
   .modal {
@@ -124,6 +163,14 @@ body {
     border: 1px solid @themecolor-three !important;
     margin-bottom: 5px !important;
     box-sizing: border-box !important;
+    input[type="select"], select,
+    input[type="text"],
+    textarea {
+      border: 1px solid @themecolor-two !important;
+    }
+    .u-themecolor-container {
+      border: 1px solid @themecolor-two !important;
+    }
   }
   .u-full-width { width: 100% !important; }
   .u-flex {
@@ -131,6 +178,10 @@ body {
     justify-content: center !important;
     align-items: center !important;
   }
+  .--beetwen {
+    justify-content: space-between !important;
+  }
+
   .u-themecolor-color { color: @themecolor !important; }
   .u-white-color { color: #fff !important; }
 

@@ -1,6 +1,6 @@
 /*
-  La classe storage est utilise par les differents contexts et
-  par les actions principales de base (delete, import...)
+La classe storage est utilisé par les différents contexts et
+par les actions principales de base (delete, import...)
 */
 
 import { tools } from 'Utils/tools.js';
@@ -10,8 +10,8 @@ export class Storage {
 
   constructor(type) {
     /*
-      le type est la clef utilise par les 3 listes (pair, friend, method)
-      ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
+    le type est la clef utilise par les 3 listes (pair, friend, method)
+    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
     */
     this.type = type;
   }
@@ -72,7 +72,7 @@ export class Storage {
     });
   }
 
-  /* recupere un element par son uuid */
+  /* recupere un element par une clef (uuid) */
   getOne(uuid) {
     return new Promise((resolve, reject) => {
       browser.storage.local.get(uuid)
@@ -109,13 +109,13 @@ export class Storage {
     });
   }
 
-  /* modifie un seul element cible par son uuid */
-  modify(uuid, newObject) {
+  /* modifie un seul element cible par sa clef (uuid par ex) */
+  modify(key, newObject) {
     return new Promise((resolve) => {
       (async () => {
-        const getObject = await browser.storage.local.get(uuid);
-        newObject = {...getObject[uuid], ...newObject};
-        browser.storage.local.set({ [uuid]: newObject})
+        const getObject = await browser.storage.local.get(key);
+        newObject = {...getObject[key], ...newObject};
+        browser.storage.local.set({ [key]: newObject})
           .then(() => {
             resolve();
           });
@@ -141,7 +141,7 @@ export class Storage {
     });
   }
 
-  ////////// Ces fonction ignore le type elles sont employees pour les actions globales ////////
+  ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
 
   /* recupere tout le store */
   getAll() {
@@ -182,6 +182,10 @@ export class Storage {
             const element = json[uuid];
             if (element) {
               browser.storage.local.set({ [uuid]: element });
+            }
+
+            if (typeof json.settings === 'object') {
+              browser.storage.local.set({ settings: json.settings });
             }
 
           });

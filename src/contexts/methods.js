@@ -13,6 +13,7 @@ const MethodsContext = createContext();
 
 // modèle de l'objet method
 const initialMethods = {
+  loaded: false,
   methods: []
 };
 
@@ -26,7 +27,10 @@ function MethodsProvider(props) {
   /* initialisation */
   const getList = async () => {
     const list = await methodStore.getList();
-    setMethods({ methods: list });
+    setMethods({
+      loaded: true,
+      methods: list
+    });
   };
   useEffect(() => {
     getList();

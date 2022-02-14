@@ -1,5 +1,5 @@
 const encryptHeader = '~ BONES ENCRYPTED MESSAGE';
-const decryptHeader = '☠️ BONES DECRYPTED MESSAGE ☠️\n';
+const decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
 import crypto from 'crypto';
 
 

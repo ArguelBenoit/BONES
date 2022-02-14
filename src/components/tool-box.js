@@ -239,7 +239,6 @@ class ToolBox extends React.Component {
                 type="checkbox"
                 className="cm-toggle u-margin-right-s"
                 id="show-bones-instruction"
-                name="scales"
                 checked={showInstruction}
                 onChange={this.setShowInstruction}
               />

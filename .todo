@@ -2,20 +2,21 @@
 ____________TODO____________
 - raffraichir toolbox lorsque les méthodes sont mise à jour
 - raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
-- Boutton modifier la methode dans toolbox et arriver desuite sur l'édition
-- toolbox vide pour les pages sans méthode afin d'en créer une
-- toolbox quick use
+
+- mode stupid
+- mode inactif
+- retour d'erreur import mauvaise base de données
+- traiter les url avec ou sans le "/" de fin
 
 - amélioration chiffrement (pour l'instant limité à 214c)
 - README github, tutoriel de fonctionnement etc...
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
-
 ____________WIP_____________
-- traiter les url avec ou sans le "/" de fin
 
 
 ____________DONE____________
+- mise à jour context settings dans view/index.js
 - tab à la place de popup (réouvrir si déjà ouvert)
 - favicon tab
 - action import

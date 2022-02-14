@@ -13,6 +13,7 @@ const FriendsContext = createContext();
 
 // modèle de l'objet friend
 const initialFriends = {
+  loaded: false,
   friends: []
 };
 
@@ -26,7 +27,10 @@ function FriendsProvider(props) {
   /* initialisation */
   const getList = async () => {
     const list = await friendStore.getList();
-    setFriends({ friends: list });
+    setFriends({
+      loaded: true,
+      friends: list
+    });
   };
   useEffect(() => {
     getList();

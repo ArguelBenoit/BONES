@@ -12,7 +12,7 @@ let initialStateValue = {
   label: '',
   url: '',
   pair: '',
-  friends: ['--']
+  friends: ['']
 };
 
 
@@ -82,12 +82,12 @@ const FormMethod = () => {
       validator.label = 1;
     if (!stateValue.url || stateValue.url === '')
       validator.url = 1;
-    if (!stateValue.pair || stateValue.pair === '--')
+    if (!stateValue.pair || stateValue.pair === '')
       validator.pair = 1;
 
     let friendsField = false;
     stateValue.friends.forEach(item => {
-      if (item && item !== '--') {
+      if (item && item !== '') {
         friendsField = true;
       }
     });
@@ -103,7 +103,7 @@ const FormMethod = () => {
   const cleanedFriends = () => {
     return stateValue
       .friends
-      .filter(el => el !== '--')
+      .filter(el => el !== '')
       .filter((el, i, self) => i === self.indexOf(el));
   };
 
@@ -172,7 +172,7 @@ const FormMethod = () => {
           data-key-state="pair"
           onChange={handlerSetValue}
         >
-          <option key="--" value="--">--</option>
+          <option key="--" value="">--</option>
           {pairs.pairs.map(
             pair => <option
               key={pair.uuid}
