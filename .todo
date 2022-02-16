@@ -1,21 +1,21 @@
 
-____________TODO____________
-- raffraichir toolbox lorsque les méthodes sont mise à jour
-- raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 
+WIP________________________________________________________________________
 - mode stupid
 - mode inactif
-- retour d'erreur import mauvaise base de données
-- traiter les url avec ou sans le "/" de fin
 
+
+TODO_______________________________________________________________________
+- traiter les url avec ou sans le "/" de fin
 - amélioration chiffrement (pour l'instant limité à 214c)
 - README github, tutoriel de fonctionnement etc...
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
+- raffraichir toolbox lorsque les méthodes sont mise à jour
+- raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 
-____________WIP_____________
 
-
-____________DONE____________
+DONE_______________________________________________________________________
+- retour d'erreur import mauvaise base de données
 - mise à jour context settings dans view/index.js
 - tab à la place de popup (réouvrir si déjà ouvert)
 - favicon tab

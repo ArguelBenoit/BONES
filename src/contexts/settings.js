@@ -15,9 +15,10 @@ const SettingsContext = createContext();
 const initialSettings = {
   loaded: false,
   activate: true,
-  instruction: true,
   stupid: false,
-  // ces deux clefs/valeurs sont pour le mode stupid
+  // ces clefs/valeurs sont pour le mode stupid
+  open: true,
+  instruction: true,
   pair: '',
   friends: []
 };

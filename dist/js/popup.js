@@ -87324,7 +87324,7 @@ var FieldFriends = function FieldFriends(_ref) {
       friends = _useFriendsContext.friends;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])({
-    value: initialState
+    value: initialState.length === 0 ? [''] : initialState
   }),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
       fields = _useState2[0],
@@ -87770,6 +87770,7 @@ var ModalImportDb = function ModalImportDb() {
     },
     id: "file-upload",
     type: "file",
+    accept: "application/json",
     onChange: updateImport
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     type: "file"
@@ -88551,7 +88552,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+ // fonction d'attachement de tout les Providers
+// TODO: trouver une méthode plus esthetique
 
 var Providers = function Providers(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_router_js__WEBPACK_IMPORTED_MODULE_1__["RouterProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__["FriendsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_4__["MethodsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_5__["SettingsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__["PairsProvider"], props)))));
@@ -88662,9 +88664,10 @@ var SettingsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_5__["cr
 var initialSettings = {
   loaded: false,
   activate: true,
-  instruction: true,
   stupid: false,
-  // ces deux clefs/valeurs sont pour le mode stupid
+  // ces clefs/valeurs sont pour le mode stupid
+  open: true,
+  instruction: true,
   pair: '',
   friends: []
 }; // Attache SettingsContext.Provider à SettingsProvider avec le state et les fonctions de changement d'état
@@ -89171,22 +89174,35 @@ var Storage = /*#__PURE__*/function () {
 
   }, {
     key: "getList",
-    value: function getList() {
+    value: function getList(listArray) {
       var _this2 = this;
 
+      // list (array) est optionel, si il n'y a pas ce param getList renvois toute la liste du type
       return new Promise(function (resolve, reject) {
         _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
-          var getList;
+          var list;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
-                  _context.next = 2;
+                  if (!listArray) {
+                    _context.next = 4;
+                    break;
+                  }
+
+                  list = listArray;
+                  _context.next = 7;
+                  break;
+
+                case 4:
+                  _context.next = 6;
                   return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
 
-                case 2:
-                  getList = _context.sent;
-                  browser.storage.local.get(getList[_this2.type]).then(function (data) {
+                case 6:
+                  list = _context.sent;
+
+                case 7:
+                  browser.storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
                     var arrayValues = Object.values(data).sort(function (a, b) {
                       var la = a.label.toLowerCase(),
                           lb = b.label.toLowerCase();
@@ -89199,7 +89215,7 @@ var Storage = /*#__PURE__*/function () {
                     reject(err);
                   });
 
-                case 4:
+                case 8:
                 case "end":
                   return _context.stop();
               }
@@ -89426,6 +89442,30 @@ var tools = {
 
     var yyyy = today.getFullYear();
     return "".concat(mm, "-").concat(dd, "-").concat(yyyy);
+  },
+
+  /* retourne un booléen qui valide le fonctionnement total du mode stupide */
+
+  /* true = mode stupide actif + pair présente + et tableau d'amis avec au moins un ami */
+  getStupidActive: function getStupidActive(settings) {
+    if (settings === undefined) {
+      return false;
+    } else if (settings.stupid === true && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if (settings === undefined) {
+      return true;
+    } else if (settings.activate === true) {
+      return true;
+    } else {
+      return false;
+    }
   }
 };
 

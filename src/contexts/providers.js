@@ -6,7 +6,8 @@ import { MethodsProvider } from 'Contexts/methods.js';
 import { SettingsProvider } from 'Contexts/settings.js';
 
 
-
+// fonction d'attachement de tout les Providers
+// TODO: trouver une méthode plus esthetique
 const Providers = props => {
 
   return <RouterProvider>

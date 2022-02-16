@@ -46,11 +46,16 @@ export class Storage {
   }
 
   /* Recupere la liste d'objet sous forme de tableau*/
-  getList() {
+  getList(listArray) { // list (array) est optionel, si il n'y a pas ce param getList renvois toute la liste du type
     return new Promise((resolve, reject) => {
       (async () => {
-        const getList = await browser.storage.local.get({[this.type]: []});
-        browser.storage.local.get(getList[this.type])
+        let list;
+        if (listArray) {
+          list = listArray;
+        } else {
+          list = await browser.storage.local.get({[this.type]: []});
+        }
+        browser.storage.local.get(listArray ? list : list[this.type])
           .then(data => {
             let arrayValues = Object.values(data).sort((a, b) => {
               let la = a.label.toLowerCase(),

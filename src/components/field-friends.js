@@ -6,7 +6,9 @@ import PropTypes from 'prop-types';
 const FieldFriends = ({ updateParent, initialState }) => {
 
   const { friends } = useFriendsContext();
-  const [ fields, setFields ] = useState({ value: initialState });
+  const [ fields, setFields ] = useState({
+    value: initialState.length === 0 ? [''] : initialState
+  });
 
 
   const addFriend = () => {

@@ -50,6 +50,7 @@ const ModalImportDb = () => {
           onMouseDown={e => e.preventDefault()}
           id="file-upload"
           type="file"
+          accept="application/json"
           onChange={updateImport}
         />
         <input type="file"/>

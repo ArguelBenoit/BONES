@@ -16,6 +16,33 @@ export const tools = {
     const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0
     const yyyy = today.getFullYear();
     return `${mm}-${dd}-${yyyy}`;
+  },
+
+  /* retourne un booléen qui valide le fonctionnement total du mode stupide */
+  /* true = mode stupide actif + pair présente + et tableau d'amis avec au moins un ami */
+  getStupidActive(settings) {
+    if (settings === undefined) {
+      return false;
+    } else if (
+      settings.stupid === true &&
+      settings.pair && settings.pair !== '' &&
+      settings.friends.length > 0
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate(settings) {
+    if (settings === undefined) {
+      return true;
+    } else if (settings.activate === true) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 };

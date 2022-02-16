@@ -84529,36 +84529,41 @@ ToolBoxTutorial.propTypes = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-draggable */ "./node_modules/react-draggable/build/cjs/cjs.js");
-/* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_draggable__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Images/bones/head-success.png */ "./src/images/bones/head-success.png");
-/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Images/bones/loading.gif */ "./src/images/bones/loading.gif");
-/* harmony import */ var Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
-/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Styles/toolbox.less */ "./src/styles/toolbox.less");
-/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
-/* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-draggable */ "./node_modules/react-draggable/build/cjs/cjs.js");
+/* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_draggable__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Images/bones/head-success.png */ "./src/images/bones/head-success.png");
+/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Images/bones/loading.gif */ "./src/images/bones/loading.gif");
+/* harmony import */ var Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
+/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Styles/toolbox.less */ "./src/styles/toolbox.less");
+/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
+/* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
+/* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/crypting.js */ "./src/utils/crypting.js");
+/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 
 
 
@@ -84566,7 +84571,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default()(this, result); }; }
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default()(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
@@ -84579,39 +84586,48 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
- // const ToolBox = ({ method, updateMethod, instruction, crypting }) => {
+
+
+var getStupidActive = Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__["tools"].getStupidActive; // Storage
+
+
+var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('method');
+var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('friend');
+var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('pair');
 
 var ToolBox = /*#__PURE__*/function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_3___default()(ToolBox, _React$Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(ToolBox, _React$Component);
 
   var _super = _createSuper(ToolBox);
 
   function ToolBox(props) {
     var _this;
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, ToolBox);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default()(this, ToolBox);
 
     _this = _super.call(this, props);
-    _this.encrypt = _this.encrypt.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this));
-    _this.decrypt = _this.decrypt.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this));
-    _this.setToggled = _this.setToggled.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this));
-    _this.setShowInstruction = _this.setShowInstruction.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this));
-    _this.handlerChange = _this.handlerChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this));
-    _this.simulateInput = _this.simulateInput.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this));
-    var method = props.method,
-        instruction = props.instruction;
+    _this.encrypt = _this.encrypt.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.decrypt = _this.decrypt.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.setToggled = _this.setToggled.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.setShowInstruction = _this.setShowInstruction.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.handlerChange = _this.handlerChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.simulateInput = _this.simulateInput.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.state = {
-      toggled: method.open ? method.open : false,
+      toggled: false,
       message: '',
-      showInstruction: instruction,
-      header: method.label,
+      showInstruction: true,
+      header: '',
       img: 'regular',
-      stun: false
+      stun: false,
+      stupid: false,
+      loaded: false,
+      uuidMethod: '',
+      labelMethod: ''
     };
     return _this;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(ToolBox, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2___default()(ToolBox, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
@@ -84629,19 +84645,100 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           }
         }
       });
+
+      _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.mark(function _callee() {
+        var settings, stupid, friends, pair, method, _pair, _friends;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                settings = methodStore.getOne('settings');
+                stupid = getStupidActive(settings);
+
+                if (!stupid) {
+                  _context.next = 13;
+                  break;
+                }
+
+                _context.next = 5;
+                return friendStore.getList(settings.friends);
+
+              case 5:
+                friends = _context.sent;
+                _context.next = 8;
+                return pairStore.getOne(settings.pair);
+
+              case 8:
+                pair = _context.sent;
+                _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](friends, pair);
+
+                _this2.setState({
+                  toggled: settings.open,
+                  showInstruction: settings.instruction,
+                  header: 'Stupid mode',
+                  stupid: true,
+                  labelMethod: 'Stupid mode',
+                  loaded: true
+                });
+
+                _context.next = 24;
+                break;
+
+              case 13:
+                _context.next = 15;
+                return methodStore.keyValue('url', window.location.href);
+
+              case 15:
+                method = _context.sent;
+                _context.next = 18;
+                return pairStore.getOne(method[0].pair);
+
+              case 18:
+                _pair = _context.sent;
+                _context.next = 21;
+                return friendStore.getList(method[0].friends);
+
+              case 21:
+                _friends = _context.sent;
+                _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](_friends, _pair);
+
+                _this2.setState({
+                  toggled: method[0].open,
+                  showInstruction: settings.instruction,
+                  header: method.label,
+                  stupid: false,
+                  uuidMethod: method.uuid,
+                  labelMethod: method.label,
+                  loaded: true
+                });
+
+              case 24:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
     }
   }, {
     key: "setToggled",
     value: function setToggled() {
-      this.props.updateMethod('open', !this.state.toggled);
+      var _this$state = this.state,
+          stupid = _this$state.stupid,
+          uuidMethod = _this$state.uuidMethod,
+          toggled = _this$state.toggled;
+      methodStore.modify(stupid ? 'settings' : uuidMethod, {
+        open: !toggled
+      });
       this.setState({
-        toggled: !this.state.toggled
+        toggled: !toggled
       });
     }
   }, {
     key: "setShowInstruction",
     value: function setShowInstruction() {
-      browser.storage.local.set({
+      methodStore.modify('settings', {
         instruction: !this.state.showInstruction
       });
       this.setState({
@@ -84661,9 +84758,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function encrypt() {
       var _this3 = this;
 
-      var _this$state = this.state,
-          stun = _this$state.stun,
-          message = _this$state.message;
+      var _this$state2 = this.state,
+          stun = _this$state2.stun,
+          message = _this$state2.message;
 
       if (stun === false) {
         this.setState({
@@ -84677,7 +84774,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
             contentEditable = activeElement.contentEditable; // Chiffrement du message de la zone d'encryption de BONES
 
         if (message && message !== '') {
-          var encryptedValue = this.props.crypting.encrypt(message);
+          var encryptedValue = this.crypting.encrypt(message);
           this.setState({
             message: encryptedValue
           });
@@ -84688,18 +84785,18 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
                 stun: false
               });
 
-              _this3.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", null, "Message copied to your clipboard,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", null), "Paste it into the main chat field"));
+              _this3.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Message copied to your clipboard,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", null), "Paste it into the main chat field"));
             });
           }, 1200); // Chiffrement input non BONES
         } else if ((tagName === 'INPUT' || tagName === 'TEXTAREA') && value && value !== '') {
           if (value.indexOf('~ BONES ENCRYPTED MESSAGE') === -1) {
-            var _encryptedValue = this.props.crypting.encrypt(value);
+            var _encryptedValue = this.crypting.encrypt(value);
 
             activeElement.value = _encryptedValue;
             this.setState({
               stun: false
             });
-            this.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", null, "Your message is crypted"));
+            this.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Your message is crypted"));
             this.simulateInput(activeElement);
           }
 
@@ -84708,13 +84805,13 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           }); // Chiffrement div contentEditable non BONES
         } else if (tagName === 'DIV' && contentEditable && textContent && textContent !== '') {
           if (textContent.indexOf('~ BONES ENCRYPTED MESSAGE') === -1) {
-            var _encryptedValue2 = this.props.crypting.encrypt(textContent);
+            var _encryptedValue2 = this.crypting.encrypt(textContent);
 
             activeElement.textContent = _encryptedValue2;
             this.setState({
               stun: false
             });
-            this.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", null, "Your message is crypted"));
+            this.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Your message is crypted"));
             this.simulateInput(activeElement);
           }
 
@@ -84729,13 +84826,14 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function success(message) {
       var _this4 = this;
 
+      var methodLabel = this.state.methodLabel;
       this.setState({
         header: message,
         img: 'success'
       });
       setTimeout(function () {
         _this4.setState({
-          header: _this4.props.method.label,
+          header: methodLabel,
           img: 'regular'
         });
       }, 3000);
@@ -84751,7 +84849,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       } else {
         this.setState({
           img: 'regular',
-          header: this.props.method.label
+          header: this.state.methodLabel
         });
       }
     }
@@ -84768,18 +84866,18 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
         });
         this.loading(true);
         setTimeout(function () {
-          _this5.props.crypting.parse().then(function () {
+          _this5.crypting.parse().then(function () {
             _this5.loading(false);
 
             _this5.setState({
               stun: false
             });
 
-            _this5.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", null, "Decryption of page messages", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("br", null), "is complete"));
+            _this5.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Decryption of page messages", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", null), "is complete"));
           });
         }, 50);
       }
-    } // lance differents events su un élément pour simuler une action utilisateur
+    } // lance differents events sur un élément pour simuler une action utilisateur
 
   }, {
     key: "simulateInput",
@@ -84798,92 +84896,92 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state2 = this.state,
-          message = _this$state2.message,
-          toggled = _this$state2.toggled,
-          img = _this$state2.img,
-          header = _this$state2.header,
-          showInstruction = _this$state2.showInstruction;
+      var _this$state3 = this.state,
+          message = _this$state3.message,
+          toggled = _this$state3.toggled,
+          img = _this$state3.img,
+          header = _this$state3.header,
+          showInstruction = _this$state3.showInstruction,
+          loaded = _this$state3.loaded;
       var propsContent = {
         message: message,
         handlerChange: this.handlerChange,
         encrypt: this.encrypt,
         decrypt: this.decrypt
       };
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_draggable__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        defaultPosition: {
-          x: 60,
-          y: 60
-        },
-        handle: ".draggable-handler"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        id: "bones-tool-box",
-        className: toggled ? ' toggled' : ''
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "content-shadow-one"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "bones-header draggable-handler",
-        onMouseDown: function onMouseDown(e) {
-          return e.preventDefault();
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "bones-logo-header"
-      }, img === 'regular' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        draggable: "false",
-        src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_9___default.a,
-        width: "60",
-        height: "60"
-      }) : '', img === 'success' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        draggable: "false",
-        src: Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_10___default.a,
-        width: "60",
-        height: "42",
-        style: {
-          marginTop: 5
-        }
-      }) : '', img === 'loading' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        draggable: "false",
-        src: Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_11___default.a,
-        width: "60",
-        height: "60"
-      }) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "u-flex"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "label-method"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "text"
-      }, header)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        className: "toggle-header",
-        id: "toggle-header",
-        src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12___default.a,
-        width: "34",
-        draggable: "false",
-        onClick: this.setToggled
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "u-padding u-padding-top-s content"
-      }, !showInstruction ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__["default"], propsContent) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__["default"], propsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "u-margin-top-s u-flex --left"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("input", {
-        type: "checkbox",
-        className: "cm-toggle u-margin-right-s",
-        id: "show-bones-instruction",
-        checked: showInstruction,
-        onChange: this.setShowInstruction
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, "Show instructions")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "content-shadow-two"
-      })));
+
+      if (loaded) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_draggable__WEBPACK_IMPORTED_MODULE_9___default.a, {
+          defaultPosition: {
+            x: 60,
+            y: 60
+          },
+          handle: ".draggable-handler"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          id: "bones-tool-box",
+          className: toggled ? ' toggled' : ''
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "content-shadow-one"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "bones-header draggable-handler",
+          onMouseDown: function onMouseDown(e) {
+            return e.preventDefault();
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "bones-logo-header"
+        }, img === 'regular' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+          draggable: "false",
+          src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10___default.a,
+          width: "60",
+          height: "60"
+        }) : '', img === 'success' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+          draggable: "false",
+          src: Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11___default.a,
+          width: "60",
+          height: "42",
+          style: {
+            marginTop: 5
+          }
+        }) : '', img === 'loading' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+          draggable: "false",
+          src: Images_bones_loading_gif__WEBPACK_IMPORTED_MODULE_12___default.a,
+          width: "60",
+          height: "60"
+        }) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "u-flex"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "label-method"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "text"
+        }, header)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+          className: "toggle-header",
+          id: "toggle-header",
+          src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13___default.a,
+          width: "34",
+          draggable: "false",
+          onClick: this.setToggled
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "u-padding u-padding-top-s content"
+        }, !showInstruction ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__["default"], propsContent) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__["default"], propsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "u-margin-top-s u-flex --left"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+          type: "checkbox",
+          className: "cm-toggle u-margin-right-s",
+          id: "show-bones-instruction",
+          checked: showInstruction,
+          onChange: this.setShowInstruction
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, "Show instructions")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "content-shadow-two"
+        })));
+      } else {
+        return '';
+      }
     }
   }]);
 
   return ToolBox;
-}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
-ToolBox.propTypes = {
-  method: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object.isRequired,
-  instruction: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.bool.isRequired,
-  updateMethod: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired,
-  crypting: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object.isRequired
-};
 /* harmony default export */ __webpack_exports__["default"] = (ToolBox);
 
 /***/ }),
@@ -84897,96 +84995,64 @@ ToolBox.propTypes = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Components_tool_box_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Components/tool-box.js */ "./src/components/tool-box.js");
-/* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/crypting.js */ "./src/utils/crypting.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/tool-box.js */ "./src/components/tool-box.js");
+/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+
+
+// Ce script est chargé dans toutes les pages lorsque l'extension est active.
+// Si l'url est inscrite dans une méthode alors celui-ci injectera le composant
+// toolBox dans la page en question.
 
 
 
 
-
-
-
+var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActivate,
+    getStupidActive = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getStupidActive;
 /* storage */
 
 
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_7__["Storage"]('method');
-var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_7__["Storage"]('friend');
-var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_7__["Storage"]('pair');
-/* Ce script est chargé dans toutes les pages lorsque l'extension est active.
-Si l'url est inscrite dans une méthode alors celui-ci injectera le composant
-toolBox dans la page en question.*/
+var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
+var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method');
 
-_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.mark(function _callee() {
-  var getMethod, methodActive, div, _yield$browser$storag, instruction, updateMethod, friends, pair, crypting;
-
-  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default.a.wrap(function _callee$(_context) {
+_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
+  var settings, getMethod, div;
+  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return methodStore.keyValue('url', window.location.href);
+          return store.getOne('settings');
 
         case 2:
+          settings = _context.sent;
+          _context.next = 5;
+          return methodStore.keyValue('url', window.location.href);
+
+        case 5:
           getMethod = _context.sent;
-          methodActive = getMethod[0];
 
-          if (!methodActive) {
-            _context.next = 22;
-            break;
+          /* si l'extension est active, et qu'il y a une méthode pour l'url,
+          ou si le mode stupide est actif avec tout ses champs. */
+          if (getActivate(settings) && (getMethod[0] || getStupidActive(settings))) {
+            /* créer la div de depart du composant react */
+            div = document.createElement('div');
+            div.id = 'BONES-CONTAINER';
+            document.body.prepend(div);
+            /* initialisation de la toolbox */
+
+            Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('BONES-CONTAINER'));
           }
 
-          // si il y a une methode pour l'url active
-
-          /* créer la div de depart du composant react */
-          div = document.createElement('div');
-          div.id = 'BONES-CONTAINER';
-          document.body.prepend(div);
-          _context.next = 10;
-          return browser.storage.local.get('instruction');
-
-        case 10:
-          _yield$browser$storag = _context.sent;
-          instruction = _yield$browser$storag.instruction;
-
-          if (typeof instruction !== 'boolean') {
-            instruction = true;
-          }
-
-          updateMethod = function updateMethod(key, value) {
-            methodStore.modify(methodActive.uuid, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, key, value));
-          };
-
-          _context.next = 16;
-          return friendStore.getList();
-
-        case 16:
-          friends = _context.sent;
-          _context.next = 19;
-          return pairStore.getOne(methodActive.pair);
-
-        case 19:
-          pair = _context.sent;
-          crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_6__["Crypting"](friends, pair, methodActive); // initialisation de la toolbox
-
-          Object(react_dom__WEBPACK_IMPORTED_MODULE_4__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            method: methodActive,
-            updateMethod: updateMethod,
-            instruction: instruction,
-            crypting: crypting
-          }), document.getElementById('BONES-CONTAINER'));
-
-        case 22:
+        case 7:
         case "end":
           return _context.stop();
       }
@@ -85102,13 +85168,11 @@ var encryptHeader = '~ BONES ENCRYPTED MESSAGE';
 var decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
 
 var Crypting = /*#__PURE__*/function () {
-  function Crypting(friends, pair, method) {
+  function Crypting(friends, pair) {
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default()(this, Crypting);
 
     this.friends = friends;
-    this.pair = pair; // La methode correspondante a cette url
-
-    this.method = method; // tableau de toutes lec clef, celle de la paire et celles des amis
+    this.pair = pair; // tableau de toutes lec clef, celle de la paire et celles des amis
 
     this.keys = [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(friends), [pair]);
   }
@@ -85330,22 +85394,35 @@ var Storage = /*#__PURE__*/function () {
 
   }, {
     key: "getList",
-    value: function getList() {
+    value: function getList(listArray) {
       var _this2 = this;
 
+      // list (array) est optionel, si il n'y a pas ce param getList renvois toute la liste du type
       return new Promise(function (resolve, reject) {
         _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
-          var getList;
+          var list;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
-                  _context.next = 2;
+                  if (!listArray) {
+                    _context.next = 4;
+                    break;
+                  }
+
+                  list = listArray;
+                  _context.next = 7;
+                  break;
+
+                case 4:
+                  _context.next = 6;
                   return browser.storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
 
-                case 2:
-                  getList = _context.sent;
-                  browser.storage.local.get(getList[_this2.type]).then(function (data) {
+                case 6:
+                  list = _context.sent;
+
+                case 7:
+                  browser.storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
                     var arrayValues = Object.values(data).sort(function (a, b) {
                       var la = a.label.toLowerCase(),
                           lb = b.label.toLowerCase();
@@ -85358,7 +85435,7 @@ var Storage = /*#__PURE__*/function () {
                     reject(err);
                   });
 
-                case 4:
+                case 8:
                 case "end":
                   return _context.stop();
               }
@@ -85585,6 +85662,30 @@ var tools = {
 
     var yyyy = today.getFullYear();
     return "".concat(mm, "-").concat(dd, "-").concat(yyyy);
+  },
+
+  /* retourne un booléen qui valide le fonctionnement total du mode stupide */
+
+  /* true = mode stupide actif + pair présente + et tableau d'amis avec au moins un ami */
+  getStupidActive: function getStupidActive(settings) {
+    if (settings === undefined) {
+      return false;
+    } else if (settings.stupid === true && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if (settings === undefined) {
+      return true;
+    } else if (settings.activate === true) {
+      return true;
+    } else {
+      return false;
+    }
   }
 };
 

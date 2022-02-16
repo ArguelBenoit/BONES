@@ -6,11 +6,9 @@ import crypto from 'crypto';
 
 export class Crypting {
 
-  constructor(friends, pair, method) {
+  constructor(friends, pair) {
     this.friends = friends;
     this.pair = pair;
-    // La methode correspondante a cette url
-    this.method = method;
     // tableau de toutes lec clef, celle de la paire et celles des amis
     this.keys = [...friends, pair];
   }

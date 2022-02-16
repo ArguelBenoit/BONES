@@ -1,6 +1,5 @@
 import React from 'react';
 import Draggable from 'react-draggable';
-import PropTypes from 'prop-types';
 import bonesRegular from 'Images/bones/head-regular.png';
 import bonesSuccess from 'Images/bones/head-success.png';
 import bonesLoading from 'Images/bones/loading.gif';
@@ -8,10 +7,18 @@ import arrow from 'Images/bones/arrow.png';
 import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
+import { Crypting } from 'Utils/crypting.js';
+import { tools } from 'Utils/tools.js';
+const { getStupidActive } = tools;
+// Storage
+import { Storage } from 'Utils/storage.js';
+const methodStore = new Storage('method');
+const friendStore = new Storage('friend');
+const pairStore = new Storage('pair');
 
 
 
-// const ToolBox = ({ method, updateMethod, instruction, crypting }) => {
+
 class ToolBox extends React.Component {
   constructor(props) {
     super(props);
@@ -23,14 +30,17 @@ class ToolBox extends React.Component {
     this.handlerChange = this.handlerChange.bind(this);
     this.simulateInput = this.simulateInput.bind(this);
 
-    const { method, instruction } = props;
     this.state = {
-      toggled: method.open ? method.open : false,
+      toggled: false,
       message: '',
-      showInstruction: instruction,
-      header: method.label,
+      showInstruction: true,
+      header: '',
       img: 'regular',
-      stun: false
+      stun: false,
+      stupid: false,
+      loaded: false,
+      uuidMethod: '',
+      labelMethod: ''
     };
   }
 
@@ -47,17 +57,53 @@ class ToolBox extends React.Component {
         }
       }
     });
+
+    (async () => {
+      const settings = methodStore.getOne('settings');
+      const stupid = getStupidActive(settings);
+
+      if (stupid) {
+        const friends = await friendStore.getList(settings.friends);
+        const pair = await pairStore.getOne(settings.pair);
+        this.crypting = new Crypting(friends, pair);
+        this.setState({
+          toggled: settings.open,
+          showInstruction: settings.instruction,
+          header: 'Stupid mode',
+          stupid: true,
+          labelMethod: 'Stupid mode',
+          loaded: true
+        });
+      } else {
+
+        const method = await methodStore.keyValue('url', window.location.href);
+        const pair = await pairStore.getOne(method[0].pair);
+        const friends = await friendStore.getList(method[0].friends);
+        this.crypting = new Crypting(friends, pair);
+        this.setState({
+          toggled: method[0].open,
+          showInstruction: settings.instruction,
+          header: method.label,
+          stupid: false,
+          uuidMethod: method.uuid,
+          labelMethod: method.label,
+          loaded: true
+        });
+      }
+
+    })();
   }
 
 
   setToggled() {
-    this.props.updateMethod('open', !this.state.toggled);
-    this.setState({ toggled: !this.state.toggled });
+    const { stupid, uuidMethod, toggled } = this.state;
+    methodStore.modify(stupid ? 'settings' : uuidMethod, { open: !toggled });
+    this.setState({ toggled: !toggled });
   }
 
 
   setShowInstruction() {
-    browser.storage.local.set({instruction: !this.state.showInstruction});
+    methodStore.modify('settings', {instruction: !this.state.showInstruction});
     this.setState({showInstruction: !this.state.showInstruction});
   }
 
@@ -78,7 +124,7 @@ class ToolBox extends React.Component {
 
       // Chiffrement du message de la zone d'encryption de BONES
       if (message && message !== '') {
-        const encryptedValue = this.props.crypting.encrypt(message);
+        const encryptedValue = this.crypting.encrypt(message);
         this.setState({ message: encryptedValue});
         setTimeout(() => {
           navigator
@@ -93,7 +139,7 @@ class ToolBox extends React.Component {
       // Chiffrement input non BONES
       } else if ((tagName === 'INPUT' || tagName === 'TEXTAREA') && value && value !== '') {
         if (value.indexOf('~ BONES ENCRYPTED MESSAGE') === -1) {
-          const encryptedValue = this.props.crypting.encrypt(value);
+          const encryptedValue = this.crypting.encrypt(value);
           activeElement.value = encryptedValue;
           this.setState({stun: false});
           this.success(<span>Your message is crypted</span>);
@@ -104,7 +150,7 @@ class ToolBox extends React.Component {
       // Chiffrement div contentEditable non BONES
       } else if ((tagName === 'DIV' && contentEditable) && textContent && textContent !== '') {
         if (textContent.indexOf('~ BONES ENCRYPTED MESSAGE') === -1) {
-          const encryptedValue = this.props.crypting.encrypt(textContent);
+          const encryptedValue = this.crypting.encrypt(textContent);
           activeElement.textContent = encryptedValue;
           this.setState({ stun: false});
           this.success(<span>Your message is crypted</span>);
@@ -117,13 +163,14 @@ class ToolBox extends React.Component {
 
 
   success(message) {
+    const { methodLabel } = this.state;
     this.setState({
       header: message,
       img: 'success'
     });
     setTimeout(() => {
       this.setState({
-        header: this.props.method.label,
+        header: methodLabel,
         img: 'regular'
       });
     }, 3000);
@@ -139,7 +186,7 @@ class ToolBox extends React.Component {
     } else {
       this.setState({
         img: 'regular',
-        header: this.props.method.label
+        header: this.state.methodLabel
       });
     }
   }
@@ -151,7 +198,7 @@ class ToolBox extends React.Component {
       this.setState({ stun: true });
       this.loading(true);
       setTimeout(() => {
-        this.props.crypting.parse().then(() => {
+        this.crypting.parse().then(() => {
           this.loading(false);
           this.setState({ stun: false });
           this.success(<span>Decryption of page messages<br/>is complete</span>);
@@ -161,7 +208,7 @@ class ToolBox extends React.Component {
   }
 
 
-  // lance differents events su un élément pour simuler une action utilisateur
+  // lance differents events sur un élément pour simuler une action utilisateur
   simulateInput(inputElement) {
     const inputEvent = new InputEvent('input', {
       'bubbles': true,
@@ -178,7 +225,7 @@ class ToolBox extends React.Component {
 
   render() {
 
-    const { message, toggled, img, header, showInstruction } = this.state;
+    const { message, toggled, img, header, showInstruction, loaded } = this.state;
 
     const propsContent = {
       message,
@@ -187,80 +234,75 @@ class ToolBox extends React.Component {
       decrypt: this.decrypt
     };
 
-    return <Draggable
-      defaultPosition={{ x: 60, y: 60 }}
-      handle=".draggable-handler"
-    >
-      <div
-        id="bones-tool-box"
-        className={toggled ? ' toggled' : ''}
+    if (loaded) {
+      return <Draggable
+        defaultPosition={{ x: 60, y: 60 }}
+        handle=".draggable-handler"
       >
-        <div className="content-shadow-one">
+        <div
+          id="bones-tool-box"
+          className={toggled ? ' toggled' : ''}
+        >
+          <div className="content-shadow-one">
 
-          <div className="bones-header draggable-handler" onMouseDown={e => e.preventDefault()}>
-            <div className="bones-logo-header">
-              {img === 'regular'
-                ? <img draggable="false" src={bonesRegular} width="60" height="60" />
-                : ''
-              }
-              {img === 'success'
-                ? <img draggable="false" src={bonesSuccess} width="60" height="42" style={{marginTop: 5}} />
-                : ''
-              }
-              {img === 'loading'
-                ? <img draggable="false" src={bonesLoading} width="60" height="60" />
-                : ''
-              }
-            </div>
-            <div className="u-flex">
-              <div className="label-method">
-                <div className="text">
-                  {header}
-                </div>
+            <div className="bones-header draggable-handler" onMouseDown={e => e.preventDefault()}>
+              <div className="bones-logo-header">
+                {img === 'regular'
+                  ? <img draggable="false" src={bonesRegular} width="60" height="60" />
+                  : ''
+                }
+                {img === 'success'
+                  ? <img draggable="false" src={bonesSuccess} width="60" height="42" style={{marginTop: 5}} />
+                  : ''
+                }
+                {img === 'loading'
+                  ? <img draggable="false" src={bonesLoading} width="60" height="60" />
+                  : ''
+                }
               </div>
-              <img
-                className="toggle-header"
-                id="toggle-header"
-                src={arrow}
-                width="34"
-                draggable="false"
-                onClick={this.setToggled}
-              />
+              <div className="u-flex">
+                <div className="label-method">
+                  <div className="text">
+                    {header}
+                  </div>
+                </div>
+                <img
+                  className="toggle-header"
+                  id="toggle-header"
+                  src={arrow}
+                  width="34"
+                  draggable="false"
+                  onClick={this.setToggled}
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="u-padding u-padding-top-s content">
-            {!showInstruction
-              ? <ToolBoxContent {...propsContent} />
-              : <ToolBoxTutorial {...propsContent} />
-            }
-            <div className="u-margin-top-s u-flex --left">
-              <input
-                type="checkbox"
-                className="cm-toggle u-margin-right-s"
-                id="show-bones-instruction"
-                checked={showInstruction}
-                onChange={this.setShowInstruction}
-              />
-              <div>Show instructions</div>
+            <div className="u-padding u-padding-top-s content">
+              {!showInstruction
+                ? <ToolBoxContent {...propsContent} />
+                : <ToolBoxTutorial {...propsContent} />
+              }
+              <div className="u-margin-top-s u-flex --left">
+                <input
+                  type="checkbox"
+                  className="cm-toggle u-margin-right-s"
+                  id="show-bones-instruction"
+                  checked={showInstruction}
+                  onChange={this.setShowInstruction}
+                />
+                <div>Show instructions</div>
+              </div>
             </div>
-          </div>
 
+          </div>
+          <div className="content-shadow-two"/>
         </div>
-        <div className="content-shadow-two"/>
-      </div>
-    </Draggable>;
+      </Draggable>;
+    } else {
+      return '';
+    }
   }
 }
-
-
-
-ToolBox.propTypes = {
-  method: PropTypes.object.isRequired,
-  instruction: PropTypes.bool.isRequired,
-  updateMethod: PropTypes.func.isRequired,
-  crypting: PropTypes.object.isRequired
-};
 
 
 export default ToolBox;
