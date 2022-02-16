@@ -59,10 +59,10 @@ class ToolBox extends React.Component {
     });
 
     (async () => {
-      const settings = methodStore.getOne('settings');
+      const settings = await methodStore.getOne('settings');
       const stupid = getStupidActive(settings);
 
-      if (stupid) {
+      if (stupid === true) {
         const friends = await friendStore.getList(settings.friends);
         const pair = await pairStore.getOne(settings.pair);
         this.crypting = new Crypting(friends, pair);
@@ -70,8 +70,8 @@ class ToolBox extends React.Component {
           toggled: settings.open,
           showInstruction: settings.instruction,
           header: 'Stupid mode',
-          stupid: true,
           labelMethod: 'Stupid mode',
+          stupid: true,
           loaded: true
         });
       } else {
@@ -82,11 +82,11 @@ class ToolBox extends React.Component {
         this.crypting = new Crypting(friends, pair);
         this.setState({
           toggled: method[0].open,
+          uuidMethod: method[0].uuid,
+          labelMethod: method[0].label,
+          header: method[0].label,
           showInstruction: settings.instruction,
-          header: method.label,
           stupid: false,
-          uuidMethod: method.uuid,
-          labelMethod: method.label,
           loaded: true
         });
       }
@@ -163,14 +163,14 @@ class ToolBox extends React.Component {
 
 
   success(message) {
-    const { methodLabel } = this.state;
+    const { labelMethod } = this.state;
     this.setState({
       header: message,
       img: 'success'
     });
     setTimeout(() => {
       this.setState({
-        header: methodLabel,
+        header: labelMethod,
         img: 'regular'
       });
     }, 3000);
@@ -178,15 +178,16 @@ class ToolBox extends React.Component {
 
 
   loading(activated) {
+    const { labelMethod } = this.state;
     if (activated) {
       this.setState({
-        img: 'loading',
-        header: 'BONES is working'
+        header: 'BONES is working',
+        img: 'loading'
       });
     } else {
       this.setState({
-        img: 'regular',
-        header: this.state.methodLabel
+        header: labelMethod,
+        img: 'regular'
       });
     }
   }
