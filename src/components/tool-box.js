@@ -68,7 +68,7 @@ class ToolBox extends React.Component {
         this.crypting = new Crypting(friends, pair);
         this.setState({
           toggled: settings.open,
-          showInstruction: settings.instruction,
+          showInstruction: settings === undefined ? true : settings.instruction,
           header: 'Stupid mode',
           labelMethod: 'Stupid mode',
           stupid: true,
@@ -85,7 +85,7 @@ class ToolBox extends React.Component {
           uuidMethod: method[0].uuid,
           labelMethod: method[0].label,
           header: method[0].label,
-          showInstruction: settings.instruction,
+          showInstruction: settings === undefined ? true : settings.instruction,
           stupid: false,
           loaded: true
         });

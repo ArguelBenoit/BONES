@@ -13,6 +13,13 @@ const methodStore = new Storage('method');
 
 
 
+// écouteur des messages entre les différents context (Envoyé par bg-dispatch.js)
+const betweenContext = browser.runtime.connect({ name: 'BONES' });
+betweenContext.onMessage.addListener(function(m) {
+  console.log('content.js : ', m);
+});
+
+
 (async () => {
 
   const settings = await store.getOne('settings');

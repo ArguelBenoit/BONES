@@ -84679,7 +84679,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
 
                 _this2.setState({
                   toggled: settings.open,
-                  showInstruction: settings.instruction,
+                  showInstruction: settings === undefined ? true : settings.instruction,
                   header: 'Stupid mode',
                   labelMethod: 'Stupid mode',
                   stupid: true,
@@ -84712,7 +84712,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
                   uuidMethod: method[0].uuid,
                   labelMethod: method[0].label,
                   header: method[0].label,
-                  showInstruction: settings.instruction,
+                  showInstruction: settings === undefined ? true : settings.instruction,
                   stupid: false,
                   loaded: true
                 });
@@ -85027,7 +85027,14 @@ var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActiva
 
 
 var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method');
+var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method'); // écouteur des messages entre les différents context (Envoyé par bg-dispatch.js)
+
+var betweenContext = browser.runtime.connect({
+  name: 'BONES'
+});
+betweenContext.onMessage.addListener(function (m) {
+  console.log('content.js : ', m);
+});
 
 _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
   var settings, getMethod, div;

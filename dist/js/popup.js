@@ -88236,7 +88236,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_context_dispatch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/context-dispatch.js */ "./src/utils/context-dispatch.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 
 
 
@@ -88252,7 +88253,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 /* eslint-disable react/no-multi-comp */
 
 
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('method');
+
+var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method');
 var MethodsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet method
 
 var initialMethods = {
@@ -88306,6 +88308,7 @@ function MethodsProvider(props) {
   function add(method) {
     methodStore.set(method).then(function () {
       getList();
+      Object(Utils_context_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('updateMethod');
     });
   }
   /**/
@@ -88314,6 +88317,8 @@ function MethodsProvider(props) {
   function modify(uuid, obj) {
     methodStore.modify(uuid, obj).then(function () {
       getList();
+      console.log('ici');
+      Object(Utils_context_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('updateMethod');
     });
   }
   /**/
@@ -88322,6 +88327,7 @@ function MethodsProvider(props) {
   function remove(uuid) {
     methodStore.remove(uuid).then(function () {
       getList();
+      Object(Utils_context_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('updateMethod');
     });
   }
   /**/
@@ -89042,6 +89048,28 @@ var Bus = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Bus);
+
+/***/ }),
+
+/***/ "./src/utils/context-dispatch.js":
+/*!***************************************!*\
+  !*** ./src/utils/context-dispatch.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* Déclanche un evenement vers le script background.js */
+/* harmony default export */ __webpack_exports__["default"] = (function (chanel) {
+  console.log('context-dispatch : ', chanel);
+  var betweenContext = browser.runtime.connect({
+    name: 'BONES'
+  });
+  betweenContext.postMessage({
+    chanel: chanel
+  });
+});
 
 /***/ }),
 
