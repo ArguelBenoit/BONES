@@ -85028,50 +85028,77 @@ var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActiva
 
 var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
 var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method'); // écouteur des messages entre les différents context (Envoyé par bg-dispatch.js)
+// Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
-var betweenContext = browser.runtime.connect({
-  name: 'BONES'
-});
-betweenContext.onMessage.addListener(function (m) {
-  console.log('content.js : ', m);
-});
+browser.runtime.onMessage.addListener(function () {
+  INIT();
+}); // function d'initialisation/réinitialisation de la toolbox
 
-_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-  var settings, getMethod, div;
-  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.next = 2;
-          return store.getOne('settings');
+var INIT = /*#__PURE__*/function () {
+  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
+    var bonesDIV, settings, getMethod, div;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
+            bonesDIV = document.querySelector('#BONES-CONTAINER');
 
-        case 2:
-          settings = _context.sent;
-          _context.next = 5;
-          return methodStore.keyValue('url', window.location.href);
+            if (bonesDIV) {
+              bonesDIV.remove();
+            }
 
-        case 5:
-          getMethod = _context.sent;
+            _context.next = 4;
+            return store.getOne('settings');
 
-          /* si l'extension est active, et qu'il y a une méthode pour l'url,
-          ou si le mode stupide est actif avec tout ses champs. */
-          if (getActivate(settings) && (getMethod[0] || getStupidActive(settings))) {
-            /* créer la div de depart du composant react */
-            div = document.createElement('div');
-            div.id = 'BONES-CONTAINER';
-            document.body.prepend(div);
-            /* initialisation de la toolbox */
+          case 4:
+            settings = _context.sent;
+            _context.next = 7;
+            return methodStore.keyValue('url', window.location.href);
 
-            Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('BONES-CONTAINER'));
-          }
+          case 7:
+            getMethod = _context.sent;
 
-        case 7:
-        case "end":
-          return _context.stop();
+            /* si l'extension est active, et qu'il y a une méthode pour l'url,
+            ou si le mode stupide est actif avec tout ses champs. */
+            if (getActivate(settings) && (getMethod[0] || getStupidActive(settings))) {
+              /* créer la div de depart du composant react */
+              div = document.createElement('div');
+              div.id = 'BONES-CONTAINER';
+              document.body.prepend(div);
+              /* initialisation de la toolbox */
+
+              Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('BONES-CONTAINER'));
+            }
+
+          case 9:
+          case "end":
+            return _context.stop();
+        }
       }
-    }
-  }, _callee);
-}))();
+    }, _callee);
+  }));
+
+  return function INIT() {
+    return _ref.apply(this, arguments);
+  };
+}(); // execute INIT au chargement du script content, ctad au moment ou le DOM a fini de charger.
+
+
+INIT();
+/*
+Control des changements d'url pour le cas des sites à routage côté client comme ce de react vue etc...
+le setInterval n'est pas très beau mais a l'avantage de fonctionner sur toutes les pages web visitées
+et surtout n'écrase pas de l'existant */
+// (function () {
+//   let location = window.location.href;
+//   setInterval(() => {
+//     if (location !== window.location.href) {
+//       location = window.location.href;
+//       INIT();
+//     }
+//   }, 2000);
+// })();
 
 /***/ }),
 

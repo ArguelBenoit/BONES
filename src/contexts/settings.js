@@ -8,6 +8,7 @@ import React, {
 import { Storage } from 'Utils/storage.js';
 const store = new Storage();
 const SettingsContext = createContext();
+import contentDispatch from 'Utils/content-dispatch.js';
 
 
 
@@ -48,7 +49,9 @@ function SettingsProvider(props) {
   function modify(obj) {
     const newData = {...settings, ...obj };
     setSettings(newData);
-    store.modify('settings', newData);
+    store.modify('settings', newData).then(() => {
+      contentDispatch();
+    });
   }
 
 

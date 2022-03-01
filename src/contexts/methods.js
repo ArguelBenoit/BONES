@@ -5,7 +5,7 @@ import React, {
   useContext,
   useEffect
 } from 'react';
-import contextDispatch from 'Utils/context-dispatch.js';
+import contentDispatch from 'Utils/content-dispatch.js';
 import { Storage } from 'Utils/storage.js';
 const methodStore = new Storage('method');
 const MethodsContext = createContext();
@@ -42,22 +42,21 @@ function MethodsProvider(props) {
   function add(method) {
     methodStore.set(method).then(() => {
       getList();
-      contextDispatch('updateMethod');
+      contentDispatch();
     });
   }
   /**/
   function modify(uuid, obj) {
     methodStore.modify(uuid, obj).then(() => {
       getList();
-      console.log('ici');
-      contextDispatch('updateMethod');
+      contentDispatch();
     });
   }
   /**/
   function remove(uuid) {
     methodStore.remove(uuid).then(() => {
       getList();
-      contextDispatch('updateMethod');
+      contentDispatch();
     });
   }
   /**/

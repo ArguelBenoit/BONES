@@ -97,15 +97,14 @@ var activeTab = function activeTab() {
   browser.tabs.query({
     title: 'BONES !#@$'
   }).then(function (tabs) {
+    // si un onglet bones est présent
     if (tabs.length > 0) {
-      // si un onglet bones est présent
       // on active celui-ci
       var id = tabs[0].id;
       browser.tabs.update(id, {
         active: true
-      });
+      }); // sinon l'onglet n'existe pas
     } else {
-      // sinon l'onglet n'existe pas
       // on ouvre un onglet BONES
       var url = browser.extension.getURL('popup.html');
       browser.tabs.create({
