@@ -6,14 +6,9 @@
 
 export default () => {
 
-  browser.tabs.query({ currentWindow: false }).then(tabs => {
+  browser.tabs.query({}).then(tabs => {
     tabs.forEach(tab => {
-      browser
-        .tabs
-        .sendMessage(
-          tab.id,
-          'update'
-        );
+      browser.tabs.sendMessage(tab.id, 'update');
     });
   });
 

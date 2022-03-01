@@ -89066,9 +89066,7 @@ __webpack_require__.r(__webpack_exports__);
 /* Déclenche un evenement vers les script content.js chargé dans toutes les pages web observées
  afin de mettre à jour la toolbox lorsqu'un parametre est mis à jour */
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  browser.tabs.query({
-    currentWindow: false
-  }).then(function (tabs) {
+  browser.tabs.query({}).then(function (tabs) {
     tabs.forEach(function (tab) {
       browser.tabs.sendMessage(tab.id, 'update');
     });

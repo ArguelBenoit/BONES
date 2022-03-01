@@ -115,7 +115,14 @@ var activeTab = function activeTab() {
 }; // utilisateur clique sur l'icon de l'extension
 
 
-browser.browserAction.onClicked.addListener(activeTab);
+browser.browserAction.onClicked.addListener(activeTab); // envoi d'un dispatch vers le script content lorsqu'il y a un changement d'url
+// obligatoire pour les routages côté client comme avec react et vue
+
+browser.tabs.onUpdated.addListener(function (tabId, changeInfo) {
+  if (changeInfo.url) {
+    browser.tabs.sendMessage(tabId, 'update');
+  }
+});
 
 /***/ })
 

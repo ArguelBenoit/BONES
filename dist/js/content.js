@@ -85086,19 +85086,6 @@ var INIT = /*#__PURE__*/function () {
 
 
 INIT();
-/*
-Control des changements d'url pour le cas des sites à routage côté client comme ce de react vue etc...
-le setInterval n'est pas très beau mais a l'avantage de fonctionner sur toutes les pages web visitées
-et surtout n'écrase pas de l'existant */
-// (function () {
-//   let location = window.location.href;
-//   setInterval(() => {
-//     if (location !== window.location.href) {
-//       location = window.location.href;
-//       INIT();
-//     }
-//   }, 2000);
-// })();
 
 /***/ }),
 

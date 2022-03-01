@@ -1,16 +1,16 @@
 
 
 WIP________________________________________________________________________
-- raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 - amélioration chiffrement (pour l'instant limité à 214c)
+- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 TODO_______________________________________________________________________
-- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 - README github, tutoriel de fonctionnement etc...
 
 
 DONE_______________________________________________________________________
+- raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 - raffraichir toolbox lorsque les méthodes sont mise à jour
 - mode stupid
 - mode inactif
