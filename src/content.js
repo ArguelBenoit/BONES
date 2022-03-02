@@ -14,23 +14,24 @@ const methodStore = new Storage('method');
 
 
 
-// écouteur des messages entre les différents context (Envoyé par content-dispatch.js)
+// écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
-browser.runtime.onMessage.addListener(() => {
-  INIT();
+browser.runtime.onMessage.addListener(data => {
+  if (data.action === 'MAINUPDATE') {
+    INIT();
+  }
 });
 
 
 
 // function d'initialisation/réinitialisation de la toolbox
 const INIT = async () => {
-  // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
-  const bonesDIV = document.querySelector('#BONES-CONTAINER');
-  if (bonesDIV) {
-    bonesDIV.remove();
-  }
   const settings = await store.getOne('settings');
   const getMethod = await methodStore.keyValue('url', window.location.href);
+  // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
+  if (document.querySelector('#BONES-CONTAINER')) {
+    document.querySelector('#BONES-CONTAINER').remove();
+  }
   /* si l'extension est active, et qu'il y a une méthode pour l'url,
   ou si le mode stupide est actif avec tout ses champs. */
   if (

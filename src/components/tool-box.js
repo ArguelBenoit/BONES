@@ -18,7 +18,7 @@ const pairStore = new Storage('pair');
 
 
 
-
+// bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
 class ToolBox extends React.Component {
   constructor(props) {
     super(props);

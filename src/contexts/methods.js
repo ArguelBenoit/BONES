@@ -42,21 +42,21 @@ function MethodsProvider(props) {
   function add(method) {
     methodStore.set(method).then(() => {
       getList();
-      contentDispatch();
+      contentDispatch('MAINUPDATE');
     });
   }
   /**/
   function modify(uuid, obj) {
     methodStore.modify(uuid, obj).then(() => {
       getList();
-      contentDispatch();
+      contentDispatch('MAINUPDATE');
     });
   }
   /**/
   function remove(uuid) {
     methodStore.remove(uuid).then(() => {
       getList();
-      contentDispatch();
+      contentDispatch('MAINUPDATE');
     });
   }
   /**/

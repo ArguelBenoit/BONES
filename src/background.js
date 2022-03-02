@@ -1,5 +1,6 @@
 
 
+
 const activeTab = () => {
   browser.tabs.query({ title: 'BONES !#@$' }).then(tabs => {
     // si un onglet bones est présent
@@ -30,6 +31,6 @@ browser
 // obligatoire pour les routages côté client comme avec react et vue
 browser.tabs.onUpdated.addListener((tabId, changeInfo) => {
   if (changeInfo.url) {
-    browser.tabs.sendMessage(tabId, 'update');
+    browser.tabs.sendMessage(tabId, { action: 'MAINUPDATE' }).then(() => {}).catch(() => {});
   }
 });

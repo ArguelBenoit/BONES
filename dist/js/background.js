@@ -120,7 +120,9 @@ browser.browserAction.onClicked.addListener(activeTab); // envoi d'un dispatch v
 
 browser.tabs.onUpdated.addListener(function (tabId, changeInfo) {
   if (changeInfo.url) {
-    browser.tabs.sendMessage(tabId, 'update');
+    browser.tabs.sendMessage(tabId, {
+      action: 'MAINUPDATE'
+    }).then(function () {})["catch"](function () {});
   }
 });
 

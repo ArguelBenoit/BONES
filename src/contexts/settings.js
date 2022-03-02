@@ -49,7 +49,7 @@ function SettingsProvider(props) {
   function modify(obj) {
     store.modify('settings', obj).then(() => {
       setSettings({...settings, ...obj });
-      contentDispatch();
+      contentDispatch('MAINUPDATE');
     });
   }
 

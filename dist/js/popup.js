@@ -88308,7 +88308,7 @@ function MethodsProvider(props) {
   function add(method) {
     methodStore.set(method).then(function () {
       getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
     });
   }
   /**/
@@ -88317,7 +88317,7 @@ function MethodsProvider(props) {
   function modify(uuid, obj) {
     methodStore.modify(uuid, obj).then(function () {
       getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
     });
   }
   /**/
@@ -88326,7 +88326,7 @@ function MethodsProvider(props) {
   function remove(uuid) {
     methodStore.remove(uuid).then(function () {
       getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
     });
   }
   /**/
@@ -88717,7 +88717,7 @@ function SettingsProvider(props) {
   function modify(obj) {
     store.modify('settings', obj).then(function () {
       setSettings(_objectSpread(_objectSpread({}, settings), obj));
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])('MAINUPDATE');
     });
   } // function modify(uuid, obj) {
   //   methodStore.modify(uuid, obj).then(() => {
@@ -89067,12 +89067,25 @@ var Bus = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 /* Déclenche un evenement vers les script content.js chargé dans toutes les pages web observées
  afin de mettre à jour la toolbox lorsqu'un parametre est mis à jour */
-/* harmony default export */ __webpack_exports__["default"] = (function () {
+// actions traitées : MAINUPDATE, TOGGLEUPDATE (pour le mode stupid), INSTRUCTIONUPDATE
+// data type object ex : { value: true }
+/* harmony default export */ __webpack_exports__["default"] = (function (action) {
+  var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   browser.tabs.query({}).then(function (tabs) {
     tabs.forEach(function (tab) {
-      browser.tabs.sendMessage(tab.id, 'update').then(function () {})["catch"](function () {});
+      browser.tabs.sendMessage(tab.id, _objectSpread(_objectSpread({}, data), {}, {
+        action: action
+      })).then(function () {})["catch"](function () {});
     });
   });
 });
