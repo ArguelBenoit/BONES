@@ -88672,9 +88672,9 @@ var initialSettings = {
   loaded: false,
   activate: true,
   stupid: false,
+  instruction: true,
   // ces clefs/valeurs sont pour le mode stupid
   open: true,
-  instruction: true,
   pair: '',
   friends: []
 }; // Attache SettingsContext.Provider à SettingsProvider avec le state et les fonctions de changement d'état
@@ -88715,13 +88715,17 @@ function SettingsProvider(props) {
   /* fonctions de changement d'état */
 
   function modify(obj) {
-    var newData = _objectSpread(_objectSpread({}, settings), obj);
-
-    setSettings(newData);
-    store.modify('settings', newData).then(function () {
+    store.modify('settings', obj).then(function () {
+      setSettings(_objectSpread(_objectSpread({}, settings), obj));
       Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
     });
-  }
+  } // function modify(uuid, obj) {
+  //   methodStore.modify(uuid, obj).then(() => {
+  //     getList();
+  //     contentDispatch();
+  //   });
+  // }
+
   /* getter */
 
 
@@ -89068,7 +89072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   browser.tabs.query({}).then(function (tabs) {
     tabs.forEach(function (tab) {
-      browser.tabs.sendMessage(tab.id, 'update');
+      browser.tabs.sendMessage(tab.id, 'update').then(function () {})["catch"](function () {});
     });
   });
 });

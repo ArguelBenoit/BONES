@@ -2,14 +2,15 @@
 
 WIP________________________________________________________________________
 - amélioration chiffrement (pour l'instant limité à 214c)
-- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 TODO_______________________________________________________________________
 - README github, tutoriel de fonctionnement etc...
+- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 DONE_______________________________________________________________________
+- fix switch de actif à non actif pas de percistance des données settings
 - raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 - raffraichir toolbox lorsque les méthodes sont mise à jour
 - mode stupid

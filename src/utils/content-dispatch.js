@@ -8,7 +8,9 @@ export default () => {
 
   browser.tabs.query({}).then(tabs => {
     tabs.forEach(tab => {
-      browser.tabs.sendMessage(tab.id, 'update');
+      browser.tabs.sendMessage(tab.id, 'update')
+        .then(() => {})
+        .catch(() => {});
     });
   });
 

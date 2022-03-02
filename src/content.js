@@ -14,7 +14,7 @@ const methodStore = new Storage('method');
 
 
 
-// écouteur des messages entre les différents context (Envoyé par bg-dispatch.js)
+// écouteur des messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 browser.runtime.onMessage.addListener(() => {
   INIT();
@@ -51,5 +51,5 @@ const INIT = async () => {
 
 
 
-// execute INIT au chargement du script content, ctad au moment ou le DOM a fini de charger.
+// execute INIT au chargement du script content (au moment ou le DOM a fini de charger).
 INIT();

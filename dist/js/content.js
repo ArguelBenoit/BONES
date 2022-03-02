@@ -85027,7 +85027,7 @@ var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActiva
 
 
 var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method'); // écouteur des messages entre les différents context (Envoyé par bg-dispatch.js)
+var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method'); // écouteur des messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
 browser.runtime.onMessage.addListener(function () {
@@ -85082,7 +85082,7 @@ var INIT = /*#__PURE__*/function () {
   return function INIT() {
     return _ref.apply(this, arguments);
   };
-}(); // execute INIT au chargement du script content, ctad au moment ou le DOM a fini de charger.
+}(); // execute INIT au chargement du script content (au moment ou le DOM a fini de charger).
 
 
 INIT();

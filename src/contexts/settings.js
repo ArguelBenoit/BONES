@@ -17,9 +17,9 @@ const initialSettings = {
   loaded: false,
   activate: true,
   stupid: false,
+  instruction: true,
   // ces clefs/valeurs sont pour le mode stupid
   open: true,
-  instruction: true,
   pair: '',
   friends: []
 };
@@ -47,12 +47,18 @@ function SettingsProvider(props) {
 
   /* fonctions de changement d'état */
   function modify(obj) {
-    const newData = {...settings, ...obj };
-    setSettings(newData);
-    store.modify('settings', newData).then(() => {
+    store.modify('settings', obj).then(() => {
+      setSettings({...settings, ...obj });
       contentDispatch();
     });
   }
+
+  // function modify(uuid, obj) {
+  //   methodStore.modify(uuid, obj).then(() => {
+  //     getList();
+  //     contentDispatch();
+  //   });
+  // }
 
 
   /* getter */
