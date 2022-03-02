@@ -1,12 +1,29 @@
+
 /*
-Ne pouvant connaitre à l'avance les pages contenues dans les méthodes de l'utilisateur,
-ce css est importé dans toutes les pages du www explorées par l'utilisateur. N'ayant pas
-forcément besoin de la totalité du css de common, on duplique seulement les règles css
-nécessaires.
+!important !important !important !important... 🤮🤮🤮. Ce css intervient sur la toolbox
+injecté dans toutes les pages web (potentiellement). Cela induit que le css de messenger,
+whatsapp, discord etc... peut interférer sur le style de BONES ,Pour le moment je n'ai
+pas cherché de solution plus esthetique.
 */
 
-#BONES-CONTAINER #bones-tool-box {
+// suppression de tout les heritages provenant des css des différentes pages observées
+// #BONES-CONTAINER {
+//   all: inherit;
+//   span,
+//   div,
+//   a,
+//   input,
+//   textarea,
+//   ul,
+//   li,
+//   button,
+//   img {
+//     all: inherit;
+//   }
+// }
 
+
+#BONES-CONTAINER #bones-tool-box {
   font-size: 13px !important;
   font-family: sans-serif !important;
   color: #ddd !important;
@@ -89,6 +106,7 @@ nécessaires.
     cursor: move !important;
   }
   .bones-header .toggle-header {
+    width: 34px;
     transform: rotateX(180deg) !important;
   }
   .content-shadow-one {
@@ -289,7 +307,7 @@ nécessaires.
   .u-white-color { color: #fff !important; }
 
   .u-text-center { text-align: center !important; }
-  .u-opacity-half { opacity: 0.5; }
+  .u-opacity-half { opacity: 0.5 !important; }
 
   .u-font-size-s { font-size: 90% !important; }
   .u-font-size-m { font-size: 95% !important; }

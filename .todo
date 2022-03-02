@@ -1,17 +1,17 @@
 
 
 WIP________________________________________________________________________
-- amélioration chiffrement (pour l'instant limité à 214c)
-- fixer le maximum de différence sur le css de la tool box
-- fix duplication toolbox routage youtube
 
 
 TODO_______________________________________________________________________
-- README github, tutoriel de fonctionnement etc...
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
+- README github, tutoriel de fonctionnement etc...
+- amélioration chiffrement (pour l'instant limité à 214c)
 
 
 DONE_______________________________________________________________________
+- fixer le maximum de différences sur le css de la tool box
+- fix duplication toolbox routage youtube
 - fix switch de actif à non actif pas de percistance des données settings
 - raffraichir toolbox lorsque l'url change (site avec rootage dynamique)
 - raffraichir toolbox lorsque les méthodes sont mise à jour
