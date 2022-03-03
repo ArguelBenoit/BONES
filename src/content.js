@@ -11,12 +11,12 @@ const { getActivate, getStupidActive } = tools;
 import { Storage } from 'Utils/storage.js';
 const store = new Storage();
 const methodStore = new Storage('method');
-
+import webExt from 'Utils/web-ext.js';
 
 
 // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
-browser.runtime.onMessage.addListener(data => {
+webExt().runtime.onMessage.addListener(data => {
   if (data.action === 'MAINUPDATE') {
     INIT();
   }

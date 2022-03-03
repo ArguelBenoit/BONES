@@ -1,19 +1,53 @@
 const path = require('path');
+const fs = require('fs');
+const util = require('util');
 
-module.exports = env => {
 
-  let config = {
+
+
+// Écrit dans un fichier .env.js l'objet des différents param
+function createFile(keysVals) {
+  return new Promise((resolve, reject) => {
+    keysVals = util.inspect(
+      keysVals,
+      {
+        compact: false,
+        depth: Infinity
+      }
+    );
+    const jsText = `module.exports = ${keysVals};`;
+    fs.writeFile('.env.js', jsText, (err) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+
+
+
+module.exports = async env => {
+
+  await createFile({
+    type: env.type,
+    bro: env.bro
+  });
+
+  return {
+    mode: env.type === 'dev' ? 'development' : 'production', // env.type = dev || prod
+    devtool: env.type === 'dev' ? 'source-map' : undefined,
     entry: {
       background: path.join(__dirname, 'src/background.js'),
       content: path.join(__dirname, 'src/content.js'),
       popup: path.join(__dirname, 'src/popup.js')
     },
-
     output: {
-      path: path.join(__dirname, `${env.bro}/js`), // env.bro == firefox || chrome
+      path: path.join(__dirname, `${env.bro}/js`), // env.bro = firefox || chrome
       filename: '[name].js'
     },
-
     module: {
       rules: [
         {
@@ -57,20 +91,10 @@ module.exports = env => {
         Components: path.resolve(__dirname, 'src/components/'),
         Images: path.resolve(__dirname, 'src/images/'),
         Utils: path.resolve(__dirname, 'src/utils/'),
-        Contexts: path.resolve(__dirname, 'src/contexts/')
+        Contexts: path.resolve(__dirname, 'src/contexts/'),
+        Env: path.resolve(__dirname, '.env.js')
       }
     }
   };
-
-  // avec --env.type=dev
-  if (env.type === 'dev') {
-    config.mode = 'development';
-    config.devtool = 'source-map';
-  // avec --env.type=prod
-  } else if (env.type === 'prod') {
-    config.mode = 'production';
-  }
-
-  return config;
 
 };
