@@ -1,10 +1,10 @@
 
 
 WIP________________________________________________________________________
+- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 TODO_______________________________________________________________________
-- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 - README github, tutoriel de fonctionnement etc...
 - amélioration chiffrement (pour l'instant limité à 214c)
 

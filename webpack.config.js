@@ -10,7 +10,7 @@ module.exports = env => {
     },
 
     output: {
-      path: path.join(__dirname, 'dist/js'),
+      path: path.join(__dirname, `${env.bro}/js`), // env.bro == firefox || chrome
       filename: '[name].js'
     },
 
@@ -62,12 +62,12 @@ module.exports = env => {
     }
   };
 
-  // avec --env dev
-  if (env === 'dev') {
+  // avec --env.type=dev
+  if (env.type === 'dev') {
     config.mode = 'development';
     config.devtool = 'source-map';
-  // avec --env prod
-  } else if (env === 'prod') {
+  // avec --env.type=prod
+  } else if (env.type === 'prod') {
     config.mode = 'production';
   }
 
