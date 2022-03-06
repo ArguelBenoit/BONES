@@ -1,22 +1,22 @@
-const keypair = require('keypair');
+const NodeRSA = require('node-rsa');
 
 
 module.exports = {
 
   /* créer une paire 2048 */
   generating() {
-    let pair = keypair(2048);
-    return pair;
+    const key = new NodeRSA({b: 2048});
+    return {
+      public: key.exportKey('openssh-public-pem'),
+      private: key.exportKey('openssh-private-pem')
+    };
   },
 
-  /* test simple clef publique */
+  /* test simple clef pub */
   checkPrivate(key) {
-    const deb = key.indexOf('-----BEGIN RSA PRIVATE KEY-----');
-    const deb2 = key.indexOf('-----BEGIN PRIVATE KEY-----');
-    const end = key.indexOf('-----END RSA PRIVATE KEY-----');
-    const end2 = key.indexOf('-----END PRIVATE KEY-----');
-
-    if ((deb >= 0 || deb2 >= 0) && (end >= 0 || end2 >= 0)) {
+    const deb = key.indexOf('-----BEGIN OPENSSH PRIVATE ');
+    const end = key.indexOf('-----END OPENSSH PRIVATE KEY-----');
+    if (deb >= 0 && end >= 0) {
       return true;
     } else {
       return false;
@@ -25,16 +25,10 @@ module.exports = {
 
   /* test simple clef pri */
   checkPublic(key) {
-    const deb = key.indexOf('-----BEGIN PUBLIC KEY-----');
-    const deb2 = key.indexOf('-----BEGIN RSA PUBLIC KEY-----');
-    const end = key.indexOf('-----END PUBLIC KEY-----');
-    const end2 = key.indexOf('-----END RSA PUBLIC KEY-----');
-
-    if ((deb >= 0 || deb2 >= 0) && (end >= 0 || end2 >= 0)) {
+    if (key.indexOf('ssh-rsa ') >= 0) {
       return true;
     } else {
       return false;
     }
   }
-
 };

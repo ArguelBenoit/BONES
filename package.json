@@ -23,6 +23,7 @@
     "eslint-plugin-react": "^7.12.4",
     "file-loader": "^3.0.1",
     "jest": "^27.5.1",
+    "less": "^3.10.1",
     "less-loader": "^4.1.0",
     "style-loader": "^0.23.1",
     "style-resources-loader": "^1.5.0",
@@ -31,9 +32,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "crypto": "^1.0.1",
-    "keypair": "^1.0.4",
-    "less": "^3.10.1",
+    "node-rsa": "^1.1.1",
     "prop-types": "^15.8.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

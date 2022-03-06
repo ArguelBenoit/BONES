@@ -1,6 +1,7 @@
 const encryptHeader = '~ BONES ENCRYPTED MESSAGE';
 const decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
-import crypto from 'crypto';
+const NodeRSA = require('node-rsa');
+import compress from 'Utils/compress-string.js';
 
 
 
@@ -9,7 +10,7 @@ export class Crypting {
   constructor(friends, pair) {
     this.friends = friends;
     this.pair = pair;
-    // tableau de toutes lec clef, celle de la paire et celles des amis
+    // tableau de toutes les clefs, celle de la paire et les clefs publiques des amis
     this.keys = [...friends, pair];
   }
 
@@ -20,10 +21,9 @@ export class Crypting {
 
     for (let key of this.keys) {
 
-      const buffer = Buffer.from(message, 'utf8');
-      const encrypted = crypto
-        .publicEncrypt(key.public, buffer)
-        .toString('base64');
+      const rsa = new NodeRSA();
+      rsa.importKey(key.public);
+      const encrypted = rsa.encrypt(message, 'base64');
 
       value += ` ~ EWTK ${key.uuid} ~ ${encrypted}`; // EWTK = Encrypted With This Key (uuid)
     }
@@ -51,21 +51,24 @@ export class Crypting {
     // si l'uuid de la pair est le même c'est que j'en suis l'auteur
     const iAmTheAuthor = txtFormated.find(e => e.uuid === this.pair.uuid);
 
+    const rsa = new NodeRSA();
+
     // si je suis l'auteur je décrypte avec la clef privé de la paire
     if (iAmTheAuthor) {
 
-      const buffer = Buffer.from(iAmTheAuthor.encrypted, 'base64');
-      const decrypted = crypto.privateDecrypt(this.pair.private, buffer);
-      return decrypted.toString('utf8');
+      rsa.importKey(this.pair.private);
+      const decrypted = rsa.decrypt(iAmTheAuthor.encrypted, 'utf8');
+      return decrypted;
 
     // boucle sur tout les textes splité pour essayer de décrypter
     } else {
 
       for (let element of txtFormated) {
-        const buffer = Buffer.from(element.encrypted, 'base64');
         try {
-          const decrypted = crypto.privateDecrypt(this.pair.private, buffer);
-          return decrypted.toString('utf8');
+          rsa.importKey(this.pair.private);
+          const decrypted = rsa.decrypt(element.encrypted, 'utf8');
+          return decrypted;
+
         } catch {
           console.warn('decrypt not working with this key');
         }

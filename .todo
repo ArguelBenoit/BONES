@@ -1,15 +1,17 @@
 
 
 WIP________________________________________________________________________
+- Loading (css, generation background ?)
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 TODO_______________________________________________________________________
+- compression finale des messages (actuellement trop long)
 - README github, tutoriel de fonctionnement etc...
-- amélioration chiffrement (pour l'instant limité à 214c)
 
 
 DONE_______________________________________________________________________
+- amélioration chiffrement (pour l'instant limité à 214c) Maintenant illimité
 - fixer le maximum de différences sur le css de la tool box
 - fix duplication toolbox routage youtube
 - fix switch de actif à non actif pas de percistance des données settings
