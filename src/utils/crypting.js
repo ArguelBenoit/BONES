@@ -1,7 +1,6 @@
 const encryptHeader = '~ BONES ENCRYPTED MESSAGE';
 const decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
 const NodeRSA = require('node-rsa');
-import compress from 'Utils/compress-string.js';
 
 
 

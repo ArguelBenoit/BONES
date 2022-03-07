@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import loadingImg from 'Images/bones/loading.gif';
 import Bus from 'Utils/bus.js';
+import Loading from 'Components/loading.js';
+
 
 
 const ModalLoading = () => {
@@ -11,11 +12,9 @@ const ModalLoading = () => {
 
   const loadingHtml = <div className="modal">
     <div className="modal-content">
-      <img
-        style={{margin: 'auto'}}
-        src={loadingImg}
-        width="90"
-      />
+      <div style={{ display: 'inline-block', margin: 'auto'}}>
+        <Loading size={100}/>
+      </div>
       <div>
         BONES is working.<br/>Don't touch <b>anything</b>!
       </div>

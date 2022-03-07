@@ -2,11 +2,11 @@ import React from 'react';
 import Draggable from 'react-draggable';
 import bonesRegular from 'Images/bones/head-regular.png';
 import bonesSuccess from 'Images/bones/head-success.png';
-import bonesLoading from 'Images/bones/loading.gif';
 import arrow from 'Images/bones/arrow.png';
 import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
+import Loading from 'Components/loading.js';
 import { Crypting } from 'Utils/crypting.js';
 import { tools } from 'Utils/tools.js';
 const { getStupidActive } = tools;
@@ -257,7 +257,7 @@ class ToolBox extends React.Component {
                   : ''
                 }
                 {img === 'loading'
-                  ? <img draggable="false" src={bonesLoading} width="60" height="60" />
+                  ? <Loading size={60}/>
                   : ''
                 }
               </div>

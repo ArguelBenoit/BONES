@@ -1,0 +1,22 @@
+
+.mask-loading {
+  overflow: hidden;
+  img.loading {
+    animation-name: slidelodingimg;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+    transform: translateX(0.9%);
+  }
+}
+
+
+
+@keyframes slidelodingimg {
+  0% { transform: translateX(0.9px); }
+  16.666% { transform: translateX(-16.666666%); }
+  33.333% { transform: translateX(-33.333333%); }
+  50% { transform: translateX(-50%); }
+  66.666% { transform: translateX(-66.666666%); }
+  83.333% { transform: translateX(-83.333333%); }
+}
