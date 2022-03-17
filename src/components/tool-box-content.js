@@ -7,7 +7,7 @@ const ToolBoxContent = ({ message, handlerChange, encrypt, decrypt }) => {
   return <div>
     <textarea
       id="bones-input"
-      placeholder="Encryption area"
+      placeholder="Safe area"
       className="u-margin-bottom-s"
       value={message}
       onChange={handlerChange}

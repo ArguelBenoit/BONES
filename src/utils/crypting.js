@@ -81,41 +81,47 @@ export class Crypting {
   /* maj du dom pour un message */
   updateDOM(node, rawText) {
     const decrypted = this.decrypt(rawText);
-    node.parentNode.innerHTML = `${decryptHeader}${decrypted}`;
+    node.parentNode.innerHTML = `<span style="white-space: pre-wrap">${decryptHeader}${decrypted}</span>`;
   }
 
   /* recherche les message crypté */
   parse() {
-    return new Promise(resolve => {
-      // fonction recursive
-      const checkAllChilds = node => {
-        // sur tout les enfants
-        for (let i = 0; i < node.childNodes.length; i++) {
 
-          const {
-            childNodes: _childNodes,
-            textContent: rawText,
-            nodeName
-          } = node.childNodes[i];
+    // fonction recursive de recherche
+    const checkAllChilds = node => {
+      // sur tout les enfants
+      for (let i = 0; i < node.childNodes.length; i++) {
 
-          const excluded = ['SCRIPT', 'HEADER', 'FOOTER', 'NAV'];
+        const {
+          childNodes: _childNodes,
+          textContent: rawText,
+          nodeName
+        } = node.childNodes[i];
 
-          if (excluded.indexOf(nodeName) === -1) { // si pas exclu
+        const excluded = ['SCRIPT', 'HEADER', 'FOOTER', 'NAV'];
 
-            if (_childNodes.length > 0) { // si le noeud a des enfants
-              // relance la fonction (recursif)
-              checkAllChilds(node.childNodes[i]);
+        if (excluded.indexOf(nodeName) === -1) { // si pas exclu
 
-            } else if (rawText.indexOf(encryptHeader) > -1) { // si le texte a le header BONES
-              // mise a jour du dom pour un message
-              this.updateDOM(node.childNodes[i], rawText);
-            }
+          if (_childNodes.length > 0) { // si le noeud a des enfants
+            // relance la fonction (recursif)
+            checkAllChilds(node.childNodes[i]);
 
+          } else if (rawText.indexOf(encryptHeader) > -1) { // si le texte a le header BONES
+            // mise a jour du dom pour un message
+            this.updateDOM(node.childNodes[i], rawText);
           }
+
         }
-      };
+      }
+    };
+
+    return new Promise(resolve => {
 
       checkAllChilds(document.body);
+      // Execution de la fonction dans tout les iframes d'un domaine identique.
+      for (let i = 0; i < window.frames.length; i++) {
+        checkAllChilds(window.frames[i].document.body);
+      }
 
       resolve();
 

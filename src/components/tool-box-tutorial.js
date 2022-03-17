@@ -7,11 +7,11 @@ const ToolBoxTutorial = ({ message, handlerChange, encrypt, decrypt }) => {
 
     <div className="step-title">
       <div className="step-title-nbr">1</div>
-      <div className="step-title-txt">Write your message in the encryption area</div>
+      <div className="step-title-txt">Write your message in the safe area</div>
     </div>
     <textarea
       id="bones-input"
-      placeholder="Encryption area"
+      placeholder="Safe area"
       className="u-margin-bottom-s"
       value={message}
       onChange={handlerChange}
@@ -53,7 +53,7 @@ const ToolBoxTutorial = ({ message, handlerChange, encrypt, decrypt }) => {
       <div className="step-title-txt">Information</div>
     </div>
     <div>
-      You can also try to <b>write and encrypt directly in the field of the website</b> but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use the field of this toolbox
+      You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.
     </div>
 
   </div>;

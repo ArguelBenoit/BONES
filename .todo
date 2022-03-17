@@ -1,16 +1,20 @@
 
 
 WIP________________________________________________________________________
-- Loading (css, generation background ?)
-- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 
 
 TODO_______________________________________________________________________
-- compression finale des messages (actuellement trop long)
+- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
+- deplacement en localstorage et repositionnement si en dehors de la fenêtre
+- nouvelle image success
+- css toggle instructions (protonmail)
 - README github, tutoriel de fonctionnement etc...
+- compression finale des messages (actuellement trop long)
 
 
 DONE_______________________________________________________________________
+- encrypt/decrypt email (protonmail iframe)
+- Loading (css, generation background ?)
 - amélioration chiffrement (pour l'instant limité à 214c) Maintenant illimité
 - fixer le maximum de différences sur le css de la tool box
 - fix duplication toolbox routage youtube
