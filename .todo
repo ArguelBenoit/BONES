@@ -5,9 +5,10 @@ WIP________________________________________________________________________
 
 TODO_______________________________________________________________________
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
-- deplacement en localstorage et repositionnement si en dehors de la fenêtre
+- [deplacement en localstorage et repositionnement si en dehors de la fenêtre]
+- bug decrypt sur gmail
 - nouvelle image success
-- css toggle instructions (protonmail)
+- css toggle instructions (protonmail entre autres)
 - README github, tutoriel de fonctionnement etc...
 - compression finale des messages (actuellement trop long)
 
