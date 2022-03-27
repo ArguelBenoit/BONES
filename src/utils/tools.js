@@ -18,22 +18,6 @@ export const tools = {
     return `${mm}-${dd}-${yyyy}`;
   },
 
-  /* retourne un booléen qui valide le fonctionnement total du mode stupide */
-  /* true = mode stupide actif + pair présente + et tableau d'amis avec au moins un ami */
-  getStupidActive(settings) {
-    if (settings === undefined) {
-      return false;
-    } else if (
-      settings.stupid === true &&
-      settings.pair && settings.pair !== '' &&
-      settings.friends.length > 0
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-
   /* retourne un booléen qui valide l'activation de bones */
   getActivate(settings) {
     if (settings === undefined) {

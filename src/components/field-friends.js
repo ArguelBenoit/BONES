@@ -51,42 +51,31 @@ const FieldFriends = ({ updateParent, initialState }) => {
 
   return <div className="u-margin-top-s">
     <div style={{marginBottom: 10}}>Friend's key</div>
-    <div className="u-padding u-themecolor-container repeat-select u-border">
-      <div className="container-multiple-select">
-
-        {fields.value.map((val, i) =>
-
-          <select
-            value={fields.value[i]}
-            onChange={handlerChange}
-            data-index={i}
-            key={`select-${i}`}
-            style={i === 0 ? { marginTop: 0 } : {}}
-          >
-            <option value="" key={'no-value-' + i}>--</option>
-            {friends.friends.map(el =>
-              <option value={el.uuid} key={`${el.uuid}-${i}`} disabled={optionDisabled(i, el.uuid)}>
-                {el.label}
-              </option>
-            )}
-          </select>
-
+    {fields.value.map((val, i) =>
+      <select
+        value={fields.value[i]}
+        onChange={handlerChange}
+        data-index={i}
+        key={`select-${i}`}
+        style={i === 0 ? { marginTop: 0 } : {}}
+      >
+        <option value="" key={'no-value-' + i}>--</option>
+        {friends.friends.map(el =>
+          <option value={el.uuid} key={`${el.uuid}-${i}`} disabled={optionDisabled(i, el.uuid)}>
+            {el.label}
+          </option>
         )}
-
-      </div>
-        {
-          fields.value.length < friends.friends.length
-            ?
-              <button
-                onClick={addFriend}
-                className="linkstyle-button u-margin-top-s"
-              >
-                Add another friend
-              </button>
-            :
-              ''
-          }
-    </div>
+      </select>
+    )}
+    {fields.value.length < friends.friends.length
+      ? <button
+        onClick={addFriend}
+        className="linkstyle-button u-margin-top-s"
+      >
+        Add another friend
+      </button>
+      : ''
+    }
   </div>;
 
 };

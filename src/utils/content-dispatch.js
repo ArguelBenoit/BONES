@@ -3,7 +3,7 @@ import webExt from 'Utils/web-ext.js';
  afin de mettre à jour la toolbox lorsqu'un parametre est mis à jour */
 
 
-// actions traitées : MAINUPDATE, TOGGLEUPDATE (pour le mode stupid), INSTRUCTIONUPDATE
+// actions traitées : MAINUPDATE, TOGGLEUPDATE, INSTRUCTIONUPDATE
 // data type object ex : { value: true }
 export default (action, data = {}) => {
 

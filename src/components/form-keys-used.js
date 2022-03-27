@@ -7,7 +7,7 @@ import FieldFriends from 'Components/field-friends.js';
 
 
 
-const FormStupidMethod = () => {
+const FormKeysUsed = () => {
 
   const { pairs } = usePairsContext();
   const {
@@ -44,28 +44,22 @@ const FormStupidMethod = () => {
   };
 
   return <div className="u-themecolor-container u-padding">
-
-    <div className="u-themecolor-color u-margin-bottom-s">
-      The stupid mode activates bones on all pages with the settings entered below. This mode is required if you want to encrypt your emails. this mode is imperative to encrypt emails (the url changes for each email in email clients). All fields are required
-    </div>
-    <div>
-      <label>Your pair key</label>
-      <select
-        type="select"
-        value={stateValue.pair}
-        onChange={handlerSetPair}
-      >
-        <option key="--" value="--">--</option>
-        {pairs.pairs.map(
-          pair => <option
-            key={pair.uuid}
-            value={pair.uuid}
-          >
-            {pair.label}
-          </option>
-        )}
-      </select>
-    </div>
+    <label>Your pair key</label>
+    <select
+      type="select"
+      value={stateValue.pair}
+      onChange={handlerSetPair}
+    >
+      <option key="--" value="--">--</option>
+      {pairs.pairs.map(
+        pair => <option
+          key={pair.uuid}
+          value={pair.uuid}
+        >
+          {pair.label}
+        </option>
+      )}
+    </select>
 
     <FieldFriends
       updateParent={handlerSetValueFriends}
@@ -77,4 +71,4 @@ const FormStupidMethod = () => {
 
 
 
-export default FormStupidMethod;
+export default FormKeysUsed;

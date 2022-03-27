@@ -16,9 +16,7 @@ import contentDispatch from 'Utils/content-dispatch.js';
 const initialSettings = {
   loaded: false,
   activate: true,
-  stupid: false,
   instruction: true,
-  // ces clefs/valeurs sont pour le mode stupid
   open: true,
   pair: '',
   friends: []
@@ -52,13 +50,6 @@ function SettingsProvider(props) {
       contentDispatch('MAINUPDATE');
     });
   }
-
-  // function modify(uuid, obj) {
-  //   methodStore.modify(uuid, obj).then(() => {
-  //     getList();
-  //     contentDispatch();
-  //   });
-  // }
 
 
   /* getter */

@@ -5,11 +5,10 @@ import bonesFail from 'Images/bones/head-fail.png';
 import line from 'Images/bones/line.png';
 import 'Styles/index.less';
 import List from 'Components/list.js';
-import FormStupidMethod from 'Components/form-stupid-method.js';
+import FormKeysUsed from 'Components/form-keys-used.js';
 import { useRouterContext } from 'Contexts/router.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
-import { useMethodsContext } from 'Contexts/methods.js';
 import { useSettingsContext } from 'Contexts/settings.js';
 import Bus from 'Utils/bus.js';
 import { Storage } from 'Utils/storage.js';
@@ -21,7 +20,6 @@ const Index = () => {
   const { changeRoute } = useRouterContext();
   const { pairs } = usePairsContext();
   const { friends } = useFriendsContext();
-  const { methods } = useMethodsContext();
   const {
     get: settings,
     modify: setSettings
@@ -30,10 +28,7 @@ const Index = () => {
   const loaded =
     pairs.loaded &&
     friends.loaded &&
-    methods.loaded &&
     settings().loaded;
-
-  const methodIsBlocked = pairs.pairs.length === 0 || friends.friends.length === 0;
 
   const handlerSetValue = event => {
     const { keyState } = event.target.dataset;
@@ -54,9 +49,8 @@ const Index = () => {
   };
 
 
-
   if (loaded) {
-    const { stupid, activate } = settings();
+    const { activate } = settings();
     return <div className="content">
 
       <header className="header">
@@ -115,60 +109,8 @@ const Index = () => {
       </section>
 
       <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-white-color u-font-size-l u-flex --beetwen">
-          <span>{ stupid ? 'Method' : 'Methods (keys per thread)'}</span>
-          <div className="u-flex --left input-activation">
-            <div className="u-margin-right-s">Stupid</div>
-            <input
-              type="checkbox"
-              className="cm-toggle"
-              checked={stupid}
-              data-key-state="stupid"
-              onChange={handlerSetValue}
-            />
-          </div>
-        </div>
-        {
-          stupid
-            ? <FormStupidMethod />
-            : <List
-              type={'method'}
-              list={methods.methods}
-              emptyMessage="BONES does not have any methodes. Methods are key bindings attached to a url."
-            />
-        }
-
-        { !stupid ?
-          <div className="u-padding-s u-themecolor-container">
-            <div
-              className="form-error u-text-center u-font-size-s u-margin-bottom-s"
-              style={{display: methodIsBlocked ? 'inherit' : 'none'}}
-            >
-              You need a pair and a friend to create a method
-            </div>
-            <button
-              onClick={methodIsBlocked
-                ? () => {}
-                : () => changeRoute({ name: 'FormMethod' })
-              }
-              className="general-button"
-              style={
-                methodIsBlocked
-                ?
-                  {
-                    opacity: 0.5,
-                    cursor: 'not-allowed'
-                  }
-                :
-                  {}
-              }
-            >
-              Add a method
-            </button>
-          </div>
-          : ''
-        }
-
+        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Keys used</div>
+        <FormKeysUsed />
       </section>
 
       <div className="u-flex u-margin-top-m">

@@ -21983,7 +21983,7 @@ exports.push([module.i, "body {\n  /******* common button *******/\n  /******* a
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #222 #000;\n}\nhtml:before {\n  content: '🇫🇷';\n  font-size: 24px;\n  position: fixed;\n  top: 5px;\n  left: 10px;\n}\n#root {\n  width: 100%;\n}\nbody {\n  overflow-x: hidden;\n  margin: auto;\n  width: 580px;\n  background: #111;\n  font-size: 95%;\n  color: #ddd;\n  padding: 20px;\n  min-height: 100vh;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /******* form *******/\n  /******* modal *******/\n  /******* utility *******/\n}\nbody a,\nbody .link {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\nbody a:hover,\nbody .link:hover {\n  text-decoration: underline;\n}\nbody p {\n  margin-top: 0px;\n}\nbody h1 {\n  font-weight: normal;\n}\nbody .content {\n  border-radius: 10px;\n  box-sizing: border-box;\n  padding: 30px;\n  background: #000;\n  position: relative;\n}\nbody .form {\n  border-top: 1px solid #666;\n}\nbody input[type=text],\nbody select,\nbody textarea {\n  padding: 10px;\n  width: 100%;\n  border-radius: 4px;\n  background: #23053f;\n  border: 1px solid #35095e;\n  box-sizing: border-box;\n  color: #ddd;\n  font-size: 92%;\n  margin-top: 10px;\n  scrollbar-color: #23053f transparent;\n}\nbody .form-error {\n  padding-top: 5px;\n  color: red;\n  font-style: italic;\n  display: inherit;\n}\nbody input[type=\"file\"] {\n  display: none;\n}\nbody .container-multiple-select select {\n  background: #120122;\n}\nbody .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\nbody .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\nbody .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\nbody .cm-toggle:checked:before {\n  left: 16px;\n}\nbody .cm-toggle:checked:after {\n  background: #8c14fc;\n}\nbody .modal {\n  height: 100vh;\n  width: 100%;\n  top: 0;\n  left: 0;\n  position: fixed;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.85);\n  display: flex;\n  align-items: center;\n  line-height: 26px;\n}\nbody .modal .modal-content {\n  margin: auto;\n  max-width: 320px;\n  text-align: center;\n  background: #000;\n  padding: 30px;\n  border: 6px solid #8c14fc;\n  border-radius: 10px;\n}\nbody .modal .modal-content img {\n  display: block;\n  margin: auto;\n}\nbody .modal .modal-buttons {\n  display: flex;\n  margin-top: 10px;\n}\nbody .modal .modal-buttons button,\nbody .modal .modal-buttons a,\nbody .modal .modal-buttons label {\n  min-height: 34px;\n  padding: 0 20px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: block;\n  margin: 0 auto 0 auto;\n  color: #060015;\n  border: none;\n  font-size: 85%;\n  line-height: 34px;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover,\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  cursor: pointer;\n  text-decoration: none;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover {\n  transform: scale(1.02);\n}\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  transform: scale(0.99) !important;\n}\nbody .modal .modal-buttons button.left,\nbody .modal .modal-buttons a.left,\nbody .modal .modal-buttons label.left,\nbody .modal .modal-buttons button:first-child,\nbody .modal .modal-buttons a:first-child,\nbody .modal .modal-buttons label:first-child {\n  margin-right: 7.5px;\n}\nbody .modal .modal-buttons button.right,\nbody .modal .modal-buttons a.right,\nbody .modal .modal-buttons label.right,\nbody .modal .modal-buttons button:last-child,\nbody .modal .modal-buttons a:last-child,\nbody .modal .modal-buttons label:last-child {\n  margin-left: 7.5px;\n}\nbody .u-themecolor-container {\n  background: #23053f !important;\n  border-radius: 4px !important;\n  border: 1px solid #35095e !important;\n  margin-bottom: 5px !important;\n  box-sizing: border-box !important;\n}\nbody .u-themecolor-container input[type=\"select\"],\nbody .u-themecolor-container select,\nbody .u-themecolor-container input[type=\"text\"],\nbody .u-themecolor-container textarea {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-themecolor-container .u-themecolor-container {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-full-width {\n  width: 100% !important;\n}\nbody .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\nbody .--beetwen {\n  justify-content: space-between !important;\n}\nbody .u-themecolor-color {\n  color: #8c14fc !important;\n}\nbody .u-white-color {\n  color: #fff !important;\n}\nbody .u-text-center {\n  text-align: center !important;\n}\nbody .u-text-italic {\n  font-style: italic !important;\n}\nbody .u-font-size-s {\n  font-size: 90% !important;\n}\nbody .u-font-size-m {\n  font-size: 95% !important;\n}\nbody .u-font-size-l {\n  font-size: 100% !important;\n}\nbody .u-font-size-xl {\n  font-size: 110% !important;\n}\nbody .u-border {\n  border: 1px solid #35095e !important;\n}\nbody .u-padding {\n  padding: 20px !important;\n}\nbody .u-padding-s {\n  padding: 12px !important;\n}\nbody .u-margin-s {\n  margin: 15px !important;\n}\nbody .u-margin-m {\n  margin: 20px !important;\n}\nbody .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\nbody .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\nbody .u-margin-top-s {\n  margin-top: 15px !important;\n}\nbody .u-margin-top-m {\n  margin-top: 20px !important;\n}\nbody .u-margin-left-s {\n  margin-left: 15px !important;\n}\nbody .u-margin-left-m {\n  margin-left: 20px !important;\n}\nbody .u-margin-right-s {\n  margin-right: 15px !important;\n}\nbody .u-margin-right-m {\n  margin-right: 20px !important;\n}\nbody .u-left {\n  float: left !important;\n}\nbody .u-right {\n  float: right !important;\n}\n", ""]);
+exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #222 #000;\n}\nhtml:before {\n  content: '🇫🇷';\n  font-size: 24px;\n  position: fixed;\n  top: 5px;\n  left: 10px;\n}\n#root {\n  width: 100%;\n}\nbody {\n  overflow-x: hidden;\n  margin: auto;\n  width: 580px;\n  background: #111;\n  font-size: 95%;\n  color: #ddd;\n  padding: 20px;\n  min-height: 100vh;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /******* form *******/\n  /******* modal *******/\n  /******* utility *******/\n}\nbody a,\nbody .link {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\nbody a:hover,\nbody .link:hover {\n  text-decoration: underline;\n}\nbody p {\n  margin-top: 0px;\n}\nbody h1 {\n  font-weight: normal;\n}\nbody .content {\n  border-radius: 10px;\n  box-sizing: border-box;\n  padding: 30px;\n  background: #000;\n  position: relative;\n}\nbody .form {\n  border-top: 1px solid #666;\n}\nbody input[type=text],\nbody select,\nbody textarea {\n  padding: 10px;\n  width: 100%;\n  border-radius: 4px;\n  background: #23053f;\n  border: 1px solid #35095e;\n  box-sizing: border-box;\n  color: #ddd;\n  font-size: 92%;\n  margin-top: 10px;\n  scrollbar-color: #23053f transparent;\n}\nbody .form-error {\n  padding-top: 5px;\n  color: red;\n  font-style: italic;\n  display: inherit;\n}\nbody input[type=\"file\"] {\n  display: none;\n}\nbody .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\nbody .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\nbody .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\nbody .cm-toggle:checked:before {\n  left: 16px;\n}\nbody .cm-toggle:checked:after {\n  background: #8c14fc;\n}\nbody .modal {\n  height: 100vh;\n  width: 100%;\n  top: 0;\n  left: 0;\n  position: fixed;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.85);\n  display: flex;\n  align-items: center;\n  line-height: 26px;\n}\nbody .modal .modal-content {\n  margin: auto;\n  max-width: 320px;\n  text-align: center;\n  background: #000;\n  padding: 30px;\n  border: 6px solid #8c14fc;\n  border-radius: 10px;\n}\nbody .modal .modal-content img {\n  display: block;\n  margin: auto;\n}\nbody .modal .modal-buttons {\n  display: flex;\n  margin-top: 10px;\n}\nbody .modal .modal-buttons button,\nbody .modal .modal-buttons a,\nbody .modal .modal-buttons label {\n  min-height: 34px;\n  padding: 0 20px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: block;\n  margin: 0 auto 0 auto;\n  color: #060015;\n  border: none;\n  font-size: 85%;\n  line-height: 34px;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover,\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  cursor: pointer;\n  text-decoration: none;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover {\n  transform: scale(1.02);\n}\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  transform: scale(0.99) !important;\n}\nbody .modal .modal-buttons button.left,\nbody .modal .modal-buttons a.left,\nbody .modal .modal-buttons label.left,\nbody .modal .modal-buttons button:first-child,\nbody .modal .modal-buttons a:first-child,\nbody .modal .modal-buttons label:first-child {\n  margin-right: 7.5px;\n}\nbody .modal .modal-buttons button.right,\nbody .modal .modal-buttons a.right,\nbody .modal .modal-buttons label.right,\nbody .modal .modal-buttons button:last-child,\nbody .modal .modal-buttons a:last-child,\nbody .modal .modal-buttons label:last-child {\n  margin-left: 7.5px;\n}\nbody .u-themecolor-container {\n  background: #23053f !important;\n  border-radius: 4px !important;\n  border: 1px solid #35095e !important;\n  margin-bottom: 5px !important;\n  box-sizing: border-box !important;\n}\nbody .u-themecolor-container input[type=\"select\"],\nbody .u-themecolor-container select,\nbody .u-themecolor-container input[type=\"text\"],\nbody .u-themecolor-container textarea {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-themecolor-container .u-themecolor-container {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-full-width {\n  width: 100% !important;\n}\nbody .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\nbody .--beetwen {\n  justify-content: space-between !important;\n}\nbody .u-themecolor-color {\n  color: #8c14fc !important;\n}\nbody .u-white-color {\n  color: #fff !important;\n}\nbody .u-text-center {\n  text-align: center !important;\n}\nbody .u-text-italic {\n  font-style: italic !important;\n}\nbody .u-font-size-s {\n  font-size: 90% !important;\n}\nbody .u-font-size-m {\n  font-size: 95% !important;\n}\nbody .u-font-size-l {\n  font-size: 100% !important;\n}\nbody .u-font-size-xl {\n  font-size: 110% !important;\n}\nbody .u-border {\n  border: 1px solid #35095e !important;\n}\nbody .u-padding {\n  padding: 20px !important;\n}\nbody .u-padding-s {\n  padding: 12px !important;\n}\nbody .u-margin-s {\n  margin: 15px !important;\n}\nbody .u-margin-m {\n  margin: 20px !important;\n}\nbody .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\nbody .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\nbody .u-margin-top-s {\n  margin-top: 15px !important;\n}\nbody .u-margin-top-m {\n  margin-top: 20px !important;\n}\nbody .u-margin-left-s {\n  margin-left: 15px !important;\n}\nbody .u-margin-left-m {\n  margin-left: 20px !important;\n}\nbody .u-margin-right-s {\n  margin-right: 15px !important;\n}\nbody .u-margin-right-m {\n  margin-right: 20px !important;\n}\nbody .u-left {\n  float: left !important;\n}\nbody .u-right {\n  float: right !important;\n}\n", ""]);
 
 
 
@@ -89117,11 +89117,7 @@ var FieldFriends = function FieldFriends(_ref) {
     style: {
       marginBottom: 10
     }
-  }, "Friend's key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "u-padding u-themecolor-container repeat-select u-border"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "container-multiple-select"
-  }, fields.value.map(function (val, i) {
+  }, "Friend's key"), fields.value.map(function (val, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
       value: fields.value[i],
       onChange: handlerChange,
@@ -89140,10 +89136,10 @@ var FieldFriends = function FieldFriends(_ref) {
         disabled: optionDisabled(i, el.uuid)
       }, el.label);
     }));
-  })), fields.value.length < friends.friends.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+  }), fields.value.length < friends.friends.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     onClick: addFriend,
     className: "linkstyle-button u-margin-top-s"
-  }, "Add another friend") : ''));
+  }, "Add another friend") : '');
 };
 
 FieldFriends.propTypes = {
@@ -89154,10 +89150,10 @@ FieldFriends.propTypes = {
 
 /***/ }),
 
-/***/ "./src/components/form-stupid-method.js":
-/*!**********************************************!*\
-  !*** ./src/components/form-stupid-method.js ***!
-  \**********************************************/
+/***/ "./src/components/form-keys-used.js":
+/*!******************************************!*\
+  !*** ./src/components/form-keys-used.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -89185,7 +89181,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-var FormStupidMethod = function FormStupidMethod() {
+var FormKeysUsed = function FormKeysUsed() {
   var _usePairsContext = Object(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_3__["usePairsContext"])(),
       pairs = _usePairsContext.pairs;
 
@@ -89228,9 +89224,7 @@ var FormStupidMethod = function FormStupidMethod() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-themecolor-container u-padding"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "u-themecolor-color u-margin-bottom-s"
-  }, "The stupid mode activates bones on all pages with the settings entered below. This mode is required if you want to encrypt your emails. this mode is imperative to encrypt emails (the url changes for each email in email clients). All fields are required"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
     type: "select",
     value: stateValue.pair,
     onChange: handlerSetPair
@@ -89242,13 +89236,13 @@ var FormStupidMethod = function FormStupidMethod() {
       key: pair.uuid,
       value: pair.uuid
     }, pair.label);
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_friends_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_friends_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
     updateParent: handlerSetValueFriends,
     initialState: stateValue.friends
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (FormStupidMethod);
+/* harmony default export */ __webpack_exports__["default"] = (FormKeysUsed);
 
 /***/ }),
 
@@ -89821,11 +89815,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Views_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Views/index.js */ "./src/views/index.js");
 /* harmony import */ var Views_form_pair_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Views/form-pair.js */ "./src/views/form-pair.js");
 /* harmony import */ var Views_form_friend_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Views/form-friend.js */ "./src/views/form-friend.js");
-/* harmony import */ var Views_form_method_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Views/form-method.js */ "./src/views/form-method.js");
-/* harmony import */ var Views_share_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Views/share.js */ "./src/views/share.js");
+/* harmony import */ var Views_share_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Views/share.js */ "./src/views/share.js");
 
  // pages
-
 
 
 
@@ -89835,8 +89827,7 @@ var routes = {
   Index: Views_index_js__WEBPACK_IMPORTED_MODULE_2__["default"],
   FormPair: Views_form_pair_js__WEBPACK_IMPORTED_MODULE_3__["default"],
   FormFriend: Views_form_friend_js__WEBPACK_IMPORTED_MODULE_4__["default"],
-  FormMethod: Views_form_method_js__WEBPACK_IMPORTED_MODULE_5__["default"],
-  Share: Views_share_js__WEBPACK_IMPORTED_MODULE_6__["default"]
+  Share: Views_share_js__WEBPACK_IMPORTED_MODULE_5__["default"]
 };
 
 var RouterTrigger = function RouterTrigger() {
@@ -90009,166 +90000,9 @@ function useFriendsContext() {
   !*** ./src/contexts/methods.js ***!
   \*********************************/
 /*! exports provided: MethodsProvider, useMethodsContext, MethodsContext */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MethodsProvider", function() { return MethodsProvider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useMethodsContext", function() { return useMethodsContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MethodsContext", function() { return MethodsContext; });
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js");
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/content-dispatch.js */ "./src/utils/content-dispatch.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
-
-
-
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-
-
-/* eslint-disable react/no-multi-comp */
-
-
-
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method');
-var MethodsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet method
-
-var initialMethods = {
-  loaded: false,
-  methods: []
-}; // Attache MethodsContext.Provider à MethodsProvider avec le state et les fonctions de changement d'état
-
-function MethodsProvider(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(initialMethods),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
-      methods = _useState2[0],
-      setMethods = _useState2[1];
-  /* initialisation */
-
-
-  var getList = /*#__PURE__*/function () {
-    var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.mark(function _callee() {
-      var list;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return methodStore.getList();
-
-            case 2:
-              list = _context.sent;
-              setMethods({
-                loaded: true,
-                methods: list
-              });
-
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }));
-
-    return function getList() {
-      return _ref.apply(this, arguments);
-    };
-  }();
-
-  Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
-    getList();
-  }, []);
-  /* fonctions de changement d'état */
-
-  function add(method) {
-    methodStore.set(method).then(function () {
-      getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
-    });
-  }
-  /**/
-
-
-  function modify(uuid, obj) {
-    methodStore.modify(uuid, obj).then(function () {
-      getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
-    });
-  }
-  /**/
-
-
-  function remove(uuid) {
-    methodStore.remove(uuid).then(function () {
-      getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
-    });
-  }
-  /**/
-
-
-  function keyValue(key, value) {
-    methodStore.keyValue(key, value).then(function (val) {
-      return val;
-    });
-  }
-  /* getter */
-
-
-  function get(uuid) {
-    var _iterator = _createForOfIteratorHelper(methods.methods),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var method = _step.value;
-
-        if (method.uuid === uuid) {
-          return method;
-        }
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    return null;
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(MethodsContext.Provider, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
-    value: {
-      methods: methods,
-      add: add,
-      modify: modify,
-      remove: remove,
-      get: get,
-      keyValue: keyValue
-    }
-  }, props));
-} // Cette fonction permet un import de MethodsContext et createContext en une fois
-
-
-function useMethodsContext() {
-  return Object(react__WEBPACK_IMPORTED_MODULE_4__["useContext"])(MethodsContext);
-}
-
-
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/wewe/Bureau/BONES/src/contexts/methods.js'");
 
 /***/ }),
 
@@ -90461,9 +90295,7 @@ var SettingsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_5__["cr
 var initialSettings = {
   loaded: false,
   activate: true,
-  stupid: false,
   instruction: true,
-  // ces clefs/valeurs sont pour le mode stupid
   open: true,
   pair: '',
   friends: []
@@ -90509,13 +90341,7 @@ function SettingsProvider(props) {
       setSettings(_objectSpread(_objectSpread({}, settings), obj));
       Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])('MAINUPDATE');
     });
-  } // function modify(uuid, obj) {
-  //   methodStore.modify(uuid, obj).then(() => {
-  //     getList();
-  //     contentDispatch();
-  //   });
-  // }
-
+  }
   /* getter */
 
 
@@ -90899,7 +90725,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 /* Déclenche un evenement vers les script content.js chargé dans toutes les pages web observées
  afin de mettre à jour la toolbox lorsqu'un parametre est mis à jour */
-// actions traitées : MAINUPDATE, TOGGLEUPDATE (pour le mode stupid), INSTRUCTIONUPDATE
+// actions traitées : MAINUPDATE, TOGGLEUPDATE, INSTRUCTIONUPDATE
 // data type object ex : { value: true }
 
 /* harmony default export */ __webpack_exports__["default"] = (function (action) {
@@ -91312,19 +91138,6 @@ var tools = {
     return "".concat(mm, "-").concat(dd, "-").concat(yyyy);
   },
 
-  /* retourne un booléen qui valide le fonctionnement total du mode stupide */
-
-  /* true = mode stupide actif + pair présente + et tableau d'amis avec au moins un ami */
-  getStupidActive: function getStupidActive(settings) {
-    if (settings === undefined) {
-      return false;
-    } else if (settings.stupid === true && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-
   /* retourne un booléen qui valide l'activation de bones */
   getActivate: function getActivate(settings) {
     if (settings === undefined) {
@@ -91514,219 +91327,6 @@ var FormFriend = function FormFriend() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FormFriend);
-
-/***/ }),
-
-/***/ "./src/views/form-method.js":
-/*!**********************************!*\
-  !*** ./src/views/form-method.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/return-link.js */ "./src/components/return-link.js");
-/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
-/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
-/* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
-/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Components_field_error_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Components/field-error.js */ "./src/components/field-error.js");
-/* harmony import */ var Components_field_friends_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Components/field-friends.js */ "./src/components/field-friends.js");
-
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
-
-
-
-
-
-
-
-var initialStateValue = {
-  label: '',
-  url: '',
-  pair: '',
-  friends: ['']
-};
-var initialStateValidator = {
-  label: 0,
-  url: 0,
-  pair: 0,
-  friends: 0
-};
-
-var FormMethod = function FormMethod() {
-  var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__["useRouterContext"])(),
-      changeRoute = _useRouterContext.changeRoute,
-      route = _useRouterContext.route;
-
-  var _useMethodsContext = Object(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_5__["useMethodsContext"])(),
-      add = _useMethodsContext.add,
-      getMethod = _useMethodsContext.get,
-      modify = _useMethodsContext.modify;
-
-  var _usePairsContext = Object(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_6__["usePairsContext"])(),
-      pairs = _usePairsContext.pairs;
-
-  var editMode = route.uuid ? true : false;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(initialStateValidator),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
-      stateValidator = _useState2[0],
-      setStateValidator = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(editMode ? getMethod(route.uuid) : initialStateValue),
-      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState3, 2),
-      stateValue = _useState4[0],
-      setStateValue = _useState4[1];
-
-  var handlerSetValue = function handlerSetValue(event) {
-    var keyState = event.target.dataset.keyState;
-    var value = event.target.value;
-    setStateValue(_objectSpread(_objectSpread({}, stateValue), {}, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, keyState, value))); // remise à 0 de la validation
-
-    resetValidation(keyState);
-  };
-
-  var handlerSetValueFriends = function handlerSetValueFriends(value) {
-    setStateValue(_objectSpread(_objectSpread({}, stateValue), {}, {
-      friends: value
-    })); // remise à 0 de la validation
-
-    resetValidation('friends');
-  };
-
-  var resetValidation = function resetValidation(key) {
-    setStateValidator(_objectSpread(_objectSpread({}, stateValidator), {}, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, key, 0)));
-  };
-
-  var checkValidator = function checkValidator() {
-    // 0 = OK, 1 = vide, 2 = rsa non valid
-    var validator = {
-      label: 0,
-      url: 0,
-      pair: 0,
-      friends: 0
-    };
-    if (!stateValue.label || stateValue.label === '') validator.label = 1;
-    if (!stateValue.url || stateValue.url === '') validator.url = 1;
-    if (!stateValue.pair || stateValue.pair === '') validator.pair = 1;
-    var friendsField = false;
-    stateValue.friends.forEach(function (item) {
-      if (item && item !== '') {
-        friendsField = true;
-      }
-    });
-
-    if (!friendsField) {
-      validator.friends = 1;
-    }
-
-    return validator;
-  };
-
-  var cleanedFriends = function cleanedFriends() {
-    return stateValue.friends.filter(function (el) {
-      return el !== '';
-    }).filter(function (el, i, self) {
-      return i === self.indexOf(el);
-    });
-  };
-
-  var save = function save() {
-    var validator = checkValidator();
-
-    if (validator.label + validator.url + validator.pair + validator.friends === 0) {
-      if (editMode) {
-        modify(route.uuid, {
-          label: stateValue.label,
-          url: stateValue.url,
-          pair: stateValue.pair,
-          friends: cleanedFriends()
-        });
-      } else {
-        add({
-          label: stateValue.label,
-          url: stateValue.url,
-          pair: stateValue.pair,
-          friends: cleanedFriends()
-        });
-      }
-
-      Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__["default"].dispatch('ModalSuccess', 'Your method has been saved');
-      changeRoute({
-        name: 'Index'
-      });
-    } else {
-      setStateValidator(validator);
-    }
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, editMode ? 'Edit' : 'Add'), " a method"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "form"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Label"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
-    type: "text",
-    value: stateValue.label,
-    "data-key-state": "label",
-    onChange: handlerSetValue
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_error_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    status: stateValidator.label
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Url of thread"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
-    type: "text",
-    value: stateValue.url,
-    "data-key-state": "url",
-    onChange: handlerSetValue
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_error_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    status: stateValidator.url
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
-    type: "select",
-    value: stateValue.pair,
-    "data-key-state": "pair",
-    onChange: handlerSetValue
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
-    key: "--",
-    value: ""
-  }, "--"), pairs.pairs.map(function (pair) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
-      key: pair.uuid,
-      value: pair.uuid
-    }, pair.label);
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_error_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    status: stateValidator.pair
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_friends_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    updateParent: handlerSetValueFriends,
-    initialState: stateValue.friends
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_field_error_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    status: stateValidator.friends
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
-    onClick: function onClick() {
-      return save();
-    },
-    className: "general-button generate-button u-margin-top-s save-keys"
-  }, "Save your method"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (FormMethod);
 
 /***/ }),
 
@@ -91946,14 +91546,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Styles_index_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Styles/index.less */ "./src/styles/index.less");
 /* harmony import */ var Styles_index_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(Styles_index_less__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var Components_list_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Components/list.js */ "./src/components/list.js");
-/* harmony import */ var Components_form_stupid_method_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/form-stupid-method.js */ "./src/components/form-stupid-method.js");
+/* harmony import */ var Components_form_keys_used_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/form-keys-used.js */ "./src/components/form-keys-used.js");
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
-/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
-/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
-/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
+/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 
 
 
@@ -91968,8 +91567,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_14__["Storage"]();
+var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_13__["Storage"]();
 
 var Index = function Index() {
   var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_8__["useRouterContext"])(),
@@ -91981,15 +91579,11 @@ var Index = function Index() {
   var _useFriendsContext = Object(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__["useFriendsContext"])(),
       friends = _useFriendsContext.friends;
 
-  var _useMethodsContext = Object(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_11__["useMethodsContext"])(),
-      methods = _useMethodsContext.methods;
-
-  var _useSettingsContext = Object(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_12__["useSettingsContext"])(),
+  var _useSettingsContext = Object(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_11__["useSettingsContext"])(),
       settings = _useSettingsContext.get,
       setSettings = _useSettingsContext.modify;
 
-  var loaded = pairs.loaded && friends.loaded && methods.loaded && settings().loaded;
-  var methodIsBlocked = pairs.pairs.length === 0 || friends.friends.length === 0;
+  var loaded = pairs.loaded && friends.loaded && settings().loaded;
 
   var handlerSetValue = function handlerSetValue(event) {
     var keyState = event.target.dataset.keyState;
@@ -91998,7 +91592,7 @@ var Index = function Index() {
   };
 
   var deleteDb = function deleteDb() {
-    Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__["default"].dispatch('ModalPrompt', {
+    Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalPrompt', {
       message: 'Do you really want to delete all data?',
       action: function action() {
         store.deleteAll().then(function () {
@@ -92010,7 +91604,6 @@ var Index = function Index() {
 
   if (loaded) {
     var _settings = settings(),
-        stupid = _settings.stupid,
         activate = _settings.activate;
 
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -92069,40 +91662,8 @@ var Index = function Index() {
     }, "Add a friend's key"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
       className: "u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "u-padding u-themecolor-container u-white-color u-font-size-l u-flex --beetwen"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, stupid ? 'Method' : 'Methods (keys per thread)'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "u-flex --left input-activation"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "u-margin-right-s"
-    }, "Stupid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-      type: "checkbox",
-      className: "cm-toggle",
-      checked: stupid,
-      "data-key-state": "stupid",
-      onChange: handlerSetValue
-    }))), stupid ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_form_stupid_method_js__WEBPACK_IMPORTED_MODULE_7__["default"], null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      type: 'method',
-      list: methods.methods,
-      emptyMessage: "BONES does not have any methodes. Methods are key bindings attached to a url."
-    }), !stupid ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "u-padding-s u-themecolor-container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      className: "form-error u-text-center u-font-size-s u-margin-bottom-s",
-      style: {
-        display: methodIsBlocked ? 'inherit' : 'none'
-      }
-    }, "You need a pair and a friend to create a method"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-      onClick: methodIsBlocked ? function () {} : function () {
-        return changeRoute({
-          name: 'FormMethod'
-        });
-      },
-      className: "general-button",
-      style: methodIsBlocked ? {
-        opacity: 0.5,
-        cursor: 'not-allowed'
-      } : {}
-    }, "Add a method")) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
+    }, "Keys used"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_form_keys_used_js__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-flex u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
       src: Images_bones_line_png__WEBPACK_IMPORTED_MODULE_4___default.a,
@@ -92110,12 +91671,12 @@ var Index = function Index() {
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "linkstyle-button u-margin-top-s",
       onClick: function onClick() {
-        return Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__["default"].dispatch('ModalDumpDb', {});
+        return Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalDumpDb', {});
       }
     }, "Make a dump of your database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "linkstyle-button u-margin-top-s",
       onClick: function onClick() {
-        return Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__["default"].dispatch('ModalImportDB', {});
+        return Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalImportDB', {});
       }
     }, "Import a dump of database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "linkstyle-button u-margin-top-s",
