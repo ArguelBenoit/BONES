@@ -90879,9 +90879,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       img: 'regular',
       stun: false,
       stupid: false,
-      loaded: false,
-      uuidMethod: '',
-      labelMethod: ''
+      loaded: false
     };
     return _this;
   }
@@ -91278,13 +91276,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActivate,
-    getStupidActive = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getStupidActive;
+var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActivate;
 /* storage */
 
 
 var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method');
  // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
@@ -91296,7 +91292,7 @@ Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__["default"])().runtime.onMes
 
 var INIT = /*#__PURE__*/function () {
   var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-    var settings, getMethod, div;
+    var settings, div;
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -91306,21 +91302,15 @@ var INIT = /*#__PURE__*/function () {
 
           case 2:
             settings = _context.sent;
-            _context.next = 5;
-            return methodStore.keyValue('url', window.location.href);
-
-          case 5:
-            getMethod = _context.sent;
 
             // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
             if (document.querySelector('#BONES-CONTAINER')) {
               document.querySelector('#BONES-CONTAINER').remove();
             }
-            /* si l'extension est active, et qu'il y a une méthode pour l'url,
-            ou si le mode stupide est actif avec tout ses champs. */
+            /* si l'extension est active */
 
 
-            if (getActivate(settings) && (getMethod[0] || getStupidActive(settings))) {
+            if (getActivate(settings)) {
               /* créer la div de depart du composant react */
               div = document.createElement('div');
               div.id = 'BONES-CONTAINER';
@@ -91330,7 +91320,7 @@ var INIT = /*#__PURE__*/function () {
               Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('BONES-CONTAINER'));
             }
 
-          case 8:
+          case 5:
           case "end":
             return _context.stop();
         }
@@ -91979,11 +91969,11 @@ var tools = {
   /* retourne une date mm-dd-yyyy */
   date: function date() {
     var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
 
-    var yyyy = today.getFullYear();
-    return "".concat(mm, "-").concat(dd, "-").concat(yyyy);
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
   },
 
   /* retourne un booléen qui valide l'activation de bones */

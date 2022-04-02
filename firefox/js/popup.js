@@ -88824,83 +88824,6 @@ ActionsFriend.propTypes = {
 
 /***/ }),
 
-/***/ "./src/components/actions-method.js":
-/*!******************************************!*\
-  !*** ./src/components/actions-method.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var Images_icons_edit_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/icons/edit.png */ "./src/images/icons/edit.png");
-/* harmony import */ var Images_icons_edit_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_icons_edit_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var Images_icons_trash_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Images/icons/trash.png */ "./src/images/icons/trash.png");
-/* harmony import */ var Images_icons_trash_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(Images_icons_trash_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
-/* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
-
-
-
-
-
-
-
-
-var ActionsFriend = function ActionsFriend(_ref) {
-  var item = _ref.item;
-
-  var _useMethodsContext = Object(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_6__["useMethodsContext"])(),
-      remove = _useMethodsContext.remove;
-
-  var uuid = item.uuid,
-      label = item.label;
-
-  var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__["useRouterContext"])(),
-      changeRoute = _useRouterContext.changeRoute;
-
-  var dataRemoveAction = {
-    message: "Do you really want to delete the method \"".concat(label, "\" ?"),
-    action: function action() {
-      remove(uuid);
-    }
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "u-flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: Images_icons_edit_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    height: "18",
-    width: "18",
-    className: "action",
-    onClick: function onClick() {
-      return changeRoute({
-        name: 'FormMethod',
-        uuid: uuid
-      });
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: Images_icons_trash_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    height: "18",
-    width: "18",
-    className: "action",
-    onClick: function onClick() {
-      return Utils_bus_js__WEBPACK_IMPORTED_MODULE_5__["default"].dispatch('ModalPrompt', dataRemoveAction);
-    }
-  }));
-};
-
-ActionsFriend.propTypes = {
-  item: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
-};
-/* harmony default export */ __webpack_exports__["default"] = (ActionsFriend);
-
-/***/ }),
-
 /***/ "./src/components/actions-pair.js":
 /*!****************************************!*\
   !*** ./src/components/actions-pair.js ***!
@@ -89261,8 +89184,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var Components_actions_pair_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Components/actions-pair.js */ "./src/components/actions-pair.js");
 /* harmony import */ var Components_actions_friend_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/actions-friend.js */ "./src/components/actions-friend.js");
-/* harmony import */ var Components_actions_method_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/actions-method.js */ "./src/components/actions-method.js");
-
 
 
 
@@ -89280,8 +89201,6 @@ var ListItem = function ListItem(props) {
   }, type === 'pair' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_actions_pair_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     item: item
   }) : '', type === 'friend' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_actions_friend_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    item: item
-  }) : '', type === 'method' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_actions_method_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     item: item
   }) : ''));
 };
@@ -89995,17 +89914,6 @@ function useFriendsContext() {
 
 /***/ }),
 
-/***/ "./src/contexts/methods.js":
-/*!*********************************!*\
-  !*** ./src/contexts/methods.js ***!
-  \*********************************/
-/*! exports provided: MethodsProvider, useMethodsContext, MethodsContext */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/wewe/Bureau/BONES/src/contexts/methods.js'");
-
-/***/ }),
-
 /***/ "./src/contexts/pairs.js":
 /*!*******************************!*\
   !*** ./src/contexts/pairs.js ***!
@@ -90174,9 +90082,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
-/* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
-/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
-
+/* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 
 
 
@@ -90185,7 +90091,7 @@ __webpack_require__.r(__webpack_exports__);
 // TODO: trouver une méthode plus esthetique
 
 var Providers = function Providers(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_router_js__WEBPACK_IMPORTED_MODULE_1__["RouterProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__["FriendsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_methods_js__WEBPACK_IMPORTED_MODULE_4__["MethodsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_5__["SettingsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__["PairsProvider"], props)))));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_router_js__WEBPACK_IMPORTED_MODULE_1__["RouterProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__["FriendsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_settings_js__WEBPACK_IMPORTED_MODULE_4__["SettingsProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__["PairsProvider"], props))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Providers);
@@ -91131,11 +91037,11 @@ var tools = {
   /* retourne une date mm-dd-yyyy */
   date: function date() {
     var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
 
-    var yyyy = today.getFullYear();
-    return "".concat(mm, "-").concat(dd, "-").concat(yyyy);
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
   },
 
   /* retourne un booléen qui valide l'activation de bones */

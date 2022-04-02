@@ -38,9 +38,7 @@ class ToolBox extends React.Component {
       img: 'regular',
       stun: false,
       stupid: false,
-      loaded: false,
-      uuidMethod: '',
-      labelMethod: ''
+      loaded: false
     };
   }
 

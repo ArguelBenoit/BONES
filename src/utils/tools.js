@@ -12,10 +12,10 @@ export const tools = {
   /* retourne une date mm-dd-yyyy */
   date() {
     const today = new Date();
-    const dd = String(today.getDate()).padStart(2, '0');
-    const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0
-    const yyyy = today.getFullYear();
-    return `${mm}-${dd}-${yyyy}`;
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
+    const year = today.getFullYear();
+    return `${month}-${day}-${year}`;
   },
 
   /* retourne un booléen qui valide l'activation de bones */

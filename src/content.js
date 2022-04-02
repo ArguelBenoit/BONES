@@ -6,11 +6,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import ToolBox from 'Components/tool-box.js';
 import { tools } from 'Utils/tools.js';
-const { getActivate, getStupidActive } = tools;
+const { getActivate } = tools;
 /* storage */
 import { Storage } from 'Utils/storage.js';
 const store = new Storage();
-const methodStore = new Storage('method');
 import webExt from 'Utils/web-ext.js';
 
 
@@ -27,17 +26,12 @@ webExt().runtime.onMessage.addListener(data => {
 // function d'initialisation/réinitialisation de la toolbox
 const INIT = async () => {
   const settings = await store.getOne('settings');
-  const getMethod = await methodStore.keyValue('url', window.location.href);
   // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
   if (document.querySelector('#BONES-CONTAINER')) {
     document.querySelector('#BONES-CONTAINER').remove();
   }
-  /* si l'extension est active, et qu'il y a une méthode pour l'url,
-  ou si le mode stupide est actif avec tout ses champs. */
-  if (
-    getActivate(settings) &&
-    (getMethod[0] || getStupidActive(settings))
-  ) {
+  /* si l'extension est active */
+  if (getActivate(settings)) {
     /* créer la div de depart du composant react */
     let div = document.createElement('div');
     div.id = 'BONES-CONTAINER';
