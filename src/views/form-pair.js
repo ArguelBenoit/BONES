@@ -111,7 +111,7 @@ const FormPair = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('ModalSuccess', 'Your key pair has been saved');
+      Bus.dispatch('ModalSuccess', 'Well done, your key pair has been saved.');
       changeRoute({ name: 'Index' });
 
     } else {

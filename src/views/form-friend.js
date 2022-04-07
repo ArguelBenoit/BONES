@@ -85,7 +85,7 @@ const FormFriend = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('ModalSuccess', 'Your friend\'s key has been saved');
+      Bus.dispatch('ModalSuccess', 'Well done, your friend\'s key has been saved.');
       changeRoute({ name: 'Index' });
 
     } else {

@@ -18,7 +18,7 @@ const Share = () => {
       .clipboard
       .writeText(pair.public)
       .then(() => {
-        Bus.dispatch('ModalSuccess', 'Your public key is copied to the clipboard. Transmit there in the way of your choice');
+        Bus.dispatch('ModalSuccess', 'Your public key is copied to the clipboard. Transmit there in the way of your choice.');
         changeRoute({ name: 'Index' });
       });
   };

@@ -27,7 +27,7 @@ const ModalSuccess = () => {
         src={successImg}
         width="110"
       />
-      <div>
+      <div className="u-margin-top-m">
         {message}
       </div>
     </div>
