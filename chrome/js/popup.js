@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/popup.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -59171,7 +59171,7 @@ var ariaProperties = {
   'aria-autocomplete': 0,
   'aria-checked': 0,
   'aria-expanded': 0,
-  'aria-haspopup': 0,
+  'aria-hasindex': 0,
   'aria-level': 0,
   'aria-modal': 0,
   'aria-multiline': 0,
@@ -90639,9 +90639,9 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm
 
 /***/ }),
 
-/***/ "./src/popup.js":
+/***/ "./src/index.js":
 /*!**********************!*\
-  !*** ./src/popup.js ***!
+  !*** ./src/index.js ***!
   \**********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -92347,4 +92347,4 @@ var Share = function Share() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=popup.js.map
+//# sourceMappingURL=index.js.map

@@ -125,7 +125,7 @@ var activeTab = function activeTab() {
       }); // sinon l'onglet n'existe pas
     } else {
       // on ouvre un onglet BONES
-      var url = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().extension.getURL('popup.html');
+      var url = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().extension.getURL('index.html');
       Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.create({
         url: url
       });

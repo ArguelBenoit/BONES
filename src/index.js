@@ -17,7 +17,7 @@ import 'Styles/button.less';
 
 
 
-const PopUp = () => {
+const Root = () => {
   return <Providers>
     <ModalLoading />
     <ModalSuccess />
@@ -33,10 +33,11 @@ const PopUp = () => {
 
 const reactRender = () => {
   render(
-    <PopUp />,
+    <Root />,
     document.getElementById('root')
   );
 };
+
 
 
 manager.getHasStorage()

@@ -42,7 +42,7 @@ module.exports = async env => {
     entry: {
       background: path.join(__dirname, 'src/background.js'),
       content: path.join(__dirname, 'src/content.js'),
-      popup: path.join(__dirname, 'src/popup.js')
+      index: path.join(__dirname, 'src/index.js')
     },
     output: {
       path: path.join(__dirname, `${env.bro}/js`), // env.bro = firefox || chrome
