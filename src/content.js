@@ -1,12 +1,11 @@
-
 // Ce script est chargé dans toutes les pages lorsque l'extension est active.
 // Si l'url est inscrite dans une méthode alors celui-ci injectera le composant
 // toolBox dans la page en question.
 import React from 'react';
 import { render } from 'react-dom';
 import ToolBox from 'Components/tool-box.js';
-import { tools } from 'Utils/tools.js';
-const { getActivate } = tools;
+import { handlers } from 'Utils/handlers.js';
+const { getActivate } = handlers;
 /* storage */
 import { Storage } from 'Utils/storage.js';
 const store = new Storage();
@@ -20,7 +19,6 @@ webExt().runtime.onMessage.addListener(data => {
     INIT();
   }
 });
-
 
 
 // function d'initialisation/réinitialisation de la toolbox
@@ -43,7 +41,6 @@ const INIT = async () => {
     );
   }
 };
-
 
 
 // execute INIT au chargement du script content (au moment ou le DOM a fini de charger).

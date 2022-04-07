@@ -1,5 +1,5 @@
 
-export const tools = {
+export const handlers = {
 
   /* retourne un uuid */
   uuid() {
@@ -20,9 +20,11 @@ export const tools = {
 
   /* retourne un booléen qui valide l'activation de bones */
   getActivate(settings) {
-    if (settings === undefined) {
-      return true;
-    } else if (settings.activate === true) {
+    if (
+      (settings.activate === true || settings.activate === undefined) &&
+      (settings.pair && settings.pair !== '') &&
+      (settings.friends.length > 0)
+    ) {
       return true;
     } else {
       return false;

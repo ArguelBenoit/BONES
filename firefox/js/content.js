@@ -22026,7 +22026,7 @@ exports.push([module.i, ".mask-loading {\n  overflow: hidden;\n}\n.mask-loading 
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#BONES-CONTAINER {\n  all: initial;\n}\n#BONES-CONTAINER #bones-tool-box {\n  font-size: 13px;\n  color: #ddd;\n  font-family: sans-serif;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-method {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-method .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-method {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
+exports.push([module.i, "#BONES-CONTAINER {\n  all: initial;\n}\n#BONES-CONTAINER #bones-tool-box {\n  font-size: 13px;\n  color: #ddd;\n  font-family: sans-serif;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-toolbox {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
 
 
 
@@ -90821,8 +90821,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
 /* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
 /* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/crypting.js */ "./src/utils/crypting.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 
 
 
@@ -90845,14 +90844,11 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+ // Storage
 
 
-var getStupidActive = Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__["tools"].getStupidActive; // Storage
-
-
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('method');
-var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('friend');
-var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
+var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('friend');
+var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
 
 var ToolBox = /*#__PURE__*/function (_React$Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(ToolBox, _React$Component);
@@ -90878,7 +90874,6 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       header: '',
       img: 'regular',
       stun: false,
-      stupid: false,
       loaded: false
     };
     return _this;
@@ -90904,77 +90899,36 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       });
 
       _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.mark(function _callee() {
-        var settings, stupid, friends, pair, method, _pair, _friends;
-
+        var settings, friends, pair;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return methodStore.getOne('settings');
+                return friendStore.getOne('settings');
 
               case 2:
                 settings = _context.sent;
-                stupid = getStupidActive(settings);
-
-                if (!(stupid === true)) {
-                  _context.next = 15;
-                  break;
-                }
-
-                _context.next = 7;
+                _context.next = 5;
                 return friendStore.getList(settings.friends);
 
-              case 7:
+              case 5:
                 friends = _context.sent;
-                _context.next = 10;
+                _context.next = 8;
                 return pairStore.getOne(settings.pair);
 
-              case 10:
+              case 8:
                 pair = _context.sent;
                 _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](friends, pair);
 
                 _this2.setState({
                   toggled: settings.open,
                   showInstruction: settings === undefined ? true : settings.instruction,
-                  header: 'Stupid mode',
-                  labelMethod: 'Stupid mode',
-                  stupid: true,
+                  header: '',
                   loaded: true
                 });
 
-                _context.next = 26;
-                break;
-
-              case 15:
-                _context.next = 17;
-                return methodStore.keyValue('url', window.location.href);
-
-              case 17:
-                method = _context.sent;
-                _context.next = 20;
-                return pairStore.getOne(method[0].pair);
-
-              case 20:
-                _pair = _context.sent;
-                _context.next = 23;
-                return friendStore.getList(method[0].friends);
-
-              case 23:
-                _friends = _context.sent;
-                _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](_friends, _pair);
-
-                _this2.setState({
-                  toggled: method[0].open,
-                  uuidMethod: method[0].uuid,
-                  labelMethod: method[0].label,
-                  header: method[0].label,
-                  showInstruction: settings === undefined ? true : settings.instruction,
-                  stupid: false,
-                  loaded: true
-                });
-
-              case 26:
+              case 11:
               case "end":
                 return _context.stop();
             }
@@ -90985,11 +90939,8 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "setToggled",
     value: function setToggled() {
-      var _this$state = this.state,
-          stupid = _this$state.stupid,
-          uuidMethod = _this$state.uuidMethod,
-          toggled = _this$state.toggled;
-      methodStore.modify(stupid ? 'settings' : uuidMethod, {
+      var toggled = this.state.toggled;
+      friendStore.modify('settings', {
         open: !toggled
       });
       this.setState({
@@ -90999,7 +90950,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "setShowInstruction",
     value: function setShowInstruction() {
-      methodStore.modify('settings', {
+      friendStore.modify('settings', {
         instruction: !this.state.showInstruction
       });
       this.setState({
@@ -91019,9 +90970,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function encrypt() {
       var _this3 = this;
 
-      var _this$state2 = this.state,
-          stun = _this$state2.stun,
-          message = _this$state2.message;
+      var _this$state = this.state,
+          stun = _this$state.stun,
+          message = _this$state.message;
 
       if (stun === false) {
         this.setState({
@@ -91087,14 +91038,13 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function success(message) {
       var _this4 = this;
 
-      var labelMethod = this.state.labelMethod;
       this.setState({
         header: message,
         img: 'success'
       });
       setTimeout(function () {
         _this4.setState({
-          header: labelMethod,
+          header: '',
           img: 'regular'
         });
       }, 3000);
@@ -91102,8 +91052,6 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "loading",
     value: function loading(activated) {
-      var labelMethod = this.state.labelMethod;
-
       if (activated) {
         this.setState({
           header: 'BONES is working',
@@ -91111,7 +91059,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
         });
       } else {
         this.setState({
-          header: labelMethod,
+          header: '',
           img: 'regular'
         });
       }
@@ -91159,13 +91107,13 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state3 = this.state,
-          message = _this$state3.message,
-          toggled = _this$state3.toggled,
-          img = _this$state3.img,
-          header = _this$state3.header,
-          showInstruction = _this$state3.showInstruction,
-          loaded = _this$state3.loaded;
+      var _this$state2 = this.state,
+          message = _this$state2.message,
+          toggled = _this$state2.toggled,
+          img = _this$state2.img,
+          header = _this$state2.header,
+          showInstruction = _this$state2.showInstruction,
+          loaded = _this$state2.loaded;
       var propsContent = {
         message: message,
         handlerChange: this.handlerChange,
@@ -91210,7 +91158,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
         }) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-flex"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-          className: "label-method"
+          className: "label-toolbox"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "text"
         }, header)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -91264,7 +91212,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/tool-box.js */ "./src/components/tool-box.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 /* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 /* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
 
@@ -91276,7 +91224,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActivate;
+var getActivate = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].getActivate;
 /* storage */
 
 
@@ -91624,6 +91572,48 @@ var Crypting = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./src/utils/handlers.js":
+/*!*******************************!*\
+  !*** ./src/utils/handlers.js ***!
+  \*******************************/
+/*! exports provided: handlers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
+var handlers = {
+  /* retourne un uuid */
+  uuid: function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0,
+          v = c == 'x' ? r : r & 0x3 | 0x8;
+      return v.toString(16);
+    });
+  },
+
+  /* retourne une date mm-dd-yyyy */
+  date: function date() {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
+
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if ((settings.activate === true || settings.activate === undefined) && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+
+/***/ }),
+
 /***/ "./src/utils/storage.js":
 /*!******************************!*\
   !*** ./src/utils/storage.js ***!
@@ -91647,7 +91637,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -91668,7 +91658,7 @@ var Storage = /*#__PURE__*/function () {
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
 
     /*
-    le type est la clef utilise par les 3 listes (pair, friend, method)
+    le type est la clef utilise par les 2 listes (pair, friend...)
     ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
     */
     this.type = type;
@@ -91682,7 +91672,7 @@ var Storage = /*#__PURE__*/function () {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_7__["tools"].uuid();
+        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__["handlers"].uuid();
         var type = _this.type;
         var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
         var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
@@ -91901,7 +91891,7 @@ var Storage = /*#__PURE__*/function () {
 
               case 2:
                 return _context4.abrupt("return", new Promise(function (resolve) {
-                  var lists = ['pair', 'friend', 'method'];
+                  var lists = ['pair', 'friend'];
                   lists.forEach(function (type) {
                     var list = json[type];
 
@@ -91943,50 +91933,6 @@ var Storage = /*#__PURE__*/function () {
 
   return Storage;
 }();
-
-/***/ }),
-
-/***/ "./src/utils/tools.js":
-/*!****************************!*\
-  !*** ./src/utils/tools.js ***!
-  \****************************/
-/*! exports provided: tools */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tools", function() { return tools; });
-var tools = {
-  /* retourne un uuid */
-  uuid: function uuid() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-      var r = Math.random() * 16 | 0,
-          v = c == 'x' ? r : r & 0x3 | 0x8;
-      return v.toString(16);
-    });
-  },
-
-  /* retourne une date mm-dd-yyyy */
-  date: function date() {
-    var today = new Date();
-    var day = String(today.getDate()).padStart(2, '0');
-    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
-
-    var year = today.getFullYear();
-    return "".concat(month, "-").concat(day, "-").concat(year);
-  },
-
-  /* retourne un booléen qui valide l'activation de bones */
-  getActivate: function getActivate(settings) {
-    if (settings === undefined) {
-      return true;
-    } else if (settings.activate === true) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-};
 
 /***/ }),
 

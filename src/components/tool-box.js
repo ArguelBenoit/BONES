@@ -8,11 +8,8 @@ import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
 import { Crypting } from 'Utils/crypting.js';
-import { tools } from 'Utils/tools.js';
-const { getStupidActive } = tools;
 // Storage
 import { Storage } from 'Utils/storage.js';
-const methodStore = new Storage('method');
 const friendStore = new Storage('friend');
 const pairStore = new Storage('pair');
 
@@ -37,7 +34,6 @@ class ToolBox extends React.Component {
       header: '',
       img: 'regular',
       stun: false,
-      stupid: false,
       loaded: false
     };
   }
@@ -57,51 +53,29 @@ class ToolBox extends React.Component {
     });
 
     (async () => {
-      const settings = await methodStore.getOne('settings');
-      const stupid = getStupidActive(settings);
-
-      if (stupid === true) {
-        const friends = await friendStore.getList(settings.friends);
-        const pair = await pairStore.getOne(settings.pair);
-        this.crypting = new Crypting(friends, pair);
-        this.setState({
-          toggled: settings.open,
-          showInstruction: settings === undefined ? true : settings.instruction,
-          header: 'Stupid mode',
-          labelMethod: 'Stupid mode',
-          stupid: true,
-          loaded: true
-        });
-      } else {
-
-        const method = await methodStore.keyValue('url', window.location.href);
-        const pair = await pairStore.getOne(method[0].pair);
-        const friends = await friendStore.getList(method[0].friends);
-        this.crypting = new Crypting(friends, pair);
-        this.setState({
-          toggled: method[0].open,
-          uuidMethod: method[0].uuid,
-          labelMethod: method[0].label,
-          header: method[0].label,
-          showInstruction: settings === undefined ? true : settings.instruction,
-          stupid: false,
-          loaded: true
-        });
-      }
-
+      const settings = await friendStore.getOne('settings');
+      const friends = await friendStore.getList(settings.friends);
+      const pair = await pairStore.getOne(settings.pair);
+      this.crypting = new Crypting(friends, pair);
+      this.setState({
+        toggled: settings.open,
+        showInstruction: settings === undefined ? true : settings.instruction,
+        header: '',
+        loaded: true
+      });
     })();
   }
 
 
   setToggled() {
-    const { stupid, uuidMethod, toggled } = this.state;
-    methodStore.modify(stupid ? 'settings' : uuidMethod, { open: !toggled });
+    const { toggled } = this.state;
+    friendStore.modify('settings', { open: !toggled });
     this.setState({ toggled: !toggled });
   }
 
 
   setShowInstruction() {
-    methodStore.modify('settings', {instruction: !this.state.showInstruction});
+    friendStore.modify('settings', {instruction: !this.state.showInstruction});
     this.setState({showInstruction: !this.state.showInstruction});
   }
 
@@ -161,14 +135,13 @@ class ToolBox extends React.Component {
 
 
   success(message) {
-    const { labelMethod } = this.state;
     this.setState({
       header: message,
       img: 'success'
     });
     setTimeout(() => {
       this.setState({
-        header: labelMethod,
+        header: '',
         img: 'regular'
       });
     }, 3000);
@@ -176,7 +149,6 @@ class ToolBox extends React.Component {
 
 
   loading(activated) {
-    const { labelMethod } = this.state;
     if (activated) {
       this.setState({
         header: 'BONES is working',
@@ -184,7 +156,7 @@ class ToolBox extends React.Component {
       });
     } else {
       this.setState({
-        header: labelMethod,
+        header: '',
         img: 'regular'
       });
     }
@@ -260,7 +232,7 @@ class ToolBox extends React.Component {
                 }
               </div>
               <div className="u-flex">
-                <div className="label-method">
+                <div className="label-toolbox">
                   <div className="text">
                     {header}
                   </div>

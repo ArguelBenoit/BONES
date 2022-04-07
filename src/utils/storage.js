@@ -1,14 +1,14 @@
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
 import webExt from 'Utils/web-ext.js';
-import { tools } from 'Utils/tools.js';
+import { handlers } from 'Utils/handlers.js';
 
 
 export class Storage {
 
   constructor(type) {
     /*
-    le type est la clef utilise par les 3 listes (pair, friend, method)
+    le type est la clef utilise par les 2 listes (pair, friend...)
     ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
     */
     this.type = type;
@@ -18,7 +18,7 @@ export class Storage {
   set(objectSended) {
     return new Promise((resolve, reject) => {
 
-      const uuid = tools.uuid();
+      const uuid = handlers.uuid();
       const { type } = this;
       const getter =  webExt().storage.local.get({[type]: []});
       const setter =  webExt().storage.local.set({
@@ -173,7 +173,7 @@ export class Storage {
 
     return new Promise(resolve => {
 
-      const lists = ['pair', 'friend', 'method'];
+      const lists = ['pair', 'friend'];
 
       lists.forEach(type => {
         const list = json[type];

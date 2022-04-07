@@ -89332,7 +89332,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 /* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
 
 
@@ -89382,7 +89382,7 @@ var ModalDumpDb = function ModalDumpDb() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     onClick: remove
   }, "CANCEL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    download: "bones_".concat(Utils_tools_js__WEBPACK_IMPORTED_MODULE_4__["tools"].date(), ".json"),
+    download: "bones_".concat(Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].date(), ".json"),
     href: window.URL.createObjectURL(data),
     onClick: remove
   }, "DOWNLOAD"))));
@@ -90647,6 +90647,48 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 /***/ }),
 
+/***/ "./src/utils/handlers.js":
+/*!*******************************!*\
+  !*** ./src/utils/handlers.js ***!
+  \*******************************/
+/*! exports provided: handlers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
+var handlers = {
+  /* retourne un uuid */
+  uuid: function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0,
+          v = c == 'x' ? r : r & 0x3 | 0x8;
+      return v.toString(16);
+    });
+  },
+
+  /* retourne une date mm-dd-yyyy */
+  date: function date() {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
+
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if ((settings.activate === true || settings.activate === undefined) && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+
+/***/ }),
+
 /***/ "./src/utils/keys.js":
 /*!***************************!*\
   !*** ./src/utils/keys.js ***!
@@ -90715,7 +90757,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -90736,7 +90778,7 @@ var Storage = /*#__PURE__*/function () {
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
 
     /*
-    le type est la clef utilise par les 3 listes (pair, friend, method)
+    le type est la clef utilise par les 2 listes (pair, friend...)
     ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
     */
     this.type = type;
@@ -90750,7 +90792,7 @@ var Storage = /*#__PURE__*/function () {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_7__["tools"].uuid();
+        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__["handlers"].uuid();
         var type = _this.type;
         var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
         var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
@@ -90969,7 +91011,7 @@ var Storage = /*#__PURE__*/function () {
 
               case 2:
                 return _context4.abrupt("return", new Promise(function (resolve) {
-                  var lists = ['pair', 'friend', 'method'];
+                  var lists = ['pair', 'friend'];
                   lists.forEach(function (type) {
                     var list = json[type];
 
@@ -91011,50 +91053,6 @@ var Storage = /*#__PURE__*/function () {
 
   return Storage;
 }();
-
-/***/ }),
-
-/***/ "./src/utils/tools.js":
-/*!****************************!*\
-  !*** ./src/utils/tools.js ***!
-  \****************************/
-/*! exports provided: tools */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tools", function() { return tools; });
-var tools = {
-  /* retourne un uuid */
-  uuid: function uuid() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-      var r = Math.random() * 16 | 0,
-          v = c == 'x' ? r : r & 0x3 | 0x8;
-      return v.toString(16);
-    });
-  },
-
-  /* retourne une date mm-dd-yyyy */
-  date: function date() {
-    var today = new Date();
-    var day = String(today.getDate()).padStart(2, '0');
-    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
-
-    var year = today.getFullYear();
-    return "".concat(month, "-").concat(day, "-").concat(year);
-  },
-
-  /* retourne un booléen qui valide l'activation de bones */
-  getActivate: function getActivate(settings) {
-    if (settings === undefined) {
-      return true;
-    } else if (settings.activate === true) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-};
 
 /***/ }),
 
