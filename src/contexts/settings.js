@@ -5,7 +5,7 @@ import React, {
   useContext,
   useEffect
 } from 'react';
-import { Storage } from 'Utils/storage.js';
+import { Storage } from 'Utils/storage/storage.js';
 const store = new Storage();
 const SettingsContext = createContext();
 import contentDispatch from 'Utils/content-dispatch.js';

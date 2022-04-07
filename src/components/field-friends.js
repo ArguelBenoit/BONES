@@ -50,7 +50,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
 
 
   return <div className="u-margin-top-s">
-    <div style={{marginBottom: 10}}>Friend's key</div>
+    <div style={{marginBottom: 10}}>Friend's key *</div>
     {fields.value.map((val, i) =>
       <select
         value={fields.value[i]}

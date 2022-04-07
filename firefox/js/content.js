@@ -90820,8 +90820,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
 /* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
 /* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
-/* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/crypting.js */ "./src/utils/crypting.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -90847,8 +90847,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
  // Storage
 
 
-var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('friend');
-var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
+var friendStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('friend');
+var pairStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
 
 var ToolBox = /*#__PURE__*/function (_React$Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(ToolBox, _React$Component);
@@ -90919,11 +90919,11 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
 
               case 8:
                 pair = _context.sent;
-                _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](friends, pair);
+                _this2.crypting = new Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](friends, pair);
 
                 _this2.setState({
                   toggled: settings.open,
-                  showInstruction: settings === undefined ? true : settings.instruction,
+                  showInstruction: settings.instruction,
                   header: '',
                   loaded: true
                 });
@@ -91213,7 +91213,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/tool-box.js */ "./src/components/tool-box.js");
 /* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 /* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
 
 
@@ -91228,7 +91228,7 @@ var getActivate = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].get
 /* storage */
 
 
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
+var store = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
  // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
@@ -91390,10 +91390,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/utils/crypting.js":
-/*!*******************************!*\
-  !*** ./src/utils/crypting.js ***!
-  \*******************************/
+/***/ "./src/utils/domain/crypting.js":
+/*!**************************************!*\
+  !*** ./src/utils/domain/crypting.js ***!
+  \**************************************/
 /*! exports provided: Crypting */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -91604,7 +91604,7 @@ var handlers = {
 
   /* retourne un booléen qui valide l'activation de bones */
   getActivate: function getActivate(settings) {
-    if ((settings.activate === true || settings.activate === undefined) && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
+    if (settings.activate === true && settings.friends.length > 0 && settings.pair !== '') {
       return true;
     } else {
       return false;
@@ -91614,31 +91614,28 @@ var handlers = {
 
 /***/ }),
 
-/***/ "./src/utils/storage.js":
-/*!******************************!*\
-  !*** ./src/utils/storage.js ***!
-  \******************************/
+/***/ "./src/utils/storage/storage.js":
+/*!**************************************!*\
+  !*** ./src/utils/storage/storage.js ***!
+  \**************************************/
 /*! exports provided: Storage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Storage", function() { return Storage; });
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
-/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
-
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -91647,42 +91644,40 @@ __webpack_require__.r(__webpack_exports__);
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
 
 
 var Storage = /*#__PURE__*/function () {
+  // le type est la clef utilise par les 2 listes (pair, friend...)
+  // ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
   function Storage(type) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Storage);
 
-    /*
-    le type est la clef utilise par les 2 listes (pair, friend...)
-    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
-    */
     this.type = type;
   }
   /* ajoute un element avec en clef son uuid et ajoute cet uuid dans le tableau correspondant au type */
 
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Storage, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Storage, [{
     key: "set",
     value: function set(objectSended) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__["handlers"].uuid();
+        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_6__["handlers"].uuid();
         var type = _this.type;
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
-        var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
+        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
+        var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
           uuid: uuid,
           type: type
         }, objectSended)));
         Promise.all([getter, setter]).then(function (data) {
           var newList = data[0][type];
           newList.push(uuid);
-          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, newList)).then(function () {
+          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
             return resolve();
           })["catch"](function () {
             return reject();
@@ -91701,9 +91696,9 @@ var Storage = /*#__PURE__*/function () {
 
       // list (array) est optionel, si il n'y a pas ce param getList renvois toute la liste du type
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee() {
           var list;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
@@ -91718,13 +91713,13 @@ var Storage = /*#__PURE__*/function () {
 
                 case 4:
                   _context.next = 6;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
+                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
 
                 case 6:
                   list = _context.sent;
 
                 case 7:
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
+                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
                     var arrayValues = Object.values(data).sort(function (a, b) {
                       var la = a.label.toLowerCase(),
                           lb = b.label.toLowerCase();
@@ -91752,7 +91747,7 @@ var Storage = /*#__PURE__*/function () {
     key: "getOne",
     value: function getOne(uuid) {
       return new Promise(function (resolve, reject) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(uuid).then(function (dataObject) {
+        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(uuid).then(function (dataObject) {
           resolve(dataObject[uuid]);
         })["catch"](function (err) {
           reject(err);
@@ -91767,18 +91762,18 @@ var Storage = /*#__PURE__*/function () {
       var _this3 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee2() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee2() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee2$(_context2) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   _context2.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this3.type, []));
+                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
 
                 case 2:
                   getList = _context2.sent;
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(getList[_this3.type]).then(function (data) {
+                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(getList[_this3.type]).then(function (data) {
                     var arrayValues = Object.values(data).filter(function (item) {
                       if (item[key] === value) {
                         return true;
@@ -91806,19 +91801,19 @@ var Storage = /*#__PURE__*/function () {
     key: "modify",
     value: function modify(key, newObject) {
       return new Promise(function (resolve) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee3() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee3() {
           var getObject;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee3$(_context3) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee3$(_context3) {
             while (1) {
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(key);
+                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(key);
 
                 case 2:
                   getObject = _context3.sent;
                   newObject = _objectSpread(_objectSpread({}, getObject[key]), newObject);
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, key, newObject)).then(function () {
+                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, key, newObject)).then(function () {
                     resolve();
                   });
 
@@ -91839,96 +91834,18 @@ var Storage = /*#__PURE__*/function () {
       var _this4 = this;
 
       return new Promise(function (resolve) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_this4.type).then(function (data) {
+        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_this4.type).then(function (data) {
           var newList = data[_this4.type];
           var indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          var setterNewList = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this4.type, newList));
-          var removeObject = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.remove(uuid);
+          var setterNewList = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
+          var removeObject = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(function () {
             resolve();
           });
         });
       });
-    } ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
-
-    /* recupere tout le store */
-
-  }, {
-    key: "getAll",
-    value: function getAll() {
-      return new Promise(function (resolve) {
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get();
-        getter.then(function (data) {
-          resolve(data);
-        });
-      });
     }
-    /* /!\ supprime tout le store /!\ */
-
-  }, {
-    key: "deleteAll",
-    value: function deleteAll() {
-      return new Promise(function (resolve) {
-        var cleaner = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.clear();
-        cleaner.then(function () {
-          resolve();
-        });
-      });
-    }
-    /* /!\ remplace tout l'existant /!\ */
-
-  }, {
-    key: "importNewStorage",
-    value: function () {
-      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee4(json) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                _context4.next = 2;
-                return this.deleteAll();
-
-              case 2:
-                return _context4.abrupt("return", new Promise(function (resolve) {
-                  var lists = ['pair', 'friend'];
-                  lists.forEach(function (type) {
-                    var list = json[type];
-
-                    if (list) {
-                      Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, list));
-                      list.forEach(function (uuid) {
-                        var element = json[uuid];
-
-                        if (element) {
-                          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, element));
-                        }
-
-                        if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
-                          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set({
-                            settings: json.settings
-                          });
-                        }
-                      });
-                    }
-                  });
-                  resolve();
-                }));
-
-              case 3:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4, this);
-      }));
-
-      function importNewStorage(_x) {
-        return _importNewStorage.apply(this, arguments);
-      }
-
-      return importNewStorage;
-    }()
   }]);
 
   return Storage;

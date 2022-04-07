@@ -6,11 +6,9 @@ import { handlers } from 'Utils/handlers.js';
 
 export class Storage {
 
+  // le type est la clef utilise par les 2 listes (pair, friend...)
+  // ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
   constructor(type) {
-    /*
-    le type est la clef utilise par les 2 listes (pair, friend...)
-    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
-    */
     this.type = type;
   }
 
@@ -141,62 +139,6 @@ export class Storage {
           });
         });
 
-    });
-  }
-
-  ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
-
-  /* recupere tout le store */
-  getAll() {
-    return new Promise(resolve => {
-      let getter = webExt().storage.local.get();
-      getter.then(data => {
-        resolve(data);
-      });
-    });
-  }
-
-  /* /!\ supprime tout le store /!\ */
-  deleteAll() {
-    return new Promise(resolve => {
-      let cleaner = webExt().storage.local.clear();
-      cleaner.then(() => {
-        resolve();
-      });
-    });
-  }
-
-  /* /!\ remplace tout l'existant /!\ */
-  async importNewStorage(json) {
-
-    await this.deleteAll();
-
-    return new Promise(resolve => {
-
-      const lists = ['pair', 'friend'];
-
-      lists.forEach(type => {
-        const list = json[type];
-
-        if (list) {
-          webExt().storage.local.set({ [type]: list });
-          list.forEach(uuid => {
-
-            const element = json[uuid];
-            if (element) {
-              webExt().storage.local.set({ [uuid]: element });
-            }
-
-            if (typeof json.settings === 'object') {
-              webExt().storage.local.set({ settings: json.settings });
-            }
-
-          });
-        }
-
-      });
-
-      resolve();
     });
   }
 

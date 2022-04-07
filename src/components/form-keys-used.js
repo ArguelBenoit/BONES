@@ -6,7 +6,6 @@ import FieldFriends from 'Components/field-friends.js';
 
 
 
-
 const FormKeysUsed = () => {
 
   const { pairs } = usePairsContext();
@@ -44,13 +43,13 @@ const FormKeysUsed = () => {
   };
 
   return <div className="u-themecolor-container u-padding">
-    <label>Your pair key</label>
+    <label>Your pair key *</label>
     <select
       type="select"
       value={stateValue.pair}
       onChange={handlerSetPair}
     >
-      <option key="--" value="--">--</option>
+      <option key="--" value="">--</option>
       {pairs.pairs.map(
         pair => <option
           key={pair.uuid}

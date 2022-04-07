@@ -90820,9 +90820,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
 /* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
 /* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
-/* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/crypting.js */ "./src/utils/crypting.js");
+/* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
 /* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -91267,7 +91267,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/tool-box.js */ "./src/components/tool-box.js");
 /* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 /* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
 
 
@@ -91452,9 +91452,9 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/utils/crypting.js":
+/***/ "./src/utils/domain/crypting.js":
 /*!*******************************!*\
-  !*** ./src/utils/crypting.js ***!
+  !*** ./src/utils/domain/crypting.js ***!
   \*******************************/
 /*! exports provided: Crypting */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -91634,9 +91634,9 @@ var Crypting = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./src/utils/storage.js":
+/***/ "./src/utils/storage/storage.js":
 /*!******************************!*\
-  !*** ./src/utils/storage.js ***!
+  !*** ./src/utils/storage/storage.js ***!
   \******************************/
 /*! exports provided: Storage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {

@@ -21,9 +21,9 @@ export const handlers = {
   /* retourne un booléen qui valide l'activation de bones */
   getActivate(settings) {
     if (
-      (settings.activate === true || settings.activate === undefined) &&
-      (settings.pair && settings.pair !== '') &&
-      (settings.friends.length > 0)
+      settings.activate === true &&
+      settings.friends.length > 0 &&
+      settings.pair !== ''
     ) {
       return true;
     } else {

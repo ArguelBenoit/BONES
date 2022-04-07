@@ -11,8 +11,7 @@ import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
 import { useSettingsContext } from 'Contexts/settings.js';
 import Bus from 'Utils/bus.js';
-import { Storage } from 'Utils/storage.js';
-const store = new Storage();
+import { manager } from 'Utils/storage/manager.js';
 
 
 const Index = () => {
@@ -41,7 +40,7 @@ const Index = () => {
     Bus.dispatch('ModalPrompt', {
       message: 'Do you really want to delete all data?',
       action: () => {
-        store.deleteAll().then(() => {
+        manager.deleteAll().then(() => {
           location.reload();
         });
       }

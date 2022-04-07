@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import head from 'Images/bones/head-regular.png';
 import Bus from 'Utils/bus.js';
-import { Storage } from 'Utils/storage.js';
+import { manager } from 'Utils/storage/manager.js';
 
 
 const ModalImportDb = () => {
@@ -22,9 +22,8 @@ const ModalImportDb = () => {
     var reader = new FileReader();
     reader.readAsText(e.target.files[0]);
     reader.onload = event => {
-      const Store = new Storage();
       const obj = JSON.parse(event.target.result);
-      Store.importNewStorage(obj).then(() => {
+      manager.importNewStorage(obj).then(() => {
         location.reload();
       });
     };

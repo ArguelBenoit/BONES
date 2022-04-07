@@ -1,10 +1,6 @@
 
-
-WIP________________________________________________________________________
-- faire le ménage dans les options (methods, stupid etc...)
-
-
 TODO_______________________________________________________________________
+- Déplacement en localstorage settings
 - Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
 - [deplacement en localstorage et repositionnement si en dehors de la fenêtre]
 - bug decrypt sur gmail
@@ -14,7 +10,13 @@ TODO_______________________________________________________________________
 - compression finale des messages (actuellement trop long)
 
 
+WIP________________________________________________________________________
+
+
 DONE_______________________________________________________________________
+- fix absence de pair doit désactiver
+- initial state supprimer les liaison
+- faire le ménage dans les options (methods, stupid etc...)
 - encrypt/decrypt email (protonmail iframe)
 - Loading (css, generation background ?)
 - amélioration chiffrement (pour l'instant limité à 214c) Maintenant illimité

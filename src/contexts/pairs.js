@@ -5,7 +5,7 @@ import React, {
   useContext,
   useEffect
 } from 'react';
-import { Storage } from 'Utils/storage.js';
+import { Storage } from 'Utils/storage/storage.js';
 const pairStore = new Storage('pair');
 const PairsContext = createContext();
 

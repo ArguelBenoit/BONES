@@ -7,9 +7,9 @@ import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
-import { Crypting } from 'Utils/crypting.js';
+import { Crypting } from 'Utils/domain/crypting.js';
 // Storage
-import { Storage } from 'Utils/storage.js';
+import { Storage } from 'Utils/storage/storage.js';
 const friendStore = new Storage('friend');
 const pairStore = new Storage('pair');
 
@@ -59,7 +59,7 @@ class ToolBox extends React.Component {
       this.crypting = new Crypting(friends, pair);
       this.setState({
         toggled: settings.open,
-        showInstruction: settings === undefined ? true : settings.instruction,
+        showInstruction: settings.instruction,
         header: '',
         loaded: true
       });

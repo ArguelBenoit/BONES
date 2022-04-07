@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import head from 'Images/bones/head-regular.png';
 import Bus from 'Utils/bus.js';
 import { handlers } from 'Utils/handlers.js';
-import { Storage } from 'Utils/storage.js';
-const store = new Storage();
+import { manager } from 'Utils/storage/manager.js';
 
 
 const ModalDumpDb = () => {
@@ -11,7 +10,7 @@ const ModalDumpDb = () => {
   const [ state, setState ] = useState({ active: false, jsDb: {} });
 
   Bus.subscribe('ModalDumpDb', () => {
-    store.getAll().then(jsDb => {
+    manager.getAll().then(jsDb => {
       setState({
         active: true,
         jsDb

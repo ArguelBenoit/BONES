@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReturnLink from 'Components/return-link.js';
 import { useRouterContext } from 'Contexts/router.js';
 import { useFriendsContext } from 'Contexts/friends.js';
-import { checkPublic } from 'Utils/keys.js';
+import { checkPublic } from 'Utils/domain/keys.js';
 import Bus from 'Utils/bus.js';
 
 

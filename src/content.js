@@ -7,7 +7,7 @@ import ToolBox from 'Components/tool-box.js';
 import { handlers } from 'Utils/handlers.js';
 const { getActivate } = handlers;
 /* storage */
-import { Storage } from 'Utils/storage.js';
+import { Storage } from 'Utils/storage/storage.js';
 const store = new Storage();
 import webExt from 'Utils/web-ext.js';
 

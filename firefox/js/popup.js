@@ -89040,7 +89040,7 @@ var FieldFriends = function FieldFriends(_ref) {
     style: {
       marginBottom: 10
     }
-  }, "Friend's key"), fields.value.map(function (val, i) {
+  }, "Friend's key *"), fields.value.map(function (val, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
       value: fields.value[i],
       onChange: handlerChange,
@@ -89147,13 +89147,13 @@ var FormKeysUsed = function FormKeysUsed() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-themecolor-container u-padding"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
     type: "select",
     value: stateValue.pair,
     onChange: handlerSetPair
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
     key: "--",
-    value: "--"
+    value: ""
   }, "--"), pairs.pairs.map(function (pair) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("option", {
       key: pair.uuid,
@@ -89333,14 +89333,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
 
 
 
 
 
 
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]();
 
 var ModalDumpDb = function ModalDumpDb() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
@@ -89352,7 +89351,7 @@ var ModalDumpDb = function ModalDumpDb() {
       setState = _useState2[1];
 
   Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__["default"].subscribe('ModalDumpDb', function () {
-    store.getAll().then(function (jsDb) {
+    Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_5__["manager"].getAll().then(function (jsDb) {
       setState({
         active: true,
         jsDb: jsDb
@@ -89409,7 +89408,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
 
 
 
@@ -89441,9 +89440,8 @@ var ModalImportDb = function ModalImportDb() {
     reader.readAsText(e.target.files[0]);
 
     reader.onload = function (event) {
-      var Store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_4__["Storage"]();
       var obj = JSON.parse(event.target.result);
-      Store.importNewStorage(obj).then(function () {
+      Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_4__["manager"].importNewStorage(obj).then(function () {
         location.reload();
       });
     };
@@ -89782,7 +89780,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -89798,7 +89796,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 /* eslint-disable react/no-multi-comp */
 
 
-var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('friend');
+var friendStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('friend');
 var FriendsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet friend
 
 var initialFriends = {
@@ -89936,7 +89934,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -89952,7 +89950,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 /* eslint-disable react/no-multi-comp */
 
 
-var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('pair');
+var pairStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_5__["Storage"]('pair');
 var PairsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_4__["createContext"])(); // modèle de l'objet pair, option n'est pas obligatoire
 
 var initialPairs = {
@@ -90179,7 +90177,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 /* harmony import */ var Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/content-dispatch.js */ "./src/utils/content-dispatch.js");
 
 
@@ -90194,7 +90192,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 /* eslint-disable react/no-multi-comp */
 
 
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
+var store = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
 var SettingsContext = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_5__["createContext"])();
  // modèle de l'objet settings
 
@@ -90385,20 +90383,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var Contexts_providers_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Contexts/providers.js */ "./src/contexts/providers.js");
-/* harmony import */ var Components_modal_loading_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/modal-loading.js */ "./src/components/modal-loading.js");
-/* harmony import */ var Components_modal_success_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/modal-success.js */ "./src/components/modal-success.js");
-/* harmony import */ var Components_modal_prompt_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Components/modal-prompt.js */ "./src/components/modal-prompt.js");
-/* harmony import */ var Components_modal_dump_db_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Components/modal-dump-db.js */ "./src/components/modal-dump-db.js");
-/* harmony import */ var Components_modal_import_db_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/modal-import-db.js */ "./src/components/modal-import-db.js");
-/* harmony import */ var Components_router_trigger_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Components/router-trigger.js */ "./src/components/router-trigger.js");
-/* harmony import */ var Styles_common_less__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Styles/common.less */ "./src/styles/common.less");
-/* harmony import */ var Styles_common_less__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(Styles_common_less__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var Styles_button_less__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Styles/button.less */ "./src/styles/button.less");
-/* harmony import */ var Styles_button_less__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(Styles_button_less__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+/* harmony import */ var Components_router_trigger_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/router-trigger.js */ "./src/components/router-trigger.js");
+/* harmony import */ var Components_modal_loading_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Components/modal-loading.js */ "./src/components/modal-loading.js");
+/* harmony import */ var Components_modal_success_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Components/modal-success.js */ "./src/components/modal-success.js");
+/* harmony import */ var Components_modal_prompt_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/modal-prompt.js */ "./src/components/modal-prompt.js");
+/* harmony import */ var Components_modal_dump_db_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Components/modal-dump-db.js */ "./src/components/modal-dump-db.js");
+/* harmony import */ var Components_modal_import_db_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Components/modal-import-db.js */ "./src/components/modal-import-db.js");
+/* harmony import */ var Styles_common_less__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Styles/common.less */ "./src/styles/common.less");
+/* harmony import */ var Styles_common_less__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(Styles_common_less__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var Styles_button_less__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Styles/button.less */ "./src/styles/button.less");
+/* harmony import */ var Styles_button_less__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Styles_button_less__WEBPACK_IMPORTED_MODULE_11__);
+
+
 
 
  // Les composants absolues
-
 
 
 
@@ -90410,10 +90410,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var PopUp = function PopUp() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_providers_js__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_loading_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_success_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_prompt_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_dump_db_js__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_import_db_js__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_router_trigger_js__WEBPACK_IMPORTED_MODULE_8__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Contexts_providers_js__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_loading_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_success_js__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_prompt_js__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_dump_db_js__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_modal_import_db_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_router_trigger_js__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
-Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PopUp, null), document.getElementById('root'));
+var reactRender = function reactRender() {
+  Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PopUp, null), document.getElementById('root'));
+};
+
+Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_3__["manager"].getHasStorage().then( // il y a un store
+function () {
+  return reactRender();
+} // On inject react
+)["catch"](function () {
+  // il y a pas de store
+  Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_3__["manager"].setInitialStorage().then( // on initialise le store
+  function () {
+    return reactRender();
+  } // On inject react
+  );
+});
 
 /***/ }),
 
@@ -90647,52 +90662,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 /***/ }),
 
-/***/ "./src/utils/handlers.js":
-/*!*******************************!*\
-  !*** ./src/utils/handlers.js ***!
-  \*******************************/
-/*! exports provided: handlers */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
-var handlers = {
-  /* retourne un uuid */
-  uuid: function uuid() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-      var r = Math.random() * 16 | 0,
-          v = c == 'x' ? r : r & 0x3 | 0x8;
-      return v.toString(16);
-    });
-  },
-
-  /* retourne une date mm-dd-yyyy */
-  date: function date() {
-    var today = new Date();
-    var day = String(today.getDate()).padStart(2, '0');
-    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
-
-    var year = today.getFullYear();
-    return "".concat(month, "-").concat(day, "-").concat(year);
-  },
-
-  /* retourne un booléen qui valide l'activation de bones */
-  getActivate: function getActivate(settings) {
-    if ((settings.activate === true || settings.activate === undefined) && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-};
-
-/***/ }),
-
-/***/ "./src/utils/keys.js":
-/*!***************************!*\
-  !*** ./src/utils/keys.js ***!
-  \***************************/
+/***/ "./src/utils/domain/keys.js":
+/*!**********************************!*\
+  !*** ./src/utils/domain/keys.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -90734,31 +90707,208 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/utils/storage.js":
-/*!******************************!*\
-  !*** ./src/utils/storage.js ***!
-  \******************************/
+/***/ "./src/utils/handlers.js":
+/*!*******************************!*\
+  !*** ./src/utils/handlers.js ***!
+  \*******************************/
+/*! exports provided: handlers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
+var handlers = {
+  /* retourne un uuid */
+  uuid: function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0,
+          v = c == 'x' ? r : r & 0x3 | 0x8;
+      return v.toString(16);
+    });
+  },
+
+  /* retourne une date mm-dd-yyyy */
+  date: function date() {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
+
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if (settings.activate === true && settings.friends.length > 0 && settings.pair !== '') {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+
+/***/ }),
+
+/***/ "./src/utils/storage/manager.js":
+/*!**************************************!*\
+  !*** ./src/utils/storage/manager.js ***!
+  \**************************************/
+/*! exports provided: manager */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "manager", function() { return manager; });
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+
+
+
+
+
+var manager = {
+  getHasStorage: function getHasStorage() {
+    return new Promise(function (resolve, reject) {
+      var getterStore = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.get();
+      getterStore.then(function (data) {
+        var settings = data.settings,
+            friend = data.friend,
+            pair = data.pair;
+
+        if (settings && friend && pair) {
+          resolve();
+        } else {
+          reject();
+        }
+      });
+    });
+  },
+
+  /* Initialise le store minimum */
+  setInitialStorage: function setInitialStorage() {
+    return new Promise(function (resolve) {
+      var setPair = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+        pair: []
+      });
+      var setFriend = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+        friend: []
+      });
+      var setSettings = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+        settings: {
+          activate: true,
+          friends: [],
+          pair: '',
+          instruction: true,
+          open: true,
+          x: 60,
+          y: 60
+        }
+      });
+      Promise.all([setPair, setFriend, setSettings]).then(function () {
+        resolve();
+      });
+    });
+  },
+
+  /* recupere tout le store */
+  getAll: function getAll() {
+    return new Promise(function (resolve) {
+      var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.get();
+      getter.then(function (data) {
+        resolve(data);
+      });
+    });
+  },
+
+  /* /!\ supprime tout le store /!\ */
+  deleteAll: function deleteAll() {
+    return new Promise(function (resolve) {
+      var cleaner = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.clear();
+      cleaner.then(function () {
+        resolve();
+      });
+    });
+  },
+
+  /* /!\ remplace tout l'existant /!\ */
+  importNewStorage: function importNewStorage(json) {
+    var _this = this;
+
+    return _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.mark(function _callee() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return _this.deleteAll();
+
+            case 2:
+              return _context.abrupt("return", new Promise(function (resolve) {
+                var lists = ['pair', 'friend'];
+                lists.forEach(function (type) {
+                  var list = json[type];
+
+                  if (list) {
+                    Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, list));
+                    list.forEach(function (uuid) {
+                      var element = json[uuid];
+
+                      if (element) {
+                        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, element));
+                      }
+
+                      if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
+                        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+                          settings: json.settings
+                        });
+                      }
+                    });
+                  }
+                });
+                resolve();
+              }));
+
+            case 3:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
+  }
+};
+
+/***/ }),
+
+/***/ "./src/utils/storage/storage.js":
+/*!**************************************!*\
+  !*** ./src/utils/storage/storage.js ***!
+  \**************************************/
 /*! exports provided: Storage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Storage", function() { return Storage; });
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
-/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
-
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -90767,42 +90917,40 @@ __webpack_require__.r(__webpack_exports__);
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
 
 
 var Storage = /*#__PURE__*/function () {
+  // le type est la clef utilise par les 2 listes (pair, friend...)
+  // ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
   function Storage(type) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Storage);
 
-    /*
-    le type est la clef utilise par les 2 listes (pair, friend...)
-    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
-    */
     this.type = type;
   }
   /* ajoute un element avec en clef son uuid et ajoute cet uuid dans le tableau correspondant au type */
 
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Storage, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Storage, [{
     key: "set",
     value: function set(objectSended) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_7__["handlers"].uuid();
+        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_6__["handlers"].uuid();
         var type = _this.type;
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
-        var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
+        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
+        var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
           uuid: uuid,
           type: type
         }, objectSended)));
         Promise.all([getter, setter]).then(function (data) {
           var newList = data[0][type];
           newList.push(uuid);
-          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, newList)).then(function () {
+          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
             return resolve();
           })["catch"](function () {
             return reject();
@@ -90821,9 +90969,9 @@ var Storage = /*#__PURE__*/function () {
 
       // list (array) est optionel, si il n'y a pas ce param getList renvois toute la liste du type
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee() {
           var list;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
@@ -90838,13 +90986,13 @@ var Storage = /*#__PURE__*/function () {
 
                 case 4:
                   _context.next = 6;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
+                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
 
                 case 6:
                   list = _context.sent;
 
                 case 7:
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
+                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
                     var arrayValues = Object.values(data).sort(function (a, b) {
                       var la = a.label.toLowerCase(),
                           lb = b.label.toLowerCase();
@@ -90872,7 +91020,7 @@ var Storage = /*#__PURE__*/function () {
     key: "getOne",
     value: function getOne(uuid) {
       return new Promise(function (resolve, reject) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(uuid).then(function (dataObject) {
+        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(uuid).then(function (dataObject) {
           resolve(dataObject[uuid]);
         })["catch"](function (err) {
           reject(err);
@@ -90887,18 +91035,18 @@ var Storage = /*#__PURE__*/function () {
       var _this3 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee2() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee2() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee2$(_context2) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   _context2.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this3.type, []));
+                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
 
                 case 2:
                   getList = _context2.sent;
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(getList[_this3.type]).then(function (data) {
+                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(getList[_this3.type]).then(function (data) {
                     var arrayValues = Object.values(data).filter(function (item) {
                       if (item[key] === value) {
                         return true;
@@ -90926,19 +91074,19 @@ var Storage = /*#__PURE__*/function () {
     key: "modify",
     value: function modify(key, newObject) {
       return new Promise(function (resolve) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee3() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee3() {
           var getObject;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee3$(_context3) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee3$(_context3) {
             while (1) {
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(key);
+                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(key);
 
                 case 2:
                   getObject = _context3.sent;
                   newObject = _objectSpread(_objectSpread({}, getObject[key]), newObject);
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, key, newObject)).then(function () {
+                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, key, newObject)).then(function () {
                     resolve();
                   });
 
@@ -90959,96 +91107,18 @@ var Storage = /*#__PURE__*/function () {
       var _this4 = this;
 
       return new Promise(function (resolve) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_this4.type).then(function (data) {
+        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_this4.type).then(function (data) {
           var newList = data[_this4.type];
           var indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          var setterNewList = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this4.type, newList));
-          var removeObject = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.remove(uuid);
+          var setterNewList = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
+          var removeObject = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(function () {
             resolve();
           });
         });
       });
-    } ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
-
-    /* recupere tout le store */
-
-  }, {
-    key: "getAll",
-    value: function getAll() {
-      return new Promise(function (resolve) {
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get();
-        getter.then(function (data) {
-          resolve(data);
-        });
-      });
     }
-    /* /!\ supprime tout le store /!\ */
-
-  }, {
-    key: "deleteAll",
-    value: function deleteAll() {
-      return new Promise(function (resolve) {
-        var cleaner = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.clear();
-        cleaner.then(function () {
-          resolve();
-        });
-      });
-    }
-    /* /!\ remplace tout l'existant /!\ */
-
-  }, {
-    key: "importNewStorage",
-    value: function () {
-      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee4(json) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                _context4.next = 2;
-                return this.deleteAll();
-
-              case 2:
-                return _context4.abrupt("return", new Promise(function (resolve) {
-                  var lists = ['pair', 'friend'];
-                  lists.forEach(function (type) {
-                    var list = json[type];
-
-                    if (list) {
-                      Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, list));
-                      list.forEach(function (uuid) {
-                        var element = json[uuid];
-
-                        if (element) {
-                          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, element));
-                        }
-
-                        if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
-                          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set({
-                            settings: json.settings
-                          });
-                        }
-                      });
-                    }
-                  });
-                  resolve();
-                }));
-
-              case 3:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4, this);
-      }));
-
-      function importNewStorage(_x) {
-        return _importNewStorage.apply(this, arguments);
-      }
-
-      return importNewStorage;
-    }()
   }]);
 
   return Storage;
@@ -91096,8 +91166,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/return-link.js */ "./src/components/return-link.js");
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
-/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/keys.js */ "./src/utils/keys.js");
-/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/domain/keys.js */ "./src/utils/domain/keys.js");
+/* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 
 
@@ -91162,7 +91232,7 @@ var FormFriend = function FormFriend() {
       "public": 0
     };
     if (!stateValue.label || stateValue.label === '') validator.label = 1;
-    if (!Object(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__["checkPublic"])(stateValue["public"])) validator["public"] = 2;
+    if (!Object(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__["checkPublic"])(stateValue["public"])) validator["public"] = 2;
     if (!stateValue["public"] || stateValue["public"] === '') validator["public"] = 1;
     return validator;
   };
@@ -91252,8 +91322,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/return-link.js */ "./src/components/return-link.js");
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
-/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/keys.js */ "./src/utils/keys.js");
-/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/domain/keys.js */ "./src/utils/domain/keys.js");
+/* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var Components_field_error_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/field-error.js */ "./src/components/field-error.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 
@@ -91318,7 +91388,7 @@ var FormPair = function FormPair() {
   var clickGenerating = function clickGenerating() {
     Utils_bus_js__WEBPACK_IMPORTED_MODULE_8__["default"].dispatch('ModalLoading', true);
     setTimeout(function () {
-      var pairGenerated = Object(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__["generating"])();
+      var pairGenerated = Object(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__["generating"])();
       setStateValue(_objectSpread(_objectSpread({}, stateValue), {}, {
         "private": pairGenerated["private"].trim(),
         "public": pairGenerated["public"].trim()
@@ -91335,8 +91405,8 @@ var FormPair = function FormPair() {
       "public": 0
     };
     if (!stateValue.label || stateValue.label === '') validator.label = 1;
-    if (!Object(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__["checkPublic"])(stateValue["public"])) validator["public"] = 2;
-    if (!Object(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__["checkPrivate"])(stateValue["private"])) validator["private"] = 3;
+    if (!Object(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__["checkPublic"])(stateValue["public"])) validator["public"] = 2;
+    if (!Object(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__["checkPrivate"])(stateValue["private"])) validator["private"] = 3;
     if (!stateValue["private"] || stateValue["private"] === '') validator["private"] = 1;
     if (!stateValue["public"] || stateValue["public"] === '') validator["public"] = 1;
     return validator;
@@ -91456,7 +91526,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
 /* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
 
 
 
@@ -91471,7 +91541,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_13__["Storage"]();
 
 var Index = function Index() {
   var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_8__["useRouterContext"])(),
@@ -91499,7 +91568,7 @@ var Index = function Index() {
     Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalPrompt', {
       message: 'Do you really want to delete all data?',
       action: function action() {
-        store.deleteAll().then(function () {
+        Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_13__["manager"].deleteAll().then(function () {
           location.reload();
         });
       }

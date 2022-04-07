@@ -89420,7 +89420,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -89496,7 +89496,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -89872,7 +89872,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -90027,7 +90027,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/content-dispatch.js */ "./src/utils/content-dispatch.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -90194,7 +90194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -90439,7 +90439,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 /* harmony import */ var Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/content-dispatch.js */ "./src/utils/content-dispatch.js");
 
 
@@ -90915,9 +90915,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 /***/ }),
 
-/***/ "./src/utils/keys.js":
+/***/ "./src/utils/domain/keys.js":
 /*!***************************!*\
-  !*** ./src/utils/keys.js ***!
+  !*** ./src/utils/domain/keys.js ***!
   \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -90960,9 +90960,9 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./src/utils/storage.js":
+/***/ "./src/utils/storage/storage.js":
 /*!******************************!*\
-  !*** ./src/utils/storage.js ***!
+  !*** ./src/utils/storage/storage.js ***!
   \******************************/
 /*! exports provided: Storage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -91379,7 +91379,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/return-link.js */ "./src/components/return-link.js");
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
-/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/keys.js */ "./src/utils/keys.js");
+/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/domain/keys.js */ "./src/utils/domain/keys.js");
 /* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 
@@ -91748,7 +91748,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/return-link.js */ "./src/components/return-link.js");
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
-/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/keys.js */ "./src/utils/keys.js");
+/* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/domain/keys.js */ "./src/utils/domain/keys.js");
 /* harmony import */ var Utils_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_keys_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var Components_field_error_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/field-error.js */ "./src/components/field-error.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
@@ -91953,7 +91953,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_methods_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/methods.js */ "./src/contexts/methods.js");
 /* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/storage.js */ "./src/utils/storage.js");
+/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
