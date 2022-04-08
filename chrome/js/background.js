@@ -140,7 +140,7 @@ Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().browserAction
 Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.onUpdated.addListener(function (tabId, changeInfo) {
   if (changeInfo.url) {
     Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.sendMessage(tabId, {
-      action: 'MAINUPDATE'
+      action: 'SETTINGS_UPDATE'
     }).then(function () {})["catch"](function () {});
   }
 });

@@ -14,7 +14,7 @@ const store = new Storage();
 // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 handlers.webExt().runtime.onMessage.addListener(data => {
-  if (data.action === 'MAINUPDATE') {
+  if (data.action === 'SETTINGS_UPDATE') {
     INIT();
   }
 });
@@ -23,7 +23,7 @@ handlers.webExt().runtime.onMessage.addListener(data => {
 // function d'initialisation/réinitialisation de la toolbox
 const INIT = async () => {
   const settings = await store.getOne('settings');
-  // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
+  /* si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple) */
   if (document.querySelector('#BONES-CONTAINER')) {
     document.querySelector('#BONES-CONTAINER').remove();
   }
@@ -35,7 +35,12 @@ const INIT = async () => {
     document.body.prepend(div);
     /* initialisation de la toolbox */
     render(
-      <ToolBox />,
+      <ToolBox
+        coordinate={{
+          x: settings.x,
+          y: settings.y
+        }}
+      />,
       document.getElementById('BONES-CONTAINER')
     );
   }

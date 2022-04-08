@@ -1,5 +1,6 @@
 import React from 'react';
 import Draggable from 'react-draggable';
+import PropTypes from 'prop-types';
 import bonesRegular from 'Images/bones/head-regular.png';
 import bonesSuccess from 'Images/bones/head-success.png';
 import arrow from 'Images/bones/arrow.png';
@@ -11,6 +12,7 @@ import { Crypting } from 'Utils/domain/crypting.js';
 // Storage
 import { Storage } from 'Utils/storage/storage.js';
 const friendStore = new Storage('friend');
+const settingsStore = new Storage('settings');
 const pairStore = new Storage('pair');
 
 
@@ -26,6 +28,7 @@ class ToolBox extends React.Component {
     this.setShowInstruction = this.setShowInstruction.bind(this);
     this.handlerChange = this.handlerChange.bind(this);
     this.simulateInput = this.simulateInput.bind(this);
+    this.updateMainPostion = this.updateMainPostion.bind(this);
 
     this.state = {
       toggled: false,
@@ -34,7 +37,9 @@ class ToolBox extends React.Component {
       header: '',
       img: 'regular',
       stun: false,
-      loaded: false
+      loaded: false,
+      x: 60,
+      y: 60
     };
   }
 
@@ -52,8 +57,14 @@ class ToolBox extends React.Component {
       }
     });
 
+    let { y, x } = this.props.coordinate;
+    if (x > window.innerWidth - 400) x = window.innerWidth - 400;
+    if (x < 20) x = 20;
+    if (y > window.innerHeight - 340) y = window.innerHeight - 340;
+    if (y < 20) y = 20;
+
     (async () => {
-      const settings = await friendStore.getOne('settings');
+      const settings = await settingsStore.getOne('settings');
       const friends = await friendStore.getList(settings.friends);
       const pair = await pairStore.getOne(settings.pair);
       this.crypting = new Crypting(friends, pair);
@@ -61,21 +72,39 @@ class ToolBox extends React.Component {
         toggled: settings.open,
         showInstruction: settings.instruction,
         header: '',
-        loaded: true
+        loaded: true,
+        y,
+        x
       });
+      setTimeout(() => {
+        this.updateMainPostion();
+      }, 100);
     })();
+  }
+
+
+  updateMainPostion() {
+    /* remplacer le querySelector par une ref */
+    const position = document
+      .querySelector('#bones-tool-box')
+      .getBoundingClientRect();
+    const { left, top } = position;
+    settingsStore.modify('settings', {
+      x: left,
+      y: top
+    });
   }
 
 
   setToggled() {
     const { toggled } = this.state;
-    friendStore.modify('settings', { open: !toggled });
+    settingsStore.modify('settings', { open: !toggled });
     this.setState({ toggled: !toggled });
   }
 
 
   setShowInstruction() {
-    friendStore.modify('settings', {instruction: !this.state.showInstruction});
+    settingsStore.modify('settings', {instruction: !this.state.showInstruction});
     this.setState({showInstruction: !this.state.showInstruction});
   }
 
@@ -195,8 +224,7 @@ class ToolBox extends React.Component {
 
 
   render() {
-
-    const { message, toggled, img, header, showInstruction, loaded } = this.state;
+    const { message, toggled, img, header, showInstruction, loaded, x, y } = this.state;
 
     const propsContent = {
       message,
@@ -207,8 +235,9 @@ class ToolBox extends React.Component {
 
     if (loaded) {
       return <Draggable
-        defaultPosition={{ x: 60, y: 60 }}
+        defaultPosition={{ x, y }}
         handle=".draggable-handler"
+        onStop={this.updateMainPostion}
       >
         <div
           id="bones-tool-box"
@@ -274,6 +303,11 @@ class ToolBox extends React.Component {
     }
   }
 }
+
+
+ToolBox.propTypes = {
+  coordinate: PropTypes.object.isRequired
+};
 
 
 export default ToolBox;

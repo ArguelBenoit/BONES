@@ -140,7 +140,7 @@ Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().browserActio
 Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.onUpdated.addListener(function (tabId, changeInfo) {
   if (changeInfo.url) {
     Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.sendMessage(tabId, {
-      action: 'MAINUPDATE'
+      action: 'SETTINGS_UPDATE'
     }).then(function () {})["catch"](function () {});
   }
 });

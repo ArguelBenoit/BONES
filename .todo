@@ -1,12 +1,10 @@
 
 TODO_______________________________________________________________________
-- update a chaque modification du store settings
-- Déplacement en localstorage settings
-- Fonctionnement sur chrome, firefox, opera, (edge, safari ?).
-- [deplacement en localstorage et repositionnement si en dehors de la fenêtre]
 - bug decrypt sur gmail
-- nouvelle image success
+- Fonctionnement sur chrome.
 - README github, tutoriel de fonctionnement etc...
+- Tag v1
+- Mise sur les stores
 - compression finale des messages (actuellement trop long)
 
 
@@ -14,7 +12,10 @@ WIP________________________________________________________________________
 
 
 DONE_______________________________________________________________________
+- update a chaque modification du store settings
+- Déplacement en localstorage settings
 - css toggle instructions (protonmail entre autres)
+- [deplacement en localstorage et repositionnement si en dehors de la fenêtre]
 - fix absence de pair doit désactiver
 - initial state supprimer les liaison
 - faire le ménage dans les options (methods, stupid etc...)

@@ -22026,7 +22026,7 @@ exports.push([module.i, ".mask-loading {\n  overflow: hidden;\n}\n.mask-loading 
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#BONES-CONTAINER {\n  all: initial;\n}\n#BONES-CONTAINER #bones-tool-box {\n  color: #ddd;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n  font-size: 13px !important;\n  font-family: sans-serif !important;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-toolbox {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  all: initial;\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  cursor: pointer;\n  position: relative;\n  border: 0;\n  outline: 0;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
+exports.push([module.i, "#BONES-CONTAINER #bones-tool-box {\n  all: initial;\n  color: #ddd;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n  font-size: 13px !important;\n  font-family: sans-serif !important;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-toolbox {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  box-sizing: initial;\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  all: initial;\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  cursor: pointer;\n  position: relative;\n  border: 0;\n  outline: 0;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
 
 
 
@@ -90809,19 +90809,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-draggable */ "./node_modules/react-draggable/build/cjs/cjs.js");
 /* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_draggable__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Images/bones/head-success.png */ "./src/images/bones/head-success.png");
-/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
-/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Styles/toolbox.less */ "./src/styles/toolbox.less");
-/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
-/* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
-/* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
-/* harmony import */ var Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
-/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Images/bones/head-success.png */ "./src/images/bones/head-success.png");
+/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
+/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Styles/toolbox.less */ "./src/styles/toolbox.less");
+/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
+/* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
+/* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
+/* harmony import */ var Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -90844,11 +90846,13 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
  // Storage
 
 
-var friendStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('friend');
-var pairStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_18__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
+var friendStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('friend');
+var settingsStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('settings');
+var pairStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
 
 var ToolBox = /*#__PURE__*/function (_React$Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(ToolBox, _React$Component);
@@ -90867,6 +90871,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     _this.setShowInstruction = _this.setShowInstruction.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.handlerChange = _this.handlerChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.simulateInput = _this.simulateInput.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.updateMainPostion = _this.updateMainPostion.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.state = {
       toggled: false,
       message: '',
@@ -90874,7 +90879,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       header: '',
       img: 'regular',
       stun: false,
-      loaded: false
+      loaded: false,
+      x: 60,
+      y: 60
     };
     return _this;
   }
@@ -90897,6 +90904,13 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           }
         }
       });
+      var _this$props$coordinat = this.props.coordinate,
+          y = _this$props$coordinat.y,
+          x = _this$props$coordinat.x;
+      if (x > window.innerWidth - 400) x = window.innerWidth - 400;
+      if (x < 20) x = 20;
+      if (y > window.innerHeight - 340) y = window.innerHeight - 340;
+      if (y < 20) y = 20;
 
       _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.mark(function _callee() {
         var settings, friends, pair;
@@ -90905,7 +90919,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return friendStore.getOne('settings');
+                return settingsStore.getOne('settings');
 
               case 2:
                 settings = _context.sent;
@@ -90919,16 +90933,22 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
 
               case 8:
                 pair = _context.sent;
-                _this2.crypting = new Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](friends, pair);
+                _this2.crypting = new Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_18__["Crypting"](friends, pair);
 
                 _this2.setState({
                   toggled: settings.open,
                   showInstruction: settings.instruction,
                   header: '',
-                  loaded: true
+                  loaded: true,
+                  y: y,
+                  x: x
                 });
 
-              case 11:
+                setTimeout(function () {
+                  _this2.updateMainPostion();
+                }, 100);
+
+              case 12:
               case "end":
                 return _context.stop();
             }
@@ -90937,10 +90957,22 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       }))();
     }
   }, {
+    key: "updateMainPostion",
+    value: function updateMainPostion() {
+      /* remplacer le querySelector par une ref */
+      var position = document.querySelector('#bones-tool-box').getBoundingClientRect();
+      var left = position.left,
+          top = position.top;
+      settingsStore.modify('settings', {
+        x: left,
+        y: top
+      });
+    }
+  }, {
     key: "setToggled",
     value: function setToggled() {
       var toggled = this.state.toggled;
-      friendStore.modify('settings', {
+      settingsStore.modify('settings', {
         open: !toggled
       });
       this.setState({
@@ -90950,7 +90982,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "setShowInstruction",
     value: function setShowInstruction() {
-      friendStore.modify('settings', {
+      settingsStore.modify('settings', {
         instruction: !this.state.showInstruction
       });
       this.setState({
@@ -91113,7 +91145,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           img = _this$state2.img,
           header = _this$state2.header,
           showInstruction = _this$state2.showInstruction,
-          loaded = _this$state2.loaded;
+          loaded = _this$state2.loaded,
+          x = _this$state2.x,
+          y = _this$state2.y;
       var propsContent = {
         message: message,
         handlerChange: this.handlerChange,
@@ -91124,10 +91158,11 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       if (loaded) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_draggable__WEBPACK_IMPORTED_MODULE_9___default.a, {
           defaultPosition: {
-            x: 60,
-            y: 60
+            x: x,
+            y: y
           },
-          handle: ".draggable-handler"
+          handle: ".draggable-handler",
+          onStop: this.updateMainPostion
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           id: "bones-tool-box",
           className: toggled ? ' toggled' : ''
@@ -91142,18 +91177,18 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           className: "bones-logo-header"
         }, img === 'regular' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
           draggable: "false",
-          src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10___default.a,
+          src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11___default.a,
           width: "60",
           height: "60"
         }) : '', img === 'success' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
           draggable: "false",
-          src: Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11___default.a,
+          src: Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12___default.a,
           width: "60",
           height: "42",
           style: {
             marginTop: 5
           }
-        }) : '', img === 'loading' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_loading_js__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        }) : '', img === 'loading' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_loading_js__WEBPACK_IMPORTED_MODULE_17__["default"], {
           size: 60
         }) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-flex"
@@ -91164,13 +91199,13 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
         }, header)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
           className: "toggle-header",
           id: "toggle-header",
-          src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12___default.a,
+          src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13___default.a,
           width: "34",
           draggable: "false",
           onClick: this.setToggled
         }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-padding u-padding-top-s content"
-        }, !showInstruction ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__["default"], propsContent) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__["default"], propsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        }, !showInstruction ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__["default"], propsContent) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__["default"], propsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-margin-top-s u-flex --left"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
           type: "checkbox",
@@ -91190,6 +91225,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   return ToolBox;
 }(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
+ToolBox.propTypes = {
+  coordinate: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.object.isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (ToolBox);
 
 /***/ }),
@@ -91231,7 +91269,7 @@ var store = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
 Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().runtime.onMessage.addListener(function (data) {
-  if (data.action === 'MAINUPDATE') {
+  if (data.action === 'SETTINGS_UPDATE') {
     INIT();
   }
 }); // function d'initialisation/réinitialisation de la toolbox
@@ -91249,7 +91287,7 @@ var INIT = /*#__PURE__*/function () {
           case 2:
             settings = _context.sent;
 
-            // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
+            /* si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple) */
             if (document.querySelector('#BONES-CONTAINER')) {
               document.querySelector('#BONES-CONTAINER').remove();
             }
@@ -91263,7 +91301,12 @@ var INIT = /*#__PURE__*/function () {
               document.body.prepend(div);
               /* initialisation de la toolbox */
 
-              Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('BONES-CONTAINER'));
+              Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                coordinate: {
+                  x: settings.x,
+                  y: settings.y
+                }
+              }), document.getElementById('BONES-CONTAINER'));
             }
 
           case 5:

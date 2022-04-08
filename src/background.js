@@ -31,6 +31,6 @@ handlers.webExt()
 // obligatoire pour les routages côté client comme avec react et vue
 handlers.webExt().tabs.onUpdated.addListener((tabId, changeInfo) => {
   if (changeInfo.url) {
-    handlers.webExt().tabs.sendMessage(tabId, { action: 'MAINUPDATE' }).then(() => {}).catch(() => {});
+    handlers.webExt().tabs.sendMessage(tabId, { action: 'SETTINGS_UPDATE' }).then(() => {}).catch(() => {});
   }
 });

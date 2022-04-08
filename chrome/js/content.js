@@ -91289,7 +91289,7 @@ var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
 Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__["default"])().runtime.onMessage.addListener(function (data) {
-  if (data.action === 'MAINUPDATE') {
+  if (data.action === 'SETTINGS_UPDATE') {
     INIT();
   }
 }); // function d'initialisation/réinitialisation de la toolbox

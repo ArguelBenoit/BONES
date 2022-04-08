@@ -90245,7 +90245,7 @@ function SettingsProvider(props) {
   function modify(obj) {
     store.modify('settings', obj).then(function () {
       setSettings(_objectSpread(_objectSpread({}, settings), obj));
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])('MAINUPDATE');
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])('SETTINGS_UPDATE');
     });
   }
   /* getter */

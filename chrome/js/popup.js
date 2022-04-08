@@ -90098,7 +90098,7 @@ function MethodsProvider(props) {
   function add(method) {
     methodStore.set(method).then(function () {
       getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('SETTINGS_UPDATE');
     });
   }
   /**/
@@ -90107,7 +90107,7 @@ function MethodsProvider(props) {
   function modify(uuid, obj) {
     methodStore.modify(uuid, obj).then(function () {
       getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('SETTINGS_UPDATE');
     });
   }
   /**/
@@ -90116,7 +90116,7 @@ function MethodsProvider(props) {
   function remove(uuid) {
     methodStore.remove(uuid).then(function () {
       getList();
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('MAINUPDATE');
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])('SETTINGS_UPDATE');
     });
   }
   /**/
@@ -90507,7 +90507,7 @@ function SettingsProvider(props) {
   function modify(obj) {
     store.modify('settings', obj).then(function () {
       setSettings(_objectSpread(_objectSpread({}, settings), obj));
-      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])('MAINUPDATE');
+      Object(Utils_content_dispatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])('SETTINGS_UPDATE');
     });
   } // function modify(uuid, obj) {
   //   methodStore.modify(uuid, obj).then(() => {
