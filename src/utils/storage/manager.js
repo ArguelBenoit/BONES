@@ -1,4 +1,4 @@
-import webExt from 'Utils/web-ext.js';
+import { handlers } from 'Utils/handlers.js';
 
 
 export const manager = {
@@ -6,7 +6,7 @@ export const manager = {
 
   getHasStorage() {
     return new Promise((resolve, reject) => {
-      const getterStore = webExt().storage.local.get();
+      const getterStore = handlers.webExt().storage.local.get();
       getterStore.then(data => {
         const { settings, friend, pair } = data;
         if (settings && friend && pair) {
@@ -22,9 +22,9 @@ export const manager = {
   /* Initialise le store minimum */
   setInitialStorage() {
     return new Promise(resolve => {
-      const setPair = webExt().storage.local.set({ pair: [] });
-      const setFriend = webExt().storage.local.set({ friend: [] });
-      const setSettings = webExt().storage.local.set({ settings: {
+      const setPair = handlers.webExt().storage.local.set({ pair: [] });
+      const setFriend = handlers.webExt().storage.local.set({ friend: [] });
+      const setSettings = handlers.webExt().storage.local.set({ settings: {
         activate: true,
         friends: [],
         pair: '',
@@ -49,7 +49,7 @@ export const manager = {
   /* recupere tout le store */
   getAll() {
     return new Promise(resolve => {
-      let getter = webExt().storage.local.get();
+      let getter = handlers.webExt().storage.local.get();
       getter.then(data => {
         resolve(data);
       });
@@ -60,7 +60,7 @@ export const manager = {
   /* /!\ supprime tout le store /!\ */
   deleteAll() {
     return new Promise(resolve => {
-      let cleaner = webExt().storage.local.clear();
+      let cleaner = handlers.webExt().storage.local.clear();
       cleaner.then(() => {
         resolve();
       });
@@ -76,14 +76,14 @@ export const manager = {
       lists.forEach(type => {
         const list = json[type];
         if (list) {
-          webExt().storage.local.set({ [type]: list });
+          handlers.webExt().storage.local.set({ [type]: list });
           list.forEach(uuid => {
             const element = json[uuid];
             if (element) {
-              webExt().storage.local.set({ [uuid]: element });
+              handlers.webExt().storage.local.set({ [uuid]: element });
             }
             if (typeof json.settings === 'object') {
-              webExt().storage.local.set({ settings: json.settings });
+              handlers.webExt().storage.local.set({ settings: json.settings });
             }
           });
         }

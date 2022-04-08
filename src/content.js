@@ -9,12 +9,11 @@ const { getActivate } = handlers;
 /* storage */
 import { Storage } from 'Utils/storage/storage.js';
 const store = new Storage();
-import webExt from 'Utils/web-ext.js';
 
 
 // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
-webExt().runtime.onMessage.addListener(data => {
+handlers.webExt().runtime.onMessage.addListener(data => {
   if (data.action === 'MAINUPDATE') {
     INIT();
   }

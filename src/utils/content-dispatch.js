@@ -1,4 +1,4 @@
-import webExt from 'Utils/web-ext.js';
+import { handlers } from 'Utils/handlers.js';
 /* Déclenche un evenement vers les script content.js chargé dans toutes les pages web observées
  afin de mettre à jour la toolbox lorsqu'un parametre est mis à jour */
 
@@ -7,9 +7,9 @@ import webExt from 'Utils/web-ext.js';
 // data type object ex : { value: true }
 export default (action, data = {}) => {
 
-  webExt().tabs.query({}).then(tabs => {
+  handlers.webExt().tabs.query({}).then(tabs => {
     tabs.forEach(tab => {
-      webExt().tabs.sendMessage(tab.id, {...data, action})
+      handlers.webExt().tabs.sendMessage(tab.id, {...data, action})
         .then(() => {})
         .catch(() => {});
     });

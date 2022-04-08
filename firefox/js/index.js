@@ -90638,7 +90638,7 @@ var Bus = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
 /* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -90653,9 +90653,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 /* harmony default export */ __webpack_exports__["default"] = (function (action) {
   var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_1__["default"])().tabs.query({}).then(function (tabs) {
+  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_1__["handlers"].webExt().tabs.query({}).then(function (tabs) {
     tabs.forEach(function (tab) {
-      Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_1__["default"])().tabs.sendMessage(tab.id, _objectSpread(_objectSpread({}, data), {}, {
+      Utils_handlers_js__WEBPACK_IMPORTED_MODULE_1__["handlers"].webExt().tabs.sendMessage(tab.id, _objectSpread(_objectSpread({}, data), {}, {
         action: action
       })).then(function () {})["catch"](function () {});
     });
@@ -90719,6 +90719,9 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
+/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Env */ "./.env.js");
+/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(Env__WEBPACK_IMPORTED_MODULE_0__);
+
 var handlers = {
   /* retourne un uuid */
   uuid: function uuid() {
@@ -90746,6 +90749,19 @@ var handlers = {
     } else {
       return false;
     }
+  },
+
+  /* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
+  retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
+  brave...) Il retourne l'object browser pour firefox */
+  webExt: function webExt() {
+    if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'firefox') {
+      return browser;
+    } else if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'chrome') {
+      return chrome;
+    } else {
+      return chrome;
+    }
   }
 };
 
@@ -90769,7 +90785,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -90778,7 +90794,7 @@ __webpack_require__.r(__webpack_exports__);
 var manager = {
   getHasStorage: function getHasStorage() {
     return new Promise(function (resolve, reject) {
-      var getterStore = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.get();
+      var getterStore = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.get();
       getterStore.then(function (data) {
         var settings = data.settings,
             friend = data.friend,
@@ -90796,13 +90812,13 @@ var manager = {
   /* Initialise le store minimum */
   setInitialStorage: function setInitialStorage() {
     return new Promise(function (resolve) {
-      var setPair = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+      var setPair = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.set({
         pair: []
       });
-      var setFriend = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+      var setFriend = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.set({
         friend: []
       });
-      var setSettings = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+      var setSettings = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.set({
         settings: {
           activate: true,
           friends: [],
@@ -90822,7 +90838,7 @@ var manager = {
   /* recupere tout le store */
   getAll: function getAll() {
     return new Promise(function (resolve) {
-      var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.get();
+      var getter = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.get();
       getter.then(function (data) {
         resolve(data);
       });
@@ -90832,7 +90848,7 @@ var manager = {
   /* /!\ supprime tout le store /!\ */
   deleteAll: function deleteAll() {
     return new Promise(function (resolve) {
-      var cleaner = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.clear();
+      var cleaner = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.clear();
       cleaner.then(function () {
         resolve();
       });
@@ -90858,16 +90874,16 @@ var manager = {
                   var list = json[type];
 
                   if (list) {
-                    Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, list));
+                    Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, list));
                     list.forEach(function (uuid) {
                       var element = json[uuid];
 
                       if (element) {
-                        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, element));
+                        Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, element));
                       }
 
                       if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
-                        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_4__["default"])().storage.local.set({
+                        Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].webExt().storage.local.set({
                           settings: json.settings
                         });
                       }
@@ -90909,8 +90925,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
-/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -90923,7 +90938,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
-
 
 var Storage = /*#__PURE__*/function () {
   // le type est la clef utilise par les 2 listes (pair, friend...)
@@ -90942,17 +90956,17 @@ var Storage = /*#__PURE__*/function () {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_6__["handlers"].uuid();
+        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].uuid();
         var type = _this.type;
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
-        var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
+        var getter = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
+        var setter = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
           uuid: uuid,
           type: type
         }, objectSended)));
         Promise.all([getter, setter]).then(function (data) {
           var newList = data[0][type];
           newList.push(uuid);
-          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
+          Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
             return resolve();
           })["catch"](function () {
             return reject();
@@ -90988,13 +91002,13 @@ var Storage = /*#__PURE__*/function () {
 
                 case 4:
                   _context.next = 6;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
+                  return Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
 
                 case 6:
                   list = _context.sent;
 
                 case 7:
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
+                  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
                     var arrayValues = Object.values(data).sort(function (a, b) {
                       var la = a.label.toLowerCase(),
                           lb = b.label.toLowerCase();
@@ -91022,7 +91036,7 @@ var Storage = /*#__PURE__*/function () {
     key: "getOne",
     value: function getOne(uuid) {
       return new Promise(function (resolve, reject) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(uuid).then(function (dataObject) {
+        Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(uuid).then(function (dataObject) {
           resolve(dataObject[uuid]);
         })["catch"](function (err) {
           reject(err);
@@ -91044,11 +91058,11 @@ var Storage = /*#__PURE__*/function () {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   _context2.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
+                  return Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
 
                 case 2:
                   getList = _context2.sent;
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(getList[_this3.type]).then(function (data) {
+                  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(getList[_this3.type]).then(function (data) {
                     var arrayValues = Object.values(data).filter(function (item) {
                       if (item[key] === value) {
                         return true;
@@ -91083,12 +91097,12 @@ var Storage = /*#__PURE__*/function () {
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(key);
+                  return Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(key);
 
                 case 2:
                   getObject = _context3.sent;
                   newObject = _objectSpread(_objectSpread({}, getObject[key]), newObject);
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, key, newObject)).then(function () {
+                  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, key, newObject)).then(function () {
                     resolve();
                   });
 
@@ -91109,12 +91123,12 @@ var Storage = /*#__PURE__*/function () {
       var _this4 = this;
 
       return new Promise(function (resolve) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.get(_this4.type).then(function (data) {
+        Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_this4.type).then(function (data) {
           var newList = data[_this4.type];
           var indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          var setterNewList = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
-          var removeObject = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_5__["default"])().storage.local.remove(uuid);
+          var setterNewList = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
+          var removeObject = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(function () {
             resolve();
           });
@@ -91125,28 +91139,6 @@ var Storage = /*#__PURE__*/function () {
 
   return Storage;
 }();
-
-/***/ }),
-
-/***/ "./src/utils/web-ext.js":
-/*!******************************!*\
-  !*** ./src/utils/web-ext.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Env */ "./.env.js");
-/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(Env__WEBPACK_IMPORTED_MODULE_0__);
-
-/* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
-retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
-brave...) Il retourne l'object browser pour firefox */
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'firefox') return browser;else if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'chrome') return chrome;else return chrome;
-});
 
 /***/ }),
 

@@ -1,6 +1,7 @@
+import Env from 'Env';
+
 
 export const handlers = {
-
   /* retourne un uuid */
   uuid() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -8,7 +9,6 @@ export const handlers = {
       return v.toString(16);
     });
   },
-
   /* retourne une date mm-dd-yyyy */
   date() {
     const today = new Date();
@@ -17,7 +17,6 @@ export const handlers = {
     const year = today.getFullYear();
     return `${month}-${day}-${year}`;
   },
-
   /* retourne un booléen qui valide l'activation de bones */
   getActivate(settings) {
     if (
@@ -29,6 +28,17 @@ export const handlers = {
     } else {
       return false;
     }
+  },
+  /* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
+  retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
+  brave...) Il retourne l'object browser pour firefox */
+  webExt() {
+    if (Env.bro === 'firefox') {
+      return browser;
+    } else if (Env.bro === 'chrome') {
+      return chrome;
+    } else {
+      return chrome;
+    }
   }
-
 };

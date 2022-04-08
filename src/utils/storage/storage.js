@@ -1,6 +1,5 @@
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
-import webExt from 'Utils/web-ext.js';
 import { handlers } from 'Utils/handlers.js';
 
 
@@ -18,8 +17,8 @@ export class Storage {
 
       const uuid = handlers.uuid();
       const { type } = this;
-      const getter =  webExt().storage.local.get({[type]: []});
-      const setter =  webExt().storage.local.set({
+      const getter =  handlers.webExt().storage.local.get({[type]: []});
+      const setter =  handlers.webExt().storage.local.set({
         [uuid]: {
           uuid,
           type,
@@ -30,7 +29,7 @@ export class Storage {
         .then(data => {
           let newList = data[0][type];
           newList.push(uuid);
-          webExt().storage.local.set({[type]: newList})
+          handlers.webExt().storage.local.set({[type]: newList})
             .then(() => resolve())
             .catch(() => reject());
         })
@@ -49,9 +48,9 @@ export class Storage {
         if (listArray) {
           list = listArray;
         } else {
-          list = await webExt().storage.local.get({[this.type]: []});
+          list = await handlers.webExt().storage.local.get({[this.type]: []});
         }
-        webExt().storage.local.get(listArray ? list : list[this.type])
+        handlers.webExt().storage.local.get(listArray ? list : list[this.type])
           .then(data => {
             let arrayValues = Object.values(data).sort((a, b) => {
               let la = a.label.toLowerCase(),
@@ -76,7 +75,7 @@ export class Storage {
   /* recupere un element par une clef (uuid) */
   getOne(uuid) {
     return new Promise((resolve, reject) => {
-      webExt().storage.local.get(uuid)
+      handlers.webExt().storage.local.get(uuid)
         .then(dataObject => {
           resolve(dataObject[uuid]);
         })
@@ -91,8 +90,8 @@ export class Storage {
   keyValue(key, value) {
     return new Promise((resolve, reject) => {
       (async () => {
-        const getList = await webExt().storage.local.get({[this.type]: []});
-        webExt().storage.local.get(getList[this.type])
+        const getList = await handlers.webExt().storage.local.get({[this.type]: []});
+        handlers.webExt().storage.local.get(getList[this.type])
           .then(data => {
             let arrayValues = Object.values(data).filter(item => {
               if (item[key] === value) {
@@ -114,9 +113,9 @@ export class Storage {
   modify(key, newObject) {
     return new Promise((resolve) => {
       (async () => {
-        const getObject = await webExt().storage.local.get(key);
+        const getObject = await handlers.webExt().storage.local.get(key);
         newObject = {...getObject[key], ...newObject};
-        webExt().storage.local.set({ [key]: newObject})
+        handlers.webExt().storage.local.set({ [key]: newObject})
           .then(() => {
             resolve();
           });
@@ -127,13 +126,13 @@ export class Storage {
   /* supprime un element cible par son uuid */
   remove(uuid) {
     return new Promise((resolve) => {
-      webExt().storage.local.get(this.type)
+      handlers.webExt().storage.local.get(this.type)
         .then(data => {
           let newList = data[this.type];
           let indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          let setterNewList = webExt().storage.local.set({ [this.type]: newList });
-          let removeObject = webExt().storage.local.remove(uuid);
+          let setterNewList = handlers.webExt().storage.local.set({ [this.type]: newList });
+          let removeObject = handlers.webExt().storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(() => {
             resolve();
           });

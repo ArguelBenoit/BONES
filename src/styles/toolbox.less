@@ -7,16 +7,15 @@
 
 
 #BONES-CONTAINER #bones-tool-box {
-  font-size: 13px;
-  font-family: sans-serif;
   color: #ddd;
-  font-family: sans-serif;
   position: fixed;
   z-index: 10000;
   user-select: none;
 
   * {
     scrollbar-color: @themecolor-one transparent;
+    font-size: 13px !important;
+    font-family: sans-serif !important;
   }
 
   /* not toggled */
@@ -223,12 +222,14 @@
 
   /******* checkbox like toggle ********/
   .cm-toggle {
+    all: initial;
+    position: relative;
   	-webkit-appearance: none;
   	-webkit-tap-highlight-color: transparent;
+    cursor: pointer;
   	position: relative;
   	border: 0;
   	outline: 0;
-  	cursor: pointer;
   	margin: 4px 0 0 0;
     background-color: transparent;
     &:before {
