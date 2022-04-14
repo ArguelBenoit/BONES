@@ -8,6 +8,7 @@ import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
+import i18 from 'Utils/i18';
 import { Crypting } from 'Utils/domain/crypting.js';
 // Storage
 import { Storage } from 'Utils/storage/storage.js';
@@ -153,7 +154,7 @@ class ToolBox extends React.Component {
         if (textContent.indexOf('~ BONES ENCRYPTED MESSAGE') === -1) {
           const encryptedValue = this.crypting.encrypt(textContent);
           activeElement.textContent = encryptedValue;
-          this.setState({ stun: false});
+          this.setState({stun: false});
           this.success(<span>Your message is crypted</span>);
           this.simulateInput(activeElement);
         }
@@ -290,7 +291,7 @@ class ToolBox extends React.Component {
                   checked={showInstruction}
                   onChange={this.setShowInstruction}
                 />
-                <div>Show instructions</div>
+                <div>{i18('toolboxInstruction')}</div>
               </div>
             </div>
 

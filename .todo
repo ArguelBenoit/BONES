@@ -1,6 +1,5 @@
 
 TODO_______________________________________________________________________
-- bug decrypt sur gmail
 - Fonctionnement sur chrome.
 - README github, tutoriel de fonctionnement etc...
 - Tag v1
@@ -9,6 +8,8 @@ TODO_______________________________________________________________________
 
 
 WIP________________________________________________________________________
+- i18 (importer via la fonction i18, ajuster locale, traduire en fr)
+- bug decrypt sur gmail
 
 
 DONE_______________________________________________________________________
