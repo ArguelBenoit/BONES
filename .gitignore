@@ -3,3 +3,7 @@ node_modules
 .env
 .env.js
 **/js/**.js.map
+
+firefox/**
+chrome/**
+package-lock.json

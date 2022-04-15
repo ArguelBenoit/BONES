@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import headFail from 'Images/bones/head-fail.png';
 import Bus from 'Utils/bus.js';
+import i18 from 'Utils/i18.js';
 
 
 const initialState = {
@@ -44,10 +45,10 @@ const ModalPrompt = () => {
         </div>
         <div className="modal-buttons">
           <button onClick={clickNo}>
-            NO
+            {i18('no')}
           </button>
           <button onClick={clickYes}>
-            YES
+            {i18('yes')}
           </button>
         </div>
       </div>

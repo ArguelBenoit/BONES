@@ -8,7 +8,7 @@ import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
-import i18 from 'Utils/i18';
+import i18 from 'Utils/i18.js';
 import { Crypting } from 'Utils/domain/crypting.js';
 // Storage
 import { Storage } from 'Utils/storage/storage.js';

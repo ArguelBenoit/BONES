@@ -90822,7 +90822,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
 /* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
 /* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
-/* harmony import */ var Utils_i18__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/i18 */ "./src/utils/i18.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
 /* harmony import */ var Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
 /* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
@@ -91215,7 +91215,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           id: "show-bones-instruction",
           checked: showInstruction,
           onChange: this.setShowInstruction
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, Object(Utils_i18__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxInstruction'))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxInstruction'))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "content-shadow-two"
         })));
       } else {
@@ -91690,19 +91690,19 @@ var dictionary = {
   /*****************/
   yes: {
     en: 'YES',
-    fr: 'YES'
+    fr: 'OUI'
   },
   no: {
     en: 'NO',
-    fr: 'NO'
+    fr: 'NON'
   },
   goBack: {
     en: 'GO BACK !',
-    fr: 'GO BACK !'
+    fr: 'RETOUR !'
   },
   label: {
     en: 'Label',
-    fr: 'Label'
+    fr: 'Nom'
   },
 
   /*************************/
@@ -91714,141 +91714,141 @@ var dictionary = {
   /* header */
   headerTxt: {
     en: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.',
-    fr: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.'
+    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clés RSA. Vous êtes le seul maître.'
   },
   headerActivate: {
-    en: 'Activer BONES',
+    en: 'Activate BONES',
     fr: 'Activer BONES'
   },
 
   /* pairs section */
   pairTitle: {
     en: 'Pairs (your key pairs)',
-    fr: 'Pairs (your key pairs)'
+    fr: 'Paires (vos paires de clefs)'
   },
   pairAddButton: {
     en: 'Add a key pair',
-    fr: 'Add a key pair'
+    fr: 'Ajouter une paire'
   },
   pairDelete: {
     en: 'Do you really want to delete public key ',
-    fr: 'Do you really want to delete public key '
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
   },
 
   /* pairs form */
   pairFormEditTitle: {
     en: 'Edit a personal rsa key pair',
-    fr: 'Edit a personal rsa key pair'
+    fr: 'Modifier une paire de clefs rsa personnelle'
   },
   pairFormAddTitle: {
     en: 'Add a personal rsa key pair',
-    fr: 'Add a personal rsa key pair'
+    fr: 'Ajouter une paire de clés rsa personnelle'
   },
   pairFormWarn: {
     en: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.',
-    fr: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.'
+    fr: 'Faites attention lorsque vous importez une paire de clefs RSA 2048, BONES ne teste pas la cohérence des deux clefs ni leur taille (2048). Si vous ne savez pas ce que vous faites, utilisez la génération.'
   },
   pairFormGenerate: {
     en: 'Generate pair of key',
-    fr: 'Generate pair of key'
+    fr: 'Générer une paire de clefs'
   },
   pairFormPriLabel: {
     en: 'Your private key',
-    fr: 'Your private key'
+    fr: 'Votre clef privée'
   },
   pairFormPriPlaceholder: {
     en: 'Paste your private key here',
-    fr: 'Paste your private key here'
+    fr: 'Collez votre clef privée ici'
   },
   pairFormPubLabel: {
     en: 'Your public key',
-    fr: 'Your public key'
+    fr: 'Votre clef publique'
   },
   pairFormPubPlaceholder: {
     en: 'Paste your public key here',
-    fr: 'Paste your public key here'
+    fr: 'Collez votre clef publique ici'
   },
   pairFormSave: {
     en: 'Save your pair',
-    fr: 'Save your pair'
+    fr: 'Enregistrer votre paire'
   },
 
   /* share form */
   shareFormTitle: {
     en: 'Copy a public key to share it',
-    fr: 'Copy a public key to share it'
+    fr: 'Copier la clef publique pour la partager'
   },
   shareFormWarn: {
     en: 'Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.',
-    fr: 'Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.'
+    fr: 'Faites très attention à la façon dont vous transmettez votre clef publique, et il est préférable d\'utiliser une paire de clefs par interlocuteur.'
   },
   shareFormCopy: {
     en: 'Copy in clipboard',
-    fr: 'Copy in clipboard'
+    fr: 'Copier la clef dans le presse-papier'
   },
 
   /* friends section */
   friendTitle: {
     en: 'Friends (their public keys)',
-    fr: 'Friends (their public keys)'
+    fr: 'Amis (leurs clés publiques)'
   },
   friendAddButton: {
     en: 'Add a friend\'s key',
-    fr: 'Add a key pair'
+    fr: 'Ajouter la clef d\'un ami'
   },
   friendDelete: {
     en: 'Do you really want to delete public key ',
-    fr: 'Do you really want to delete public key '
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
   },
 
   /* pairs form */
   friendFormEditTitle: {
     en: 'Edit a friend\'s key',
-    fr: 'Edit a friend\'s key'
+    fr: 'Modifier la clef d\'un ami'
   },
   friendFormAddTitle: {
     en: 'Add a friend\'s key',
-    fr: 'Add a friend\'s key'
+    fr: 'Ajouter la clef d\'un ami'
   },
   friendFormPubLabel: {
     en: 'Public key of your friend',
-    fr: 'Public key of your friend '
+    fr: 'Clef publique de votre ami'
   },
   friendFormPubPlaceholder: {
     en: 'Paste your public key here',
-    fr: 'Paste your public key here'
+    fr: 'Collez sa clef ici'
   },
   friendFormSave: {
     en: 'Save friend\'s key',
-    fr: 'Save friend\'s key'
+    fr: 'Enregistrer la clef'
   },
 
   /* keys used section */
   keysUsedTitle: {
     en: 'Keys used',
-    fr: 'Keys used'
+    fr: 'Clefs utilisées'
   },
   keysUsedPair: {
     en: 'Your pair key *',
-    fr: 'Your pair key *'
+    fr: 'Votre paire de clefs *'
   },
   keysUsedfriends: {
     en: 'Friend\'s key *',
-    fr: 'Friend\'s key *'
+    fr: 'Les clefs des amis *'
   },
 
   /* database Actions */
   dbDump: {
     en: 'Make a dump of your database',
-    fr: 'Make a dump of your database'
+    fr: 'Faire un dump des données'
   },
   dbImport: {
     en: 'Import a dump of database',
-    fr: 'Import a dump of database'
+    fr: 'Importer un dump de données'
   },
   dbRemove: {
     en: 'Delete database',
-    fr: 'Delete database'
+    fr: 'Supprimer toutes les données'
   },
 
   /****************************************/
@@ -91858,59 +91858,59 @@ var dictionary = {
   /****************************************/
   toolboxSafeAreaPlaceholder: {
     en: 'Safe area',
-    fr: 'Safe area'
+    fr: 'Zone de sécurité'
   },
   toolboxEncrypt: {
     en: 'Encrypt ctr+j',
-    fr: 'Encrypt ctr+j'
+    fr: 'Crypter ctr+j'
   },
   toolboxDecrypt: {
     en: 'Decrypt ctr+k',
-    fr: 'Decrypt ctr+k'
+    fr: 'Décrypter ctr+k'
   },
   toolboxInstruction: {
     en: 'Show instructions',
-    fr: 'Show instructions'
+    fr: 'Afficher les instructions'
   },
   toolboxTitle1: {
     en: 'Write your message in the safe area',
-    fr: 'Write your message in the safe area'
+    fr: 'Écrivez votre message dans la zone de sécurité'
   },
   toolboxTitle2: {
     en: 'Encrypt and cut it with this button',
-    fr: 'Encrypt and cut it with this button'
+    fr: 'Cryptez et copiez le, avec ce bouton'
   },
   toolboxTitle3: {
     en: 'Send your encrypted message',
-    fr: 'Send your encrypted message'
+    fr: 'Envoyez votre message crypté'
   },
   toolboxTitle4: {
     en: 'Decrypt messages on the page',
-    fr: 'Decrypt messages on the page'
+    fr: 'Décryptez les messages sur la page'
   },
   toolboxTitle5: {
-    en: 'Information',
-    fr: 'Information'
+    en: 'Informations',
+    fr: 'Informations'
   },
   toolboxInstruction3: {
     en: 'Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it.',
-    fr: 'Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it.'
+    fr: 'Votre texte crypté est dans votre presse-papiers, il vous suffit de le coller dans le champ du site Web et de l\'envoyer.'
   },
   toolboxInstruction5: {
     en: 'You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.',
-    fr: 'You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.'
+    fr: 'Vous pouvez essayer de chiffrer directement dans un champ du site Web, mais cela provoque des échecs sur de nombreuses plates-formes modernes, si vous rencontrez un problème à la suite de votre essai de cette manière, rechargez la page et utilisez la zone de sécurité.'
   },
   toolboxDecryptSuccess: {
-    en: 'Decryption of page messages<br/>is complete',
-    fr: 'Decryption of page messages<br/>is complete'
+    en: 'Decryption of page messages is complete',
+    fr: 'Le décryptage des messages de la page est terminé'
   },
   toolboxEncryptCopySuccess: {
-    en: 'Message copied to your clipboard,<br/>Paste it into the main chat field',
-    fr: 'Message copied to your clipboard,<br/>Paste it into the main chat field'
+    en: 'Message copied to your clipboard, paste it into the main chat field',
+    fr: 'Le message est copié dans votre presse-papiers, Collez-le dans le champ de discussion principal'
   },
   toolboxEncryptSuccess: {
     en: 'Your message is crypted',
-    fr: 'Your message is crypted'
+    fr: 'Votre message est crypté'
   },
 
   /****************************************/
@@ -91928,9 +91928,9 @@ var dictionary = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (function (key) {
-  var locale = 'fr';
-  var loc = locale === 'fr' ? 'fr' : 'en';
-  return dictionary[key][loc];
+  var userLang = (navigator.language || navigator.userLanguage).slice(0, 2);
+  var locale = userLang === 'fr' ? 'fr' : 'en';
+  return dictionary[key][locale];
 });
 
 /***/ }),

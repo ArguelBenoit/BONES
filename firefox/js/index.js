@@ -89547,6 +89547,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Images/bones/head-fail.png */ "./src/images/bones/head-fail.png");
 /* harmony import */ var Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_fail_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -89597,9 +89599,9 @@ var ModalPrompt = function ModalPrompt() {
       className: "modal-buttons"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       onClick: clickNo
-    }, "NO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_4__["default"])('no')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       onClick: clickYes
-    }, "YES"))));
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_4__["default"])('yes')))));
   } else {
     return '';
   }
@@ -89692,13 +89694,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
 /* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+/* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
+
 
 
 
 
 var ReturnLink = function ReturnLink() {
-  var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_2__["useRouterContext"])(),
+  var _useRouterContext = Object(Contexts_router_js__WEBPACK_IMPORTED_MODULE_3__["useRouterContext"])(),
       changeRoute = _useRouterContext.changeRoute;
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -89712,7 +89716,7 @@ var ReturnLink = function ReturnLink() {
     src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     width: "26",
     height: "18"
-  }), "GO BACK !");
+  }), Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('goBack'));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ReturnLink);
@@ -90764,6 +90768,268 @@ var handlers = {
     }
   }
 };
+
+/***/ }),
+
+/***/ "./src/utils/i18.js":
+/*!**************************!*\
+  !*** ./src/utils/i18.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var dictionary = {
+  /*****************/
+
+  /* Global        */
+
+  /*****************/
+  yes: {
+    en: 'YES',
+    fr: 'OUI'
+  },
+  no: {
+    en: 'NO',
+    fr: 'NON'
+  },
+  goBack: {
+    en: 'GO BACK !',
+    fr: 'RETOUR !'
+  },
+  label: {
+    en: 'Label',
+    fr: 'Nom'
+  },
+
+  /*************************/
+
+  /* Settings page (index) */
+
+  /*************************/
+
+  /* header */
+  headerTxt: {
+    en: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.',
+    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clés RSA. Vous êtes le seul maître.'
+  },
+  headerActivate: {
+    en: 'Activate BONES',
+    fr: 'Activer BONES'
+  },
+
+  /* pairs section */
+  pairTitle: {
+    en: 'Pairs (your key pairs)',
+    fr: 'Paires (vos paires de clefs)'
+  },
+  pairAddButton: {
+    en: 'Add a key pair',
+    fr: 'Ajouter une paire'
+  },
+  pairDelete: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+
+  /* pairs form */
+  pairFormEditTitle: {
+    en: 'Edit a personal rsa key pair',
+    fr: 'Modifier une paire de clefs rsa personnelle'
+  },
+  pairFormAddTitle: {
+    en: 'Add a personal rsa key pair',
+    fr: 'Ajouter une paire de clés rsa personnelle'
+  },
+  pairFormWarn: {
+    en: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.',
+    fr: 'Faites attention lorsque vous importez une paire de clefs RSA 2048, BONES ne teste pas la cohérence des deux clefs ni leur taille (2048). Si vous ne savez pas ce que vous faites, utilisez la génération.'
+  },
+  pairFormGenerate: {
+    en: 'Generate pair of key',
+    fr: 'Générer une paire de clefs'
+  },
+  pairFormPriLabel: {
+    en: 'Your private key',
+    fr: 'Votre clef privée'
+  },
+  pairFormPriPlaceholder: {
+    en: 'Paste your private key here',
+    fr: 'Collez votre clef privée ici'
+  },
+  pairFormPubLabel: {
+    en: 'Your public key',
+    fr: 'Votre clef publique'
+  },
+  pairFormPubPlaceholder: {
+    en: 'Paste your public key here',
+    fr: 'Collez votre clef publique ici'
+  },
+  pairFormSave: {
+    en: 'Save your pair',
+    fr: 'Enregistrer votre paire'
+  },
+
+  /* share form */
+  shareFormTitle: {
+    en: 'Copy a public key to share it',
+    fr: 'Copier la clef publique pour la partager'
+  },
+  shareFormWarn: {
+    en: 'Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.',
+    fr: 'Faites très attention à la façon dont vous transmettez votre clef publique, et il est préférable d\'utiliser une paire de clefs par interlocuteur.'
+  },
+  shareFormCopy: {
+    en: 'Copy in clipboard',
+    fr: 'Copier la clef dans le presse-papier'
+  },
+
+  /* friends section */
+  friendTitle: {
+    en: 'Friends (their public keys)',
+    fr: 'Amis (leurs clés publiques)'
+  },
+  friendAddButton: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  friendDelete: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+
+  /* pairs form */
+  friendFormEditTitle: {
+    en: 'Edit a friend\'s key',
+    fr: 'Modifier la clef d\'un ami'
+  },
+  friendFormAddTitle: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  friendFormPubLabel: {
+    en: 'Public key of your friend',
+    fr: 'Clef publique de votre ami'
+  },
+  friendFormPubPlaceholder: {
+    en: 'Paste your public key here',
+    fr: 'Collez sa clef ici'
+  },
+  friendFormSave: {
+    en: 'Save friend\'s key',
+    fr: 'Enregistrer la clef'
+  },
+
+  /* keys used section */
+  keysUsedTitle: {
+    en: 'Keys used',
+    fr: 'Clefs utilisées'
+  },
+  keysUsedPair: {
+    en: 'Your pair key *',
+    fr: 'Votre paire de clefs *'
+  },
+  keysUsedfriends: {
+    en: 'Friend\'s key *',
+    fr: 'Les clefs des amis *'
+  },
+
+  /* database Actions */
+  dbDump: {
+    en: 'Make a dump of your database',
+    fr: 'Faire un dump des données'
+  },
+  dbImport: {
+    en: 'Import a dump of database',
+    fr: 'Importer un dump de données'
+  },
+  dbRemove: {
+    en: 'Delete database',
+    fr: 'Supprimer toutes les données'
+  },
+
+  /****************************************/
+
+  /* Content (component injected in page) */
+
+  /****************************************/
+  toolboxSafeAreaPlaceholder: {
+    en: 'Safe area',
+    fr: 'Zone de sécurité'
+  },
+  toolboxEncrypt: {
+    en: 'Encrypt ctr+j',
+    fr: 'Crypter ctr+j'
+  },
+  toolboxDecrypt: {
+    en: 'Decrypt ctr+k',
+    fr: 'Décrypter ctr+k'
+  },
+  toolboxInstruction: {
+    en: 'Show instructions',
+    fr: 'Afficher les instructions'
+  },
+  toolboxTitle1: {
+    en: 'Write your message in the safe area',
+    fr: 'Écrivez votre message dans la zone de sécurité'
+  },
+  toolboxTitle2: {
+    en: 'Encrypt and cut it with this button',
+    fr: 'Cryptez et copiez le, avec ce bouton'
+  },
+  toolboxTitle3: {
+    en: 'Send your encrypted message',
+    fr: 'Envoyez votre message crypté'
+  },
+  toolboxTitle4: {
+    en: 'Decrypt messages on the page',
+    fr: 'Décryptez les messages sur la page'
+  },
+  toolboxTitle5: {
+    en: 'Informations',
+    fr: 'Informations'
+  },
+  toolboxInstruction3: {
+    en: 'Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it.',
+    fr: 'Votre texte crypté est dans votre presse-papiers, il vous suffit de le coller dans le champ du site Web et de l\'envoyer.'
+  },
+  toolboxInstruction5: {
+    en: 'You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.',
+    fr: 'Vous pouvez essayer de chiffrer directement dans un champ du site Web, mais cela provoque des échecs sur de nombreuses plates-formes modernes, si vous rencontrez un problème à la suite de votre essai de cette manière, rechargez la page et utilisez la zone de sécurité.'
+  },
+  toolboxDecryptSuccess: {
+    en: 'Decryption of page messages is complete',
+    fr: 'Le décryptage des messages de la page est terminé'
+  },
+  toolboxEncryptCopySuccess: {
+    en: 'Message copied to your clipboard, paste it into the main chat field',
+    fr: 'Le message est copié dans votre presse-papiers, Collez-le dans le champ de discussion principal'
+  },
+  toolboxEncryptSuccess: {
+    en: 'Your message is crypted',
+    fr: 'Votre message est crypté'
+  },
+
+  /****************************************/
+
+  /* Encrypted Message                    */
+
+  /****************************************/
+  encryptedNoKeyMatch: {
+    en: '⚠️ No keys matches ⚠️',
+    fr: '⚠️ No keys matches ⚠️'
+  },
+  encryptedHeader: {
+    en: '💀 Bones decrypted message 💀\n',
+    fr: '💀 Bones decrypted message 💀\n'
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (function (key) {
+  var userLang = (navigator.language || navigator.userLanguage).slice(0, 2);
+  var locale = userLang === 'fr' ? 'fr' : 'en';
+  return dictionary[key][locale];
+});
 
 /***/ }),
 
