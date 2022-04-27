@@ -109,24 +109,24 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 var activeTab = function activeTab() {
-  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.query({
+  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.query({
     title: 'BONES !#@$'
   }).then(function (tabs) {
     // si un onglet bones est présent
     if (tabs.length > 0) {
       // on active celui-ci
       var id = tabs[0].id;
-      Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.update(id, {
+      Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.update(id, {
         active: true
       }); // sinon l'onglet n'existe pas
     } else {
       // on ouvre un onglet BONES
-      var url = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().extension.getURL('index.html');
-      Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.create({
+      var url = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().extension.getURL('index.html');
+      Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.create({
         url: url
       });
     }
@@ -134,12 +134,12 @@ var activeTab = function activeTab() {
 }; // utilisateur clique sur l'icon de l'extension
 
 
-Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().browserAction.onClicked.addListener(activeTab); // envoi d'un dispatch vers le script content lorsqu'il y a un changement d'url
+Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().browserAction.onClicked.addListener(activeTab); // envoi d'un dispatch vers le script content lorsqu'il y a un changement d'url
 // obligatoire pour les routages côté client comme avec react et vue
 
-Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.onUpdated.addListener(function (tabId, changeInfo) {
+Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.onUpdated.addListener(function (tabId, changeInfo) {
   if (changeInfo.url) {
-    Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.sendMessage(tabId, {
+    Utils_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.sendMessage(tabId, {
       action: 'SETTINGS_UPDATE'
     }).then(function () {})["catch"](function () {});
   }
@@ -147,25 +147,61 @@ Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_0__["default"])().tabs.onUpdate
 
 /***/ }),
 
-/***/ "./src/utils/web-ext.js":
-/*!******************************!*\
-  !*** ./src/utils/web-ext.js ***!
-  \******************************/
-/*! exports provided: default */
+/***/ "./src/utils/handlers.js":
+/*!*******************************!*\
+  !*** ./src/utils/handlers.js ***!
+  \*******************************/
+/*! exports provided: handlers */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
 /* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Env */ "./.env.js");
 /* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(Env__WEBPACK_IMPORTED_MODULE_0__);
 
-/* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
-retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
-brave...) Il retourne l'object browser pour firefox */
+var handlers = {
+  /* retourne un uuid */
+  uuid: function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0,
+          v = c == 'x' ? r : r & 0x3 | 0x8;
+      return v.toString(16);
+    });
+  },
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'firefox') return browser;else if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'chrome') return chrome;else return chrome;
-});
+  /* retourne une date mm-dd-yyyy */
+  date: function date() {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
+
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if (settings.activate === true && settings.friends.length > 0 && settings.pair !== '') {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
+  /* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
+  retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
+  brave...) Il retourne l'object browser pour firefox */
+  webExt: function webExt() {
+    if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'firefox') {
+      return browser;
+    } else if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'chrome') {
+      return chrome;
+    } else {
+      return chrome;
+    }
+  }
+};
 
 /***/ })
 

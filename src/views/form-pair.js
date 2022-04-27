@@ -5,6 +5,7 @@ import { usePairsContext } from 'Contexts/pairs.js';
 import { generating, checkPrivate, checkPublic } from 'Utils/domain/keys.js';
 import FieldError from 'Components/field-error.js';
 import Bus from 'Utils/bus.js';
+import i18 from 'Utils/i18.js';
 
 
 let initialStateValue = {
@@ -127,7 +128,7 @@ const FormPair = () => {
       {/* label */}
       <div className="u-margin-top-m">
         <div className="u-margin-top-s">
-          <label>Label</label>
+          <label>{i18('label')}</label>
           <input
             type="text"
             className="input-label"

@@ -22026,7 +22026,7 @@ exports.push([module.i, ".mask-loading {\n  overflow: hidden;\n}\n.mask-loading 
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "/*\n!important !important !important !important... 🤮🤮🤮. Ce css intervient sur la toolbox\ninjecté dans toutes les pages web (potentiellement). Cela induit que le css de messenger,\nwhatsapp, discord etc... peut interférer sur le style de BONES ,Pour le moment je n'ai\npas cherché de solution plus esthetique.\n*/\n#BONES-CONTAINER {\n  all: initial;\n}\n#BONES-CONTAINER #bones-tool-box {\n  font-size: 13px;\n  color: #ddd;\n  font-family: sans-serif;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-method {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-method .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-method {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
+exports.push([module.i, "#BONES-CONTAINER #bones-tool-box {\n  all: initial;\n  color: #ddd;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n  font-size: 13px !important;\n  font-family: sans-serif !important;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-toolbox {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  box-sizing: initial;\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  all: initial;\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  cursor: pointer;\n  position: relative;\n  border: 0;\n  outline: 0;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
 
 
 
@@ -59169,7 +59169,7 @@ var ariaProperties = {
   'aria-autocomplete': 0,
   'aria-checked': 0,
   'aria-expanded': 0,
-  'aria-hasindex': 0,
+  'aria-haspopup': 0,
   'aria-level': 0,
   'aria-modal': 0,
   'aria-multiline': 0,
@@ -90809,20 +90809,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-draggable */ "./node_modules/react-draggable/build/cjs/cjs.js");
 /* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_draggable__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
-/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Images/bones/head-success.png */ "./src/images/bones/head-success.png");
-/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
-/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Styles/toolbox.less */ "./src/styles/toolbox.less");
-/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
-/* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
-/* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
-/* harmony import */ var Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Images/bones/head-regular.png */ "./src/images/bones/head-regular.png");
+/* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Images/bones/head-success.png */ "./src/images/bones/head-success.png");
+/* harmony import */ var Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Images/bones/arrow.png */ "./src/images/bones/arrow.png");
+/* harmony import */ var Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Styles/toolbox.less */ "./src/styles/toolbox.less");
+/* harmony import */ var Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(Styles_toolbox_less__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! Components/tool-box-tutorial.js */ "./src/components/tool-box-tutorial.js");
+/* harmony import */ var Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! Components/tool-box-content.js */ "./src/components/tool-box-content.js");
+/* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+/* harmony import */ var Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! Utils/domain/crypting.js */ "./src/utils/domain/crypting.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 
@@ -90847,12 +90849,12 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
-var getStupidActive = Utils_tools_js__WEBPACK_IMPORTED_MODULE_18__["tools"].getStupidActive; // Storage
+ // Storage
 
 
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('method');
-var friendStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('friend');
-var pairStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_19__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
+var friendStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_20__["Storage"]('friend');
+var settingsStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_20__["Storage"]('settings');
+var pairStore = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_20__["Storage"]('pair'); // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
 
 var ToolBox = /*#__PURE__*/function (_React$Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(ToolBox, _React$Component);
@@ -90871,6 +90873,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     _this.setShowInstruction = _this.setShowInstruction.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.handlerChange = _this.handlerChange.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.simulateInput = _this.simulateInput.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
+    _this.updateMainPostion = _this.updateMainPostion.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_3___default()(_this));
     _this.state = {
       toggled: false,
       message: '',
@@ -90878,10 +90881,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       header: '',
       img: 'regular',
       stun: false,
-      stupid: false,
       loaded: false,
-      uuidMethod: '',
-      labelMethod: ''
+      x: 60,
+      y: 60
     };
     return _this;
   }
@@ -90904,79 +90906,51 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           }
         }
       });
+      var _this$props$coordinat = this.props.coordinate,
+          y = _this$props$coordinat.y,
+          x = _this$props$coordinat.x;
+      if (x > window.innerWidth - 400) x = window.innerWidth - 400;
+      if (x < 20) x = 20;
+      if (y > window.innerHeight - 340) y = window.innerHeight - 340;
+      if (y < 20) y = 20;
 
       _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.mark(function _callee() {
-        var settings, stupid, friends, pair, method, _pair, _friends;
-
+        var settings, friends, pair;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return methodStore.getOne('settings');
+                return settingsStore.getOne('settings');
 
               case 2:
                 settings = _context.sent;
-                stupid = getStupidActive(settings);
-
-                if (!(stupid === true)) {
-                  _context.next = 15;
-                  break;
-                }
-
-                _context.next = 7;
+                _context.next = 5;
                 return friendStore.getList(settings.friends);
 
-              case 7:
+              case 5:
                 friends = _context.sent;
-                _context.next = 10;
+                _context.next = 8;
                 return pairStore.getOne(settings.pair);
 
-              case 10:
+              case 8:
                 pair = _context.sent;
-                _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](friends, pair);
+                _this2.crypting = new Utils_domain_crypting_js__WEBPACK_IMPORTED_MODULE_19__["Crypting"](friends, pair);
 
                 _this2.setState({
                   toggled: settings.open,
-                  showInstruction: settings === undefined ? true : settings.instruction,
-                  header: 'Stupid mode',
-                  labelMethod: 'Stupid mode',
-                  stupid: true,
-                  loaded: true
+                  showInstruction: settings.instruction,
+                  header: '',
+                  loaded: true,
+                  y: y,
+                  x: x
                 });
 
-                _context.next = 26;
-                break;
+                setTimeout(function () {
+                  _this2.updateMainPostion();
+                }, 100);
 
-              case 15:
-                _context.next = 17;
-                return methodStore.keyValue('url', window.location.href);
-
-              case 17:
-                method = _context.sent;
-                _context.next = 20;
-                return pairStore.getOne(method[0].pair);
-
-              case 20:
-                _pair = _context.sent;
-                _context.next = 23;
-                return friendStore.getList(method[0].friends);
-
-              case 23:
-                _friends = _context.sent;
-                _this2.crypting = new Utils_crypting_js__WEBPACK_IMPORTED_MODULE_17__["Crypting"](_friends, _pair);
-
-                _this2.setState({
-                  toggled: method[0].open,
-                  uuidMethod: method[0].uuid,
-                  labelMethod: method[0].label,
-                  header: method[0].label,
-                  showInstruction: settings === undefined ? true : settings.instruction,
-                  stupid: false,
-                  loaded: true
-                });
-
-              case 26:
+              case 12:
               case "end":
                 return _context.stop();
             }
@@ -90985,13 +90959,22 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       }))();
     }
   }, {
+    key: "updateMainPostion",
+    value: function updateMainPostion() {
+      /* remplacer le querySelector par une ref */
+      var position = document.querySelector('#bones-tool-box').getBoundingClientRect();
+      var left = position.left,
+          top = position.top;
+      settingsStore.modify('settings', {
+        x: left,
+        y: top
+      });
+    }
+  }, {
     key: "setToggled",
     value: function setToggled() {
-      var _this$state = this.state,
-          stupid = _this$state.stupid,
-          uuidMethod = _this$state.uuidMethod,
-          toggled = _this$state.toggled;
-      methodStore.modify(stupid ? 'settings' : uuidMethod, {
+      var toggled = this.state.toggled;
+      settingsStore.modify('settings', {
         open: !toggled
       });
       this.setState({
@@ -91001,7 +90984,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "setShowInstruction",
     value: function setShowInstruction() {
-      methodStore.modify('settings', {
+      settingsStore.modify('settings', {
         instruction: !this.state.showInstruction
       });
       this.setState({
@@ -91021,9 +91004,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function encrypt() {
       var _this3 = this;
 
-      var _this$state2 = this.state,
-          stun = _this$state2.stun,
-          message = _this$state2.message;
+      var _this$state = this.state,
+          stun = _this$state.stun,
+          message = _this$state.message;
 
       if (stun === false) {
         this.setState({
@@ -91089,14 +91072,13 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function success(message) {
       var _this4 = this;
 
-      var labelMethod = this.state.labelMethod;
       this.setState({
         header: message,
         img: 'success'
       });
       setTimeout(function () {
         _this4.setState({
-          header: labelMethod,
+          header: '',
           img: 'regular'
         });
       }, 3000);
@@ -91104,8 +91086,6 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "loading",
     value: function loading(activated) {
-      var labelMethod = this.state.labelMethod;
-
       if (activated) {
         this.setState({
           header: 'BONES is working',
@@ -91113,7 +91093,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
         });
       } else {
         this.setState({
-          header: labelMethod,
+          header: '',
           img: 'regular'
         });
       }
@@ -91161,13 +91141,15 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$state3 = this.state,
-          message = _this$state3.message,
-          toggled = _this$state3.toggled,
-          img = _this$state3.img,
-          header = _this$state3.header,
-          showInstruction = _this$state3.showInstruction,
-          loaded = _this$state3.loaded;
+      var _this$state2 = this.state,
+          message = _this$state2.message,
+          toggled = _this$state2.toggled,
+          img = _this$state2.img,
+          header = _this$state2.header,
+          showInstruction = _this$state2.showInstruction,
+          loaded = _this$state2.loaded,
+          x = _this$state2.x,
+          y = _this$state2.y;
       var propsContent = {
         message: message,
         handlerChange: this.handlerChange,
@@ -91178,10 +91160,11 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
       if (loaded) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_draggable__WEBPACK_IMPORTED_MODULE_9___default.a, {
           defaultPosition: {
-            x: 60,
-            y: 60
+            x: x,
+            y: y
           },
-          handle: ".draggable-handler"
+          handle: ".draggable-handler",
+          onStop: this.updateMainPostion
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           id: "bones-tool-box",
           className: toggled ? ' toggled' : ''
@@ -91196,35 +91179,35 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           className: "bones-logo-header"
         }, img === 'regular' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
           draggable: "false",
-          src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_10___default.a,
+          src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_11___default.a,
           width: "60",
           height: "60"
         }) : '', img === 'success' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
           draggable: "false",
-          src: Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_11___default.a,
+          src: Images_bones_head_success_png__WEBPACK_IMPORTED_MODULE_12___default.a,
           width: "60",
           height: "42",
           style: {
             marginTop: 5
           }
-        }) : '', img === 'loading' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_loading_js__WEBPACK_IMPORTED_MODULE_16__["default"], {
+        }) : '', img === 'loading' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_loading_js__WEBPACK_IMPORTED_MODULE_17__["default"], {
           size: 60
         }) : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-flex"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-          className: "label-method"
+          className: "label-toolbox"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "text"
         }, header)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
           className: "toggle-header",
           id: "toggle-header",
-          src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_12___default.a,
+          src: Images_bones_arrow_png__WEBPACK_IMPORTED_MODULE_13___default.a,
           width: "34",
           draggable: "false",
           onClick: this.setToggled
         }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-padding u-padding-top-s content"
-        }, !showInstruction ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_15__["default"], propsContent) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_14__["default"], propsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        }, !showInstruction ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_content_js__WEBPACK_IMPORTED_MODULE_16__["default"], propsContent) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Components_tool_box_tutorial_js__WEBPACK_IMPORTED_MODULE_15__["default"], propsContent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "u-margin-top-s u-flex --left"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
           type: "checkbox",
@@ -91232,7 +91215,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
           id: "show-bones-instruction",
           checked: showInstruction,
           onChange: this.setShowInstruction
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, "Show instructions")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxInstruction'))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
           className: "content-shadow-two"
         })));
       } else {
@@ -91244,6 +91227,9 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
   return ToolBox;
 }(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
+ToolBox.propTypes = {
+  coordinate: prop_types__WEBPACK_IMPORTED_MODULE_10___default.a.object.isRequired
+};
 /* harmony default export */ __webpack_exports__["default"] = (ToolBox);
 
 /***/ }),
@@ -91266,9 +91252,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Components/tool-box.js */ "./src/components/tool-box.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-/* harmony import */ var Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
+/* harmony import */ var Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/storage/storage.js */ "./src/utils/storage/storage.js");
 
 
 // Ce script est chargé dans toutes les pages lorsque l'extension est active.
@@ -91278,17 +91263,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var getActivate = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getActivate,
-    getStupidActive = Utils_tools_js__WEBPACK_IMPORTED_MODULE_5__["tools"].getStupidActive;
+var getActivate = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].getActivate;
 /* storage */
 
 
-var store = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]();
-var methodStore = new Utils_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"]('method');
- // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
+var store = new Utils_storage_storage_js__WEBPACK_IMPORTED_MODULE_6__["Storage"](); // écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
 
-Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__["default"])().runtime.onMessage.addListener(function (data) {
+Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().runtime.onMessage.addListener(function (data) {
   if (data.action === 'SETTINGS_UPDATE') {
     INIT();
   }
@@ -91296,7 +91278,7 @@ Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_7__["default"])().runtime.onMes
 
 var INIT = /*#__PURE__*/function () {
   var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-    var settings, getMethod, div;
+    var settings, div;
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -91306,31 +91288,30 @@ var INIT = /*#__PURE__*/function () {
 
           case 2:
             settings = _context.sent;
-            _context.next = 5;
-            return methodStore.keyValue('url', window.location.href);
 
-          case 5:
-            getMethod = _context.sent;
-
-            // si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple)
+            /* si l'outil bones existe on la supprime pour la réinitialisation (changement d'url par exemple) */
             if (document.querySelector('#BONES-CONTAINER')) {
               document.querySelector('#BONES-CONTAINER').remove();
             }
-            /* si l'extension est active, et qu'il y a une méthode pour l'url,
-            ou si le mode stupide est actif avec tout ses champs. */
+            /* si l'extension est active */
 
 
-            if (getActivate(settings) && (getMethod[0] || getStupidActive(settings))) {
+            if (getActivate(settings)) {
               /* créer la div de depart du composant react */
               div = document.createElement('div');
               div.id = 'BONES-CONTAINER';
               document.body.prepend(div);
               /* initialisation de la toolbox */
 
-              Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('BONES-CONTAINER'));
+              Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_tool_box_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                coordinate: {
+                  x: settings.x,
+                  y: settings.y
+                }
+              }), document.getElementById('BONES-CONTAINER'));
             }
 
-          case 8:
+          case 5:
           case "end":
             return _context.stop();
         }
@@ -91453,9 +91434,9 @@ if(false) {}
 /***/ }),
 
 /***/ "./src/utils/domain/crypting.js":
-/*!*******************************!*\
+/*!**************************************!*\
   !*** ./src/utils/domain/crypting.js ***!
-  \*******************************/
+  \**************************************/
 /*! exports provided: Crypting */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -91634,31 +91615,349 @@ var Crypting = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./src/utils/handlers.js":
+/*!*******************************!*\
+  !*** ./src/utils/handlers.js ***!
+  \*******************************/
+/*! exports provided: handlers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handlers", function() { return handlers; });
+/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Env */ "./.env.js");
+/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(Env__WEBPACK_IMPORTED_MODULE_0__);
+
+var handlers = {
+  /* retourne un uuid */
+  uuid: function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = Math.random() * 16 | 0,
+          v = c == 'x' ? r : r & 0x3 | 0x8;
+      return v.toString(16);
+    });
+  },
+
+  /* retourne une date mm-dd-yyyy */
+  date: function date() {
+    var today = new Date();
+    var day = String(today.getDate()).padStart(2, '0');
+    var month = String(today.getMonth() + 1).padStart(2, '0'); // Janvier = 0
+
+    var year = today.getFullYear();
+    return "".concat(month, "-").concat(day, "-").concat(year);
+  },
+
+  /* retourne un booléen qui valide l'activation de bones */
+  getActivate: function getActivate(settings) {
+    if (settings.activate === true && settings.friends.length > 0 && settings.pair !== '') {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
+  /* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
+  retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
+  brave...) Il retourne l'object browser pour firefox */
+  webExt: function webExt() {
+    if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'firefox') {
+      return browser;
+    } else if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'chrome') {
+      return chrome;
+    } else {
+      return chrome;
+    }
+  }
+};
+
+/***/ }),
+
+/***/ "./src/utils/i18.js":
+/*!**************************!*\
+  !*** ./src/utils/i18.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// import i18 from 'Utils/i18.js';
+// {i18('')}
+var dictionary = {
+  /*****************/
+
+  /* Global        */
+
+  /*****************/
+  yes: {
+    en: 'YES',
+    fr: 'OUI'
+  },
+  no: {
+    en: 'NO',
+    fr: 'NON'
+  },
+  goBack: {
+    en: 'GO BACK !',
+    fr: 'RETOUR !'
+  },
+  label: {
+    en: 'Label',
+    fr: 'Nom'
+  },
+
+  /*************************/
+
+  /* Settings page (index) */
+
+  /*************************/
+
+  /* header */
+  headerTxt: {
+    en: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.',
+    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clés RSA. Vous êtes le seul maître.'
+  },
+  headerActivate: {
+    en: 'Activate BONES',
+    fr: 'Activer BONES'
+  },
+
+  /* pairs section */
+  pairTitle: {
+    en: 'Pairs (your key pairs)',
+    fr: 'Paires (vos paires de clefs)'
+  },
+  pairAddButton: {
+    en: 'Add a key pair',
+    fr: 'Ajouter une paire'
+  },
+  pairDelete: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+
+  /* pairs form */
+  pairFormEditTitle: {
+    en: 'Edit a personal rsa key pair',
+    fr: 'Modifier une paire de clefs rsa personnelle'
+  },
+  pairFormAddTitle: {
+    en: 'Add a personal rsa key pair',
+    fr: 'Ajouter une paire de clés rsa personnelle'
+  },
+  pairFormWarn: {
+    en: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.',
+    fr: 'Faites attention lorsque vous importez une paire de clefs RSA 2048, BONES ne teste pas la cohérence des deux clefs ni leur taille (2048). Si vous ne savez pas ce que vous faites, utilisez la génération.'
+  },
+  pairFormGenerate: {
+    en: 'Generate pair of key',
+    fr: 'Générer une paire de clefs'
+  },
+  pairFormPriLabel: {
+    en: 'Your private key',
+    fr: 'Votre clef privée'
+  },
+  pairFormPriPlaceholder: {
+    en: 'Paste your private key here',
+    fr: 'Collez votre clef privée ici'
+  },
+  pairFormPubLabel: {
+    en: 'Your public key',
+    fr: 'Votre clef publique'
+  },
+  pairFormPubPlaceholder: {
+    en: 'Paste your public key here',
+    fr: 'Collez votre clef publique ici'
+  },
+  pairFormSave: {
+    en: 'Save your pair',
+    fr: 'Enregistrer votre paire'
+  },
+
+  /* share form */
+  shareFormTitle: {
+    en: 'Copy a public key to share it',
+    fr: 'Copier la clef publique pour la partager'
+  },
+  shareFormWarn: {
+    en: 'Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.',
+    fr: 'Faites très attention à la façon dont vous transmettez votre clef publique, et il est préférable d\'utiliser une paire de clefs par interlocuteur.'
+  },
+  shareFormCopy: {
+    en: 'Copy in clipboard',
+    fr: 'Copier la clef dans le presse-papier'
+  },
+
+  /* friends section */
+  friendTitle: {
+    en: 'Friends (their public keys)',
+    fr: 'Amis (leurs clés publiques)'
+  },
+  friendAddButton: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  friendDelete: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+
+  /* pairs form */
+  friendFormEditTitle: {
+    en: 'Edit a friend\'s key',
+    fr: 'Modifier la clef d\'un ami'
+  },
+  friendFormAddTitle: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  friendFormPubLabel: {
+    en: 'Public key of your friend',
+    fr: 'Clef publique de votre ami'
+  },
+  friendFormPubPlaceholder: {
+    en: 'Paste your public key here',
+    fr: 'Collez sa clef ici'
+  },
+  friendFormSave: {
+    en: 'Save friend\'s key',
+    fr: 'Enregistrer la clef'
+  },
+
+  /* keys used section */
+  keysUsedTitle: {
+    en: 'Keys used',
+    fr: 'Clefs utilisées'
+  },
+  keysUsedPair: {
+    en: 'Your pair key *',
+    fr: 'Votre paire de clefs *'
+  },
+  keysUsedfriends: {
+    en: 'Friend\'s key *',
+    fr: 'Les clefs des amis *'
+  },
+
+  /* database Actions */
+  dbDump: {
+    en: 'Make a dump of your database',
+    fr: 'Faire un dump des données'
+  },
+  dbImport: {
+    en: 'Import a dump of database',
+    fr: 'Importer un dump de données'
+  },
+  dbRemove: {
+    en: 'Delete database',
+    fr: 'Supprimer toutes les données'
+  },
+
+  /****************************************/
+
+  /* Content (component injected in page) */
+
+  /****************************************/
+  toolboxSafeAreaPlaceholder: {
+    en: 'Safe area',
+    fr: 'Zone de sécurité'
+  },
+  toolboxEncrypt: {
+    en: 'Encrypt ctr+j',
+    fr: 'Crypter ctr+j'
+  },
+  toolboxDecrypt: {
+    en: 'Decrypt ctr+k',
+    fr: 'Décrypter ctr+k'
+  },
+  toolboxInstruction: {
+    en: 'Show instructions',
+    fr: 'Afficher les instructions'
+  },
+  toolboxTitle1: {
+    en: 'Write your message in the safe area',
+    fr: 'Écrivez votre message dans la zone de sécurité'
+  },
+  toolboxTitle2: {
+    en: 'Encrypt and cut it with this button',
+    fr: 'Cryptez et copiez le, avec ce bouton'
+  },
+  toolboxTitle3: {
+    en: 'Send your encrypted message',
+    fr: 'Envoyez votre message crypté'
+  },
+  toolboxTitle4: {
+    en: 'Decrypt messages on the page',
+    fr: 'Décryptez les messages sur la page'
+  },
+  toolboxTitle5: {
+    en: 'Informations',
+    fr: 'Informations'
+  },
+  toolboxInstruction3: {
+    en: 'Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it.',
+    fr: 'Votre texte crypté est dans votre presse-papiers, il vous suffit de le coller dans le champ du site Web et de l\'envoyer.'
+  },
+  toolboxInstruction5: {
+    en: 'You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.',
+    fr: 'Vous pouvez essayer de chiffrer directement dans un champ du site Web, mais cela provoque des échecs sur de nombreuses plates-formes modernes, si vous rencontrez un problème à la suite de votre essai de cette manière, rechargez la page et utilisez la zone de sécurité.'
+  },
+  toolboxDecryptSuccess: {
+    en: 'Decryption of page messages is complete',
+    fr: 'Le décryptage des messages de la page est terminé'
+  },
+  toolboxEncryptCopySuccess: {
+    en: 'Message copied to your clipboard, paste it into the main chat field',
+    fr: 'Le message est copié dans votre presse-papiers, Collez-le dans le champ de discussion principal'
+  },
+  toolboxEncryptSuccess: {
+    en: 'Your message is crypted',
+    fr: 'Votre message est crypté'
+  },
+
+  /****************************************/
+
+  /* Encrypted Message                    */
+
+  /****************************************/
+  encryptedNoKeyMatch: {
+    en: '⚠️ No keys matches ⚠️',
+    fr: '⚠️ No keys matches ⚠️'
+  },
+  encryptedHeader: {
+    en: '💀 Bones decrypted message 💀\n',
+    fr: '💀 Bones decrypted message 💀\n'
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (function (key) {
+  var userLang = (navigator.language || navigator.userLanguage).slice(0, 2);
+  var locale = userLang === 'fr' ? 'fr' : 'en';
+  return dictionary[key][locale];
+});
+
+/***/ }),
+
 /***/ "./src/utils/storage/storage.js":
-/*!******************************!*\
+/*!**************************************!*\
   !*** ./src/utils/storage/storage.js ***!
-  \******************************/
+  \**************************************/
 /*! exports provided: Storage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Storage", function() { return Storage; });
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
-/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/web-ext.js */ "./src/utils/web-ext.js");
-/* harmony import */ var Utils_tools_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/tools.js */ "./src/utils/tools.js");
-
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 
 
 
@@ -91667,42 +91966,39 @@ __webpack_require__.r(__webpack_exports__);
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
 
-
 var Storage = /*#__PURE__*/function () {
+  // le type est la clef utilise par les 2 listes (pair, friend...)
+  // ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
   function Storage(type) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, Storage);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Storage);
 
-    /*
-    le type est la clef utilise par les 3 listes (pair, friend, method)
-    ex: 'friend': ['3412-12md1-12...', '12ik-12md1-12...', ...]
-    */
     this.type = type;
   }
   /* ajoute un element avec en clef son uuid et ajoute cet uuid dans le tableau correspondant au type */
 
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(Storage, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Storage, [{
     key: "set",
     value: function set(objectSended) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        var uuid = Utils_tools_js__WEBPACK_IMPORTED_MODULE_7__["tools"].uuid();
+        var uuid = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].uuid();
         var type = _this.type;
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, []));
-        var setter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, _objectSpread({
+        var getter = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, []));
+        var setter = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, uuid, _objectSpread({
           uuid: uuid,
           type: type
         }, objectSended)));
         Promise.all([getter, setter]).then(function (data) {
           var newList = data[0][type];
           newList.push(uuid);
-          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, newList)).then(function () {
+          Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, type, newList)).then(function () {
             return resolve();
           })["catch"](function () {
             return reject();
@@ -91721,9 +92017,9 @@ var Storage = /*#__PURE__*/function () {
 
       // list (array) est optionel, si il n'y a pas ce param getList renvois toute la liste du type
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee() {
           var list;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee$(_context) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
@@ -91738,13 +92034,13 @@ var Storage = /*#__PURE__*/function () {
 
                 case 4:
                   _context.next = 6;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this2.type, []));
+                  return Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this2.type, []));
 
                 case 6:
                   list = _context.sent;
 
                 case 7:
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
+                  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(listArray ? list : list[_this2.type]).then(function (data) {
                     var arrayValues = Object.values(data).sort(function (a, b) {
                       var la = a.label.toLowerCase(),
                           lb = b.label.toLowerCase();
@@ -91772,7 +92068,7 @@ var Storage = /*#__PURE__*/function () {
     key: "getOne",
     value: function getOne(uuid) {
       return new Promise(function (resolve, reject) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(uuid).then(function (dataObject) {
+        Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(uuid).then(function (dataObject) {
           resolve(dataObject[uuid]);
         })["catch"](function (err) {
           reject(err);
@@ -91787,18 +92083,18 @@ var Storage = /*#__PURE__*/function () {
       var _this3 = this;
 
       return new Promise(function (resolve, reject) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee2() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee2() {
           var getList;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee2$(_context2) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   _context2.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this3.type, []));
+                  return Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this3.type, []));
 
                 case 2:
                   getList = _context2.sent;
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(getList[_this3.type]).then(function (data) {
+                  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(getList[_this3.type]).then(function (data) {
                     var arrayValues = Object.values(data).filter(function (item) {
                       if (item[key] === value) {
                         return true;
@@ -91826,19 +92122,19 @@ var Storage = /*#__PURE__*/function () {
     key: "modify",
     value: function modify(key, newObject) {
       return new Promise(function (resolve) {
-        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee3() {
+        _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.mark(function _callee3() {
           var getObject;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee3$(_context3) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_4___default.a.wrap(function _callee3$(_context3) {
             while (1) {
               switch (_context3.prev = _context3.next) {
                 case 0:
                   _context3.next = 2;
-                  return Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(key);
+                  return Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(key);
 
                 case 2:
                   getObject = _context3.sent;
                   newObject = _objectSpread(_objectSpread({}, getObject[key]), newObject);
-                  Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, key, newObject)).then(function () {
+                  Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, key, newObject)).then(function () {
                     resolve();
                   });
 
@@ -91859,179 +92155,22 @@ var Storage = /*#__PURE__*/function () {
       var _this4 = this;
 
       return new Promise(function (resolve) {
-        Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get(_this4.type).then(function (data) {
+        Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.get(_this4.type).then(function (data) {
           var newList = data[_this4.type];
           var indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          var setterNewList = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, _this4.type, newList));
-          var removeObject = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.remove(uuid);
+          var setterNewList = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()({}, _this4.type, newList));
+          var removeObject = Utils_handlers_js__WEBPACK_IMPORTED_MODULE_5__["handlers"].webExt().storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(function () {
             resolve();
           });
         });
       });
-    } ////////// Ces fonctions ignorent le type elles sont employées pour les actions globales ////////
-
-    /* recupere tout le store */
-
-  }, {
-    key: "getAll",
-    value: function getAll() {
-      return new Promise(function (resolve) {
-        var getter = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.get();
-        getter.then(function (data) {
-          resolve(data);
-        });
-      });
     }
-    /* /!\ supprime tout le store /!\ */
-
-  }, {
-    key: "deleteAll",
-    value: function deleteAll() {
-      return new Promise(function (resolve) {
-        var cleaner = Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.clear();
-        cleaner.then(function () {
-          resolve();
-        });
-      });
-    }
-    /* /!\ remplace tout l'existant /!\ */
-
-  }, {
-    key: "importNewStorage",
-    value: function () {
-      var _importNewStorage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.mark(function _callee4(json) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_5___default.a.wrap(function _callee4$(_context4) {
-          while (1) {
-            switch (_context4.prev = _context4.next) {
-              case 0:
-                _context4.next = 2;
-                return this.deleteAll();
-
-              case 2:
-                return _context4.abrupt("return", new Promise(function (resolve) {
-                  var lists = ['pair', 'friend', 'method'];
-                  lists.forEach(function (type) {
-                    var list = json[type];
-
-                    if (list) {
-                      Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, type, list));
-                      list.forEach(function (uuid) {
-                        var element = json[uuid];
-
-                        if (element) {
-                          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()({}, uuid, element));
-                        }
-
-                        if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(json.settings) === 'object') {
-                          Object(Utils_web_ext_js__WEBPACK_IMPORTED_MODULE_6__["default"])().storage.local.set({
-                            settings: json.settings
-                          });
-                        }
-                      });
-                    }
-                  });
-                  resolve();
-                }));
-
-              case 3:
-              case "end":
-                return _context4.stop();
-            }
-          }
-        }, _callee4, this);
-      }));
-
-      function importNewStorage(_x) {
-        return _importNewStorage.apply(this, arguments);
-      }
-
-      return importNewStorage;
-    }()
   }]);
 
   return Storage;
 }();
-
-/***/ }),
-
-/***/ "./src/utils/tools.js":
-/*!****************************!*\
-  !*** ./src/utils/tools.js ***!
-  \****************************/
-/*! exports provided: tools */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tools", function() { return tools; });
-var tools = {
-  /* retourne un uuid */
-  uuid: function uuid() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-      var r = Math.random() * 16 | 0,
-          v = c == 'x' ? r : r & 0x3 | 0x8;
-      return v.toString(16);
-    });
-  },
-
-  /* retourne une date mm-dd-yyyy */
-  date: function date() {
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0
-
-    var yyyy = today.getFullYear();
-    return "".concat(mm, "-").concat(dd, "-").concat(yyyy);
-  },
-
-  /* retourne un booléen qui valide le fonctionnement total du mode stupide */
-
-  /* true = mode stupide actif + pair présente + et tableau d'amis avec au moins un ami */
-  getStupidActive: function getStupidActive(settings) {
-    if (settings === undefined) {
-      return false;
-    } else if (settings.stupid === true && settings.pair && settings.pair !== '' && settings.friends.length > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-
-  /* retourne un booléen qui valide l'activation de bones */
-  getActivate: function getActivate(settings) {
-    if (settings === undefined) {
-      return true;
-    } else if (settings.activate === true) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-};
-
-/***/ }),
-
-/***/ "./src/utils/web-ext.js":
-/*!******************************!*\
-  !*** ./src/utils/web-ext.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Env */ "./.env.js");
-/* harmony import */ var Env__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(Env__WEBPACK_IMPORTED_MODULE_0__);
-
-/* Utiliser ce module permet d'unifier les développements pour toutes les plateformes. Il
-retourne l'objet chrome pour chrome et tout les naviguateurs basé sur chromium (edge, opera,
-brave...) Il retourne l'object browser pour firefox */
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'firefox') return browser;else if (Env__WEBPACK_IMPORTED_MODULE_0___default.a.bro === 'chrome') return chrome;else return chrome;
-});
 
 /***/ }),
 

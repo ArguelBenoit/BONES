@@ -11,6 +11,7 @@ import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
 import { useSettingsContext } from 'Contexts/settings.js';
 import Bus from 'Utils/bus.js';
+import i18 from 'Utils/i18.js';
 import { manager } from 'Utils/storage/manager.js';
 
 
@@ -55,7 +56,7 @@ const Index = () => {
       <header className="header">
         <img src={activate ? bones : bonesFail} width="100" />
         <div className="u-font-size-s">
-          <b>BONES</b> is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.&nbsp;
+          {i18('headerTxt')}
           <a href="https://github.com/ArguelBenoit/e2e-chat-encryption">
             github
           </a>
@@ -70,11 +71,11 @@ const Index = () => {
           data-key-state="activate"
           onChange={handlerSetValue}
         />
-        <div>Activate BONES</div>
+        <div>{i18('headerActivate')}</div>
       </div>
 
       <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Pairs (your key pairs)</div>
+        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('pairTitle')}</div>
         <List
           type={'pair'}
           list={pairs.pairs}
@@ -85,7 +86,7 @@ const Index = () => {
             onClick={() => changeRoute({ name: 'FormPair' })}
             className="general-button"
           >
-            Add a key pair
+            {i18('pairAddButton')}
           </button>
         </div>
       </section>

@@ -95,7 +95,7 @@
 
 module.exports = {
   type: 'dev',
-  bro: 'firefox'
+  bro: 'chrome'
 };
 
 /***/ }),
@@ -90780,6 +90780,8 @@ var handlers = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+// import i18 from 'Utils/i18.js';
+// {i18('')}
 var dictionary = {
   /*****************/
 
@@ -91429,12 +91431,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/domain/keys.js */ "./src/utils/domain/keys.js");
 /* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
 
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -91530,7 +91534,7 @@ var FormFriend = function FormFriend() {
     className: "u-margin-top-m"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Label"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('label')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
     type: "text",
     className: "input-label",
     value: stateValue.label,
@@ -91586,12 +91590,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(Utils_domain_keys_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var Components_field_error_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Components/field-error.js */ "./src/components/field-error.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
 
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
 
 
 
@@ -91707,7 +91713,7 @@ var FormPair = function FormPair() {
     className: "u-margin-top-m"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Label"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('label')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("input", {
     type: "text",
     className: "input-label",
     value: stateValue.label,
@@ -91786,7 +91792,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
 /* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+
 
 
 
@@ -91828,7 +91836,7 @@ var Index = function Index() {
     Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalPrompt', {
       message: 'Do you really want to delete all data?',
       action: function action() {
-        Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_13__["manager"].deleteAll().then(function () {
+        Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_14__["manager"].deleteAll().then(function () {
           location.reload();
         });
       }
@@ -91848,7 +91856,7 @@ var Index = function Index() {
       width: "100"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-font-size-s"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, "BONES"), " is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.\xA0", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('headerTxt'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
       href: "https://github.com/ArguelBenoit/e2e-chat-encryption"
     }, "github"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-flex --left input-activation"
@@ -91858,11 +91866,11 @@ var Index = function Index() {
       checked: activate,
       "data-key-state": "activate",
       onChange: handlerSetValue
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Activate BONES")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('headerActivate'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
       className: "u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-    }, "Pairs (your key pairs)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('pairTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       type: 'pair',
       list: pairs.pairs,
       emptyMessage: "BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys."
@@ -91875,7 +91883,7 @@ var Index = function Index() {
         });
       },
       className: "general-button"
-    }, "Add a key pair"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('pairAddButton')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
       className: "u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"

@@ -1,4 +1,5 @@
-
+// import i18 from 'Utils/i18.js';
+// {i18('')}
 
 
 const dictionary = {
