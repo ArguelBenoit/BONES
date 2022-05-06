@@ -8,11 +8,12 @@ TODO_______________________________________________________________________
 
 
 WIP________________________________________________________________________
-- i18 (importer via la fonction i18, ajuster locale, traduire en fr)
+- fix css flex toolbox (after translation feature)
 - bug decrypt sur gmail
 
 
 DONE_______________________________________________________________________
+- i18 (manque dossier views)
 - update a chaque modification du store settings
 - Déplacement en localstorage settings
 - css toggle instructions (protonmail entre autres)

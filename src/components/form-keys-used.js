@@ -3,6 +3,7 @@ import { usePairsContext } from 'Contexts/pairs.js';
 import { useSettingsContext } from 'Contexts/settings.js';
 // import Bus from 'Utils/bus.js';
 import FieldFriends from 'Components/field-friends.js';
+import i18 from 'Utils/i18.js';
 
 
 
@@ -43,7 +44,7 @@ const FormKeysUsed = () => {
   };
 
   return <div className="u-themecolor-container u-padding">
-    <label>Your pair key *</label>
+    <label>{i18('keysUsedPair')}</label>
     <select
       type="select"
       value={stateValue.pair}

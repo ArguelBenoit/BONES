@@ -112,7 +112,7 @@ const FormPair = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('ModalSuccess', 'Well done, your key pair has been saved.');
+      Bus.dispatch('ModalSuccess', i18('successPair'));
       changeRoute({ name: 'Index' });
 
     } else {
@@ -123,7 +123,7 @@ const FormPair = () => {
 
   return <div className="content">
     <ReturnLink />
-    <h1><span>{editMode ? 'Edit' : 'Add'}</span> a personal rsa key pair</h1>
+    <h1><span>{i18(editMode ? 'edit' : 'add')}</span>{i18('pairFormEditTitle')}</h1>
     <div className="form">
       {/* label */}
       <div className="u-margin-top-m">
@@ -141,26 +141,23 @@ const FormPair = () => {
       </div>
 
       <div className="u-border u-margin-top-s u-themecolor-color u-themecolor-container u-padding-s">
-        <i>
-          Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys
-          as well as their size (2048). If you don't know what you are doing, use generation.
-        </i>
+        <i>{i18('pairFormWarn')}</i>
         <button
           className="general-button generate-button u-margin-top-m"
           onClick={() => clickGenerating()}
         >
-          Generate pair of key
+          {i18('pairFormGenerate')}
         </button>
       </div>
 
       {/* private key */}
       <div className="u-margin-top-s">
-        <label>Your private key</label>
+        <label>{i18('pairFormPriLabel')}</label>
         <textarea
           name="name"
           rows="8"
           cols="80"
-          placeholder="Paste your private key here"
+          placeholder={i18('pairFormPriPlaceholder')}
           value={stateValue.private}
           data-key-state="private"
           onChange={handlerSetValue}
@@ -170,12 +167,12 @@ const FormPair = () => {
 
       {/* public key */}
       <div className="u-margin-top-s">
-        <label>Your public key</label>
+        <label>{i18('pairFormPubLabel')}</label>
         <textarea
           name="name"
           rows="8"
           cols="80"
-          placeholder="Paste your public key here"
+          placeholder={i18('pairFormPubPlaceholder')}
           value={stateValue.public}
           data-key-state="public"
           onChange={handlerSetValue}
@@ -188,7 +185,7 @@ const FormPair = () => {
       onClick={() => save()}
       className="general-button generate-button u-margin-top-s save-keys"
     >
-      Save your pair
+      {i18('pairFormSave')}
     </button>
   </div>;
 };

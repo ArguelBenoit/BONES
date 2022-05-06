@@ -1,13 +1,9 @@
-// import i18 from 'Utils/i18.js';
-// {i18('')}
 
 
 const dictionary = {
-
   /*****************/
   /* Global        */
   /*****************/
-
   yes: {
     en: 'YES',
     fr: 'OUI'
@@ -15,6 +11,18 @@ const dictionary = {
   no: {
     en: 'NO',
     fr: 'NON'
+  },
+  cancel: {
+    en: 'CANCEL',
+    fr: 'ANNULER'
+  },
+  download: {
+    en: 'DOWNLOAD',
+    fr: 'TÉLÉCHARGER'
+  },
+  import: {
+    en: 'IMPORT',
+    fr: 'IMPORTER'
   },
   goBack: {
     en: 'GO BACK !',
@@ -24,21 +32,73 @@ const dictionary = {
     en: 'Label',
     fr: 'Nom'
   },
-
+  encrypt: {
+    en: 'Encrypt ctr+j',
+    fr: 'Crypter ctr+j'
+  },
+  decrypt: {
+    en: 'Decrypt ctr+k',
+    fr: 'Décrypter ctr+k'
+  },
+  add: {
+    en: 'Adding',
+    fr: 'Ajout'
+  },
+  edit: {
+    en: 'Edit',
+    fr: 'Édition'
+  },
+  /********************/
+  /* actions (modale) */
+  /********************/
+  actionsFriend: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+  actionPair: {
+    en: 'Do you really want to delete pair ',
+    fr: 'Voulez-vous vraiment supprimer la paire '
+  },
+  actionCreateDB: {
+    en: 'BONES has created a dump of your database.',
+    fr: 'BONES a créé un dump de la base de données'
+  },
+  actionImport: {
+    en: 'Be careful, importing a dump of bones will overwrite the current data',
+    fr: 'Attention, importer un dump de bones va écraser les données actuelles'
+  },
+  loading: {
+    en: 'BONES is working.<br/>Don\'t touch <b>anything</b>!',
+    fr: 'BONES travaille.<br/>Ne touchez <b>à rien</b> !'
+  },
+  successFriend: {
+    en: 'Well done, your friend\'s key has been saved.',
+    fr: 'Bravo, la clef de votre ami a été enregistrée.'
+  },
+  successPair: {
+    en: 'Well done, your key pair key has been saved.',
+    fr: 'Bravo, votre paire de clefs a été enregistrée.'
+  },
+  successShare: {
+    en: 'Your public key is copied to the clipboard. Transmit there in the way of your choice.',
+    fr: 'Bravo, votre clef publique est dans votre presse-papiers'
+  },
+  deleteAllDB: {
+    en: 'Do you really want to delete all data?',
+    fr: 'Voulez-vous vraiment supprimer toutes les données ?'
+  },
   /*************************/
   /* Settings page (index) */
   /*************************/
-
   /* header */
   headerTxt: {
     en: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.',
-    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clés RSA. Vous êtes le seul maître.'
+    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clefs RSA. Vous êtes le seul maître.'
   },
   headerActivate: {
     en: 'Activate BONES',
     fr: 'Activer BONES'
   },
-
   /* pairs section */
   pairTitle: {
     en: 'Pairs (your key pairs)',
@@ -48,19 +108,59 @@ const dictionary = {
     en: 'Add a key pair',
     fr: 'Ajouter une paire'
   },
-  pairDelete: {
-    en: 'Do you really want to delete public key ',
-    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  emptyPair: {
+    en: 'BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys.',
+    fr: 'BONES ne possède pas de clef. Pour chiffrer et déchiffrer vos messages, BONES a besoin d\'une paire de clefs RSA 2048.'
   },
-
-  /* pairs form */
+  /* friends section */
+  friendTitle: {
+    en: 'Friends (their public keys)',
+    fr: 'Amis (leurs clefs publiques)'
+  },
+  friendAddButton: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  emptyFriend: {
+    en: 'BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key.',
+    fr: 'BONES n\'a pas de clefs publiques de vos amis. Pour déchiffrer les messages, il est nécessaire d\'avoir les clefs publiques de vos amis.'
+  },
+  /* keys used section */
+  keysUsedTitle: {
+    en: 'Keys used',
+    fr: 'Clefs utilisées'
+  },
+  keysUsedPair: {
+    en: 'Your pair key *',
+    fr: 'Votre paire de clefs *'
+  },
+  keysUsedfriends: {
+    en: 'Friend\'s key *',
+    fr: 'Les clefs des amis *'
+  },
+  addAnotherFriend: {
+    en: 'Add another friend',
+    fr: 'Ajouter un autre ami'
+  },
+  /* database Actions */
+  dbDump: {
+    en: 'Make a dump of your database',
+    fr: 'Faire un dump des données'
+  },
+  dbImport: {
+    en: 'Import a dump of database',
+    fr: 'Importer un dump de données'
+  },
+  dbRemove: {
+    en: 'Delete database',
+    fr: 'Supprimer toutes les données'
+  },
+  /*************************/
+  /* Pair form             */
+  /*************************/
   pairFormEditTitle: {
-    en: 'Edit a personal rsa key pair',
-    fr: 'Modifier une paire de clefs rsa personnelle'
-  },
-  pairFormAddTitle: {
-    en: 'Add a personal rsa key pair',
-    fr: 'Ajouter une paire de clés rsa personnelle'
+    en: ' rsa key pair',
+    fr: ' d\'une paire de clefs rsa'
   },
   pairFormWarn: {
     en: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.',
@@ -90,8 +190,9 @@ const dictionary = {
     en: 'Save your pair',
     fr: 'Enregistrer votre paire'
   },
-
-  /* share form */
+  /*************************/
+  /* share form            */
+  /*************************/
   shareFormTitle: {
     en: 'Copy a public key to share it',
     fr: 'Copier la clef publique pour la partager'
@@ -102,77 +203,45 @@ const dictionary = {
   },
   shareFormCopy: {
     en: 'Copy in clipboard',
-    fr: 'Copier la clef dans le presse-papier'
+    fr: 'Copier la clef'
   },
-
-  /* friends section */
-  friendTitle: {
-    en: 'Friends (their public keys)',
-    fr: 'Amis (leurs clés publiques)'
-  },
-  friendAddButton: {
-    en: 'Add a friend\'s key',
-    fr: 'Ajouter la clef d\'un ami'
-  },
-  friendDelete: {
-    en: 'Do you really want to delete public key ',
-    fr: 'Voulez-vous vraiment supprimer la clef publique '
-  },
-
-  /* pairs form */
+  /*************************/
+  /* friend form           */
+  /*************************/
   friendFormEditTitle: {
-    en: 'Edit a friend\'s key',
-    fr: 'Modifier la clef d\'un ami'
-  },
-  friendFormAddTitle: {
-    en: 'Add a friend\'s key',
-    fr: 'Ajouter la clef d\'un ami'
+    en: ' friend\'s key',
+    fr: ' de la clef d\'un ami'
   },
   friendFormPubLabel: {
     en: 'Public key of your friend',
     fr: 'Clef publique de votre ami'
   },
   friendFormPubPlaceholder: {
-    en: 'Paste your public key here',
-    fr: 'Collez sa clef ici'
+    en: 'Paste public key here',
+    fr: 'Coller la clef publique ici'
   },
   friendFormSave: {
     en: 'Save friend\'s key',
     fr: 'Enregistrer la clef'
   },
-
-  /* keys used section */
-  keysUsedTitle: {
-    en: 'Keys used',
-    fr: 'Clefs utilisées'
+  /*------------*/
+  /* error form */
+  /*------------*/
+  fieldRequired: {
+    en: 'This field is required',
+    fr: 'Ce champ est requis'
   },
-  keysUsedPair: {
-    en: 'Your pair key *',
-    fr: 'Votre paire de clefs *'
+  fieldNoPublic: {
+    en: 'This is not a RSA public key',
+    fr: 'Ce n\'est pas une clef RSA publique'
   },
-  keysUsedfriends: {
-    en: 'Friend\'s key *',
-    fr: 'Les clefs des amis *'
+  fieldNoPrivate: {
+    en: 'This is not a RSA private key',
+    fr: 'Ce n\'est pas une clef RSA privée'
   },
-
-  /* database Actions */
-  dbDump: {
-    en: 'Make a dump of your database',
-    fr: 'Faire un dump des données'
-  },
-  dbImport: {
-    en: 'Import a dump of database',
-    fr: 'Importer un dump de données'
-  },
-  dbRemove: {
-    en: 'Delete database',
-    fr: 'Supprimer toutes les données'
-  },
-
   /****************************************/
   /* Content (component injected in page) */
   /****************************************/
-
   toolboxSafeAreaPlaceholder: {
     en: 'Safe area',
     fr: 'Zone de sécurité'
@@ -229,18 +298,20 @@ const dictionary = {
     en: 'Your message is crypted',
     fr: 'Votre message est crypté'
   },
-
+  toolboxLoading: {
+    en: 'BONES is working',
+    fr: 'BONES travaille'
+  },
   /****************************************/
   /* Encrypted Message                    */
   /****************************************/
-
   encryptedNoKeyMatch: {
     en: '⚠️ No keys matches ⚠️',
     fr: '⚠️ No keys matches ⚠️'
   },
-  encryptedHeader: {
+  decryptedHeader: {
     en: '💀 Bones decrypted message 💀\n',
-    fr: '💀 Bones decrypted message 💀\n'
+    fr: '💀 Message Bones décrypté 💀\n'
   }
 };
 

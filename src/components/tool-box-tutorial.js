@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import i18 from 'Utils/i18.js';
 
 
 const ToolBoxTutorial = ({ message, handlerChange, encrypt, decrypt }) => {
@@ -7,11 +8,11 @@ const ToolBoxTutorial = ({ message, handlerChange, encrypt, decrypt }) => {
 
     <div className="step-title">
       <div className="step-title-nbr">1</div>
-      <div className="step-title-txt">Write your message in the safe area</div>
+      <div className="step-title-txt">{i18('toolboxTitle1')}</div>
     </div>
     <textarea
       id="bones-input"
-      placeholder="Safe area"
+      placeholder={i18('toolboxSafeAreaPlaceholder')}
       className="u-margin-bottom-s"
       value={message}
       onChange={handlerChange}
@@ -20,7 +21,7 @@ const ToolBoxTutorial = ({ message, handlerChange, encrypt, decrypt }) => {
 
     <div className="step-title">
       <div className="step-title-nbr">2</div>
-      <div className="step-title-txt">Encrypt and cut it with this button</div>
+      <div className="step-title-txt">{i18('toolboxTitle2')}</div>
     </div>
     {/* prevent default pour conserver le focus dans le champ */}
     <button
@@ -28,33 +29,31 @@ const ToolBoxTutorial = ({ message, handlerChange, encrypt, decrypt }) => {
       onClick={encrypt}
       className="general-button u-margin-bottom-s"
     >
-      Encrypt ctr+j
+      {i18('toolboxEncrypt')}
     </button>
 
     <div className="step-title">
       <div className="step-title-nbr">3</div>
-      <div className="step-title-txt">Send your encrypted message</div>
+      <div className="step-title-txt">{i18('toolboxTitle3')}</div>
     </div>
-    <div className="u-margin-bottom-s">Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it</div>
+    <div className="u-margin-bottom-s">{i18('toolboxInstruction3')}</div>
 
     <div className="step-title">
       <div className="step-title-nbr">4</div>
-      <div className="step-title-txt">Decrypt messages on the page</div>
+      <div className="step-title-txt">{i18('toolboxTitle4')}</div>
     </div>
     <button
       onClick={decrypt}
       className="u-margin-bottom-s general-button --color-one"
     >
-      Decrypt ctr+k
+      {i18('toolboxDecrypt')}
     </button>
 
     <div className="step-title">
       <div className="step-title-nbr">5</div>
-      <div className="step-title-txt">Information</div>
+      <div className="step-title-txt">{i18('toolboxTitle5')}</div>
     </div>
-    <div>
-      You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.
-    </div>
+    <div>{i18('toolboxInstruction5')}</div>
 
   </div>;
 };

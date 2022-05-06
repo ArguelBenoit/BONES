@@ -3,6 +3,7 @@ import ReturnLink from 'Components/return-link.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { useRouterContext } from 'Contexts/router.js';
 import Bus from 'Utils/bus.js';
+import i18 from 'Utils/i18.js';
 
 
 
@@ -18,24 +19,21 @@ const Share = () => {
       .clipboard
       .writeText(pair.public)
       .then(() => {
-        Bus.dispatch('ModalSuccess', 'Your public key is copied to the clipboard. Transmit there in the way of your choice.');
+        Bus.dispatch('ModalSuccess', i18('successShare'));
         changeRoute({ name: 'Index' });
       });
   };
 
   return <div className="content">
     <ReturnLink/>
-    <h1>Copy a public key to share it</h1>
+    <h1>{i18('shareFormTitle')}</h1>
     <div className="form">
       <div className="u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m">
-        <i>
-          Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.
-        </i>
+        <i>{i18('shareFormWarn')}</i>
       </div>
-
       <section className="u-themecolor-container u-padding-s u-margin-top-m">
         <div style={{overflowWrap: 'anywhere'}}>{pair.public}</div>
-        <button className="general-button u-margin-top-s" onClick={copy}>Copy in clipboard</button>
+        <button className="general-button u-margin-top-s" onClick={copy}>{i18('shareFormCopy')}</button>
       </section>
     </div>
   </div>;

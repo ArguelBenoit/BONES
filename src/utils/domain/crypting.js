@@ -1,7 +1,7 @@
 const encryptHeader = '~ BONES ENCRYPTED MESSAGE';
-const decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
 const NodeRSA = require('node-rsa');
-
+import i18 from 'Utils/i18.js';
+const decryptHeader = i18('decryptedHeader');
 
 
 export class Crypting {
@@ -73,7 +73,7 @@ export class Crypting {
         }
       }
 
-      return '⚠️ No keys matches ⚠️';
+      return i18('encryptedNoKeyMatch');
 
     }
   }

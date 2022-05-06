@@ -11,8 +11,8 @@ import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
 import { useSettingsContext } from 'Contexts/settings.js';
 import Bus from 'Utils/bus.js';
-import i18 from 'Utils/i18.js';
 import { manager } from 'Utils/storage/manager.js';
+import i18 from 'Utils/i18.js';
 
 
 const Index = () => {
@@ -39,7 +39,7 @@ const Index = () => {
 
   const deleteDb = () => {
     Bus.dispatch('ModalPrompt', {
-      message: 'Do you really want to delete all data?',
+      message: i18('deleteAllDB'),
       action: () => {
         manager.deleteAll().then(() => {
           location.reload();
@@ -56,10 +56,7 @@ const Index = () => {
       <header className="header">
         <img src={activate ? bones : bonesFail} width="100" />
         <div className="u-font-size-s">
-          {i18('headerTxt')}
-          <a href="https://github.com/ArguelBenoit/e2e-chat-encryption">
-            github
-          </a>
+          {i18('headerTxt')}<a href="https://github.com/ArguelBenoit/BONES">github</a>
         </div>
       </header>
 
@@ -79,7 +76,7 @@ const Index = () => {
         <List
           type={'pair'}
           list={pairs.pairs}
-          emptyMessage="BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys."
+          emptyMessage={i18('emptyPair')}
         />
         <div className="u-padding-s u-themecolor-container">
           <button
@@ -92,33 +89,33 @@ const Index = () => {
       </section>
 
       <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Friends (their public keys)</div>
+        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('friendTitle')}</div>
         <List
           type={'friend'}
           list={friends.friends}
-          emptyMessage="BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key."
+          emptyMessage={i18('emptyFriend')}
         />
         <div className="u-padding-s u-themecolor-container">
           <button
             onClick={() => changeRoute({ name: 'FormFriend' })}
             className="general-button"
           >
-            Add a friend's key
+            {i18('friendAddButton')}
           </button>
         </div>
       </section>
 
       <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">Keys used</div>
+        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('keysUsedTitle')}</div>
         <FormKeysUsed />
       </section>
 
       <div className="u-flex u-margin-top-m">
         <img src={line} width="80" />
       </div>
-      <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalDumpDb', {})}>Make a dump of your database</button>
-      <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalImportDB', {})}>Import a dump of database</button>
-      <button className="linkstyle-button u-margin-top-s" onClick={deleteDb}>Delete database</button>
+      <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalDumpDb', {})}>{i18('dbDump')}</button>
+      <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalImportDB', {})}>{i18('dbImport')}</button>
+      <button className="linkstyle-button u-margin-top-s" onClick={deleteDb}>{i18('dbRemove')}</button>
 
     </div>;
 

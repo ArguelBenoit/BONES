@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import i18 from 'Utils/i18.js';
 
 
 const FieldError = ({ status }) => {
 
   const statusResponse = {
     0: '',
-    1: <span className="form-error">This field is required</span>,
-    2: <span className="form-error">This is not a RSA public key</span>,
-    3: <span className="form-error">This is not a RSA private key</span>
+    1: <span className="form-error">{i18('fieldRequired')}</span>,
+    2: <span className="form-error">{i18('fieldNoPublic')}</span>,
+    3: <span className="form-error">{i18('fieldNoPrivate')}</span>
   };
 
   return statusResponse[status];

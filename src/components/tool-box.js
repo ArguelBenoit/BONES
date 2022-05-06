@@ -17,7 +17,6 @@ const settingsStore = new Storage('settings');
 const pairStore = new Storage('pair');
 
 
-
 // bon ok... le 100% fonctionnel c'est plus esthetique, mais dans le cas de cette toolbox injecté dans les pages web, on passera.
 class ToolBox extends React.Component {
   constructor(props) {
@@ -134,7 +133,7 @@ class ToolBox extends React.Component {
             .writeText(encryptedValue)
             .then(() => {
               this.setState({ message: '', stun: false});
-              this.success(<span>Message copied to your clipboard,<br/>Paste it into the main chat field</span>);
+              this.success(i18('toolboxEncryptCopySuccess'));
             });
         }, 1200);
 
@@ -144,7 +143,7 @@ class ToolBox extends React.Component {
           const encryptedValue = this.crypting.encrypt(value);
           activeElement.value = encryptedValue;
           this.setState({stun: false});
-          this.success(<span>Your message is crypted</span>);
+          this.success(i18('toolboxEncryptSuccess'));
           this.simulateInput(activeElement);
         }
         this.setState({stun: false});
@@ -155,7 +154,7 @@ class ToolBox extends React.Component {
           const encryptedValue = this.crypting.encrypt(textContent);
           activeElement.textContent = encryptedValue;
           this.setState({stun: false});
-          this.success(<span>Your message is crypted</span>);
+          this.success(i18('toolboxEncryptSuccess'));
           this.simulateInput(activeElement);
         }
         this.setState({ stun: false});
@@ -181,7 +180,7 @@ class ToolBox extends React.Component {
   loading(activated) {
     if (activated) {
       this.setState({
-        header: 'BONES is working',
+        header: i18('toolboxLoading'),
         img: 'loading'
       });
     } else {
@@ -202,7 +201,7 @@ class ToolBox extends React.Component {
         this.crypting.parse().then(() => {
           this.loading(false);
           this.setState({ stun: false });
-          this.success(<span>Decryption of page messages<br/>is complete</span>);
+          this.success(i18('toolboxDecryptSuccess'));
         });
       }, 50);
     }

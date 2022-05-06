@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import head from 'Images/bones/head-regular.png';
 import Bus from 'Utils/bus.js';
 import { manager } from 'Utils/storage/manager.js';
+import i18 from 'Utils/i18.js';
 
 
 const ModalImportDb = () => {
@@ -36,14 +37,14 @@ const ModalImportDb = () => {
         width="90"
       />
       <div>
-        Be careful, importing a dump of bones will overwrite the current data<br/>
+        {i18('actionImport')}<br/>
       </div>
       <div className="modal-buttons">
         <button className="left" onClick={remove}>
-          CANCEL
+          {i18('cancel')}
         </button>
         <label className="right" htmlFor="file-upload" onMouseDown={e => e.preventDefault()}>
-          IMPORT
+          {i18('import')}
         </label>
         <input
           onMouseDown={e => e.preventDefault()}

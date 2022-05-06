@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Bus from 'Utils/bus.js';
 import Loading from 'Components/loading.js';
-
+import i18 from 'Utils/i18.js';
 
 
 const ModalLoading = () => {
@@ -15,9 +15,7 @@ const ModalLoading = () => {
       <div style={{ display: 'inline-block', margin: 'auto'}}>
         <Loading size={100}/>
       </div>
-      <div>
-        BONES is working.<br/>Don't touch <b>anything</b>!
-      </div>
+      <div dangerouslySetInnerHTML={{__html: i18('loading')}} />{/* eslint-disable-line */}
     </div>
   </div>;
 

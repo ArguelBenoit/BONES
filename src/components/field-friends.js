@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useFriendsContext } from 'Contexts/friends.js';
 import PropTypes from 'prop-types';
+import i18 from 'Utils/i18.js';
 
 
 const FieldFriends = ({ updateParent, initialState }) => {
@@ -72,7 +73,7 @@ const FieldFriends = ({ updateParent, initialState }) => {
         onClick={addFriend}
         className="linkstyle-button u-margin-top-s"
       >
-        Add another friend
+        {i18('addAnotherFriend')}
       </button>
       : ''
     }

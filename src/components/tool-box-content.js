@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import i18 from 'Utils/i18.js';
 
 
 const ToolBoxContent = ({ message, handlerChange, encrypt, decrypt }) => {
@@ -7,7 +8,7 @@ const ToolBoxContent = ({ message, handlerChange, encrypt, decrypt }) => {
   return <div>
     <textarea
       id="bones-input"
-      placeholder="Safe area"
+      placeholder={i18('toolboxSafeAreaPlaceholder')}
       className="u-margin-bottom-s"
       value={message}
       onChange={handlerChange}
@@ -21,7 +22,7 @@ const ToolBoxContent = ({ message, handlerChange, encrypt, decrypt }) => {
           className="general-button u-full-width"
           onMouseDown={e => e.preventDefault()}
         >
-          Encrypt ctr+j
+          {i18('encrypt')}
         </button>
       </div>
       <div className="u-half-width" style={{ paddingLeft: 7.5 }}>
@@ -30,7 +31,7 @@ const ToolBoxContent = ({ message, handlerChange, encrypt, decrypt }) => {
           className="general-button u-full-width --color-one"
           id="decrypt-message"
         >
-          Decrypt ctr+k
+          {i18('decrypt')}
         </button>
       </div>
     </div>

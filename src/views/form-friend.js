@@ -86,7 +86,7 @@ const FormFriend = () => {
           public: stateValue.public
         });
       }
-      Bus.dispatch('ModalSuccess', 'Well done, your friend\'s key has been saved.');
+      Bus.dispatch('ModalSuccess', i18('successFriend'));
       changeRoute({ name: 'Index' });
 
     } else {
@@ -97,7 +97,7 @@ const FormFriend = () => {
 
   return <div className="content">
     <ReturnLink />
-    <h1><span>{editMode ? 'Edit' : 'Add'}</span> a friend's key</h1>
+    <h1><span>{i18(editMode ? 'edit' : 'add')}</span>{i18('friendFormEditTitle')}</h1>
     <div className="form">
       {/* label */}
       <div className="u-margin-top-m">
@@ -111,7 +111,7 @@ const FormFriend = () => {
             onChange={handlerSetValue}
           />
           {stateValidator.label === 1
-            ? <span className="form-error">This field is required</span>
+            ? <span className="form-error">{i18('fieldRequired')}</span>
             : ''
           }
         </div>
@@ -120,22 +120,22 @@ const FormFriend = () => {
 
       {/* public key */}
       <div className="u-margin-top-s">
-        <label>Public key of your friend</label>
+        <label>{i18('friendFormPubLabel')}</label>
         <textarea
           name="name"
           rows="8"
           cols="80"
-          placeholder="Paste public RSA 2048 key here"
+          placeholder={i18('friendFormPubPlaceholder')}
           value={stateValue.public}
           data-key-state="public"
           onChange={handlerSetValue}
         />
         {stateValidator.public === 1
-          ? <span className="form-error">This field is required</span>
+          ? <span className="form-error">{i18('fieldRequired')}</span>
           : ''
         }
         {stateValidator.public === 2
-          ? <span className="form-error">This is not a RSA public key</span>
+          ? <span className="form-error">{i18('fieldNoPublic')}</span>
           : ''
         }
       </div>
@@ -145,7 +145,7 @@ const FormFriend = () => {
       onClick={() => save()}
       className="general-button generate-button u-margin-top-s save-keys"
     >
-      Save friend's key
+      {i18('friendFormSave')}
     </button>
   </div>;
 };

@@ -3,6 +3,7 @@ import head from 'Images/bones/head-regular.png';
 import Bus from 'Utils/bus.js';
 import { handlers } from 'Utils/handlers.js';
 import { manager } from 'Utils/storage/manager.js';
+import i18 from 'Utils/i18.js';
 
 
 const ModalDumpDb = () => {
@@ -39,18 +40,18 @@ const ModalDumpDb = () => {
         width="90"
       />
       <div>
-        BONES has created a dump of your database.
+        {i18('actionCreateDB')}
       </div>
       <div className="modal-buttons">
         <button onClick={remove}>
-          CANCEL
+          {i18('cancel')}
         </button>
         <a
           download={`bones_${handlers.date()}.json`}
           href={window.URL.createObjectURL(data)}
           onClick={remove}
         >
-          DOWNLOAD
+          {i18('download')}
         </a>
       </div>
     </div>

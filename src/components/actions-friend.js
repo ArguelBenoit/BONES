@@ -5,7 +5,7 @@ import trash from 'Images/icons/trash.png';
 import { useRouterContext } from 'Contexts/router.js';
 import Bus from 'Utils/bus.js';
 import { useFriendsContext } from 'Contexts/friends.js';
-
+import i18 from 'Utils/i18.js';
 
 const ActionsFriend = ({ item }) => {
 
@@ -14,7 +14,7 @@ const ActionsFriend = ({ item }) => {
   const { changeRoute } = useRouterContext();
 
   const dataRemoveAction = {
-    message: `Do you really want to delete public key "${label}" ?`,
+    message: `${i18('actionsFriend')}"${label}" ?`,
     action: () => {
       remove(uuid);
     }
