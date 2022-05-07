@@ -1,19 +1,18 @@
 
+
 TODO_______________________________________________________________________
 - Fonctionnement sur chrome.
-- README github, tutoriel de fonctionnement etc...
 - Tag v1
 - Mise sur les stores
 - compression finale des messages (actuellement trop long)
 
 
 WIP________________________________________________________________________
-- fix css flex toolbox (after translation feature)
 - bug decrypt sur gmail
 
 
 DONE_______________________________________________________________________
-- i18 (manque dossier views)
+- fix css flex toolbox (after translation feature)
 - update a chaque modification du store settings
 - Déplacement en localstorage settings
 - css toggle instructions (protonmail entre autres)

@@ -91003,8 +91003,8 @@ var dictionary = {
     fr: 'Collez votre clef publique ici'
   },
   pairFormSave: {
-    en: 'Save your pair',
-    fr: 'Enregistrer votre paire'
+    en: 'Save pair',
+    fr: 'Enregistrer la paire'
   },
 
   /*************************/
@@ -91119,8 +91119,8 @@ var dictionary = {
     fr: 'Le décryptage des messages de la page est terminé'
   },
   toolboxEncryptCopySuccess: {
-    en: 'Message copied to your clipboard, paste it into the main chat field',
-    fr: 'Le message est copié dans votre presse-papiers, Collez-le dans le champ de discussion principal'
+    en: 'Message copied to your clipboard !',
+    fr: 'Message copié dans votre presse-papiers !'
   },
   toolboxEncryptSuccess: {
     en: 'Your message is crypted',
