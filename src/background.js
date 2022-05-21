@@ -27,6 +27,7 @@ handlers.webExt()
 
 
 
+
 // envoi d'un dispatch vers le script content lorsqu'il y a un changement d'url
 // obligatoire pour les routages côté client comme avec react et vue
 handlers.webExt().tabs.onUpdated.addListener((tabId, changeInfo) => {

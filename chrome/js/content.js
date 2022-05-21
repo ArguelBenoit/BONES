@@ -22026,7 +22026,7 @@ exports.push([module.i, ".mask-loading {\n  overflow: hidden;\n}\n.mask-loading 
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#BONES-CONTAINER #bones-tool-box {\n  all: initial;\n  color: #ddd;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n  font-size: 13px !important;\n  font-family: sans-serif !important;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox .text {\n  display: inline-block;\n  width: 260px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-toolbox {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  box-sizing: initial;\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  all: initial;\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  cursor: pointer;\n  position: relative;\n  border: 0;\n  outline: 0;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
+exports.push([module.i, "#BONES-CONTAINER #bones-tool-box {\n  all: initial;\n  color: #ddd;\n  position: fixed;\n  z-index: 10000;\n  user-select: none;\n  /* not toggled */\n  border-radius: 24px;\n  width: 130px;\n  /* toggled */\n  /* shadow */\n  /******* title step **********/\n  /******* common button *******/\n  /******* checkbox like toggle ********/\n  /******* utility *******/\n}\n#BONES-CONTAINER #bones-tool-box * {\n  scrollbar-color: #23053f transparent;\n  font-size: 13px !important;\n  font-family: sans-serif !important;\n}\n#BONES-CONTAINER #bones-tool-box a {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box a:hover {\n  text-decoration: underline;\n}\n#BONES-CONTAINER #bones-tool-box ul {\n  padding: 0 0 0 15px;\n  margin: 10px 0 0 0;\n  list-style-type: decimal;\n}\n#BONES-CONTAINER #bones-tool-box ul li {\n  padding: 0 0 0 0;\n  margin: 0 0 5px 0;\n}\n#BONES-CONTAINER #bones-tool-box ul li:last-child {\n  margin: 0 0 0 0;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input {\n  user-select: inherit;\n  width: 100%;\n  height: 120px;\n  box-sizing: border-box;\n  background: #23053f;\n  border-radius: 4px;\n  border: 1px solid #23053f;\n  padding: 12px;\n  margin-top: 2px;\n  color: #ccc;\n}\n#BONES-CONTAINER #bones-tool-box #bones-input::placeholder {\n  /* Chrome, Firefox, Opera, Safari 10.1+ */\n  color: #8c14fc;\n  opacity: 1;\n  /* Firefox */\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox {\n  display: none;\n  width: 260px;\n  height: 52px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .label-toolbox .text {\n  display: inline-block;\n  width: 260px;\n  white-space: initial;\n  font-size: 14px;\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .content {\n  display: none;\n  background: #000;\n  border-radius: 16px;\n  color: #ddd;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  cursor: move;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  width: 34px;\n  transform: rotateX(180deg);\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  border-radius: 24px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled {\n  width: 380px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content {\n  display: inherit;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .bones-header .toggle-header {\n  transform: rotateX(0deg);\n}\n#BONES-CONTAINER #bones-tool-box.toggled .content-shadow-one {\n  border-radius: 16px;\n}\n#BONES-CONTAINER #bones-tool-box.toggled .label-toolbox {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n#BONES-CONTAINER #bones-tool-box * {\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-one {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  background: #000;\n  position: relative;\n  z-index: 2;\n}\n#BONES-CONTAINER #bones-tool-box .content-shadow-two {\n  box-shadow: 0px 0px 0px 5px #8c14fc;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  z-index: 1;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header {\n  height: 50px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .bones-logo-header {\n  box-sizing: border-box;\n  background: #000;\n  border-radius: 50%;\n  height: 75px;\n  width: 75px;\n  position: absolute;\n  top: -13px;\n  left: -14px;\n  padding: 7.5px;\n}\n#BONES-CONTAINER #bones-tool-box .bones-header .toggle-header {\n  position: absolute;\n  right: 18px;\n  top: 13px;\n  cursor: pointer;\n}\n#BONES-CONTAINER #bones-tool-box .step-title {\n  display: flex;\n  flex-direction: row;\n  margin-bottom: 6px;\n  margin-top: 6px;\n  color: #8c14fc;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-txt {\n  display: flex;\n  align-items: center;\n  margin-left: 8px;\n  font-size: 14px;\n}\n#BONES-CONTAINER #bones-tool-box .step-title .step-title-nbr {\n  box-sizing: initial;\n  font-weight: bolder;\n  width: 18px;\n  height: 18px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 11px;\n  border: 2px solid #8c14fc;\n  border-radius: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .general-button {\n  width: 100%;\n  min-height: 34px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: inline;\n  margin: 0 auto 0 auto;\n  border: none;\n  font-size: 13px;\n  color: #000;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover,\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  cursor: pointer;\n  text-decoration: none;\n}\n#BONES-CONTAINER #bones-tool-box .general-button:hover {\n  transform: scale(1.02);\n}\n#BONES-CONTAINER #bones-tool-box .general-button:active {\n  transform: scale(0.99);\n}\n#BONES-CONTAINER #bones-tool-box .general-button.--color-one {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .action {\n  cursor: pointer;\n  margin-left: 10px;\n  opacity: 0.7;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle {\n  all: initial;\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  cursor: pointer;\n  position: relative;\n  border: 0;\n  outline: 0;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:before {\n  left: 16px;\n}\n#BONES-CONTAINER #bones-tool-box .cm-toggle:checked:after {\n  background: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container {\n  background: #23053f;\n  border-radius: 2px;\n  border: 1px solid #23053f;\n  box-sizing: border-box;\n  margin-bottom: 5px;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container select,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container input,\n#BONES-CONTAINER #bones-tool-box .u-themecolor-container textarea {\n  border: 0.5px solid #620eb0;\n  background: #23053f;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-flex.--left {\n  justify-content: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-full-width {\n  width: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-half-width {\n  width: 50%;\n}\n#BONES-CONTAINER #bones-tool-box .u-themecolor-color {\n  color: #8c14fc;\n}\n#BONES-CONTAINER #bones-tool-box .u-white-color {\n  color: #fff;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-center {\n  text-align: center;\n}\n#BONES-CONTAINER #bones-tool-box .u-opacity-half {\n  opacity: 0.5;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-s {\n  font-size: 90%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-m {\n  font-size: 95%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-l {\n  font-size: 100%;\n}\n#BONES-CONTAINER #bones-tool-box .u-font-size-xl {\n  font-size: 110%;\n}\n#BONES-CONTAINER #bones-tool-box .u-text-italic {\n  font-style: italic;\n}\n#BONES-CONTAINER #bones-tool-box .u-border {\n  border: 0.5px solid #620eb0;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding {\n  padding: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-s {\n  padding: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-padding-top-s {\n  padding-top: 12px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-s {\n  margin: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-m {\n  margin: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-s {\n  margin-bottom: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-bottom-m {\n  margin-bottom: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-s {\n  margin-top: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-top-m {\n  margin-top: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-s {\n  margin-left: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-left-m {\n  margin-left: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-s {\n  margin-right: 15px;\n}\n#BONES-CONTAINER #bones-tool-box .u-margin-right-m {\n  margin-right: 20px;\n}\n#BONES-CONTAINER #bones-tool-box .u-left {\n  float: left;\n}\n#BONES-CONTAINER #bones-tool-box .u-right {\n  float: right;\n}\n", ""]);
 
 
 
@@ -90642,6 +90642,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -90652,7 +90654,7 @@ var ToolBoxContent = function ToolBoxContent(_ref) {
       decrypt = _ref.decrypt;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
     id: "bones-input",
-    placeholder: "Safe area",
+    placeholder: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxSafeAreaPlaceholder'),
     className: "u-margin-bottom-s",
     value: message,
     onChange: handlerChange,
@@ -90673,7 +90675,7 @@ var ToolBoxContent = function ToolBoxContent(_ref) {
     onMouseDown: function onMouseDown(e) {
       return e.preventDefault();
     }
-  }, "Encrypt ctr+j")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('encrypt'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "u-half-width",
     style: {
       paddingLeft: 7.5
@@ -90682,7 +90684,7 @@ var ToolBoxContent = function ToolBoxContent(_ref) {
     onClick: decrypt,
     className: "general-button u-full-width --color-one",
     id: "decrypt-message"
-  }, "Decrypt ctr+k"))));
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('decrypt')))));
 };
 
 ToolBoxContent.propTypes = {
@@ -90708,6 +90710,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -90722,9 +90726,9 @@ var ToolBoxTutorial = function ToolBoxTutorial(_ref) {
     className: "step-title-nbr"
   }, "1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-txt"
-  }, "Write your message in the safe area")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxTitle1'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
     id: "bones-input",
-    placeholder: "Safe area",
+    placeholder: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxSafeAreaPlaceholder'),
     className: "u-margin-bottom-s",
     value: message,
     onChange: handlerChange,
@@ -90738,36 +90742,36 @@ var ToolBoxTutorial = function ToolBoxTutorial(_ref) {
     className: "step-title-nbr"
   }, "2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-txt"
-  }, "Encrypt and cut it with this button")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxTitle2'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onMouseDown: function onMouseDown(e) {
       return e.preventDefault();
     },
     onClick: encrypt,
     className: "general-button u-margin-bottom-s"
-  }, "Encrypt ctr+j"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxEncrypt')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-nbr"
   }, "3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-txt"
-  }, "Send your encrypted message")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxTitle3'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "u-margin-bottom-s"
-  }, "Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxInstruction3')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-nbr"
   }, "4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-txt"
-  }, "Decrypt messages on the page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxTitle4'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: decrypt,
     className: "u-margin-bottom-s general-button --color-one"
-  }, "Decrypt ctr+k"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxDecrypt')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-nbr"
   }, "5"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "step-title-txt"
-  }, "Information")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area."));
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxTitle5'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('toolboxInstruction5')));
 };
 
 ToolBoxTutorial.propTypes = {
@@ -91031,7 +91035,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
                 stun: false
               });
 
-              _this3.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Message copied to your clipboard,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", null), "Paste it into the main chat field"));
+              _this3.success(Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxEncryptCopySuccess'));
             });
           }, 1200); // Chiffrement input non BONES
         } else if ((tagName === 'INPUT' || tagName === 'TEXTAREA') && value && value !== '') {
@@ -91042,7 +91046,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
             this.setState({
               stun: false
             });
-            this.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Your message is crypted"));
+            this.success(Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxEncryptSuccess'));
             this.simulateInput(activeElement);
           }
 
@@ -91057,7 +91061,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
             this.setState({
               stun: false
             });
-            this.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Your message is crypted"));
+            this.success(Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxEncryptSuccess'));
             this.simulateInput(activeElement);
           }
 
@@ -91088,7 +91092,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
     value: function loading(activated) {
       if (activated) {
         this.setState({
-          header: 'BONES is working',
+          header: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxLoading'),
           img: 'loading'
         });
       } else {
@@ -91118,7 +91122,7 @@ var ToolBox = /*#__PURE__*/function (_React$Component) {
               stun: false
             });
 
-            _this5.success( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", null, "Decryption of page messages", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("br", null), "is complete"));
+            _this5.success(Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_18__["default"])('toolboxDecryptSuccess'));
           });
         }, 50);
       }
@@ -91449,6 +91453,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
 
 
 
@@ -91460,10 +91465,11 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 var encryptHeader = '~ BONES ENCRYPTED MESSAGE';
-var decryptHeader = '💀 BONES DECRYPTED MESSAGE 💀\n';
 
 var NodeRSA = __webpack_require__(/*! node-rsa */ "./node_modules/node-rsa/src/NodeRSA.js");
 
+
+var decryptHeader = Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_3__["default"])('decryptedHeader');
 var Crypting = /*#__PURE__*/function () {
   function Crypting(friends, pair) {
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_1___default()(this, Crypting);
@@ -91555,7 +91561,7 @@ var Crypting = /*#__PURE__*/function () {
           _iterator2.f();
         }
 
-        return '⚠️ No keys matches ⚠️';
+        return Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_3__["default"])('encryptedNoKeyMatch');
       }
     }
     /* maj du dom pour un message */
@@ -91682,8 +91688,6 @@ var handlers = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// import i18 from 'Utils/i18.js';
-// {i18('')}
 var dictionary = {
   /*****************/
 
@@ -91698,6 +91702,18 @@ var dictionary = {
     en: 'NO',
     fr: 'NON'
   },
+  cancel: {
+    en: 'CANCEL',
+    fr: 'ANNULER'
+  },
+  download: {
+    en: 'DOWNLOAD',
+    fr: 'TÉLÉCHARGER'
+  },
+  "import": {
+    en: 'IMPORT',
+    fr: 'IMPORTER'
+  },
   goBack: {
     en: 'GO BACK !',
     fr: 'RETOUR !'
@@ -91705,6 +91721,64 @@ var dictionary = {
   label: {
     en: 'Label',
     fr: 'Nom'
+  },
+  encrypt: {
+    en: 'Encrypt ctr+j',
+    fr: 'Crypter ctr+j'
+  },
+  decrypt: {
+    en: 'Decrypt ctr+k',
+    fr: 'Décrypter ctr+k'
+  },
+  add: {
+    en: 'Adding',
+    fr: 'Ajout'
+  },
+  edit: {
+    en: 'Edit',
+    fr: 'Édition'
+  },
+
+  /********************/
+
+  /* actions (modale) */
+
+  /********************/
+  actionsFriend: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+  actionPair: {
+    en: 'Do you really want to delete pair ',
+    fr: 'Voulez-vous vraiment supprimer la paire '
+  },
+  actionCreateDB: {
+    en: 'BONES has created a dump of your database.',
+    fr: 'BONES a créé un dump de la base de données'
+  },
+  actionImport: {
+    en: 'Be careful, importing a dump of bones will overwrite the current data',
+    fr: 'Attention, importer un dump de bones va écraser les données actuelles'
+  },
+  loading: {
+    en: 'BONES is working.<br/>Don\'t touch <b>anything</b>!',
+    fr: 'BONES travaille.<br/>Ne touchez <b>à rien</b> !'
+  },
+  successFriend: {
+    en: 'Well done, your friend\'s key has been saved.',
+    fr: 'Bravo, la clef de votre ami a été enregistrée.'
+  },
+  successPair: {
+    en: 'Well done, your key pair key has been saved.',
+    fr: 'Bravo, votre paire de clefs a été enregistrée.'
+  },
+  successShare: {
+    en: 'Your public key is copied to the clipboard. Transmit there in the way of your choice.',
+    fr: 'Bravo, votre clef publique est dans votre presse-papiers'
+  },
+  deleteAllDB: {
+    en: 'Do you really want to delete all data?',
+    fr: 'Voulez-vous vraiment supprimer toutes les données ?'
   },
 
   /*************************/
@@ -91716,7 +91790,7 @@ var dictionary = {
   /* header */
   headerTxt: {
     en: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.',
-    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clés RSA. Vous êtes le seul maître.'
+    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clefs RSA. Vous êtes le seul maître.'
   },
   headerActivate: {
     en: 'Activate BONES',
@@ -91732,19 +91806,65 @@ var dictionary = {
     en: 'Add a key pair',
     fr: 'Ajouter une paire'
   },
-  pairDelete: {
-    en: 'Do you really want to delete public key ',
-    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  emptyPair: {
+    en: 'BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys.',
+    fr: 'BONES ne possède pas de clef. Pour chiffrer et déchiffrer vos messages, BONES a besoin d\'une paire de clefs RSA 2048.'
   },
 
-  /* pairs form */
-  pairFormEditTitle: {
-    en: 'Edit a personal rsa key pair',
-    fr: 'Modifier une paire de clefs rsa personnelle'
+  /* friends section */
+  friendTitle: {
+    en: 'Friends (their public keys)',
+    fr: 'Amis (leurs clefs publiques)'
   },
-  pairFormAddTitle: {
-    en: 'Add a personal rsa key pair',
-    fr: 'Ajouter une paire de clés rsa personnelle'
+  friendAddButton: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  emptyFriend: {
+    en: 'BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key.',
+    fr: 'BONES n\'a pas de clefs publiques de vos amis. Pour déchiffrer les messages, il est nécessaire d\'avoir les clefs publiques de vos amis.'
+  },
+
+  /* keys used section */
+  keysUsedTitle: {
+    en: 'Keys used',
+    fr: 'Clefs utilisées'
+  },
+  keysUsedPair: {
+    en: 'Your pair key *',
+    fr: 'Votre paire de clefs *'
+  },
+  keysUsedfriends: {
+    en: 'Friend\'s key *',
+    fr: 'Les clefs des amis *'
+  },
+  addAnotherFriend: {
+    en: 'Add another friend',
+    fr: 'Ajouter un autre ami'
+  },
+
+  /* database Actions */
+  dbDump: {
+    en: 'Make a dump of your database',
+    fr: 'Faire un dump des données'
+  },
+  dbImport: {
+    en: 'Import a dump of database',
+    fr: 'Importer un dump de données'
+  },
+  dbRemove: {
+    en: 'Delete database',
+    fr: 'Supprimer toutes les données'
+  },
+
+  /*************************/
+
+  /* Pair form             */
+
+  /*************************/
+  pairFormEditTitle: {
+    en: ' rsa key pair',
+    fr: ' d\'une paire de clefs rsa'
   },
   pairFormWarn: {
     en: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.',
@@ -91771,11 +91891,15 @@ var dictionary = {
     fr: 'Collez votre clef publique ici'
   },
   pairFormSave: {
-    en: 'Save your pair',
-    fr: 'Enregistrer votre paire'
+    en: 'Save pair',
+    fr: 'Enregistrer la paire'
   },
 
-  /* share form */
+  /*************************/
+
+  /* share form            */
+
+  /*************************/
   shareFormTitle: {
     en: 'Copy a public key to share it',
     fr: 'Copier la clef publique pour la partager'
@@ -91786,71 +91910,47 @@ var dictionary = {
   },
   shareFormCopy: {
     en: 'Copy in clipboard',
-    fr: 'Copier la clef dans le presse-papier'
+    fr: 'Copier la clef'
   },
 
-  /* friends section */
-  friendTitle: {
-    en: 'Friends (their public keys)',
-    fr: 'Amis (leurs clés publiques)'
-  },
-  friendAddButton: {
-    en: 'Add a friend\'s key',
-    fr: 'Ajouter la clef d\'un ami'
-  },
-  friendDelete: {
-    en: 'Do you really want to delete public key ',
-    fr: 'Voulez-vous vraiment supprimer la clef publique '
-  },
+  /*************************/
 
-  /* pairs form */
+  /* friend form           */
+
+  /*************************/
   friendFormEditTitle: {
-    en: 'Edit a friend\'s key',
-    fr: 'Modifier la clef d\'un ami'
-  },
-  friendFormAddTitle: {
-    en: 'Add a friend\'s key',
-    fr: 'Ajouter la clef d\'un ami'
+    en: ' friend\'s key',
+    fr: ' de la clef d\'un ami'
   },
   friendFormPubLabel: {
     en: 'Public key of your friend',
     fr: 'Clef publique de votre ami'
   },
   friendFormPubPlaceholder: {
-    en: 'Paste your public key here',
-    fr: 'Collez sa clef ici'
+    en: 'Paste public key here',
+    fr: 'Coller la clef publique ici'
   },
   friendFormSave: {
     en: 'Save friend\'s key',
     fr: 'Enregistrer la clef'
   },
 
-  /* keys used section */
-  keysUsedTitle: {
-    en: 'Keys used',
-    fr: 'Clefs utilisées'
-  },
-  keysUsedPair: {
-    en: 'Your pair key *',
-    fr: 'Votre paire de clefs *'
-  },
-  keysUsedfriends: {
-    en: 'Friend\'s key *',
-    fr: 'Les clefs des amis *'
-  },
+  /*------------*/
 
-  /* database Actions */
-  dbDump: {
-    en: 'Make a dump of your database',
-    fr: 'Faire un dump des données'
+  /* error form */
+
+  /*------------*/
+  fieldRequired: {
+    en: 'This field is required',
+    fr: 'Ce champ est requis'
   },
-  dbImport: {
-    en: 'Import a dump of database',
-    fr: 'Importer un dump de données'
+  fieldNoPublic: {
+    en: 'This is not a RSA public key',
+    fr: 'Ce n\'est pas une clef RSA publique'
   },
-  dbRemove: {
-    en: 'Delete database',
-    fr: 'Supprimer toutes les données'
+  fieldNoPrivate: {
+    en: 'This is not a RSA private key',
+    fr: 'Ce n\'est pas une clef RSA privée'
   },
 
   /****************************************/
@@ -91907,12 +92007,16 @@ var dictionary = {
     fr: 'Le décryptage des messages de la page est terminé'
   },
   toolboxEncryptCopySuccess: {
-    en: 'Message copied to your clipboard, paste it into the main chat field',
-    fr: 'Le message est copié dans votre presse-papiers, Collez-le dans le champ de discussion principal'
+    en: 'Message copied to your clipboard !',
+    fr: 'Message copié dans votre presse-papiers !'
   },
   toolboxEncryptSuccess: {
     en: 'Your message is crypted',
     fr: 'Votre message est crypté'
+  },
+  toolboxLoading: {
+    en: 'BONES is working',
+    fr: 'BONES travaille'
   },
 
   /****************************************/
@@ -91924,9 +92028,9 @@ var dictionary = {
     en: '⚠️ No keys matches ⚠️',
     fr: '⚠️ No keys matches ⚠️'
   },
-  encryptedHeader: {
+  decryptedHeader: {
     en: '💀 Bones decrypted message 💀\n',
-    fr: '💀 Bones decrypted message 💀\n'
+    fr: '💀 Message Bones décrypté 💀\n'
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (function (key) {

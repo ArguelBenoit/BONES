@@ -247,7 +247,7 @@ class ToolBox extends React.Component {
 
             <div className="bones-header draggable-handler" onMouseDown={e => e.preventDefault()}>
               <div className="bones-logo-header">
-                {img === 'regular'
+                {img === 'regular' 
                   ? <img draggable="false" src={bonesRegular} width="60" height="60" />
                   : ''
                 }

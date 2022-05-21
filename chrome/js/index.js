@@ -21983,7 +21983,7 @@ exports.push([module.i, "body {\n  /******* common button *******/\n  /******* a
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #222 #000;\n}\nhtml:before {\n  content: '🇫🇷';\n  font-size: 24px;\n  position: fixed;\n  top: 5px;\n  left: 10px;\n}\n#root {\n  width: 100%;\n}\nbody {\n  overflow-x: hidden;\n  margin: auto;\n  width: 580px;\n  background: #111;\n  font-size: 95%;\n  color: #ddd;\n  padding: 20px;\n  min-height: 100vh;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /******* form *******/\n  /******* modal *******/\n  /******* utility *******/\n}\nbody a,\nbody .link {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\nbody a:hover,\nbody .link:hover {\n  text-decoration: underline;\n}\nbody p {\n  margin-top: 0px;\n}\nbody h1 {\n  font-weight: normal;\n}\nbody .content {\n  border-radius: 10px;\n  box-sizing: border-box;\n  padding: 30px;\n  background: #000;\n  position: relative;\n}\nbody .form {\n  border-top: 1px solid #666;\n}\nbody input[type=text],\nbody select,\nbody textarea {\n  padding: 10px;\n  width: 100%;\n  border-radius: 4px;\n  background: #23053f;\n  border: 1px solid #35095e;\n  box-sizing: border-box;\n  color: #ddd;\n  font-size: 92%;\n  margin-top: 10px;\n  scrollbar-color: #23053f transparent;\n}\nbody .form-error {\n  padding-top: 5px;\n  color: red;\n  font-style: italic;\n  display: inherit;\n}\nbody input[type=\"file\"] {\n  display: none;\n}\nbody .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\nbody .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\nbody .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\nbody .cm-toggle:checked:before {\n  left: 16px;\n}\nbody .cm-toggle:checked:after {\n  background: #8c14fc;\n}\nbody .modal {\n  height: 100vh;\n  width: 100%;\n  top: 0;\n  left: 0;\n  position: fixed;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.85);\n  display: flex;\n  align-items: center;\n  line-height: 26px;\n}\nbody .modal .modal-content {\n  margin: auto;\n  max-width: 300px;\n  text-align: center;\n  background: #000;\n  padding: 30px;\n  border: 6px solid #8c14fc;\n  border-radius: 10px;\n}\nbody .modal .modal-content img {\n  display: block;\n  margin: auto;\n}\nbody .modal .modal-buttons {\n  display: flex;\n  margin-top: 10px;\n}\nbody .modal .modal-buttons button,\nbody .modal .modal-buttons a,\nbody .modal .modal-buttons label {\n  min-height: 34px;\n  padding: 0 20px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: block;\n  margin: 0 auto 0 auto;\n  color: #060015;\n  border: none;\n  font-size: 85%;\n  line-height: 34px;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover,\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  cursor: pointer;\n  text-decoration: none;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover {\n  transform: scale(1.02);\n}\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  transform: scale(0.99) !important;\n}\nbody .modal .modal-buttons button.left,\nbody .modal .modal-buttons a.left,\nbody .modal .modal-buttons label.left,\nbody .modal .modal-buttons button:first-child,\nbody .modal .modal-buttons a:first-child,\nbody .modal .modal-buttons label:first-child {\n  margin-right: 7.5px;\n}\nbody .modal .modal-buttons button.right,\nbody .modal .modal-buttons a.right,\nbody .modal .modal-buttons label.right,\nbody .modal .modal-buttons button:last-child,\nbody .modal .modal-buttons a:last-child,\nbody .modal .modal-buttons label:last-child {\n  margin-left: 7.5px;\n}\nbody .u-themecolor-container {\n  background: #23053f !important;\n  border-radius: 4px !important;\n  border: 1px solid #35095e !important;\n  margin-bottom: 5px !important;\n  box-sizing: border-box !important;\n}\nbody .u-themecolor-container input[type=\"select\"],\nbody .u-themecolor-container select,\nbody .u-themecolor-container input[type=\"text\"],\nbody .u-themecolor-container textarea {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-themecolor-container .u-themecolor-container {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-full-width {\n  width: 100% !important;\n}\nbody .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\nbody .--beetwen {\n  justify-content: space-between !important;\n}\nbody .u-themecolor-color {\n  color: #8c14fc !important;\n}\nbody .u-white-color {\n  color: #fff !important;\n}\nbody .u-text-center {\n  text-align: center !important;\n}\nbody .u-text-italic {\n  font-style: italic !important;\n}\nbody .u-font-size-s {\n  font-size: 90% !important;\n}\nbody .u-font-size-m {\n  font-size: 95% !important;\n}\nbody .u-font-size-l {\n  font-size: 100% !important;\n}\nbody .u-font-size-xl {\n  font-size: 110% !important;\n}\nbody .u-border {\n  border: 1px solid #35095e !important;\n}\nbody .u-padding {\n  padding: 20px !important;\n}\nbody .u-padding-s {\n  padding: 12px !important;\n}\nbody .u-margin-s {\n  margin: 15px !important;\n}\nbody .u-margin-m {\n  margin: 20px !important;\n}\nbody .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\nbody .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\nbody .u-margin-top-s {\n  margin-top: 15px !important;\n}\nbody .u-margin-top-m {\n  margin-top: 20px !important;\n}\nbody .u-margin-left-s {\n  margin-left: 15px !important;\n}\nbody .u-margin-left-m {\n  margin-left: 20px !important;\n}\nbody .u-margin-right-s {\n  margin-right: 15px !important;\n}\nbody .u-margin-right-m {\n  margin-right: 20px !important;\n}\nbody .u-left {\n  float: left !important;\n}\nbody .u-right {\n  float: right !important;\n}\n", ""]);
+exports.push([module.i, "* {\n  font-family: sans-serif;\n  scrollbar-color: #222 #000;\n}\nhtml:before {\n  content: '🇫🇷';\n  font-size: 24px;\n  position: fixed;\n  top: 5px;\n  left: 10px;\n}\n#root {\n  width: 100%;\n}\nbody {\n  user-select: none;\n  overflow-x: hidden;\n  margin: auto;\n  width: 580px;\n  background: radial-gradient(circle 800px, #2a054d, #040404);\n  font-size: 95%;\n  color: #ddd;\n  padding: 20px;\n  min-height: 100vh;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  /******* form *******/\n  /******* modal *******/\n  /******* utility *******/\n}\nbody a,\nbody .link {\n  cursor: pointer;\n  color: #f8a300;\n  text-decoration: none;\n}\nbody a:hover,\nbody .link:hover {\n  text-decoration: underline;\n}\nbody p {\n  margin-top: 0px;\n}\nbody h1 {\n  font-weight: normal;\n}\nbody .content {\n  border-radius: 10px;\n  box-sizing: border-box;\n  padding: 30px;\n  background: #000;\n  position: relative;\n}\nbody .form {\n  border-top: 1px solid #666;\n}\nbody input[type=text],\nbody select,\nbody textarea {\n  padding: 10px;\n  width: 100%;\n  border-radius: 4px;\n  background: #23053f;\n  border: 1px solid #35095e;\n  box-sizing: border-box;\n  color: #ddd;\n  font-size: 92%;\n  margin-top: 10px;\n  scrollbar-color: #23053f transparent;\n}\nbody .form-error {\n  padding-top: 5px;\n  color: red;\n  font-style: italic;\n  display: inherit;\n}\nbody input[type=\"file\"] {\n  display: none;\n}\nbody .cm-toggle {\n  -webkit-appearance: none;\n  -webkit-tap-highlight-color: transparent;\n  position: relative;\n  border: 0;\n  outline: 0;\n  cursor: pointer;\n  margin: 4px 0 0 0;\n  background-color: transparent;\n}\nbody .cm-toggle:before {\n  content: '';\n  width: 16px;\n  height: 16px;\n  display: block;\n  position: absolute;\n  left: 2px;\n  top: 2px;\n  border-radius: 4px;\n  background: #000;\n}\nbody .cm-toggle:after {\n  content: '';\n  width: 34px;\n  height: 20px;\n  display: inline-block;\n  background: #333;\n  border-radius: 4px;\n  clear: both;\n}\nbody .cm-toggle:checked:before {\n  left: 16px;\n}\nbody .cm-toggle:checked:after {\n  background: #8c14fc;\n}\nbody .modal {\n  height: 100vh;\n  width: 100%;\n  top: 0;\n  left: 0;\n  position: fixed;\n  z-index: 2;\n  background: rgba(0, 0, 0, 0.85);\n  display: flex;\n  align-items: center;\n  line-height: 26px;\n}\nbody .modal .modal-content {\n  margin: auto;\n  max-width: 300px;\n  text-align: center;\n  background: #000;\n  padding: 30px;\n  border: 6px solid #8c14fc;\n  border-radius: 10px;\n}\nbody .modal .modal-content img {\n  display: block;\n  margin: auto;\n}\nbody .modal .modal-buttons {\n  display: flex;\n  margin-top: 10px;\n}\nbody .modal .modal-buttons button,\nbody .modal .modal-buttons a,\nbody .modal .modal-buttons label {\n  min-height: 34px;\n  padding: 0 20px;\n  border-radius: 4px;\n  background: #f8a300;\n  font-size: 100%;\n  display: block;\n  margin: 0 auto 0 auto;\n  color: #060015;\n  border: none;\n  font-size: 85%;\n  line-height: 34px;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover,\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  cursor: pointer;\n  text-decoration: none;\n}\nbody .modal .modal-buttons button:hover,\nbody .modal .modal-buttons a:hover,\nbody .modal .modal-buttons label:hover {\n  transform: scale(1.02);\n}\nbody .modal .modal-buttons button:active,\nbody .modal .modal-buttons a:active,\nbody .modal .modal-buttons label:active {\n  transform: scale(0.99) !important;\n}\nbody .modal .modal-buttons button.left,\nbody .modal .modal-buttons a.left,\nbody .modal .modal-buttons label.left,\nbody .modal .modal-buttons button:first-child,\nbody .modal .modal-buttons a:first-child,\nbody .modal .modal-buttons label:first-child {\n  margin-right: 7.5px;\n}\nbody .modal .modal-buttons button.right,\nbody .modal .modal-buttons a.right,\nbody .modal .modal-buttons label.right,\nbody .modal .modal-buttons button:last-child,\nbody .modal .modal-buttons a:last-child,\nbody .modal .modal-buttons label:last-child {\n  margin-left: 7.5px;\n}\nbody .u-themecolor-container {\n  background: #23053f !important;\n  border-radius: 4px !important;\n  border: 1px solid #35095e !important;\n  margin-bottom: 5px !important;\n  box-sizing: border-box !important;\n}\nbody .u-themecolor-container input[type=\"select\"],\nbody .u-themecolor-container select,\nbody .u-themecolor-container input[type=\"text\"],\nbody .u-themecolor-container textarea {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-themecolor-container .u-themecolor-container {\n  border: 1px solid #620eb0 !important;\n}\nbody .u-full-width {\n  width: 100% !important;\n}\nbody .u-flex {\n  display: flex !important;\n  justify-content: center !important;\n  align-items: center !important;\n}\nbody .--beetwen {\n  justify-content: space-between !important;\n}\nbody .u-themecolor-color {\n  color: #8c14fc !important;\n}\nbody .u-white-color {\n  color: #fff !important;\n}\nbody .u-text-center {\n  text-align: center !important;\n}\nbody .u-text-italic {\n  font-style: italic !important;\n}\nbody .u-font-size-s {\n  font-size: 90% !important;\n}\nbody .u-font-size-m {\n  font-size: 95% !important;\n}\nbody .u-font-size-l {\n  font-size: 100% !important;\n}\nbody .u-font-size-xl {\n  font-size: 110% !important;\n}\nbody .u-border {\n  border: 1px solid #35095e !important;\n}\nbody .u-padding {\n  padding: 20px !important;\n}\nbody .u-padding-s {\n  padding: 12px !important;\n}\nbody .u-margin-s {\n  margin: 15px !important;\n}\nbody .u-margin-m {\n  margin: 20px !important;\n}\nbody .u-margin-bottom-s {\n  margin-bottom: 15px !important;\n}\nbody .u-margin-bottom-m {\n  margin-bottom: 20px !important;\n}\nbody .u-margin-top-s {\n  margin-top: 15px !important;\n}\nbody .u-margin-top-m {\n  margin-top: 20px !important;\n}\nbody .u-margin-left-s {\n  margin-left: 15px !important;\n}\nbody .u-margin-left-m {\n  margin-left: 20px !important;\n}\nbody .u-margin-right-s {\n  margin-right: 15px !important;\n}\nbody .u-margin-right-m {\n  margin-right: 20px !important;\n}\nbody .u-left {\n  float: left !important;\n}\nbody .u-right {\n  float: right !important;\n}\n", ""]);
 
 
 
@@ -88767,6 +88767,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -88788,7 +88790,7 @@ var ActionsFriend = function ActionsFriend(_ref) {
       changeRoute = _useRouterContext.changeRoute;
 
   var dataRemoveAction = {
-    message: "Do you really want to delete public key \"".concat(label, "\" ?"),
+    message: "".concat(Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_7__["default"])('actionsFriend'), "\"").concat(label, "\" ?"),
     action: function action() {
       remove(uuid);
     }
@@ -88846,6 +88848,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -88868,7 +88872,7 @@ var ActionsPair = function ActionsPair(_ref) {
       changeRoute = _useRouterContext.changeRoute;
 
   var dataRemoveAction = {
-    message: "Do you really want to delete public key \"".concat(label, "\" ?"),
+    message: "".concat(Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('actionPair'), "\"").concat(label, "\" ?"),
     action: function action() {
       remove(uuid);
     }
@@ -88928,6 +88932,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -88937,13 +88943,13 @@ var FieldError = function FieldError(_ref) {
     0: '',
     1: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "form-error"
-    }, "This field is required"),
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('fieldRequired')),
     2: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "form-error"
-    }, "This is not a RSA public key"),
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('fieldNoPublic')),
     3: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "form-error"
-    }, "This is not a RSA private key")
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_2__["default"])('fieldNoPrivate'))
   };
   return statusResponse[status];
 };
@@ -88974,6 +88980,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -89062,7 +89070,7 @@ var FieldFriends = function FieldFriends(_ref) {
   }), fields.value.length < friends.friends.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     onClick: addFriend,
     className: "linkstyle-button u-margin-top-s"
-  }, "Add another friend") : '');
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('addAnotherFriend')) : '');
 };
 
 FieldFriends.propTypes = {
@@ -89091,6 +89099,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
 /* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 /* harmony import */ var Components_field_friends_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Components/field-friends.js */ "./src/components/field-friends.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
 
 
 
@@ -89101,6 +89110,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
  // import Bus from 'Utils/bus.js';
+
 
 
 
@@ -89147,7 +89157,7 @@ var FormKeysUsed = function FormKeysUsed() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-themecolor-container u-padding"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your pair key *"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_6__["default"])('keysUsedPair')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
     type: "select",
     value: stateValue.pair,
     onChange: handlerSetPair
@@ -89334,6 +89344,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/handlers.js */ "./src/utils/handlers.js");
 /* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -89376,15 +89388,15 @@ var ModalDumpDb = function ModalDumpDb() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     width: "90"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "BONES has created a dump of your database."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_6__["default"])('actionCreateDB')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "modal-buttons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     onClick: remove
-  }, "CANCEL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_6__["default"])('cancel')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     download: "bones_".concat(Utils_handlers_js__WEBPACK_IMPORTED_MODULE_4__["handlers"].date(), ".json"),
     href: window.URL.createObjectURL(data),
     onClick: remove
-  }, "DOWNLOAD"))));
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_6__["default"])('download')))));
   return state.active ? dumpMessage : '';
 };
 
@@ -89409,6 +89421,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -89454,18 +89468,18 @@ var ModalImportDb = function ModalImportDb() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: Images_bones_head_regular_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     width: "90"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Be careful, importing a dump of bones will overwrite the current data", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('actionImport'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "modal-buttons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "left",
     onClick: remove
-  }, "CANCEL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('cancel')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     className: "right",
     htmlFor: "file-upload",
     onMouseDown: function onMouseDown(e) {
       return e.preventDefault();
     }
-  }, "IMPORT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('import')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
     onMouseDown: function onMouseDown(e) {
       return e.preventDefault();
     },
@@ -89498,6 +89512,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
 /* harmony import */ var Components_loading_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Components/loading.js */ "./src/components/loading.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -89523,7 +89539,11 @@ var ModalLoading = function ModalLoading() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_loading_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
     size: 100
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "BONES is working.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), "Don't touch ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, "anything"), "!")));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    dangerouslySetInnerHTML: {
+      __html: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_4__["default"])('loading')
+    }
+  })));
   return active ? loadingHtml : '';
 };
 
@@ -90780,8 +90800,6 @@ var handlers = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// import i18 from 'Utils/i18.js';
-// {i18('')}
 var dictionary = {
   /*****************/
 
@@ -90796,6 +90814,18 @@ var dictionary = {
     en: 'NO',
     fr: 'NON'
   },
+  cancel: {
+    en: 'CANCEL',
+    fr: 'ANNULER'
+  },
+  download: {
+    en: 'DOWNLOAD',
+    fr: 'TÉLÉCHARGER'
+  },
+  "import": {
+    en: 'IMPORT',
+    fr: 'IMPORTER'
+  },
   goBack: {
     en: 'GO BACK !',
     fr: 'RETOUR !'
@@ -90803,6 +90833,64 @@ var dictionary = {
   label: {
     en: 'Label',
     fr: 'Nom'
+  },
+  encrypt: {
+    en: 'Encrypt ctr+j',
+    fr: 'Crypter ctr+j'
+  },
+  decrypt: {
+    en: 'Decrypt ctr+k',
+    fr: 'Décrypter ctr+k'
+  },
+  add: {
+    en: 'Adding',
+    fr: 'Ajout'
+  },
+  edit: {
+    en: 'Edit',
+    fr: 'Édition'
+  },
+
+  /********************/
+
+  /* actions (modale) */
+
+  /********************/
+  actionsFriend: {
+    en: 'Do you really want to delete public key ',
+    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  },
+  actionPair: {
+    en: 'Do you really want to delete pair ',
+    fr: 'Voulez-vous vraiment supprimer la paire '
+  },
+  actionCreateDB: {
+    en: 'BONES has created a dump of your database.',
+    fr: 'BONES a créé un dump de la base de données'
+  },
+  actionImport: {
+    en: 'Be careful, importing a dump of bones will overwrite the current data',
+    fr: 'Attention, importer un dump de bones va écraser les données actuelles'
+  },
+  loading: {
+    en: 'BONES is working.<br/>Don\'t touch <b>anything</b>!',
+    fr: 'BONES travaille.<br/>Ne touchez <b>à rien</b> !'
+  },
+  successFriend: {
+    en: 'Well done, your friend\'s key has been saved.',
+    fr: 'Bravo, la clef de votre ami a été enregistrée.'
+  },
+  successPair: {
+    en: 'Well done, your key pair key has been saved.',
+    fr: 'Bravo, votre paire de clefs a été enregistrée.'
+  },
+  successShare: {
+    en: 'Your public key is copied to the clipboard. Transmit there in the way of your choice.',
+    fr: 'Bravo, votre clef publique est dans votre presse-papiers'
+  },
+  deleteAllDB: {
+    en: 'Do you really want to delete all data?',
+    fr: 'Voulez-vous vraiment supprimer toutes les données ?'
   },
 
   /*************************/
@@ -90814,7 +90902,7 @@ var dictionary = {
   /* header */
   headerTxt: {
     en: 'BONES is a utility for RSA (2048) encryption and decryption of your messages on any communication system. Manage your RSA keys yourself. You are the only master.',
-    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clés RSA. Vous êtes le seul maître.'
+    fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clefs RSA. Vous êtes le seul maître.'
   },
   headerActivate: {
     en: 'Activate BONES',
@@ -90830,19 +90918,65 @@ var dictionary = {
     en: 'Add a key pair',
     fr: 'Ajouter une paire'
   },
-  pairDelete: {
-    en: 'Do you really want to delete public key ',
-    fr: 'Voulez-vous vraiment supprimer la clef publique '
+  emptyPair: {
+    en: 'BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys.',
+    fr: 'BONES ne possède pas de clef. Pour chiffrer et déchiffrer vos messages, BONES a besoin d\'une paire de clefs RSA 2048.'
   },
 
-  /* pairs form */
-  pairFormEditTitle: {
-    en: 'Edit a personal rsa key pair',
-    fr: 'Modifier une paire de clefs rsa personnelle'
+  /* friends section */
+  friendTitle: {
+    en: 'Friends (their public keys)',
+    fr: 'Amis (leurs clefs publiques)'
   },
-  pairFormAddTitle: {
-    en: 'Add a personal rsa key pair',
-    fr: 'Ajouter une paire de clés rsa personnelle'
+  friendAddButton: {
+    en: 'Add a friend\'s key',
+    fr: 'Ajouter la clef d\'un ami'
+  },
+  emptyFriend: {
+    en: 'BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key.',
+    fr: 'BONES n\'a pas de clefs publiques de vos amis. Pour déchiffrer les messages, il est nécessaire d\'avoir les clefs publiques de vos amis.'
+  },
+
+  /* keys used section */
+  keysUsedTitle: {
+    en: 'Keys used',
+    fr: 'Clefs utilisées'
+  },
+  keysUsedPair: {
+    en: 'Your pair key *',
+    fr: 'Votre paire de clefs *'
+  },
+  keysUsedfriends: {
+    en: 'Friend\'s key *',
+    fr: 'Les clefs des amis *'
+  },
+  addAnotherFriend: {
+    en: 'Add another friend',
+    fr: 'Ajouter un autre ami'
+  },
+
+  /* database Actions */
+  dbDump: {
+    en: 'Make a dump of your database',
+    fr: 'Faire un dump des données'
+  },
+  dbImport: {
+    en: 'Import a dump of database',
+    fr: 'Importer un dump de données'
+  },
+  dbRemove: {
+    en: 'Delete database',
+    fr: 'Supprimer toutes les données'
+  },
+
+  /*************************/
+
+  /* Pair form             */
+
+  /*************************/
+  pairFormEditTitle: {
+    en: ' rsa key pair',
+    fr: ' d\'une paire de clefs rsa'
   },
   pairFormWarn: {
     en: 'Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don\'t know what you are doing, use generation.',
@@ -90869,11 +91003,15 @@ var dictionary = {
     fr: 'Collez votre clef publique ici'
   },
   pairFormSave: {
-    en: 'Save your pair',
-    fr: 'Enregistrer votre paire'
+    en: 'Save pair',
+    fr: 'Enregistrer la paire'
   },
 
-  /* share form */
+  /*************************/
+
+  /* share form            */
+
+  /*************************/
   shareFormTitle: {
     en: 'Copy a public key to share it',
     fr: 'Copier la clef publique pour la partager'
@@ -90884,71 +91022,47 @@ var dictionary = {
   },
   shareFormCopy: {
     en: 'Copy in clipboard',
-    fr: 'Copier la clef dans le presse-papier'
+    fr: 'Copier la clef'
   },
 
-  /* friends section */
-  friendTitle: {
-    en: 'Friends (their public keys)',
-    fr: 'Amis (leurs clés publiques)'
-  },
-  friendAddButton: {
-    en: 'Add a friend\'s key',
-    fr: 'Ajouter la clef d\'un ami'
-  },
-  friendDelete: {
-    en: 'Do you really want to delete public key ',
-    fr: 'Voulez-vous vraiment supprimer la clef publique '
-  },
+  /*************************/
 
-  /* pairs form */
+  /* friend form           */
+
+  /*************************/
   friendFormEditTitle: {
-    en: 'Edit a friend\'s key',
-    fr: 'Modifier la clef d\'un ami'
-  },
-  friendFormAddTitle: {
-    en: 'Add a friend\'s key',
-    fr: 'Ajouter la clef d\'un ami'
+    en: ' friend\'s key',
+    fr: ' de la clef d\'un ami'
   },
   friendFormPubLabel: {
     en: 'Public key of your friend',
     fr: 'Clef publique de votre ami'
   },
   friendFormPubPlaceholder: {
-    en: 'Paste your public key here',
-    fr: 'Collez sa clef ici'
+    en: 'Paste public key here',
+    fr: 'Coller la clef publique ici'
   },
   friendFormSave: {
     en: 'Save friend\'s key',
     fr: 'Enregistrer la clef'
   },
 
-  /* keys used section */
-  keysUsedTitle: {
-    en: 'Keys used',
-    fr: 'Clefs utilisées'
-  },
-  keysUsedPair: {
-    en: 'Your pair key *',
-    fr: 'Votre paire de clefs *'
-  },
-  keysUsedfriends: {
-    en: 'Friend\'s key *',
-    fr: 'Les clefs des amis *'
-  },
+  /*------------*/
 
-  /* database Actions */
-  dbDump: {
-    en: 'Make a dump of your database',
-    fr: 'Faire un dump des données'
+  /* error form */
+
+  /*------------*/
+  fieldRequired: {
+    en: 'This field is required',
+    fr: 'Ce champ est requis'
   },
-  dbImport: {
-    en: 'Import a dump of database',
-    fr: 'Importer un dump de données'
+  fieldNoPublic: {
+    en: 'This is not a RSA public key',
+    fr: 'Ce n\'est pas une clef RSA publique'
   },
-  dbRemove: {
-    en: 'Delete database',
-    fr: 'Supprimer toutes les données'
+  fieldNoPrivate: {
+    en: 'This is not a RSA private key',
+    fr: 'Ce n\'est pas une clef RSA privée'
   },
 
   /****************************************/
@@ -91005,12 +91119,16 @@ var dictionary = {
     fr: 'Le décryptage des messages de la page est terminé'
   },
   toolboxEncryptCopySuccess: {
-    en: 'Message copied to your clipboard, paste it into the main chat field',
-    fr: 'Le message est copié dans votre presse-papiers, Collez-le dans le champ de discussion principal'
+    en: 'Message copied to your clipboard !',
+    fr: 'Message copié dans votre presse-papiers !'
   },
   toolboxEncryptSuccess: {
     en: 'Your message is crypted',
     fr: 'Votre message est crypté'
+  },
+  toolboxLoading: {
+    en: 'BONES is working',
+    fr: 'BONES travaille'
   },
 
   /****************************************/
@@ -91022,9 +91140,9 @@ var dictionary = {
     en: '⚠️ No keys matches ⚠️',
     fr: '⚠️ No keys matches ⚠️'
   },
-  encryptedHeader: {
+  decryptedHeader: {
     en: '💀 Bones decrypted message 💀\n',
-    fr: '💀 Bones decrypted message 💀\n'
+    fr: '💀 Message Bones décrypté 💀\n'
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (function (key) {
@@ -91517,7 +91635,7 @@ var FormFriend = function FormFriend() {
         });
       }
 
-      Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__["default"].dispatch('ModalSuccess', 'Well done, your friend\'s key has been saved.');
+      Utils_bus_js__WEBPACK_IMPORTED_MODULE_7__["default"].dispatch('ModalSuccess', Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('successFriend'));
       changeRoute({
         name: 'Index'
       });
@@ -91528,7 +91646,7 @@ var FormFriend = function FormFriend() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, editMode ? 'Edit' : 'Add'), " a friend's key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])(editMode ? 'edit' : 'add')), Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('friendFormEditTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "form"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-m"
@@ -91542,26 +91660,26 @@ var FormFriend = function FormFriend() {
     onChange: handlerSetValue
   }), stateValidator.label === 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     className: "form-error"
-  }, "This field is required") : '')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('fieldRequired')) : '')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Public key of your friend"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('friendFormPubLabel')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
     name: "name",
     rows: "8",
     cols: "80",
-    placeholder: "Paste public RSA 2048 key here",
+    placeholder: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('friendFormPubPlaceholder'),
     value: stateValue["public"],
     "data-key-state": "public",
     onChange: handlerSetValue
   }), stateValidator["public"] === 1 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     className: "form-error"
-  }, "This field is required") : '', stateValidator["public"] === 2 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('fieldRequired')) : '', stateValidator["public"] === 2 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
     className: "form-error"
-  }, "This is not a RSA public key") : '')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('fieldNoPublic')) : '')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     onClick: function onClick() {
       return save();
     },
     className: "general-button generate-button u-margin-top-s save-keys"
-  }, "Save friend's key"));
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_8__["default"])('friendFormSave')));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FormFriend);
@@ -91696,7 +91814,7 @@ var FormPair = function FormPair() {
         });
       }
 
-      Utils_bus_js__WEBPACK_IMPORTED_MODULE_8__["default"].dispatch('ModalSuccess', 'Well done, your key pair has been saved.');
+      Utils_bus_js__WEBPACK_IMPORTED_MODULE_8__["default"].dispatch('ModalSuccess', Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('successPair'));
       changeRoute({
         name: 'Index'
       });
@@ -91707,7 +91825,7 @@ var FormPair = function FormPair() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, editMode ? 'Edit' : 'Add'), " a personal rsa key pair"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])(editMode ? 'edit' : 'add')), Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormEditTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "form"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-m"
@@ -91723,18 +91841,18 @@ var FormPair = function FormPair() {
     status: stateValidator.label
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-border u-margin-top-s u-themecolor-color u-themecolor-container u-padding-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", null, "Take care to import a pair of RSA 2048 keys, BONES does not test the consistency of the two keys as well as their size (2048). If you don't know what you are doing, use generation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormWarn')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     className: "general-button generate-button u-margin-top-m",
     onClick: function onClick() {
       return clickGenerating();
     }
-  }, "Generate pair of key")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormGenerate'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your private key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormPriLabel')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
     name: "name",
     rows: "8",
     cols: "80",
-    placeholder: "Paste your private key here",
+    placeholder: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormPriPlaceholder'),
     value: stateValue["private"],
     "data-key-state": "private",
     onChange: handlerSetValue
@@ -91742,11 +91860,11 @@ var FormPair = function FormPair() {
     status: stateValidator["private"]
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "u-margin-top-s"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, "Your public key"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormPubLabel')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
     name: "name",
     rows: "8",
     cols: "80",
-    placeholder: "Paste your public key here",
+    placeholder: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormPubPlaceholder'),
     value: stateValue["public"],
     "data-key-state": "public",
     onChange: handlerSetValue
@@ -91757,7 +91875,7 @@ var FormPair = function FormPair() {
       return save();
     },
     className: "general-button generate-button u-margin-top-s save-keys"
-  }, "Save your pair"));
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_9__["default"])('pairFormSave')));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FormPair);
@@ -91792,8 +91910,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_friends_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! Contexts/friends.js */ "./src/contexts/friends.js");
 /* harmony import */ var Contexts_settings_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! Contexts/settings.js */ "./src/contexts/settings.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
-/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
-/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+/* harmony import */ var Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! Utils/storage/manager.js */ "./src/utils/storage/manager.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
 
 
 
@@ -91834,9 +91952,9 @@ var Index = function Index() {
 
   var deleteDb = function deleteDb() {
     Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalPrompt', {
-      message: 'Do you really want to delete all data?',
+      message: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('deleteAllDB'),
       action: function action() {
-        Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_14__["manager"].deleteAll().then(function () {
+        Utils_storage_manager_js__WEBPACK_IMPORTED_MODULE_13__["manager"].deleteAll().then(function () {
           location.reload();
         });
       }
@@ -91856,8 +91974,8 @@ var Index = function Index() {
       width: "100"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-font-size-s"
-    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('headerTxt'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://github.com/ArguelBenoit/e2e-chat-encryption"
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('headerTxt'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+      href: "https://github.com/ArguelBenoit/BONES"
     }, "github"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-flex --left input-activation"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -91866,14 +91984,14 @@ var Index = function Index() {
       checked: activate,
       "data-key-state": "activate",
       onChange: handlerSetValue
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('headerActivate'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('headerActivate'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
       className: "u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('pairTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('pairTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       type: 'pair',
       list: pairs.pairs,
-      emptyMessage: "BONES does not have your keys. To encrypt and decrypt your messages BONES needs a pair of RSA 2048 keys."
+      emptyMessage: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('emptyPair')
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding-s u-themecolor-container"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -91883,14 +92001,14 @@ var Index = function Index() {
         });
       },
       className: "general-button"
-    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_13__["default"])('pairAddButton')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('pairAddButton')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
       className: "u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-    }, "Friends (their public keys)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('friendTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_list_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
       type: 'friend',
       list: friends.friends,
-      emptyMessage: "BONES does not have any public key from your friends. To decrypt their encrypted message, it is necessary to have their public key."
+      emptyMessage: Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('emptyFriend')
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding-s u-themecolor-container"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -91900,11 +92018,11 @@ var Index = function Index() {
         });
       },
       className: "general-button"
-    }, "Add a friend's key"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('friendAddButton')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
       className: "u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-padding u-themecolor-container u-text-center u-white-color u-font-size-l"
-    }, "Keys used"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_form_keys_used_js__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('keysUsedTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Components_form_keys_used_js__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "u-flex u-margin-top-m"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
       src: Images_bones_line_png__WEBPACK_IMPORTED_MODULE_4___default.a,
@@ -91914,15 +92032,15 @@ var Index = function Index() {
       onClick: function onClick() {
         return Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalDumpDb', {});
       }
-    }, "Make a dump of your database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('dbDump')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "linkstyle-button u-margin-top-s",
       onClick: function onClick() {
         return Utils_bus_js__WEBPACK_IMPORTED_MODULE_12__["default"].dispatch('ModalImportDB', {});
       }
-    }, "Import a dump of database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('dbImport')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
       className: "linkstyle-button u-margin-top-s",
       onClick: deleteDb
-    }, "Delete database"));
+    }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_14__["default"])('dbRemove')));
   } else {
     return '';
   }
@@ -91947,6 +92065,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var Contexts_pairs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! Contexts/pairs.js */ "./src/contexts/pairs.js");
 /* harmony import */ var Contexts_router_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! Contexts/router.js */ "./src/contexts/router.js");
 /* harmony import */ var Utils_bus_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! Utils/bus.js */ "./src/utils/bus.js");
+/* harmony import */ var Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! Utils/i18.js */ "./src/utils/i18.js");
+
 
 
 
@@ -91965,7 +92085,7 @@ var Share = function Share() {
 
   var copy = function copy() {
     navigator.clipboard.writeText(pair["public"]).then(function () {
-      Utils_bus_js__WEBPACK_IMPORTED_MODULE_4__["default"].dispatch('ModalSuccess', 'Your public key is copied to the clipboard. Transmit there in the way of your choice.');
+      Utils_bus_js__WEBPACK_IMPORTED_MODULE_4__["default"].dispatch('ModalSuccess', Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('successShare'));
       changeRoute({
         name: 'Index'
       });
@@ -91974,11 +92094,11 @@ var Share = function Share() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Copy a public key to share it"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Components_return_link_js__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('shareFormTitle')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "u-themecolor-color u-themecolor-container u-padding-s u-margin-top-m"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Be very careful how you transmit your public key, and it is best to use one pair of keys per interlocutor.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('shareFormWarn'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "u-themecolor-container u-padding-s u-margin-top-m"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
@@ -91987,7 +92107,7 @@ var Share = function Share() {
   }, pair["public"]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "general-button u-margin-top-s",
     onClick: copy
-  }, "Copy in clipboard"))));
+  }, Object(Utils_i18_js__WEBPACK_IMPORTED_MODULE_5__["default"])('shareFormCopy')))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Share);
