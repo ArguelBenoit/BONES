@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Bus from 'Utils/bus.js';
+import Bus from 'Bin/bus.js';
 import Loading from 'Components/loading.js';
-import i18 from 'Utils/i18.js';
+import i18 from 'Bin/i18.js';
 
 
 const ModalLoading = () => {

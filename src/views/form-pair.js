@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import ReturnLink from 'Components/return-link.js';
 import { useRouterContext } from 'Contexts/router.js';
 import { usePairsContext } from 'Contexts/pairs.js';
-import { generating, checkPrivate, checkPublic } from 'Utils/domain/keys.js';
+import { generating, checkPrivate, checkPublic } from 'Bin/domain/keys.js';
 import FieldError from 'Components/field-error.js';
-import Bus from 'Utils/bus.js';
-import i18 from 'Utils/i18.js';
+import Bus from 'Bin/bus.js';
+import i18 from 'Bin/i18.js';
 
 
 let initialStateValue = {

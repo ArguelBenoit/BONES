@@ -1,6 +1,6 @@
 const encryptHeader = '~ BONES ENCRYPTED MESSAGE';
 const NodeRSA = require('node-rsa');
-import i18 from 'Utils/i18.js';
+import i18 from 'Bin/i18.js';
 const decryptHeader = i18('decryptedHeader');
 
 
@@ -13,7 +13,7 @@ export class Crypting {
     this.keys = [...friends, pair];
   }
 
-  /* encrypter un message (max 214, pour le moment)*/
+  /* encrypter un message */
   encrypt(message) {
 
     let value = `${encryptHeader}`;
@@ -79,9 +79,9 @@ export class Crypting {
   }
 
   /* maj du dom pour un message */
-  updateDOM(node, rawText) {
-    const decrypted = this.decrypt(rawText);
-    node.parentNode.innerHTML = `<span style="white-space: pre-wrap">${decryptHeader}${decrypted}</span>`;
+  updateDOM(node) {
+    const decrypted = this.decrypt(node.innerText);
+    node.innerHTML = `<span style="white-space: pre-wrap">${decryptHeader}${decrypted}</span>`;
   }
 
   /* recherche les message crypté */
@@ -95,7 +95,8 @@ export class Crypting {
         const {
           childNodes: _childNodes,
           textContent: rawText,
-          nodeName
+          nodeName,
+          parentNode
         } = node.childNodes[i];
 
         const excluded = ['SCRIPT', 'HEADER', 'FOOTER', 'NAV'];
@@ -108,7 +109,7 @@ export class Crypting {
 
           } else if (rawText.indexOf(encryptHeader) > -1) { // si le texte a le header BONES
             // mise a jour du dom pour un message
-            this.updateDOM(node.childNodes[i], rawText);
+            this.updateDOM(parentNode);
           }
 
         }

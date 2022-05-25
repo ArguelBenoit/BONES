@@ -90,7 +90,7 @@ module.exports = async env => {
         Styles: path.resolve(__dirname, 'src/styles/'),
         Components: path.resolve(__dirname, 'src/components/'),
         Images: path.resolve(__dirname, 'src/images/'),
-        Utils: path.resolve(__dirname, 'src/utils/'),
+        Bin: path.resolve(__dirname, 'src/bin/'),
         Contexts: path.resolve(__dirname, 'src/contexts/'),
         Env: path.resolve(__dirname, '.env.js')
       }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import head from 'Images/bones/head-regular.png';
-import Bus from 'Utils/bus.js';
-import { handlers } from 'Utils/handlers.js';
-import { manager } from 'Utils/storage/manager.js';
-import i18 from 'Utils/i18.js';
+import Bus from 'Bin/bus.js';
+import { handlers } from 'Bin/handlers.js';
+import { manager } from 'Bin/storage/manager.js';
+import i18 from 'Bin/i18.js';
 
 
 const ModalDumpDb = () => {

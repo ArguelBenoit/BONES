@@ -1,4 +1,4 @@
-import { handlers } from 'Utils/handlers.js';
+import { handlers } from 'Bin/handlers.js';
 
 
 const activeTab = () => {

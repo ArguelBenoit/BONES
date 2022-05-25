@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import i18 from 'Utils/i18.js';
+import i18 from 'Bin/i18.js';
 
 
 const FieldError = ({ status }) => {

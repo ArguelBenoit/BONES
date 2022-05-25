@@ -5,10 +5,10 @@ import React, {
   useContext,
   useEffect
 } from 'react';
-import { Storage } from 'Utils/storage/storage.js';
+import { Storage } from 'Bin/storage/storage.js';
 const store = new Storage();
 const SettingsContext = createContext();
-import contentDispatch from 'Utils/content-dispatch.js';
+import contentDispatch from 'Bin/content-dispatch.js';
 
 
 

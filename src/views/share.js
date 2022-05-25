@@ -2,8 +2,8 @@ import React from 'react';
 import ReturnLink from 'Components/return-link.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { useRouterContext } from 'Contexts/router.js';
-import Bus from 'Utils/bus.js';
-import i18 from 'Utils/i18.js';
+import Bus from 'Bin/bus.js';
+import i18 from 'Bin/i18.js';
 
 
 

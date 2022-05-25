@@ -10,9 +10,9 @@ import { useRouterContext } from 'Contexts/router.js';
 import { usePairsContext } from 'Contexts/pairs.js';
 import { useFriendsContext } from 'Contexts/friends.js';
 import { useSettingsContext } from 'Contexts/settings.js';
-import Bus from 'Utils/bus.js';
-import { manager } from 'Utils/storage/manager.js';
-import i18 from 'Utils/i18.js';
+import Bus from 'Bin/bus.js';
+import { manager } from 'Bin/storage/manager.js';
+import i18 from 'Bin/i18.js';
 
 
 const Index = () => {

@@ -5,7 +5,7 @@ import React, {
   useContext,
   useEffect
 } from 'react';
-import { Storage } from 'Utils/storage/storage.js';
+import { Storage } from 'Bin/storage/storage.js';
 const friendStore = new Storage('friend');
 const FriendsContext = createContext();
 

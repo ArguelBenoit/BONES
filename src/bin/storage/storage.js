@@ -1,6 +1,6 @@
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
-import { handlers } from 'Utils/handlers.js';
+import { handlers } from 'Bin/handlers.js';
 
 
 export class Storage {

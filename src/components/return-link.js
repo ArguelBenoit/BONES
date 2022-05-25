@@ -1,6 +1,6 @@
 import React from 'react';
 import arrow from 'Images/bones/arrow.png';
-import i18 from 'Utils/i18.js';
+import i18 from 'Bin/i18.js';
 import { useRouterContext } from 'Contexts/router.js';
 
 

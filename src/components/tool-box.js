@@ -8,10 +8,10 @@ import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
-import i18 from 'Utils/i18.js';
-import { Crypting } from 'Utils/domain/crypting.js';
+import i18 from 'Bin/i18.js';
+import { Crypting } from 'Bin/domain/crypting.js';
 // Storage
-import { Storage } from 'Utils/storage/storage.js';
+import { Storage } from 'Bin/storage/storage.js';
 const friendStore = new Storage('friend');
 const settingsStore = new Storage('settings');
 const pairStore = new Storage('pair');
@@ -158,6 +158,8 @@ class ToolBox extends React.Component {
           this.simulateInput(activeElement);
         }
         this.setState({ stun: false});
+      } else {
+        this.setState({ stun: false});
       }
     }
   }
@@ -247,7 +249,7 @@ class ToolBox extends React.Component {
 
             <div className="bones-header draggable-handler" onMouseDown={e => e.preventDefault()}>
               <div className="bones-logo-header">
-                {img === 'regular' 
+                {img === 'regular'
                   ? <img draggable="false" src={bonesRegular} width="60" height="60" />
                   : ''
                 }

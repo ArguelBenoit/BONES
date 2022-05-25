@@ -4,10 +4,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import ToolBox from 'Components/tool-box.js';
-import { handlers } from 'Utils/handlers.js';
+import { handlers } from 'Bin/handlers.js';
 const { getActivate } = handlers;
 /* storage */
-import { Storage } from 'Utils/storage/storage.js';
+import { Storage } from 'Bin/storage/storage.js';
 const store = new Storage();
 
 

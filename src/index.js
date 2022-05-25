@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Providers from 'Contexts/providers.js';
-import { manager } from 'Utils/storage/manager.js';
+import { manager } from 'Bin/storage/manager.js';
 import RouterTrigger from 'Components/router-trigger.js';
 
 // Les composants absolues

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import headFail from 'Images/bones/head-fail.png';
-import Bus from 'Utils/bus.js';
-import i18 from 'Utils/i18.js';
+import Bus from 'Bin/bus.js';
+import i18 from 'Bin/i18.js';
 
 
 const initialState = {

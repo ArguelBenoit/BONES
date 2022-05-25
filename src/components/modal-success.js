@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import successImg from 'Images/bones/head-success.png';
-import Bus from 'Utils/bus.js';
+import Bus from 'Bin/bus.js';
 
 
 
