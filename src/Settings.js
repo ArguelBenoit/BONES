@@ -13,7 +13,8 @@ import ModalImportDb from 'Components/modal-import-db.js';
 
 // styles
 import 'Styles/common.less';
-import 'Styles/button.less';
+import 'Styles/Settings.less';
+import 'Styles/modale.less';
 
 
 

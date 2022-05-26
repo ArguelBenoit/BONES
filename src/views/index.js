@@ -56,7 +56,7 @@ const Index = () => {
       <header className="header">
         <img src={activate ? bones : bonesFail} width="100" />
         <div className="u-font-size-s">
-          {i18('headerTxt')}<a href="https://github.com/ArguelBenoit/BONES">github</a>
+          {i18('headerTxt')} <a href="https://github.com/ArguelBenoit/BONES">github</a>
         </div>
       </header>
 

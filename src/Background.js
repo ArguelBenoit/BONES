@@ -11,7 +11,7 @@ const activeTab = () => {
     // sinon l'onglet n'existe pas
     } else {
       // on ouvre un onglet BONES
-      const url = handlers.webExt().extension.getURL('index.html');
+      const url = handlers.webExt().extension.getURL('settings.html');
       handlers.webExt().tabs.create({ url });
     }
   });

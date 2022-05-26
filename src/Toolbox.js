@@ -1,3 +1,5 @@
+//!\\ CONTENT SCRIPT //!\\
+
 // Ce script est chargé dans toutes les pages lorsque l'extension est active.
 // Si l'url est inscrite dans une méthode alors celui-ci injectera le composant
 // toolBox dans la page en question.

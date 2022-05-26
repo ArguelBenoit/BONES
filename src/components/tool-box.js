@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import bonesRegular from 'Images/bones/head-regular.png';
 import bonesSuccess from 'Images/bones/head-success.png';
 import arrow from 'Images/bones/arrow.png';
-import 'Styles/toolbox.less';
 import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
 import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
 import i18 from 'Bin/i18.js';
 import { Crypting } from 'Bin/domain/crypting.js';
+// styles
+import 'Styles/Toolbox.less';
 // Storage
 import { Storage } from 'Bin/storage/storage.js';
 const friendStore = new Storage('friend');
