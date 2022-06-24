@@ -28,7 +28,6 @@ export const manager = {
         activate: true,
         friends: [],
         pair: '',
-        instruction: true,
         open: true,
         x: 60,
         y: 60

@@ -16,7 +16,6 @@ import contentDispatch from 'Bin/content-dispatch.js';
 const initialSettings = {
   loaded: false,
   activate: true,
-  instruction: true,
   open: true,
   pair: '',
   friends: []

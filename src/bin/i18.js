@@ -254,45 +254,13 @@ const dictionary = {
     en: 'Decrypt ctr+k',
     fr: 'Décrypter ctr+k'
   },
-  toolboxInstruction: {
-    en: 'Show instructions',
-    fr: 'Afficher les instructions'
-  },
-  toolboxTitle1: {
-    en: 'Write your message in the safe area',
-    fr: 'Écrivez votre message dans la zone de sécurité'
-  },
-  toolboxTitle2: {
-    en: 'Encrypt and cut it with this button',
-    fr: 'Cryptez et copiez le, avec ce bouton'
-  },
-  toolboxTitle3: {
-    en: 'Send your encrypted message',
-    fr: 'Envoyez votre message crypté'
-  },
-  toolboxTitle4: {
-    en: 'Decrypt messages on the page',
-    fr: 'Décryptez les messages sur la page'
-  },
-  toolboxTitle5: {
-    en: 'Informations',
-    fr: 'Informations'
-  },
-  toolboxInstruction3: {
-    en: 'Your encrypted text is in your clipboard, you just have to paste it in the field of the website and send it.',
-    fr: 'Votre texte crypté est dans votre presse-papiers, il vous suffit de le coller dans le champ du site Web et de l\'envoyer.'
-  },
-  toolboxInstruction5: {
-    en: 'You can try to encrypt directly in a field of the website but this causes failures on many modern platforms, if you encounter a problem as a result of your try in this way, reload the page and use safe area.',
-    fr: 'Vous pouvez essayer de chiffrer directement dans un champ du site Web, mais cela provoque des échecs sur de nombreuses plates-formes modernes, si vous rencontrez un problème à la suite de votre essai de cette manière, rechargez la page et utilisez la zone de sécurité.'
-  },
   toolboxDecryptSuccess: {
-    en: 'Decryption of page messages is complete',
-    fr: 'Le décryptage des messages de la page est terminé'
+    en: 'Decryption is complete',
+    fr: 'Décryptage terminé'
   },
   toolboxEncryptCopySuccess: {
-    en: 'Message copied to your clipboard !',
-    fr: 'Message copié dans votre presse-papiers !'
+    en: 'Encrypted message copied',
+    fr: 'Message crypté copié'
   },
   toolboxEncryptSuccess: {
     en: 'Your message is crypted',

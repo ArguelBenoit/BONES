@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import bonesRegular from 'Images/bones/head-regular.png';
 import bonesSuccess from 'Images/bones/head-success.png';
 import arrow from 'Images/bones/arrow.png';
-import ToolBoxTutorial from 'Components/tool-box-tutorial.js';
-import ToolBoxContent from 'Components/tool-box-content.js';
 import Loading from 'Components/loading.js';
 import i18 from 'Bin/i18.js';
 import { Crypting } from 'Bin/domain/crypting.js';
@@ -26,7 +24,6 @@ class ToolBox extends React.Component {
     this.encrypt = this.encrypt.bind(this);
     this.decrypt = this.decrypt.bind(this);
     this.setToggled = this.setToggled.bind(this);
-    this.setShowInstruction = this.setShowInstruction.bind(this);
     this.handlerChange = this.handlerChange.bind(this);
     this.simulateInput = this.simulateInput.bind(this);
     this.updateMainPostion = this.updateMainPostion.bind(this);
@@ -34,7 +31,6 @@ class ToolBox extends React.Component {
     this.state = {
       toggled: false,
       message: '',
-      showInstruction: true,
       header: '',
       img: 'regular',
       stun: false,
@@ -71,7 +67,6 @@ class ToolBox extends React.Component {
       this.crypting = new Crypting(friends, pair);
       this.setState({
         toggled: settings.open,
-        showInstruction: settings.instruction,
         header: '',
         loaded: true,
         y,
@@ -101,12 +96,6 @@ class ToolBox extends React.Component {
     const { toggled } = this.state;
     settingsStore.modify('settings', { open: !toggled });
     this.setState({ toggled: !toggled });
-  }
-
-
-  setShowInstruction() {
-    settingsStore.modify('settings', {instruction: !this.state.showInstruction});
-    this.setState({showInstruction: !this.state.showInstruction});
   }
 
 
@@ -226,15 +215,8 @@ class ToolBox extends React.Component {
   }
 
 
-  render() {
-    const { message, toggled, img, header, showInstruction, loaded, x, y } = this.state;
-
-    const propsContent = {
-      message,
-      handlerChange: this.handlerChange,
-      encrypt: this.encrypt,
-      decrypt: this.decrypt
-    };
+    render() {
+    const { message, toggled, img, header, loaded, x, y } = this.state;
 
     if (loaded) {
       return <Draggable
@@ -281,19 +263,34 @@ class ToolBox extends React.Component {
             </div>
 
             <div className="u-padding u-padding-top-s content">
-              {!showInstruction
-                ? <ToolBoxContent {...propsContent} />
-                : <ToolBoxTutorial {...propsContent} />
-              }
-              <div className="u-margin-top-s u-flex --left">
-                <input
-                  type="checkbox"
-                  className="cm-toggle u-margin-right-s"
-                  id="show-bones-instruction"
-                  checked={showInstruction}
-                  onChange={this.setShowInstruction}
-                />
-                <div>{i18('toolboxInstruction')}</div>
+              <textarea
+                id="bones-input"
+                placeholder={i18('toolboxSafeAreaPlaceholder')}
+                className="u-margin-bottom-s"
+                value={message}
+                onChange={this.handlerChange}
+                style={{ resize: 'none', height: 150 }}
+              />
+              <div className="u-flex">
+                <div className="u-half-width" style={{ paddingRight: 7.5 }}>
+                  {/* prevent default pour conserver le focus dans le champ */}
+                  <button
+                    onClick={this.encrypt}
+                    className="general-button u-full-width"
+                    onMouseDown={e => e.preventDefault()}
+                  >
+                    {i18('encrypt')}
+                  </button>
+                </div>
+                <div className="u-half-width" style={{ paddingLeft: 7.5 }}>
+                  <button
+                    onClick={this.decrypt}
+                    className="general-button u-full-width --color-one"
+                    id="decrypt-message"
+                  >
+                    {i18('decrypt')}
+                  </button>
+                </div>
               </div>
             </div>
 
