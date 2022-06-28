@@ -40,9 +40,10 @@ module.exports = async env => {
     mode: env.type === 'dev' ? 'development' : 'production', // env.type = dev || prod
     devtool: env.type === 'dev' ? 'source-map' : undefined,
     entry: {
-      background: path.join(__dirname, 'src/Background.js'),
+      // background: path.join(__dirname, 'src/Background.js'),
       settings: path.join(__dirname, 'src/Settings.js'),
-      toolbox: path.join(__dirname, 'src/Toolbox.js')
+      toolbox: path.join(__dirname, 'src/Toolbox.js'),
+      popup: path.join(__dirname, 'src/Popup.js')
     },
     output: {
       path: path.join(__dirname, `${env.bro}/js`), // env.bro = firefox || chrome

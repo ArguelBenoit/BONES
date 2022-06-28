@@ -16,13 +16,13 @@
   },
   "action": {
     "default_icon": "icons/icon-96.png",
+    "default_popup": "popup.html",
     "default_title": "Bones"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["js/content.js"]
+      "js": ["js/toolbox.js"]
     }
-  ],
-  "background": "js/background.js"
+  ]
 }

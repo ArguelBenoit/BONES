@@ -88,6 +88,17 @@ const dictionary = {
     fr: 'Voulez-vous vraiment supprimer toutes les données ?'
   },
   /*************************/
+  /* Popup                 */
+  /*************************/
+  settingsButton: {
+    en: 'Settings',
+    fr: 'Paramètres'
+  },
+  settingsButtonInfo: {
+    en: 'Add a key pair, add a friend key, manage your local data, etc...',
+    fr: 'Ajouter une paire de clefs, ajouter une clef d\'ami, gérer vos données locales, etc...'
+  },
+  /*************************/
   /* Settings page (index) */
   /*************************/
   /* header */
@@ -96,8 +107,8 @@ const dictionary = {
     fr: 'BONES est un utilitaire pour le cryptage RSA (2048) et le décryptage de vos messages sur n\'importe quelle plateforme de communication. Gérez vous-même vos clefs RSA. Vous êtes le seul maître.'
   },
   headerActivate: {
-    en: 'Activate BONES',
-    fr: 'Activer BONES'
+    en: 'ON/OFF',
+    fr: 'ON/OFF'
   },
   /* pairs section */
   pairTitle: {

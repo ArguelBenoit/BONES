@@ -43,7 +43,7 @@ const FormKeysUsed = () => {
     return value.filter(el => el !== '');
   };
 
-  return <div className="u-themecolor-container u-padding">
+  return <>
     <label>{i18('keysUsedPair')}</label>
     <select
       type="select"
@@ -66,7 +66,7 @@ const FormKeysUsed = () => {
       initialState={stateValue.friends}
     />
 
-  </div>;
+  </>;
 };
 
 

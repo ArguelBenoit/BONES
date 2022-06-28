@@ -1,7 +1,5 @@
-
 import React from 'react';
 import bones from 'Images/bones/head-regular.png';
-import bonesFail from 'Images/bones/head-fail.png';
 import line from 'Images/bones/line.png';
 import 'Styles/index.less';
 import List from 'Components/list.js';
@@ -54,7 +52,7 @@ const Index = () => {
     return <div className="content">
 
       <header className="header">
-        <img src={activate ? bones : bonesFail} width="100" />
+        <img src={bones} width="100" />
         <div className="u-font-size-s">
           {i18('headerTxt')} <a href="https://github.com/ArguelBenoit/BONES">github</a>
         </div>
@@ -107,7 +105,9 @@ const Index = () => {
 
       <section className="u-margin-top-m">
         <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('keysUsedTitle')}</div>
-        <FormKeysUsed />
+        <div className="u-themecolor-container u-padding">
+          <FormKeysUsed />
+        </div>
       </section>
 
       <div className="u-flex u-margin-top-m">

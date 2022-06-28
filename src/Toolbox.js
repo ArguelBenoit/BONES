@@ -1,7 +1,7 @@
 //!\\ CONTENT SCRIPT //!\\
 
 // Ce script est chargé dans toutes les pages lorsque l'extension est active.
-// Si l'url est inscrite dans une méthode alors celui-ci injectera le composant
+// Si bones est actif et que les clefs sont inscrites, celui-ci injectera le composant
 // toolBox dans la page en question.
 import React from 'react';
 import { render } from 'react-dom';
