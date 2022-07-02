@@ -21,20 +21,18 @@ const ActionsFriend = ({ item }) => {
   };
 
   return <div className="u-flex">
-    <img
-      src={edit}
-      height="18"
-      width="18"
+    <button
       className="action"
       onClick={() => changeRoute({ name: 'FormFriend', uuid })}
-    />
-    <img
-      src={trash}
-      height="18"
-      width="18"
+    >
+      <img src={edit} />
+    </button>
+    <button
       className="action"
       onClick={() => Bus.dispatch('ModalPrompt', dataRemoveAction)}
-    />
+    >
+      <img src={trash} />
+    </button>
   </div>;
 };
 

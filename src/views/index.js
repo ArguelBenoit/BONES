@@ -47,81 +47,80 @@ const Index = () => {
   };
 
 
-  if (loaded) {
-    const { activate } = settings();
-    return <div className="content">
-
-      <header className="header">
-        <img src={bones} width="100" />
-        <div className="u-font-size-s">
-          {i18('headerTxt')} <a href="https://github.com/ArguelBenoit/BONES">github</a>
-        </div>
-      </header>
-
-      <div className="u-flex --left input-activation">
-        <input
-          type="checkbox"
-          className="cm-toggle u-margin-right-s"
-          checked={activate}
-          data-key-state="activate"
-          onChange={handlerSetValue}
-        />
-        <div>{i18('headerActivate')}</div>
-      </div>
-
-      <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('pairTitle')}</div>
-        <List
-          type={'pair'}
-          list={pairs.pairs}
-          emptyMessage={i18('emptyPair')}
-        />
-        <div className="u-padding-s u-themecolor-container">
-          <button
-            onClick={() => changeRoute({ name: 'FormPair' })}
-            className="general-button"
-          >
-            {i18('pairAddButton')}
-          </button>
-        </div>
-      </section>
-
-      <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('friendTitle')}</div>
-        <List
-          type={'friend'}
-          list={friends.friends}
-          emptyMessage={i18('emptyFriend')}
-        />
-        <div className="u-padding-s u-themecolor-container">
-          <button
-            onClick={() => changeRoute({ name: 'FormFriend' })}
-            className="general-button"
-          >
-            {i18('friendAddButton')}
-          </button>
-        </div>
-      </section>
-
-      <section className="u-margin-top-m">
-        <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('keysUsedTitle')}</div>
-        <div className="u-themecolor-container u-padding">
-          <FormKeysUsed />
-        </div>
-      </section>
-
-      <div className="u-flex u-margin-top-m">
-        <img src={line} width="80" />
-      </div>
-      <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalDumpDb', {})}>{i18('dbDump')}</button>
-      <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalImportDB', {})}>{i18('dbImport')}</button>
-      <button className="linkstyle-button u-margin-top-s" onClick={deleteDb}>{i18('dbRemove')}</button>
-
-    </div>;
-
-  } else {
-    return '';
+  if (!loaded) {
+    return null;
   }
+
+  const { activate } = settings();
+  return <div className="content">
+
+    <header className="header">
+      <img src={bones} width="100" />
+      <div className="u-font-size-s">
+        {i18('headerTxt')} <a href="https://github.com/ArguelBenoit/BONES">github</a>
+      </div>
+    </header>
+
+    <div className="u-flex --left input-activation">
+      <input
+        type="checkbox"
+        className="cm-toggle u-margin-right-s"
+        checked={activate}
+        data-key-state="activate"
+        onChange={handlerSetValue}
+      />
+      <div>{i18('headerActivate')}</div>
+    </div>
+
+    <section className="u-margin-top-m">
+      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('pairTitle')}</div>
+      <List
+        type={'pair'}
+        list={pairs.pairs}
+        emptyMessage={i18('emptyPair')}
+      />
+      <div className="u-padding-s u-themecolor-container">
+        <button
+          onClick={() => changeRoute({ name: 'FormPair' })}
+          className="general-button"
+        >
+          {i18('pairAddButton')}
+        </button>
+      </div>
+    </section>
+
+    <section className="u-margin-top-m">
+      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('friendTitle')}</div>
+      <List
+        type={'friend'}
+        list={friends.friends}
+        emptyMessage={i18('emptyFriend')}
+      />
+      <div className="u-padding-s u-themecolor-container">
+        <button
+          onClick={() => changeRoute({ name: 'FormFriend' })}
+          className="general-button"
+        >
+          {i18('friendAddButton')}
+        </button>
+      </div>
+    </section>
+
+    <section className="u-margin-top-m">
+      <div className="u-padding u-themecolor-container u-text-center u-white-color u-font-size-l">{i18('keysUsedTitle')}</div>
+      <div className="u-themecolor-container u-padding">
+        <FormKeysUsed />
+      </div>
+    </section>
+
+    <div className="u-flex u-margin-top-m">
+      <img src={line} width="80" />
+    </div>
+    <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalDumpDb', {})}>{i18('dbDump')}</button>
+    <button className="linkstyle-button u-margin-top-s" onClick={() => Bus.dispatch('ModalImportDB', {})}>{i18('dbImport')}</button>
+    <button className="linkstyle-button u-margin-top-s" onClick={deleteDb}>{i18('dbRemove')}</button>
+
+  </div>;
 
 };
 

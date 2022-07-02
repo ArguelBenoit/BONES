@@ -8,13 +8,13 @@ const ReturnLink = () => {
 
   const { changeRoute } = useRouterContext();
 
-  return <div
+  return <button
     className="return-link"
     onClick={() => changeRoute({ name: 'Index' })}
   >
     <img src={arrow} width="26" height="18"/>
     {i18('goBack')}
-  </div>;
+  </button>;
 
 };
 

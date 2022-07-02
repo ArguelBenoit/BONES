@@ -2,7 +2,19 @@
 * {
   font-family: sans-serif;
   scrollbar-color: #222 #000;
+  &::-webkit-scrollbar {
+    background-color: #000;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 5px;
+    width: 6px;
+    right: 2px;
+  }
 }
+
+
 
 body {
   margin: auto;
@@ -20,6 +32,7 @@ body {
     cursor: pointer;
     color: @secondarythemecolor;
     text-decoration: none;
+    border-radius: 3px;
     &:hover {
       text-decoration: underline;
     }
@@ -29,6 +42,19 @@ body {
   }
   h1 {
     font-weight: normal;
+  }
+
+  /******* focus ******/
+  a, .link,
+  input[type=text],
+  input[type=checkbox],
+  select,
+  textarea,
+  button {
+    &:focus-visible {
+      outline: none !important;
+      box-shadow: 0 0 0 3px @themecolor-two !important;
+    }
   }
 
   /******* form *******/
@@ -48,6 +74,7 @@ body {
     font-size: 92%;
     margin-top: 10px;
     scrollbar-color: @themecolor-one transparent;
+    box-sizing: border-box;
   }
   .form-error {
     padding-top: 5px;
@@ -69,6 +96,8 @@ body {
   	cursor: pointer;
   	margin: 4px 0 0 0;
     background-color: transparent;
+    border-radius: 4px;
+    height: 20px;
     &:before {
       content: '';
       width: 16px;
@@ -100,21 +129,39 @@ body {
   }
 
   /******* common button *******/
+  button.action {
+    background: none;
+    border: none;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+    margin: 0 0;
+    border-radius: 4px;
+    margin-left: 6px;
+    cursor: pointer;
+    img {
+      width: 18px;
+      height: 18px;
+      opacity: 0.7;
+    }
+  }
   .return-link {
     color: #fff;
-    display: inline-block;
-    font-weight: normal;
-    padding: 10px 0px;
+    padding: 10px;
+    padding-left: 3px;
     border-radius: 4px;
     background: @themecolor-one;
     border: 1px solid @themecolor-three;
-    display: flex;
-    align-items: center;
-    width: 120px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     img {
-      margin-right: 5px;
-      transform: rotate(-90deg);
+      transform: rotate(-90deg) scale(0.9);
     }
     &:hover {
       text-decoration: none;
@@ -141,6 +188,7 @@ body {
     font-style: italic;
     margin: 0 auto 0 auto;
     display: block;
+    border-radius: 3px;
     &:hover,
     &:active {
       text-decoration: underline;

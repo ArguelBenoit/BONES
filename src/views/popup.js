@@ -3,29 +3,10 @@ import bones from 'Images/bones/head-regular.png';
 import line from 'Images/bones/line.png';
 import FormKeysUsed from 'Components/form-keys-used.js';
 import { useSettingsContext } from 'Contexts/settings.js';
+import { usePairsContext } from 'Contexts/pairs.js';
+import { useFriendsContext } from 'Contexts/friends.js';
 import i18 from 'Bin/i18.js';
-import { handlers } from 'Bin/handlers.js';
-import Env from 'Env';
-
-
-
-const activeTab = () => {
-  handlers.webExt().tabs.query({ title: 'BONES !#@$' }).then(tabs => {
-    // si un onglet bones est présent
-    if (tabs.length > 0) {
-      // on active celui-ci
-      const { id } = tabs[0];
-      handlers.webExt().tabs.update(id, { active: true });
-    // sinon l'onglet n'existe pas
-    } else {
-        // on ouvre un onglet BONES
-        const url = Env.bro === 'firefox'
-          ? handlers.webExt().extension.getURL('settings.html')
-          : 'settings.html';
-        handlers.webExt().tabs.create({ url });
-    }
-  });
-};
+import { activeTab } from 'Bin/active-tab.js';
 
 
 const Popup = () => {
@@ -34,6 +15,13 @@ const Popup = () => {
     get: settings,
     modify: setSettings
   } = useSettingsContext();
+  const { activate } = settings();
+  const { pairs } = usePairsContext();
+  const { friends } = useFriendsContext();
+  const loaded =
+    pairs.loaded &&
+    friends.loaded &&
+    settings().loaded;
 
   const handlerSetValue = event => {
     const { keyState } = event.target.dataset;
@@ -41,9 +29,12 @@ const Popup = () => {
     setSettings({[keyState]: checked});
   };
 
-  const { activate } = settings();
-  return <div id="popup">
 
+  if (!loaded) {
+    return null;
+  }
+
+  return <div id="popup">
     <header>
       <img
         src={bones}
@@ -83,7 +74,6 @@ const Popup = () => {
         {i18('settingsButtonInfo')}
       </div>
     </div>
-
   </div>;
 
 };

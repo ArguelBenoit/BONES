@@ -8,7 +8,7 @@ import Loading from 'Components/loading.js';
 import i18 from 'Bin/i18.js';
 import { Crypting } from 'Bin/domain/crypting.js';
 // styles
-import 'Styles/Toolbox.less';
+import 'Styles/toolbox.less';
 // Storage
 import { Storage } from 'Bin/storage/storage.js';
 const friendStore = new Storage('friend');

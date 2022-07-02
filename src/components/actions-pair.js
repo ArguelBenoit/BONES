@@ -23,27 +23,24 @@ const ActionsPair = ({ item }) => {
   };
 
   return <div className="u-flex">
-    <img
-      src={share}
-      height="18"
-      width="18"
-      className="small action"
+    <button
+      className="action"
       onClick={() => changeRoute({ name: 'Share', uuid })}
-    />
-    <img
-      src={edit}
-      height="18"
-      width="18"
-      className="small action"
+    >
+      <img src={share} />
+    </button>
+    <button
+      className="action"
       onClick={() => changeRoute({ name: 'FormPair', uuid })}
-    />
-    <img
-      src={trash}
-      height="18"
-      width="18"
-      className="small action"
+    >
+      <img src={edit} />
+    </button>
+    <button
+      className="action"
       onClick={() => Bus.dispatch('ModalPrompt', dataRemoveAction)}
-    />
+    >
+      <img src={trash} />
+    </button>
   </div>;
 };
 

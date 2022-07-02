@@ -20,7 +20,6 @@ const FormKeysUsed = () => {
     friends: settings().friends
   });
 
-
   const handlerSetPair = event => {
     const { value } = event.target;
     storeModify({ pair: value });

@@ -7,19 +7,16 @@ import React from 'react';
 import { render } from 'react-dom';
 import ToolBox from 'Components/tool-box.js';
 import { handlers } from 'Bin/handlers.js';
+import { subscribeUpdate } from 'Bin/dispatch.js';
 const { getActivate } = handlers;
 /* storage */
 import { Storage } from 'Bin/storage/storage.js';
 const store = new Storage();
 
 
-// écouteur les messages entre les différents context (Envoyé par content-dispatch.js)
+// écouteur les messages entre les différents context (Envoyé par dispatch.js)
 // Cela permet par exemple de mettre à jour la toolbox lorsque les paramètres sont mis à jour
-handlers.webExt().runtime.onMessage.addListener(data => {
-  if (data.action === 'SETTINGS_UPDATE') {
-    INIT();
-  }
-});
+subscribeUpdate(() => {});
 
 
 // function d'initialisation/réinitialisation de la toolbox
