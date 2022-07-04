@@ -1,32 +1,30 @@
 import { handlers } from 'Bin/handlers.js';
 
 
-export const dispatchUpdate = () => {
-  // dispatch toolbox on content-script
-  handlers.webExt().tabs.query({}).then(tabs => {
-    tabs.forEach(({ id }) => {
-      handlers.webExt().tabs.sendMessage(id, { message: 'yolo' });
-    });
-  });
-
-  // dispatch to popup
-  handlers.webExt().runtime.sendMessage({ message: 'yolo' });
-
-  // dispatch to settings page(s)
-  handlers.webExt().tabs.query({ title: 'BONES !#@$' }).then(tabs => {
-    tabs.forEach(({ id }) => {
-      handlers.webExt().tabs.sendMessage(id, { message: 'yolo' });
-    });
-  });
-
+// envoie un ping de mise à jour au script backgound
+export const dispatchUpdateToBG = () => {
+  handlers.webExt().runtime.sendMessage({ message:  'UPDATE', title: document.title });
 };
 
 
+// fonction de subsribe du script background et dispatch du ping de mise à jour vers tout les
+// contextes de l'extensions (pages de paramètres, script content dans les différents onglets ouverts.)
+export const backgroundHandler = () => {
+  handlers.webExt().runtime.onMessage.addListener(({ title }) => {
 
-export const subscribeUpdate = callback => {
+    handlers.webExt().tabs.query({}).then(tabs => {
+      tabs.forEach(tab => {
+        if (title === 'bones popup !#@$' || !tab.active) {
+          handlers.webExt().tabs.sendMessage(tab.id, { message: 'UPDATE' });
+        }
+      });
+    });
 
-  handlers.webExt().runtime.onMessage.addListener(() => {
-    callback();
   });
+};
 
+
+// fonction de subscribe des pages paramètres, et des script content dans les onglets ouvert (toolbox)
+export const tabSubscriber = callback => {
+  handlers.webExt().runtime.onMessage.addListener(callback);
 };

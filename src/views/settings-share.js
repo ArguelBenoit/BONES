@@ -8,7 +8,7 @@ import i18 from 'Bin/i18.js';
 
 
 
-const Share = () => {
+const SettingsShare = () => {
 
   const { route: getRoute, changeRoute } = useRouterContext();
   const { get: getPair } = usePairsContext();
@@ -20,7 +20,7 @@ const Share = () => {
       .writeText(pair.public)
       .then(() => {
         Bus.dispatch('ModalSuccess', i18('successShare'));
-        changeRoute({ name: 'Index' });
+        changeRoute({ name: 'SettingsIndex' });
       });
   };
 
@@ -39,4 +39,4 @@ const Share = () => {
   </div>;
 };
 
-export default Share;
+export default SettingsShare;

@@ -5,7 +5,7 @@ const RouterContext = createContext();
 
 // modèle de l'objet route, option n'est pas obligatoire
 const initialRoute = {
-  name: 'Index'
+  name: 'SettingsIndex'
 };
 
 

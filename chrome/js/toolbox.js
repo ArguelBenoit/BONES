@@ -90703,7 +90703,7 @@ var dispatchUpdate = function dispatchUpdate() {
   }); // dispatch to settings page(s)
 
   Bin_handlers_js__WEBPACK_IMPORTED_MODULE_0__["handlers"].webExt().tabs.query({
-    title: 'BONES !#@$'
+    title: 'bones settings !#@$'
   }).then(function (tabs) {
     tabs.forEach(function (_ref2) {
       var id = _ref2.id;

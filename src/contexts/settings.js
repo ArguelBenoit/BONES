@@ -8,7 +8,6 @@ import React, {
 import { Storage } from 'Bin/storage/storage.js';
 const store = new Storage();
 const SettingsContext = createContext();
-import { dispatchUpdate } from 'Bin/dispatch.js';
 
 
 
@@ -30,7 +29,7 @@ function SettingsProvider(props) {
 
   /* initialisation */
   useEffect(() => {
-    (async () => {
+    const updateState = async () => {
       const settingsStore = await store.getOne('settings');
       const newData = {
         ...settings,
@@ -38,7 +37,8 @@ function SettingsProvider(props) {
         loaded: true
       };
       setSettings(newData);
-    })();
+    };
+    updateState();
   }, []);
 
 
@@ -46,7 +46,6 @@ function SettingsProvider(props) {
   function modify(obj) {
     store.modify('settings', obj).then(() => {
       setSettings({...settings, ...obj });
-      dispatchUpdate();
     });
   }
 

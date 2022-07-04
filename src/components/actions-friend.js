@@ -23,7 +23,7 @@ const ActionsFriend = ({ item }) => {
   return <div className="u-flex">
     <button
       className="action"
-      onClick={() => changeRoute({ name: 'FormFriend', uuid })}
+      onClick={() => changeRoute({ name: 'SettingsFormFriend', uuid })}
     >
       <img src={edit} />
     </button>

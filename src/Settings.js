@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import Providers from 'Contexts/providers.js';
 import { manager } from 'Bin/storage/manager.js';
-import RouterTrigger from 'Components/router-trigger.js';
+import { tabSubscriber } from 'Bin/dispatch.js';
+import { handlers } from 'Bin/handlers.js';
+import SettingsRouterTrigger from 'Components/settings-router-trigger.js';
 
 // Les composants absolues
 import ModalLoading from 'Components/modal-loading.js';
@@ -19,14 +21,23 @@ import 'Styles/modale.less';
 
 
 const Root = () => {
-  return <Providers>
+
+  // pour recharger la page au ping update
+  const [ uuid, setUuid ] = useState(handlers.uuid());
+  useEffect(() => {
+    tabSubscriber(() => {
+      setUuid(handlers.uuid());
+    });
+  }, []);
+
+  return <Providers key={uuid}>
     <ModalLoading />
     <ModalSuccess />
     <ModalPrompt />
     <ModalDumpDb />
     <ModalImportDb />
 
-    <RouterTrigger />
+    <SettingsRouterTrigger />
   </Providers>;
 };
 

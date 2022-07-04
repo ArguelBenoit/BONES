@@ -1,7 +1,7 @@
 import React from 'react';
 import bones from 'Images/bones/head-regular.png';
 import line from 'Images/bones/line.png';
-import 'Styles/index.less';
+import 'Styles/settings-index.less';
 import List from 'Components/list.js';
 import FormKeysUsed from 'Components/form-keys-used.js';
 import { useRouterContext } from 'Contexts/router.js';
@@ -13,7 +13,7 @@ import { manager } from 'Bin/storage/manager.js';
 import i18 from 'Bin/i18.js';
 
 
-const Index = () => {
+const SettingsIndex = () => {
 
   const { changeRoute } = useRouterContext();
   const { pairs } = usePairsContext();
@@ -46,14 +46,13 @@ const Index = () => {
     });
   };
 
+  const { activate } = settings();
 
   if (!loaded) {
     return null;
   }
 
-  const { activate } = settings();
   return <div className="content">
-
     <header className="header">
       <img src={bones} width="100" />
       <div className="u-font-size-s">
@@ -81,7 +80,7 @@ const Index = () => {
       />
       <div className="u-padding-s u-themecolor-container">
         <button
-          onClick={() => changeRoute({ name: 'FormPair' })}
+          onClick={() => changeRoute({ name: 'SettingsFormPair' })}
           className="general-button"
         >
           {i18('pairAddButton')}
@@ -98,7 +97,7 @@ const Index = () => {
       />
       <div className="u-padding-s u-themecolor-container">
         <button
-          onClick={() => changeRoute({ name: 'FormFriend' })}
+          onClick={() => changeRoute({ name: 'SettingsFormFriend' })}
           className="general-button"
         >
           {i18('friendAddButton')}
@@ -124,4 +123,4 @@ const Index = () => {
 
 };
 
-export default Index;
+export default SettingsIndex;

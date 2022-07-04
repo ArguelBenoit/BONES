@@ -1,6 +1,7 @@
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
 import { handlers } from 'Bin/handlers.js';
+import { dispatchUpdateToBG } from 'Bin/dispatch.js';
 
 
 export class Storage {
@@ -117,6 +118,7 @@ export class Storage {
         newObject = {...getObject[key], ...newObject};
         handlers.webExt().storage.local.set({ [key]: newObject})
           .then(() => {
+            dispatchUpdateToBG();
             resolve();
           });
       })();

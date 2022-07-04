@@ -25,13 +25,13 @@ const ActionsPair = ({ item }) => {
   return <div className="u-flex">
     <button
       className="action"
-      onClick={() => changeRoute({ name: 'Share', uuid })}
+      onClick={() => changeRoute({ name: 'SettingsShare', uuid })}
     >
       <img src={share} />
     </button>
     <button
       className="action"
-      onClick={() => changeRoute({ name: 'FormPair', uuid })}
+      onClick={() => changeRoute({ name: 'SettingsFormPair', uuid })}
     >
       <img src={edit} />
     </button>

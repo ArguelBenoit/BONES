@@ -10,7 +10,7 @@ const ReturnLink = () => {
 
   return <button
     className="return-link"
-    onClick={() => changeRoute({ name: 'Index' })}
+    onClick={() => changeRoute({ name: 'SettingsIndex' })}
   >
     <img src={arrow} width="26" height="18"/>
     {i18('goBack')}

@@ -3,7 +3,7 @@ import Env from 'Env';
 
 
 export const activeTab = () => {
-  handlers.webExt().tabs.query({ title: 'BONES !#@$' }).then(tabs => {
+  handlers.webExt().tabs.query({ title: 'bones settings !#@$' }).then(tabs => {
     // si un onglet bones est présent on l'active
     if (tabs.length > 0) {
       handlers.webExt().tabs.update(
