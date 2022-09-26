@@ -1,4 +1,5 @@
 import { handlers } from 'Bin/handlers.js';
+import { dispatchUpdateToBG } from 'Bin/dispatch.js';
 
 
 export const manager = {
@@ -62,6 +63,9 @@ export const manager = {
       let cleaner = handlers.webExt().storage.local.clear();
       cleaner.then(() => {
         resolve();
+
+        // TODO fix communication between settings and content (toolbox)
+        dispatchUpdateToBG();
       });
     });
   },
@@ -82,7 +86,11 @@ export const manager = {
               handlers.webExt().storage.local.set({ [uuid]: element });
             }
             if (typeof json.settings === 'object') {
-              handlers.webExt().storage.local.set({ settings: json.settings });
+
+              // TODO fix communication between settings and content (toolbox)
+              handlers.webExt().storage.local.set({ settings: json.settings }).then(() => {
+                dispatchUpdateToBG();
+              });
             }
           });
         }

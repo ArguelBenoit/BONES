@@ -59,7 +59,6 @@ const ModalImportDb = () => {
   </div>;
 
   return state.active ? view : '';
-  // accept="image/png, image/jpeg, image/jpg"
 
 };
 
