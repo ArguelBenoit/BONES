@@ -1,9 +1,9 @@
 {
   "name": "BONES",
-  "version": "0.1.0",
+  "version": "1.0.0-beta",
   "main": "manifest.json",
   "author": "Benoit Arguel",
-  "license": "unlicense",
+  "license": "GNU Library General Public License v3.0",
   "homepage": ".",
   "scripts": {
     "firefox": "webpack -w --env.type='dev' --env.bro='firefox'",
