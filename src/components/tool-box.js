@@ -260,7 +260,7 @@ class ToolBox extends React.Component {
               </div>
             </div>
 
-            <div className="u-padding u-padding-top-s content">
+            <div className="u-padding content">
               <textarea
                 id="bones-input"
                 placeholder={i18('toolboxSafeAreaPlaceholder')}
