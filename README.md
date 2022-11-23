@@ -16,19 +16,25 @@ To develop and observe the modifications on the javascript and css files, execut
 ### Firefox
 
 ```
-npm run firefox
+npm run dev:firefox
 ```
 
 ### Chrome/Chromium
 
 ```
-npm run chrome
+npm run dev:chrome
 ```
 
 ## Production
 
-A single command updates the public folders of both extensions (chrome, firefox).
+### Firefox
 
 ```
-npm run build
+npm run build:firefox
+```
+
+### Chrome/Chromium
+
+```
+npm run build:chrome
 ```

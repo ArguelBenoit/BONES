@@ -6,9 +6,10 @@
   "license": "GNU Library General Public License v3.0",
   "homepage": ".",
   "scripts": {
-    "firefox": "webpack -w --env.type='dev' --env.bro='firefox'",
-    "chrome": "webpack -w --env.type='dev' --env.bro='chrome'",
-    "build": "webpack --env.type='prod' --env.bro='firefox' && webpack --env.type='prod' --env.bro='chrome'"
+    "dev:firefox": "webpack -w --env.type='dev' --env.bro='firefox'",
+    "dev:chrome": "webpack -w --env.type='dev' --env.bro='chrome'",
+    "build:firefox": "webpack --env.type='prod' --env.bro='firefox'",
+    "build:chrome": "webpack --env.type='prod' --env.bro='chrome'"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
