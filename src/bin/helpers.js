@@ -1,7 +1,7 @@
 import Env from 'Env';
 
 
-export const handlers = {
+export const helpers = {
   /* retourne un uuid */
   uuid() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {

@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Providers from 'Contexts/providers.js';
 import { manager } from 'Bin/storage/manager.js';
 import { tabSubscriber } from 'Bin/dispatch.js';
-import { handlers } from 'Bin/handlers.js';
+import { helpers } from 'Bin/helpers.js';
 import SettingsRouterTrigger from 'Components/settings-router-trigger.js';
 
 // Les composants absolues
@@ -23,10 +23,10 @@ import 'Styles/modale.less';
 const Root = () => {
 
   // pour recharger la page au ping update
-  const [ uuid, setUuid ] = useState(handlers.uuid());
+  const [ uuid, setUuid ] = useState(helpers.uuid());
   useEffect(() => {
     tabSubscriber(() => {
-      setUuid(handlers.uuid());
+      setUuid(helpers.uuid());
     });
   }, []);
 

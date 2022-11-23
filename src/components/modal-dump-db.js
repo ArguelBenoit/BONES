@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import head from 'Images/bones/head-regular.png';
 import Bus from 'Bin/bus.js';
-import { handlers } from 'Bin/handlers.js';
+import { helpers } from 'Bin/helpers.js';
 import { manager } from 'Bin/storage/manager.js';
 import i18 from 'Bin/i18.js';
 
@@ -47,7 +47,7 @@ const ModalDumpDb = () => {
           {i18('cancel')}
         </button>
         <a
-          download={`bones_${handlers.date()}.json`}
+          download={`bones_${helpers.date()}.json`}
           href={window.URL.createObjectURL(data)}
           onClick={remove}
         >

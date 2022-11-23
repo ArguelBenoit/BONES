@@ -1,21 +1,21 @@
-import { handlers } from 'Bin/handlers.js';
+import { helpers } from 'Bin/helpers.js';
 
 
 // envoie un ping de mise à jour au script backgound
 export const dispatchUpdateToBG = () => {
-  handlers.webExt().runtime.sendMessage({ message:  'UPDATE', title: document.title });
+  helpers.webExt().runtime.sendMessage({ message:  'UPDATE', title: document.title });
 };
 
 
 // fonction de subsribe du script background et dispatch du ping de mise à jour vers tout les
 // contextes de l'extensions (pages de paramètres, script content dans les différents onglets ouverts.)
 export const backgroundHandler = () => {
-  handlers.webExt().runtime.onMessage.addListener(({ title }) => {
+  helpers.webExt().runtime.onMessage.addListener(({ title }) => {
 
-    handlers.webExt().tabs.query({}).then(tabs => {
+    helpers.webExt().tabs.query({}).then(tabs => {
       tabs.forEach(tab => {
         if (title === 'bones popup !#@$' || !tab.active) {
-          handlers.webExt().tabs.sendMessage(tab.id, { message: 'UPDATE' });
+          helpers.webExt().tabs.sendMessage(tab.id, { message: 'UPDATE' });
         }
       });
     });
@@ -26,5 +26,5 @@ export const backgroundHandler = () => {
 
 // fonction de subscribe des pages paramètres, et des script content dans les onglets ouvert (toolbox)
 export const tabSubscriber = callback => {
-  handlers.webExt().runtime.onMessage.addListener(callback);
+  helpers.webExt().runtime.onMessage.addListener(callback);
 };

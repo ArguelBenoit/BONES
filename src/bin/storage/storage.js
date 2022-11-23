@@ -1,6 +1,6 @@
 /* La classe storage est utilisé par les différents contexts et
 par les actions principales de base (delete, import...) */
-import { handlers } from 'Bin/handlers.js';
+import { helpers } from 'Bin/helpers.js';
 import { dispatchUpdateToBG } from 'Bin/dispatch.js';
 
 
@@ -16,10 +16,10 @@ export class Storage {
   set(objectSended) {
     return new Promise((resolve, reject) => {
 
-      const uuid = handlers.uuid();
+      const uuid = helpers.uuid();
       const { type } = this;
-      const getter =  handlers.webExt().storage.local.get({[type]: []});
-      const setter =  handlers.webExt().storage.local.set({
+      const getter =  helpers.webExt().storage.local.get({[type]: []});
+      const setter =  helpers.webExt().storage.local.set({
         [uuid]: {
           uuid,
           type,
@@ -30,7 +30,7 @@ export class Storage {
         .then(data => {
           let newList = data[0][type];
           newList.push(uuid);
-          handlers.webExt().storage.local.set({[type]: newList})
+          helpers.webExt().storage.local.set({[type]: newList})
             .then(() => resolve())
             .catch(() => reject());
         })
@@ -49,9 +49,9 @@ export class Storage {
         if (listArray) {
           list = listArray;
         } else {
-          list = await handlers.webExt().storage.local.get({[this.type]: []});
+          list = await helpers.webExt().storage.local.get({[this.type]: []});
         }
-        handlers.webExt().storage.local.get(listArray ? list : list[this.type])
+        helpers.webExt().storage.local.get(listArray ? list : list[this.type])
           .then(data => {
             let arrayValues = Object.values(data).sort((a, b) => {
               let la = a.label.toLowerCase(),
@@ -76,7 +76,7 @@ export class Storage {
   /* recupere un element par une clef (uuid) */
   getOne(uuid) {
     return new Promise((resolve, reject) => {
-      handlers.webExt().storage.local.get(uuid)
+      helpers.webExt().storage.local.get(uuid)
         .then(dataObject => {
           resolve(dataObject[uuid]);
         })
@@ -91,8 +91,8 @@ export class Storage {
   keyValue(key, value) {
     return new Promise((resolve, reject) => {
       (async () => {
-        const getList = await handlers.webExt().storage.local.get({[this.type]: []});
-        handlers.webExt().storage.local.get(getList[this.type])
+        const getList = await helpers.webExt().storage.local.get({[this.type]: []});
+        helpers.webExt().storage.local.get(getList[this.type])
           .then(data => {
             let arrayValues = Object.values(data).filter(item => {
               if (item[key] === value) {
@@ -114,9 +114,9 @@ export class Storage {
   modify(key, newObject) {
     return new Promise((resolve) => {
       (async () => {
-        const getObject = await handlers.webExt().storage.local.get(key);
+        const getObject = await helpers.webExt().storage.local.get(key);
         newObject = {...getObject[key], ...newObject};
-        handlers.webExt().storage.local.set({ [key]: newObject})
+        helpers.webExt().storage.local.set({ [key]: newObject})
           .then(() => {
             dispatchUpdateToBG();
             resolve();
@@ -128,13 +128,13 @@ export class Storage {
   /* supprime un element cible par son uuid */
   remove(uuid) {
     return new Promise((resolve) => {
-      handlers.webExt().storage.local.get(this.type)
+      helpers.webExt().storage.local.get(this.type)
         .then(data => {
           let newList = data[this.type];
           let indexOfUuid = newList.indexOf(uuid);
           newList.splice(indexOfUuid, 1);
-          let setterNewList = handlers.webExt().storage.local.set({ [this.type]: newList });
-          let removeObject = handlers.webExt().storage.local.remove(uuid);
+          let setterNewList = helpers.webExt().storage.local.set({ [this.type]: newList });
+          let removeObject = helpers.webExt().storage.local.remove(uuid);
           Promise.all([setterNewList, removeObject]).then(() => {
             resolve();
           });

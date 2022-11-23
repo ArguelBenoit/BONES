@@ -6,7 +6,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import ToolBox from 'Components/tool-box.js';
-import { handlers } from 'Bin/handlers.js';
+import { helpers } from 'Bin/helpers.js';
 const { getActivate } = handlers;
 import { tabSubscriber } from 'Bin/dispatch.js';
 /* storage */
