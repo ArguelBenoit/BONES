@@ -1,12 +1,17 @@
 const path = require('path');
 const fs = require('fs');
 const util = require('util');
-
-
+const {
+  name,
+  version,
+  author,
+  license,
+  homepage
+} = require('./package.json');
 
 
 // Écrit dans un fichier .env.js l'objet des différents param
-function createFile(keysVals) {
+function createEnvFile(keysVals) {
   return new Promise((resolve, reject) => {
     keysVals = util.inspect(
       keysVals,
@@ -16,7 +21,7 @@ function createFile(keysVals) {
       }
     );
     const jsText = `module.exports = ${keysVals};`;
-    fs.writeFile('.env.js', jsText, (err) => {
+    fs.writeFile('.env.js', jsText, err => {
       if (err) {
         reject(err);
       } else {
@@ -27,14 +32,38 @@ function createFile(keysVals) {
 }
 
 
+// Écrit dans un fichier release.json
+function createJson(path, json) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(path, json, err => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
 
 
 module.exports = async env => {
 
-  await createFile({
+  await createEnvFile({
     type: env.type,
     bro: env.bro
   });
+
+  await createJson(
+    `${env.bro}/release.json`,
+`{
+  "name": "${name}",
+  "plateforme": "${env.bro}",
+  "version": "${version}",
+  "author": "${author}",
+  "license": "${license}",
+  "homepage": "${homepage}"
+}`
+  );
 
   return {
     mode: env.type === 'dev' ? 'development' : 'production', // env.type = dev || prod
@@ -97,5 +126,4 @@ module.exports = async env => {
       }
     }
   };
-
 };
