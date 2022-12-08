@@ -1,9 +1,11 @@
 {
-  "name": "BONES",
-  "version": "1.0.0-beta",
+  "name": "bones",
+  "version": "1.0.0",
   "main": "manifest.json",
   "author": "Benoit Arguel",
   "license": "GNU Library General Public License v3.0",
+  "description": "End to end, chat RSA encryption utility",
+  "homepage_url": "https://github.com/ArguelBenoit/BONES",
   "homepage": ".",
   "scripts": {
     "dev:firefox": "webpack -w --env.type='dev' --env.bro='firefox'",
@@ -26,6 +28,7 @@
     "jest": "^27.5.1",
     "less": "^3.10.1",
     "less-loader": "^4.1.0",
+    "open": "^8.4.0",
     "style-loader": "^0.23.1",
     "style-resources-loader": "^1.5.0",
     "url-loader": "^1.1.2",

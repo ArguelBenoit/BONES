@@ -1,13 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const util = require('util');
-const {
-  name,
-  version,
-  author,
-  license,
-  homepage
-} = require('./package.json');
+// const open = require('open');
 
 
 // Écrit dans un fichier .env.js l'objet des différents param
@@ -31,21 +25,6 @@ function createEnvFile(keysVals) {
   });
 }
 
-
-// Écrit dans un fichier release.json
-function createJson(path, json) {
-  return new Promise((resolve, reject) => {
-    fs.writeFile(path, json, err => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve();
-      }
-    });
-  });
-}
-
-
 module.exports = async env => {
 
   await createEnvFile({
@@ -53,17 +32,14 @@ module.exports = async env => {
     bro: env.bro
   });
 
-  await createJson(
-    `${env.bro}/release.json`,
-`{
-  "name": "${name}",
-  "plateforme": "${env.bro}",
-  "version": "${version}",
-  "author": "${author}",
-  "license": "${license}",
-  "homepage": "${homepage}"
-}`
-  );
+
+  // if (env.type === 'dev' && env.bro === 'chrome')
+  //   open('chrome://extensions/', 'chrome');
+
+
+  // if (env.type === 'dev' && env.bro === 'firefox')
+  //   open('about:debugging#/runtime/this-firefox', 'firefox');
+
 
   return {
     mode: env.type === 'dev' ? 'development' : 'production', // env.type = dev || prod

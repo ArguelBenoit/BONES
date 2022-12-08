@@ -7,7 +7,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import ToolBox from 'Components/tool-box.js';
 import { helpers } from 'Bin/helpers.js';
-const { getActivate } = handlers;
+const { getActivate } = helpers;
 import { tabSubscriber } from 'Bin/dispatch.js';
 /* storage */
 import { Storage } from 'Bin/storage/storage.js';

@@ -1,11 +1,19 @@
 #!/bin/bash
-# Ce script fait les 3 archives de release dans un dossier parent.
-# Il necessite jq, disponible sur les depots apt ou snap
-# Attention, mettre à jour le numéro de version dans package.json
-# avant de le lancer
+
+#   +-----------------------------------------------------------------------------+
+#   |   Ce script fait les 3 archives de release dans un dossier parent. Il       |
+#   |   necessite jq, disponible sur les depots apt ou snap mais également node,  |
+#   |   pour executer le script js sync-package-manifest.js, cela permet de       |
+#   |   mettre à jour les numéros de version dans les 2 manifest, en se basant    |
+#   |   sur le numéro dans le package.json. Donc, Attention, mettre à jour le     |
+#   |   numéro de version dans package.json avant de lancer ce script.            |
+#   +-----------------------------------------------------------------------------+
 
 version=$(jq -r '.version' package.json)
 browser=(firefox chrome)
+
+# mise à jour des fichers manifest de firefox et chrome (version, mais aussi description, license, auteur etc...)
+node sync-package-manifest.js
 
 # suppréssion de la même release et création du dossier
 rm -rf ../bones_release_v${version} 

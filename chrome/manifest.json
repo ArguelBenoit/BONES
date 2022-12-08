@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Bones",
+  "name": "bones",
   "version": "1.0.0",
   "description": "End to end, chat RSA encryption utility",
   "homepage_url": "https://github.com/ArguelBenoit/BONES",
+  "author": "Benoit Arguel",
+  "license": "GNU Library General Public License v3.0",
   "permissions": [
     "activeTab",
     "storage",
@@ -20,12 +22,18 @@
     "default_title": "Bones"
   },
   "background.service_worker": {
-    "scripts": ["js/background.js"]
+    "scripts": [
+      "js/background.js"
+    ]
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["js/content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content.js"
+      ]
     }
   ]
 }

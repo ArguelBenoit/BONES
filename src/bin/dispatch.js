@@ -14,6 +14,7 @@ export const backgroundHandler = () => {
 
     helpers.webExt().tabs.query({}).then(tabs => {
       tabs.forEach(tab => {
+        console.log(tab);
         if (title === 'bones popup !#@$' || !tab.active) {
           helpers.webExt().tabs.sendMessage(tab.id, { message: 'UPDATE' });
         }
