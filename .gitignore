@@ -1,4 +1,10 @@
 .DS_Store
 node_modules
+
+# env file
 .env
 .env.js
+
+# dist folder
+firefox
+chrome

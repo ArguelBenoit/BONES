@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "bones",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "End to end, chat RSA encryption utility",
   "homepage_url": "https://github.com/ArguelBenoit/BONES",
   "author": "Benoit Arguel",

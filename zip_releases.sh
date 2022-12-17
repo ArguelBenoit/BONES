@@ -12,19 +12,14 @@
 version=$(jq -r '.version' package.json)
 browser=(firefox chrome)
 
-# mise à jour des fichers manifest de firefox et chrome (version, mais aussi description, license, auteur etc...)
-node sync-package-manifest.js
-
-# suppréssion de la même release et création du dossier
-rm -rf ../bones_release_v${version} 
+# suppréssion de la même release des dossiers dist et création du dossier pour les zip
+rm -rf ./firefox ./chrome ../bones_release_v${version}
 mkdir ../bones_release_v${version}
 
 for i in ${browser[@]}
 do
     # build
     npm run build:$i
-    # suppression des fichier map de dev
-    rm rf -f ${i}/js/**.js.map
     # zipage ^^ de l'archive
     cd ${i} && zip -r ../bones_${i}_v${version}.zip * && cd ..
     # mv de l'archive dans le dossier release

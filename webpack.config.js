@@ -1,7 +1,55 @@
 const path = require('path');
+const exec = require('node-async-exec');
 const fs = require('fs');
 const util = require('util');
+
+
+
 // const open = require('open');
+// if (env.type === 'dev' && env.bro === 'chrome')
+//   open('chrome://extensions/', 'chrome');
+
+// if (env.type === 'dev' && env.bro === 'firefox')
+//   open('about:debugging#/runtime/this-firefox', 'firefox');
+// fs.mkdir() Method
+
+
+// function de syncro entre les différents manifest.
+function syncManifestAndPackage(path, originalManifest) {
+  return new Promise((resolve, reject) => {
+
+    const {
+      name,
+      version,
+      description,
+      homepage_url,
+      author,
+      license
+    } = require('./package.json');
+
+    const json = JSON.stringify(
+      Object.assign(
+        originalManifest,
+        {
+          name,
+          version,
+          author,
+          license,
+          description,
+          homepage_url
+        }
+      ), null, 2 // indent
+    );
+
+    fs.writeFile(path, json, err => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
 
 
 // Écrit dans un fichier .env.js l'objet des différents param
@@ -25,6 +73,7 @@ function createEnvFile(keysVals) {
   });
 }
 
+
 module.exports = async env => {
 
   await createEnvFile({
@@ -32,13 +81,34 @@ module.exports = async env => {
     bro: env.bro
   });
 
+  /**
+   * commandes shell :
+   * Suppression du dossier dist (chrome ou firefox)
+   * Création des dossiers publics
+   * Copie des assets (base-manifest, icon, html...)
+   */
+  [
+    `rm -rf ${env.bro}`,
+    `mkdir ${env.bro}`,
+    `mkdir ${env.bro}/js`,
+    `mkdir ${env.bro}/icons`,
+    `cp src/assets/icons/** ${env.bro}/icons/`,
+    `cp src/assets/**.html ${env.bro}/`
+  ].forEach(async cmd => {
+    try {
+      await exec({
+        cmd: cmd
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  });
 
-  // if (env.type === 'dev' && env.bro === 'chrome')
-  //   open('chrome://extensions/', 'chrome');
-
-
-  // if (env.type === 'dev' && env.bro === 'firefox')
-  //   open('about:debugging#/runtime/this-firefox', 'firefox');
+  /**
+   * syncronisation du manifests avec le package
+   */
+  const baseManifest = require(`./src/assets/${env.bro}-base-manifest.json`);
+  syncManifestAndPackage(`./${env.bro}/manifest.json`, baseManifest);
 
 
   return {

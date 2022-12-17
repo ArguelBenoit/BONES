@@ -7,7 +7,7 @@ Bones is a browser extension, allowing to easily manage encrypted communication 
 
 # Compile source code
 
-*Two versions can be deployed with the same code source, one for firefox, and another for chrome/chromium. The public folders updated following the various commands are ./firefox and ./chrome*
+*Two versions can be deployed with the same code source, one for firefox, and another for chrome/chromium. The dist folders created following the various commands are ./firefox and ./chrome*
 
 ## Development
 
