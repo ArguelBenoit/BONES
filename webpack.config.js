@@ -2,16 +2,8 @@ const path = require('path');
 const exec = require('node-async-exec');
 const fs = require('fs');
 const util = require('util');
+const open = require('open');
 
-
-
-// const open = require('open');
-// if (env.type === 'dev' && env.bro === 'chrome')
-//   open('chrome://extensions/', 'chrome');
-
-// if (env.type === 'dev' && env.bro === 'firefox')
-//   open('about:debugging#/runtime/this-firefox', 'firefox');
-// fs.mkdir() Method
 
 
 // function de syncro entre les différents manifest.
@@ -103,6 +95,15 @@ module.exports = async env => {
       console.log(err);
     }
   });
+
+
+  if (env.type === 'dev') {
+    open(
+      `file:///${path.join(__dirname, 'fake_chat.html')}`,
+      { app: { name: env.bro === 'chrome' ? 'chromium' : 'firefox'}}
+    );
+  }
+
 
   /**
    * syncronisation du manifests avec le package
