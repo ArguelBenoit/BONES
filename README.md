@@ -1,5 +1,5 @@
 
-# ![bones icon](https://raw.githubusercontent.com/ArguelBenoit/BONES/master/firefox/icons/icon-32.png) Description of BONES
+# ![bones icon](https://raw.githubusercontent.com/ArguelBenoit/BONES/master/src/assets/icons/icon-32.png) Description of BONES
 
 Bones is a browser extension, allowing to easily manage encrypted communication in rsa 2048 on the different text communication platforms. The extension offers different functionalities, such as: generating, naming and storing pairs of rsa keys, keeping the public keys of friends, sharing public keys. encrypt and decrypt messages. The extension is standalone. No server keeps data created and saved in bones, everything is kept locally.
 
