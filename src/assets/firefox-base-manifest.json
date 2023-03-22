@@ -4,8 +4,6 @@
   "version": "",
   "description": "",
   "homepage_url": "",
-  "author": "",
-  "license": "",
   "permissions": [
     "activeTab",
     "storage",

@@ -14,9 +14,7 @@ function syncManifestAndPackage(path, originalManifest) {
       name,
       version,
       description,
-      homepage_url,
-      author,
-      license
+      homepage_url
     } = require('./package.json');
 
     const json = JSON.stringify(
@@ -25,8 +23,6 @@ function syncManifestAndPackage(path, originalManifest) {
         {
           name,
           version,
-          author,
-          license,
           description,
           homepage_url
         }
