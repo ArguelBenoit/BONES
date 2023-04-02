@@ -3,9 +3,8 @@
 // Ce script est chargé dans toutes les pages lorsque l'extension est active.
 // Si bones est actif et que les clefs sont inscrites, celui-ci injectera le composant
 // toolBox dans la page en question.
-import React from 'react';
 import { render } from 'react-dom';
-import ToolBox from 'Components/tool-box.js';
+import ToolBox from 'Components/tool-box.jsx';
 import { helpers } from 'Bin/helpers.js';
 const { getActivate } = helpers;
 import { tabSubscriber } from 'Bin/dispatch.js';

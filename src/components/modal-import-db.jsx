@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import head from 'Images/bones/head-regular.png';
 import Bus from 'Bin/bus.js';
 import { manager } from 'Bin/storage/manager.js';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import successImg from 'Images/bones/head-success.png';
 import Bus from 'Bin/bus.js';
 

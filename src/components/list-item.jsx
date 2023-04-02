@@ -1,7 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import ActionsPair from 'Components/actions-pair.js';
-import ActionsFriend from 'Components/actions-friend.js';
+import ActionsPair from 'Components/actions-pair.jsx';
+import ActionsFriend from 'Components/actions-friend.jsx';
 
 
 const ListItem = props => {

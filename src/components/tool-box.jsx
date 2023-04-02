@@ -1,10 +1,9 @@
-import React from 'react';
 import Draggable from 'react-draggable';
 import PropTypes from 'prop-types';
 import bonesRegular from 'Images/bones/head-regular.png';
 import bonesSuccess from 'Images/bones/head-success.png';
 import arrow from 'Images/bones/arrow.png';
-import Loading from 'Components/loading.js';
+import Loading from 'Components/loading.jsx';
 import i18 from 'Bin/i18.js';
 import { Crypting } from 'Bin/domain/crypting.js';
 // styles

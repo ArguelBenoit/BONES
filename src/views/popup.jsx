@@ -1,10 +1,9 @@
-import React from 'react';
 import bones from 'Images/bones/head-regular.png';
 import line from 'Images/bones/line.png';
-import FormKeysUsed from 'Components/form-keys-used.js';
-import { useSettingsContext } from 'Contexts/settings.js';
-import { usePairsContext } from 'Contexts/pairs.js';
-import { useFriendsContext } from 'Contexts/friends.js';
+import FormKeysUsed from 'Components/form-keys-used.jsx';
+import { useSettingsContext } from 'Contexts/settings.jsx';
+import { usePairsContext } from 'Contexts/pairs.jsx';
+import { useFriendsContext } from 'Contexts/friends.jsx';
 import i18 from 'Bin/i18.js';
 import { activeTab } from 'Bin/active-tab.js';
 

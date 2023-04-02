@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { render } from 'react-dom';
-import Providers from 'Contexts/providers.js';
+import Providers from 'Contexts/providers.jsx';
 import { manager } from 'Bin/storage/manager.js';
 import { tabSubscriber } from 'Bin/dispatch.js';
 import { helpers } from 'Bin/helpers.js';
-import SettingsRouterTrigger from 'Components/settings-router-trigger.js';
+import SettingsRouterTrigger from 'Components/settings-router-trigger.jsx';
 
 // Les composants absolues
-import ModalLoading from 'Components/modal-loading.js';
-import ModalSuccess from 'Components/modal-success.js';
-import ModalPrompt from 'Components/modal-prompt.js';
-import ModalDumpDb from 'Components/modal-dump-db.js';
-import ModalImportDb from 'Components/modal-import-db.js';
+import ModalLoading from 'Components/modal-loading.jsx';
+import ModalSuccess from 'Components/modal-success.jsx';
+import ModalPrompt from 'Components/modal-prompt.jsx';
+import ModalDumpDb from 'Components/modal-dump-db.jsx';
+import ModalImportDb from 'Components/modal-import-db.jsx';
 
 // styles
 import 'Styles/common.less';

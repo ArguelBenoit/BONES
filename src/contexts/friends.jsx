@@ -1,5 +1,5 @@
 /* eslint-disable react/no-multi-comp */
-import React, {
+import {
   createContext,
   useState,
   useContext,

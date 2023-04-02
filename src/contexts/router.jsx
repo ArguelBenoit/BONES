@@ -1,5 +1,5 @@
 /* eslint-disable react/no-multi-comp */
-import React, { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext } from 'react';
 const RouterContext = createContext();
 
 

@@ -1,8 +1,7 @@
-import React from 'react';
-import { RouterProvider } from 'Contexts/router.js';
-import { PairsProvider } from 'Contexts/pairs.js';
-import { FriendsProvider } from 'Contexts/friends.js';
-import { SettingsProvider } from 'Contexts/settings.js';
+import { RouterProvider } from 'Contexts/router.jsx';
+import { PairsProvider } from 'Contexts/pairs.jsx';
+import { FriendsProvider } from 'Contexts/friends.jsx';
+import { SettingsProvider } from 'Contexts/settings.jsx';
 
 
 // fonction d'attachement de tout les Providers

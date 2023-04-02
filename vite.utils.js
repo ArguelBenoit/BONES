@@ -1,6 +1,8 @@
 import exec from 'node-async-exec';
 import fs from 'fs';
 import path from 'path';
+import react from '@vitejs/plugin-react'
+
 
 /**
  * commandes shell :
@@ -31,7 +33,6 @@ export async function distGenerating(browser) {
 // function de syncro entre les différents le manifest et le package.json
 export async function syncManifestAndPackage(browser) {
   return new Promise(async (resolve, reject) => {
-
 
     const baseManifest = JSON.parse(
       fs.readFileSync(
@@ -88,9 +89,9 @@ export function configurationCreated( mode, browser ) {
       rollupOptions: {
         input: {
           background: path.join(__dirname, 'src/Background.js'),
-          content: path.join(__dirname, 'src/Content.js'),
-          settings: path.join(__dirname, 'src/Settings.js'),
-          popup: path.join(__dirname, 'src/Popup.js'),
+          content: path.join(__dirname, 'src/Content.jsx'),
+          settings: path.join(__dirname, 'src/Settings.jsx'),
+          popup: path.join(__dirname, 'src/Popup.jsx'),
         },
       },
     },
@@ -107,12 +108,11 @@ export function configurationCreated( mode, browser ) {
         Env: path.resolve(__dirname, '.env.js'),
       },
     },
+    plugins: [react()],
     esbuild: {
+      // jsxInject: `import React from 'react'`,
       jsxFactory: 'React.createElement',
-      jsxFragment: 'React.Fragment',
-    },
-    optimizeDeps: {
-      include: ['react', 'react-dom'],
-    },
+      jsxFragment: 'React.Fragment'
+    }
   }
 }

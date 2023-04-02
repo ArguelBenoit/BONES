@@ -1,7 +1,6 @@
-import React from 'react';
-import ReturnLink from 'Components/return-link.js';
-import { usePairsContext } from 'Contexts/pairs.js';
-import { useRouterContext } from 'Contexts/router.js';
+import ReturnLink from 'Components/return-link.jsx';
+import { usePairsContext } from 'Contexts/pairs.jsx';
+import { useRouterContext } from 'Contexts/router.jsx';
 import Bus from 'Bin/bus.js';
 import i18 from 'Bin/i18.js';
 

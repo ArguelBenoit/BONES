@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Bus from 'Bin/bus.js';
-import Loading from 'Components/loading.js';
+import Loading from 'Components/loading.jsx';
 import i18 from 'Bin/i18.js';
 
 

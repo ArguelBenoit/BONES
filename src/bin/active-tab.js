@@ -1,5 +1,5 @@
 import { helpers } from 'Bin/helpers.js';
-import Env from 'Env';
+const env = { bro: 'firefox' };
 
 
 export const activeTab = () => {

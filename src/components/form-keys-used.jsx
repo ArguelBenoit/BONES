@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { usePairsContext } from 'Contexts/pairs.js';
-import { useSettingsContext } from 'Contexts/settings.js';
+import { useState } from 'react';
+import { usePairsContext } from 'Contexts/pairs.jsx';
+import { useSettingsContext } from 'Contexts/settings.jsx';
 // import Bus from 'Bin/bus.js';
-import FieldFriends from 'Components/field-friends.js';
+import FieldFriends from 'Components/field-friends.jsx';
 import i18 from 'Bin/i18.js';
 
 

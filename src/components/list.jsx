@@ -1,6 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import ListItem from 'Components/list-item.js';
+import ListItem from 'Components/list-item.jsx';
 import 'Styles/list.less';
 
 

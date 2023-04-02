@@ -1,8 +1,7 @@
 
-import React from 'react';
 import { render } from 'react-dom';
-import Popup from 'Views/popup.js';
-import Providers from 'Contexts/providers.js';
+import Popup from 'Views/popup.jsx';
+import Providers from 'Contexts/providers.jsx';
 // styles
 import 'Styles/common.less';
 import 'Styles/popup.less';

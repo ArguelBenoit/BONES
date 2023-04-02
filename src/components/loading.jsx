@@ -1,4 +1,3 @@
-import React from 'react';
 import loadingImg from 'Images/bones/loading.png';
 import 'Styles/loading.less';
 import PropTypes from 'prop-types';

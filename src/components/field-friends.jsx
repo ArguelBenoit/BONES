@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useFriendsContext } from 'Contexts/friends.js';
+import { useState } from 'react';
+import { useFriendsContext } from 'Contexts/friends.jsx';
 import PropTypes from 'prop-types';
 import i18 from 'Bin/i18.js';
 

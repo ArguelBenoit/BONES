@@ -1,5 +1,3 @@
-import Env from 'Env';
-
 
 export const helpers = {
   /* retourne un uuid */
